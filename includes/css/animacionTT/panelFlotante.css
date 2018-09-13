@@ -1,0 +1,233 @@
+/*ALGUBOS ELEMENTOS DEL LA PAGINA*/
+.content-heading {
+    padding: 2px 25px 4px !important;
+}
+.content-heading .breadcrumb {
+    float: left !important;
+}
+.cerrarModalTabs {
+	float: right;
+	position: relative;
+	bottom: 12px;
+	left: 20px;
+	height: 40px;
+	width: 40px;
+	padding: 5px 13px !important;
+}
+.btnVelocidadCopiar {
+	width: 34px;
+	padding: 6px 9px !important;
+	margin-right: -2px !important;
+}
+.input-group {
+	width: 100%;
+}
+@media only all and (max-width: 767px) {
+	.cerrarModalTabs {
+		bottom: 74px;
+	}
+	.content-heading .breadcrumb {
+	    max-width: 300px;
+	}
+}
+@media only all and (max-width: 1250px) and (min-width: 767px) {
+	.accionIniciar:before {
+		font-family: "FontAwesome";
+    	content: "\f085";
+    	margin-right: 18px;
+    	margin-left: -6px;
+	}
+	.accionIniciar {
+		height: 34px;
+		width: 34px;
+		white-space: nowrap;
+  		overflow: hidden;
+	}
+	.accionCancelar:before {
+		font-family: "FontAwesome";
+    	content: "\f057";
+    	margin-right: 18px;
+    	margin-left: -6px;
+	}
+	.accionCancelar {
+		height: 34px;
+		width: 34px;
+		white-space: nowrap;
+  		overflow: hidden;
+	}
+}
+
+@media only all and (max-width: 767px) {
+	.sketch{
+		display: none;
+	}
+}
+.sketch{
+	margin: 0px 50px 0px 30px;
+}
+
+.modal-content>.panel{
+	border: 0px !important;
+}
+.modal-content>.panel>.panel-heading{
+	border-top-left-radius: 3px !important;
+	border-top-right-radius: 3px !important;
+	background-color: #7d3c61 !important;
+}
+.modal-content>.panel>.panel-heading>.panel-title{
+	color: white !important;
+}
+
+.modal-content>.panel>.panel-heading>ul>li>a{
+	color: white !important;
+}
+
+.modal-content>.panel>.panel-heading>ul>li.active>a,
+.modal-content>.panel>.panel-heading>ul>li>a:focus,
+.modal-content>.panel>.panel-heading>ul>li>a:hover{
+	color: #5e6773 !important;
+}
+
+/*IMAGENES*/
+.imagenDerecha{
+	margin-left: 50px;
+}
+.imagenDerecha>img{
+	border-radius: 5px;
+    border: 1px solid #d2d2d2;
+}
+.imagenDerecha>p{
+	text-align: center;
+}
+.navbar-nav>li>a img {
+     border: unset !important; 
+}
+
+/*PANEL DE FUNDAMENTOS MATEMATICOS*/
+#panel-fundamentos {
+	position: fixed;
+	top: 80px;
+	right: 0;
+	margin-right: -262px;
+	z-index: 1000;
+	border: 1px solid #ccc;	
+	-webkit-border-radius: 0 0 2px 0;
+	-moz-border-radius: 0 0 2px 0;
+	border-radius: 0 0 2px 0;
+	-webkit-transition: all ease 0.25s;
+	-moz-transition: all ease 0.25s;
+	-o-transition: all ease 0.25s;
+	transition: all ease 0.25s;
+}
+
+#panel-fundamentos.active {
+	margin-right: -1px;
+}
+
+#panel-fundamentos > a {
+	display: block;
+	width: 55px;
+	height: 50px;
+	position: absolute;
+	top: -1px;
+	right: 99%;
+	border-radius: 0 2px 2px 0;
+	border: 0;
+	border-right: none;
+	background-color: #fff;
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+	z-index: -1;
+	color: white !important;
+}
+
+#panel-fundamentos i {
+	line-height: 50px;
+}
+
+#panel-fundamentos #listaFundamentos {
+	display: block;
+	width: 260px;
+	height: 600px;
+	overflow: hidden;
+	border: none;
+	background-color: white;
+	margin-top: -1px;
+}
+
+#panel-fundamentos a {
+	color: #0af;
+	text-decoration: underline;
+}
+
+#panel-fundamentos a:hover, #panel-fundamentos a:focus {
+	text-decoration: none;
+}
+
+#panel-fundamentos ul {
+	margin-top: 0;
+	padding: 0 0 0 25px;
+	list-style: none;
+}
+
+#panel-fundamentos ul li  {
+	list-style-type: none;
+	margin-bottom: 4px;
+}
+
+#panel-fundamentos h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+#panel-fundamentos hr {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: 0;
+	border-top: 1px solid #ccc;
+}
+
+#panel-fundamentos #listaFundamentos .panel-heading {
+	background-color: #2b333e;
+	border-radius: 0px;
+	height: 50px;
+	padding-top: 18px;
+	text-align: center;
+}
+
+#panel-fundamentos #listaFundamentos .panel-title {
+	color: white;
+}
+
+#panel-fundamentos .panel-row{
+	position: absolute;
+    right: 312px;
+    top: -1px;
+    margin: 0 0 15px 0;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 30px solid #2b333e;
+}
+
+#panel-fundamentos #listaFundamentos .slimScrollDiv .panel-body {
+	padding-bottom: 60px;
+}
+
+@media only all and (max-height: 715px) {
+	#panel-fundamentos #listaFundamentos {
+		height: 400px !important;
+	}
+
+	#panel-fundamentos #listaFundamentos .slimScrollDiv {
+		height: 400px !important;
+	}
+
+	#panel-fundamentos #listaFundamentos .slimScrollDiv .panel-body {
+		height: 400px !important;
+	}
+}
+    

@@ -1,0 +1,2289 @@
+<div class="modal fade" id="modalMatematicaModular" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Aritmética Modular</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalMatematicaModularTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body text-justify">
+					<p>Aritmética modular es una forma simple de realizar aritmética en un conjunto finito de enteros.</p>
+					<p>Sea <label class="formula2">a</label>, <label class="formula2">r</label>, <label class="formula2">m</label> ∈ <label class="formula2">Z</label> (donde <label class="formula2">Z</label> es un conjunto de todos los enteros) y <label class="formula2">m &gt; 0 </label>. Se escribe:</p><br>
+					<div class="formula">a ≡ r mod m</div><br>
+					<p>si <label class="formula2">m</label> divide <label class="formula2">a - r</label>.</p>
+					<br>
+					<p>Donde:</p>
+					<ul>
+						<li><label class="formula2">m</label> es llamado el <b>módulo</b></li>
+						<li><label class="formula2">r</label> es llamado el <b>residuo</b></li>
+					</ul>
+					<p>La línea <label class="formula2">a ≡ r mod m</label> se lee como "<b>a es congruente con r módulo  m</b>"</p>
+					<p>Se supone que se divide <label class="formula2">a</label> y <label class="formula2">r</label> por <label class="formula2">m</label>, obteniendo cocientes y residuos enteros, donde los residuos están entre 0 y m - 1. Es decir, <label class="formula2">a = q<sub>1</sub>m + r<sub>1</sub></label> y <label class="formula2">r = q<sub>2</sub>m + r<sub>2</sub></label>, donde <label class="formula2">0 &lt; r<sub>1</sub> &lt; m-1</label> y <label class="formula2">0 &lt; r<sub>2</sub> &lt; m-1</label>.</p>
+					<p>Entonces no es difícil ver que <label class="formula2">a ≡ r mod m</label> si y solo si <label class="formula2">r<sub>1</sub> = r<sub>2</sub></label>.</p>
+
+					<p><b>OBSERVACIÓN</b>: Para propósito de la criptografía siempre se define <label class="formula2">a mod m</label> como un número no-negativo.</p><br>
+					<p>Ahora se puede definir el módulo aritmético <label class="formula2">m</label>: <label class="formula2">Z<sub>m</sub></label> se define como el conjunto <label class="formula2">{0 , ... , m-1}</label>, equipado con dos operaciones, <label class="formula2">+</label> y <label class="formula2">*</label>. La suma y la multiplicación mudular son exactamente como la suma y multiplicación aritmetica, excepto que los resultados se reducen módulo <label class="formula2">m</label>.</p>
+					<p>Por ejemplo, supongamos que queremos calcular 11 × 13 en <label class="formula2">Z<sub>16</sub></label>. Como números enteros, tenemos 11 × 13 = 143. Para reducir 143 módulo 16, simplemente realizamos una división larga ordinaria: 143 = 8 × 16 + 15, por lo que 143 mod 16 = 15 y, por lo tanto, 11 × 13 = 15 en <label class="formula2">Z<sub>16</sub></label>.</p>
+					<hr>
+					<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+					<ol type="”1”" start="”1”">
+						<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+						<li>Douglas Stinson. (1995). Cryptography: Theory and Practice. United States: CRC Press.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalSumaModular" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Suma Modular</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalSumaModularTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalSumaModularAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalSumaModularTeoria">
+							<div class="panel-body text-justy">
+								<p>La suma modular es exactamente como la suma algebraica, excepto que el resultado se reduce módulo <label class="formula2">m</label>.</p>
+								<p>Por ejemplo:</p>
+								<p>Se quiere sumar <label class="formula2">5</label> y <label class="formula2">8</label> en <label class="formula2">Z<sub>10</sub></label></p>
+								<center>
+									<p><label class="formula2">5 + 8 = 13 ≡ 3 mod 10</label></p>
+								</center><br>
+								<p>Esta definición de suma satisface la mayoría de las reglas familiares de aritmética. A continuación se enumeran estas propiedades:</p>
+								<ol>
+									<li>La suma es cerrada, es decir, para cualquier <label class="formula2">a</label>, <label class="formula2">b</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">a + b ∈ Z<sub>m</sub></label></li>
+									<li>La suma es conmutativa, es decir, para cualquier <label class="formula2">a</label>, <label class="formula2">b</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">a + b = b + a</label></li>
+									<li>La suma es asociativa, es decir, para cualquier <label class="formula2">a</label>, <label class="formula2">b</label>, <label class="formula2">c</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">(a + b) + c = a + (b + c)</label></li>
+									<li><label class="formula2">0</label> es una identidad aditiva, es decir, para cualquiera, <label class="formula2">a</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">a + 0 = 0 + a = a </label></li>
+									<li>El inverso aditivo de cualquier <label class="formula2">a</label> ∈ <label class="formula2">Z<sub>m</sub></label> es <label class="formula2">m - a</label>, es decir, <label class="formula2">a + (m - a) = (m - a) + a = 0</label> para cualquier <label class="formula2">a</label> ∈ <label class="formula2">Z<sub>m</sub></label>.</li>
+								</ol>
+								<hr>
+								<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+								<ol type="”1”" start="”1”">
+									<li>Douglas Stinson. (1995). Cryptography: Theory and Practice. United States: CRC Press.</li>
+								</ol>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="modalSumaModularAnimacion">
+							<div id="operacionSumaModular">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-1"></div>
+										<div class="col-sm-2 text-primary" style="padding-top: 10px; width: 10%;">
+											<div class="form-group">
+												<div class="input-group">
+													<div class="fancy-radio">
+														<label>
+															<input name="tipoSuma" id="SMtabla" checked="true" value="tablaSuma" type="radio">
+															<span><i></i>Tabla</span>
+														</label>
+													</div>
+													<div class="fancy-radio">
+														<label>
+															<input name="tipoSuma" id="SMdivision" value="divisionSuma" type="radio">
+														<span><i></i>División</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-2 text-primary">A:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorASumaModular" min="0" max="50" value="15">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-2 text-primary">B:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorBSumaModular" min="0" max="50" value="15">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3 text-primary">Anillo (Z):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorAnilloSumaModular" min="2" max="50" value="20">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadSumaModular" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoSumaModular1">Calcular Rápido</a></li>
+															<li><a id="tipoSumaModular2">Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-comenzarSumaModular" tabindex="-1" value="2">Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarSumaModular" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="SMdiv1"></div>
+								<div class="col-md-12">
+									<div class="text-center" id="divOperacion"><br></div><br>
+									<div id="divAnillo" class="text-center"><br></div>
+								</div>
+								<div class="col-md-12">
+									<div id="valorSumaModular" class="text-center"><br></div>
+								</div>
+								<div class="container"><br>
+									<div class="row">
+										<div class="col-sm-2 text-primary"></div>
+										<div class="col-sm-8 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="out-sumaModular">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalMultiplicacionModular" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Multiplicación Modular</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalMultiplicacionModularTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalMultiplicacionModularAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalMultiplicacionModularTeoria">
+							<p>La multiplicación modular es exactamente como la multiplicación algebraica, excepto que el resultado se reduce módulo <label class="formula2">m</label>.</p>
+							<p>Por ejemplo:</p>
+							<p>Se quiere multiplicar <label class="formula2">10</label> y <label class="formula2">3</label> en <label class="formula2">Z<sub>14</sub></label></p>
+							<center>
+								<p><label class="formula2">10 * 3 = 30 ≡ 2 mod 14</label></p>
+							</center><br>
+							<p>Esta definición de multiplicación satisface la mayoría de las reglas familiares de aritmética. A continuación se enumeran estas propiedades:</p>
+							<ol>
+								<li>La multiplicación es cerrada, es decir, para cualquier <label class="formula2">a</label>, <label class="formula2">b</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">a * b ∈ Z<sub>m</sub></label></li>
+								<li>La multiplicación es conmutativa, es decir, para cualquier <label class="formula2">a</label>, <label class="formula2">b</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">a * b = b * a</label></li>
+								<li>La multiplicación es asociativa, es decir, para cualquier <label class="formula2">a</label>, <label class="formula2">b</label>, <label class="formula2">c</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">(a * b) * c = a * (b * c)</label></li>
+								<li><label class="formula2">1</label> es una identidad multiplicativa, es decir, para cualquiera, <label class="formula2">a</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">a * 1 = 1 * a = a </label></li>
+								<li>La multiplicación distribuye sobre la suma, es decir, para cualquier <label class="formula2">a</label>, <label class="formula2">b</label>, <label class="formula2">c</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">(a + b) * c = (a * c) + (b * c)</label> y <label class="formula2">a * (b +c) = (a * b) + (a * c)</label>.</li>
+							</ol>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol type="”1”" start="”1”">
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalMultiplicacionModularAnimacion">
+							<div id="operacionMultiplicacionModular">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-2 text-primary">A:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorAMultiplicacionModular" min="0" max="50" value="15">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-2 text-primary">B:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorBMultiplicacionModular" min="0" max="50" value="15">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 text-primary">Anillo (Z):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorAnilloMultiplicacionModular" min="2" max="50" value="20">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadMultiplicacionModular" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoMultiplicacionModular1">Calcular Rápido</a></li>
+															<li><a id="tipoMultiplicacionModular2">Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-comenzarMultiplicacionModular" tabindex="-1" value="2">Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarMultiplicacionModular" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="MMdiv1"></div>
+								<div class="col-md-12">
+									<div class="text-center" id="MMdivOperacion"></div><br>
+								</div>
+								<div class="col-md-12">
+									<div id="valorMultiplicacionModular" class="text-center"></div>
+								</div>
+								<div class="container"><br>
+									<div class="row">
+										<div class="col-md-2 text-primary"></div>
+										<div class="col-md-8 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="out-multiplicacionModular">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalInversoAditivo" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Inverso Aditivo</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalInversoAditivoTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalInversoAditivoAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalInversoAditivoTeoria">
+							<p>El inverso aditivo en la aritmética modular se puede definir como el complemento del número original, de tal forma que la suma de  ambos (complemento y original) sea igual al módulo.</p>
+							<p>En otras palabras, el inverso aditivo de cualquier <label class="formula2">a</label> ∈ <label class="formula2">Z<sub>m</sub></label> es <label class="formula2">m - a</label>, es decir, <label class="formula2">a + (m - a) = (m - a) + a = 0</label> para cualquier <label class="formula2">a</label> ∈ <label class="formula2">Z<sub>m</sub></label>.</p>
+							<p>Por ejemplo:</p>
+							<div class="formula">a = 5 en Z<sub>26</sub></div><br>
+							<div class="formula">-a = 26 - 5</div><br>
+							Entonces:<br>
+							<div class="formula">-a = 21</div>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<p align="justify"> </p><ol type="”1”" start="”1”">
+								<li>Douglas Stinson. (1995). Cryptography: Theory and Practice. United States: CRC Press.</li>
+							</ol><p></p>
+						</div>
+						<div class="tab-pane fade" id="modalInversoAditivoAnimacion">
+							<div id="operacionInversoAditivo">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-md-3"></div>
+										<div class="col-md-2 text-primary">A:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorAInversoAditivo" min="0" max="999" value="15">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 text-primary">Anillo (Z):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorAnilloInversoAditivo" min="2" max="1000" value="20">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadInversoAditivo" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoInversoAditivo1">Calcular Rápido</a></li>
+															<li><a id="tipoInversoAditivo2">Calcular Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-comenzarInversoAditivo" tabindex="-1" value="2">Calcular Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarInversoAditivo" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="IAdiv1"></div>
+								<div class="col-md-12">
+									<div class="text-center" id="IAdivOperacion"></div><br>
+								</div>
+								<div class="col-md-12">
+									<div id="valorInversoAditivo" class="text-center"></div>
+								</div>
+								<div class="container"><br>
+									<div class="row">
+										<div class="col-md-3 text-primary"></div>
+										<div class="col-md-6 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="out-inversoAditivo">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalInversoMultiplicativo" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Inverso Multiplicativo</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalInversoMultiplicativoTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalInversoMultiplicativoAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalInversoMultiplicativoTeoria">
+							<p>En aritmética modular el inverso multiplicativo se define de la siguiente manera.</p>
+							<p>Sea <label class="formula2">a ∈ Z</label></p>
+							<div class="formula">a * a<sup>-1</sup> ≡ 1 mod m</div><br>
+							<p>El inverso multiplicativo existe solo para algunos, pero no para todos, elementos.</p>
+							<p>Un elemento <label class="formula2">a ∈ Z</label> tiene un inverso multiplicativo <label class="formula2">a<sup>-1</sup></label> si y solo si <label class="formula2">mcd(a , m) = 1</label>, donde <b>mcd</b> es el <b>máximo común divisor</b>, es decir, el entero más grande que divide ambos números <label class="formula2">a</label> y <label class="formula2">m</label>. El hecho de que dos números  tengan un mcd de 1 es de gran importancia y hay un nombre especial para eso: si <label class="formula2">mcd(a , m) = 1</label>, entonces <label class="formula2">a</label> y <label class="formula2">m</label> se dice que son <b>primos relativos</b> o <b>coprimos</b>.</p>
+							<p>Por ejemplo:</p>
+							<p>Veamos si el inverso multiplicativo de 14 existe en <label class="formula2">Z<sub>27</sub></label>.</p>
+							<p>Porque</p>
+							<center><label class="formula2">mcd(14 , 27) = 1</label></center>
+							<p> el inverso debe existir. Por otro lado, </p>
+							<center><label class="formula2">mcd(15 , 27) = 3</label></center>
+							<p>el inverso multiplicativo de 15 no existe en <label class="formula2">Z<sub>17</sub></label>.</p>
+							<br>
+							<h4 class="text-primary">Encontrar un inverso multiplicativo</h4>
+							<p>Lo primero que se hace es aplicar el algoritmo de Euclides para verificar que <label class="formula2">mcd(n , m) = 1</label> donde <label class="formula2">n</label> es el número del que queremos obtener su inverso multiplicativo y <label class="formula2">m</label> es el número de elementos del conjunto (alfabeto) con el que estemos trabajando.</p>
+							<p>Ejemplo: Vamos a calcular el inverso de 7 y consideremos que estamos trabajando con el alfabeto español que tiene 27 letras, entonces <label class="formula2">n = 8</label> y <label class="formula2">m = 27</label>.</p>
+							<p>Usando el Algoritmo de Euclides se calcula el máximo común divisor:</p>
+							<ol type="”1”" start="”1”">								
+								<li><label class="formula2">27 = 3*8 + 3</label>.</li>
+								<li><label class="formula2">8 = 2*3 + 2</label>.</li>
+								<li><label class="formula2">3 = 1*2 + 1</label>.</li>
+								<li><label class="formula2">2 = 2*1 + 0</label>.</li>
+							</ol>
+							<p>Utilizando los pasos del Algoritmo de Euclides se procede a calcular el inverso</p>
+							<ol start="5">
+								<li>Del paso 3 se despeja el residuo, <label class="formula2">1 = 3 - 1*2</label>.</li>
+								<li>Del paso 2 se despeja el residuo <label class="formula2">2 = 8 - 2*3</label> y si esto lo sustituimos en la ecuación del paso 5 tenemos:<br><label class="formula2">1 = 3 - 1*(8 - 2*3) = 3 - 1*8 + 2*3 = -1*8 + 3*3</label>.</li>
+								<li>Del paso 1 se despeja el residuo <label class="formula2">3 = 27 - 3*8</label> y si esto lo sustituimos en la ecuación del paso 6 nos queda:<br><label class="formula2">1 = -1*8 + 3*(27 - 3*8) = -1*8 + 3*27 - 9*8 = 3*27 - 10*8</label>.</li>
+							</ol>
+							<p>El número que multiplica a 8 es el inverso multiplicativo, pero como es negativo se debe calcular su inverso aditivo.</p>
+							<center><label class="formula2">27 - 10 = 17</label></center>
+							<p>El inverso multiplicativo de 8 en <label class="formula2">Z<sub>27</sub></label> es <label class="formula2">17</label>, demostración: <label class="formula2">8*17 = 136 ≡ 1 mod 27</label>.</p>
+							<p>En el algoritmo anterior los resultados es importante simplificarlos lo más posible y tratar de dejarlos en términos del número del que buscamos el inverso, <label class="formula2">n</label>, así como de <label class="formula2">m</label>.</p>
+							<p>Una alternativa, aunque poco práctica, es ir multiplicando el número del que queremos saber su inverso por otro número y aplicar al resultado la operación módulo, para el ejemplo anterior <label class="formula2">mod 27</label>, hasta que obtengamos un 1:</p>
+							<p align="center"><label class="formula2">8*0 ≡ 0 mod 27</label><br>
+							<label class="formula2">8*1 ≡ 8 mod 27</label><br>
+							<label class="formula2">8*2 ≡ 16 mod 27</label><br>
+							<label class="formula2">8*3 ≡ 24 mod 27</label><br>
+							.<br>
+							.<br>
+							.<br>
+							<label class="formula2">8*17 ≡ 1 mod 27</label></p>
+							<hr>								
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol type="”1”" start="”1”">
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+								<li>Douglas Stinson. (1995). Cryptography: Theory and Practice. United States: CRC Press.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalInversoMultiplicativoAnimacion">
+							<div id="operacionInversoMultiplicativo">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-2 text-primary">A:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorAInversoMultiplicativo" min="2" max="999" value="117">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 text-primary">Anillo (z):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorModuloInversoMultiplicativo" min="2" max="1000" value="244">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadInversoMultiplicativo" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoInversoMultiplicativo1">Calcular Rápido</a></li>
+															<li><a id="tipoInversoMultiplicativo2">Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-comenzarInversoMultiplicativo" tabindex="-1" value="2">Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarInversoMultiplicativo" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="IMdiv1"></div>
+								<div class="col-md-12">
+									<div class="col-md-4" id="IMizquierda"></div>
+									<div class="col-md-4" id="IMcentro"></div>
+									<div class="col-md-4" id="IMderecha"></div>
+								</div>
+								<div class="col-md-12">
+									<div id="valorInversoMultiplicativo" class="text-center"></div>
+								</div>
+								<div class="container"><br>
+									<div class="row">
+										<div class="col-sm-3 text-primary"></div>
+										<div class="col-sm-6 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="out-inversoMultiplicativo">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalExponenciacionClasica" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Exponenciación Clásica</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalExponenciacionClasicaTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalExponenciacionClasicaAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalExponenciacionClasicaTeoria">
+							<p>Realizar la operación de elevar un número a una cierta potencia y después aplicarle la operación módulo puede ser algo fácil o difícil de hacer dependiendo tanto del exponente.</p>
+							<p>Por ejemplo:</p>
+							<p>Elevar <b>5</b> a la potencia <b>3</b> en <b>Z<sub>27</sub></b></p>
+							<center><label class="formula2">5<sup>3</sup> = 125 ≡ 17 mod 27</label></center>
+							<p>es algo fácil de calcular porque el exponente es pequeño.</p>
+							<p>Ahora elevamos <b>5</b> a la potencia <b>21</b> en <b>Z<sub>27</sub></b></p>
+							<center><label class="formula2">5<sup>21</sup> = 476,837,158,203,125 ≡ 17 mod 27</label></center>
+							<p>y notamos que se vuelve más difícil de hacer.</p>
+							<hr>
+							<p>El método más simple para realizar una exponenciación modular basa su funcionamiento en el hecho de que no importa que tan grande sea la potencia, el resultado siempre será un número entre <label class="formula2">0</label> y <label class="formula2">m - 1</label>.</p>
+							<p>Para explicar este método se usará el ejemplo anterior.</p>
+							<ol>
+								<li>Se toma la base y se escribe en forma de multiplicación.</li>
+								<center><label class="formula2">5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5</label></center>
+								<li>Se toman los dos primeros números, se multiplican entre ellos y se calcula el módulo.</li>
+								<center><label class="formula2">5 * 5 ≡ 25 mod 27</label></center>
+								<li>El 25 se coloca en lugar de los 2 primeros números.</li>
+								<center><label class="formula2">25</label>*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5</center>
+								<li>Se vuelven a tomar los dos primeros números, se multiplican entre ellos y se calcula el módulo.</li>
+								<center><label class="formula2">25 * 5 ≡ 17 mod 27</label></center>
+								<li>El 25 se coloca en lugar de los 2 primeros números.</li>
+								<center><label class="formula2">17</label>*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5</center>
+								<li>Se repiten los pasos hasta que solo quede un número.</li>
+								<center><label class="formula2">25</label>*5</center>
+								<center><label class="formula2">25 * 5 ≡ 17 mod 27</label></center>
+								<center><label class="formula2">17</label></center>
+								<li>El número final es el resultado de la exponenciación modular.</li>
+								<center><label class="formula2">5<sup>21</sup> ≡ 17 mod 27</label></center>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalExponenciacionClasicaAnimacion">
+							<div id="operacionExponenciacionClasica">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-2 text-primary">Base (b):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-baseExponenciacionClasica" min="2" max="999" value="3">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-2 text-primary">Exponente (e):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-exponenteExponenciacionClasica" min="2" max="20" value="5">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 text-primary">Anillo (z):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorAnilloExponenciacionClasica" min="3" max="1000" value="19">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadExponenciacionClasica" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoExponenciacionClasica1">Calcular Rápido</a></li>
+															<li><a id="tipoExponenciacionClasica2">Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-comenzarExponenciacionClasica" tabindex="-1" value="2">Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarExponenciacionClasica" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="ECdiv1"></div>
+								<div class="col-md-12">
+									<div class="text-center" id="ECdivOperacion"></div><br>
+									<div id="ECdivAnillo" class="text-center"></div>
+								</div>
+								<div class="col-md-12"><br>
+									<div id="valorExponenciacionClasica" class="text-center"></div>
+								</div>
+								<div class="container"><br>
+									<div class="row">
+										<div class="col-sm-2 text-primary"></div>
+										<div class="col-sm-8 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="out-exponenciacionClasica">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalExponenciacionBinaria" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Exponenciación Binaria</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalExponenciacionBinariaTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalExponenciacionBinariaAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalExponenciacionBinariaTeoria">
+							<p>Realizar la operación de elevar un número a una cierta potencia y después aplicarle la operación módulo puede ser algo fácil o difícil de hacer dependiendo tanto del exponente.</p>
+							<p>Por ejemplo:</p>
+							<p>Elevar <b>5</b> a la potencia <b>3</b> en <b>Z<sub>27</sub></b></p>
+							<center><label class="formula2">5<sup>3</sup> = 125 ≡ 17 mod 27</label></center>
+							<p>es algo fácil de calcular porque el exponente es pequeño.</p>
+							<p>Ahora elevamos <b>5</b> a la potencia <b>20</b> en <b>Z<sub>27</sub></b></p>
+							<center><label class="formula2">5<sup>21</sup> = 476,837,158,203,125 ≡ 17 mod 27</label></center>
+							<p>y notamos que se vuelve más difícil de hacer.</p>
+							<hr>
+							<p>Un método muy eficaz y rápido para realizar una exponenciación modular con exponentes muy grandes es la <b>Exponenciación Modular Binaria</b></p>
+							<p>Este algoritmo hace uso de solo dos operaciones:</p>
+							<ul>
+								<li><b>Elevar al cuadrado (SQ)</b> el resultado actual.</li>
+								<li><b>Multiplicar (MUL)</b> el resultado actual por el elemento base.</li>
+							</ul>
+							<p>Este algoritmo está basado en escanear el bit del exponente desde la izquierda (el bit más significativo) a la derecha (el bit menos significativo). En cada iteración, es decir, por cada bit del exponente, el resultado actual se eleva al cuadrado. Si y solo si el bit del exponente escaneado actualmente tiene el valor de <b>1</b>, una multiplicación del resultado actual por la base es ejecutada después de la elevación al cuadrado. Después de cada paso se aplica la operación módulo para mantener el resultado intermedio pequeño.</p><br>
+							<p>Ahora se explicará con el ejemplo anterior.</p>
+							<p>En primer se mostrará la representación binaria del exponente:</p>
+							<center><label class="formula2">5<sup>21</sup> = 5<sup>10101</sup> = 5<sup>(h<sub>4</sub> h<sub>3</sub> h<sub>2</sub> h<sub>1</sub> h<sub>0</sub>)</sup></label></center><br>
+							<p>El algoritmo escanea los bits del exponente empezando por la izquierda con <label class="formula2">h<sub>4</sub></label> y finalizando con el bit más a la derecha <label class="formula2">h<sub>0</sub></label>.</p>
+							<table class="table table-bordered" style="background-color: #F2F4F7;">
+								<tbody><tr><td>Paso</td><td>Desarrollo</td><td>Operaciones</td><td>Resultado</td></tr>
+								<tr><td>#0</td><td>5 = 5<sup><b>1</b><sub>2</sub></sup></td><td>Ajuste inicial, bit escaneado: h<sub>4</sub> = 1</td><td>5 mod 27</td></tr>
+								<tr><td>#1a</td><td>(5<sup>1</sup>)<sup>2</sup> = 5<sup>2</sup> = 5<sup><b>10</b><sub>2</sub></sup></td><td>SQ, bit scaneado: h<sub>3</sub></td><td>5<sup>2</sup> ≡ 25 mod 27</td></tr>
+								<tr><td>#1b</td><td></td><td>no MUL, ya que h<sub>3</sub> = 0</td><td></td></tr>
+								<tr><td>#2a</td><td>(5<sup>2</sup>)<sup>2</sup> = 5<sup>4</sup> = 5<sup><b>100</b><sub>2</sub></sup></td><td>SQ, bit scaneado: h<sub>2</sub></td><td>25<sup>2</sup> ≡ 4 mod 27</td></tr>
+								<tr><td>#2b</td><td>5<sup>4</sup>*5 = 5<sup>5</sup> = 5<sup><b>101</b><sub>2</sub></sup></td><td>MUL, ya que: h<sub>2</sub> = 1</td><td>4 * 5 ≡ 20 mod 27</td></tr>
+								<tr><td>#3a</td><td>(5<sup>5</sup>)<sup>2</sup> = 5<sup>10</sup> = 5<sup><b>1010</b><sub>2</sub></sup></td><td>SQ, bit scaneado: h<sub>1</sub></td><td>20<sup>2</sup> ≡ 22 mod 27</td></tr>
+								<tr><td>#3b</td><td></td><td>no MUL, ya que h<sub>1</sub> = 0</td><td></td></tr>
+								<tr><td>#4a</td><td>(5<sup>10</sup>)<sup>2</sup> = 5<sup>20</sup> = 5<sup><b>10100</b><sub>2</sub></sup></td><td>SQ, bit scaneado: h<sub>0</sub></td><td>22<sup>2</sup> ≡ 25 mod 27</td></tr>
+								<tr><td>#4b</td><td>5<sup>20</sup>*5 = 5<sup>21</sup> = 5<sup><b>10101</b><sub>2</sub></sup></td><td>MUL, ya que: h<sub>0</sub> = 1</td><td>25 * 5 ≡ 17 mod 27</td></tr>
+							</tbody></table><br>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol type="”1”" start="”1”">
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalExponenciacionBinariaAnimacion">
+							<div id="operacionExponenciacionBinaria">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-2 text-primary">Base (b):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-baseExponenciacionBinaria" min="2" max="999" value="3">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-2 text-primary">Exponente (e):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-exponenteExponenciacionBinaria" min="2" max="1000" value="49">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 text-primary">Anillo (z):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorAnilloExponenciacionBinaria" min="3" max="1000" value="19">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadExponenciacionBinaria" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoExponenciacionBinaria1">Calcular Rápido</a></li>
+															<li><a id="tipoExponenciacionBinaria2">Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-comenzarExponenciacionBinaria" tabindex="-1" value="2">Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarExponenciacionBinaria" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="EBdiv1"></div>
+								<div class="col-md-12">
+									<div class="col-md-2"></div>
+									<div id="EBdivAnillo" class="col-md-8 text-center"></div><br>
+									<div class="col-md-4"></div>
+									<div class="col-md-4 text-center" id="EBdivtabla"></div>
+								</div>
+								<div class="col-md-12">
+									<div id="valorExponenciacionBinaria" class="text-center"></div>
+								</div>
+								<div class="container"><br>
+									<div class="row">
+										<div class="col-md-2 text-primary"></div>
+										<div class="col-md-8 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="out-exponenciacionBinaria">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalExponenciacionEuler" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Exponenciación por Teorema de Euler</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalExponenciacionEulerTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalExponenciacionEulerAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalExponenciacionEulerTeoria">
+							<p>Realizar la operación de elevar un número a una cierta potencia y después aplicarle la operación módulo puede ser algo fácil o difícil de hacer dependiendo tanto del exponente.</p>
+							<p>Por ejemplo:</p>
+							<p>Elevar <b>5</b> a la potencia <b>3</b> en <b>Z<sub>27</sub></b></p>
+							<center><label class="formula2">5<sup>3</sup> = 125 ≡ 17 mod 27</label></center>
+							<p>es algo fácil de calcular porque el exponente es pequeño.</p>
+							<p>Ahora elevamos <b>5</b> a la potencia <b>20</b> en <b>Z<sub>27</sub></b></p>
+							<center><label class="formula2">5<sup>21</sup> = 476,837,158,203,125 ≡ 17 mod 27</label></center>
+							<p>y notamos que se vuelve más difícil de hacer.</p>
+							<hr>
+							<h4 class="text-primary">Teorema de Euler</h4>
+							<p>El Teorema de Euler dice: Sean <label class="formula2">a</label> y <label class="formula2">m</label> enteros con <label class="formula2">mcd(a , m) = 1</label>, entonces</p>
+							<div class="formula">a<sup>φ(m)</sup> ≡ 1 mod m</div><br>
+							<p>Este teorema sirve para reducir el exponente en una exponenciación modular siempre que:</p>
+							<ul>
+								<li><label class="formula2">mcd(a , m) = 1</label></li>
+								<li><label class="formula2">φ(m) &lt;= e</label></li>
+							</ul><br>
+							<p>Para explicar su funcionamiento se usará el ejemplo anterior.</p>
+							<p>Se calcula φ(27) (Phi de Euler)</p>
+							<center><label class="formula2">φ(27) = 18</label></center>
+							<p>Se expresa el exponente en términos de φ(27).</p>
+							<center><label class="formula2">21 = 1*18 + 3</label></center><br>
+							<center><label class="formula2">5<sup>21</sup> = 5<sup>1*18 + 3</sup></label></center>
+							<center><label class="formula2">5<sup>21</sup> = 5<sup>1*18</sup> * 5<sup>3</sup></label></center>
+							<center><label class="formula2">5<sup>21</sup> = (5<sup>18</sup>)<sup>1</sup> * 5<sup>3</sup></label></center>
+							<p>Como <b>mcd(5 , 27) = 1</b> y <b>φ(27) &lt; 21</b> se puede aplicar el Teorema de Euler</p>
+							<center><label class="formula2">5<sup>18</sup> ≡ 1 mod 27</label></center>
+							<p>Se hace la sustitución.</p>
+							<center><label class="formula2">5<sup>21</sup> = (5<sup>18</sup>)<sup>1</sup> * 5<sup>3</sup></label></center>
+							<center><label class="formula2">5<sup>21</sup> ≡ 1<sup>1</sup> * 5<sup>3</sup> mod 27</label></center>
+							<center><label class="formula2">5<sup>21</sup> ≡ 5<sup>3</sup> mod 27</label></center>
+							<p>Ahora que el exponente se ha reducido se puede aplicar cualquier otro método de exponenciación modular.</p>
+							<center><label class="formula2">5<sup>21</sup> ≡ 5<sup>3</sup> mod 27</label></center>
+							<center><label class="formula2">5<sup>3</sup> ≡ 17 mod 27</label></center>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol type="”1”" start="”1”">
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalExponenciacionEulerAnimacion">
+							<div id="operacionExponenciacionEuler">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-2 text-primary">Base (b):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-baseExponenciacionEuler" min="2" max="999" value="3">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-2 text-primary">Exponente (e):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-exponenteExponenciacionEuler" min="2" max="1000" value="49">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 text-primary">Anillo (z):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorAnilloExponenciacionEuler" min="3" max="1000" value="19">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadExponenciacionEuler" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoExponenciacionEuler1">Calcular Rápido</a></li>
+															<li><a id="tipoExponenciacionEuler2">Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-comenzarExponenciacionEuler" tabindex="-1" value="2">Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarExponenciacionEuler" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="EEdiv"></div>
+								<div class="col-md-12">
+									<div id="EEdiv1" class="text-center"></div><br>
+									<div class="text-center" id="EEdiv2"></div>
+								</div>
+								<div class="col-md-12">
+									<div id="valorExponenciacionEuler" class="text-center"></div>
+								</div>
+								<div class="container"><br>
+									<div class="row">
+										<div class="col-sm-2 text-primary"></div>
+										<div class="col-sm-8 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="out-exponenciacionEuler">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalAlgoritmoEuclides" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Algoritmo Euclides</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalAlgoritmoEuclidesTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalAlgoritmoEuclidesAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalAlgoritmoEuclidesTeoria">
+							<p>El mcd de dos enteros positivos <label class="formula2">r<sub>0</sub></label> y <label class="formula2">r<sub>1</sub></label> se denota por</p>
+							<center><label class="formula2">mcd(r<sub>0</sub> , r<sub>1</sub>)</label></center><br>
+							<p>y es el número positivo más grande que divide ambos <label class="formula2">r<sub>0</sub></label> y <label class="formula2">r<sub>1</sub></label>. Para números pequeños, el mcd es fácil de calcular por la factorización de ambos números y encontrando el factor común más alto.</p>
+							<p>Para números más grandes a menudo no es posible factorizar, y un algoritmo más eficiente es usado para calcular el mcd, el <b>Algoritmo de Euclides</b>.</p>
+							<p>La principal observación de este algoritmo es que se puede reducir el problema de encontrar el mcd de dos números dados al mcd de 2 números más pequeños. Este proceso puede ser aplicado recursivamente hasta que finalmente se obtenga <label class="formula2">mcd(r<sub>l</sub> , 0) = r<sub>l</sub></label></p><br>
+							<p>Se explicará el funcionamiento del algoritmo con un ejemplo.</p>
+							<p>Sea <label class="formula2">r<sub>0</sub> = 973</label> y <label class="formula2">r<sub>1</sub> = 301</label></p><br>
+							<p>Se toma el número mayor y se expresa en términos del menor.</p>
+							<center><label class="formula2">973 = 3*301 + 70</label></center>
+							<p>Por lo tanto</p>
+							<center><label class="formula2">mcd(973 , 301) = mcd(301, 70)</label></center>
+							<p>Se toma el ahora nuevo número mayor y se expresa en términos del nuevo menor.</p>
+							<center><label class="formula2">301 = 4*70 + 21</label></center>
+							<center><label class="formula2">mcd(301 , 70) = mcd(70, 21)</label></center>
+							<p>Se repiten los pasos hasta que el número menor sea 0.</p>
+							<center><label class="formula2">70 = 3*21 + 7</label></center>
+							<center><label class="formula2">mcd(70 , 21) = mcd(21, 7)</label></center><br>
+							<center><label class="formula2">21 = 3*7 + 0</label></center>
+							<center><label class="formula2">mcd(21 , 7) = mcd(7, 0)</label></center><br>
+							<p>Una vez que se llegó a la ronda con el número menor igual a 0, el número mayor de esa misma ronda es el mcd de los números originales.</p>
+							<center><label class="formula2">mcd(973, 301) = mcd (7, 0)</label></center>
+							<center><label class="formula2">mcd(973, 301) = 7</label></center>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol type="”1”" start="”1”">
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalAlgoritmoEuclidesAnimacion">
+							<div id="operacionEuclides">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-2 text-primary">A:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorAEuclides" min="1" max="1000" value="244">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 text-primary">B:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorBEuclides" min="1" max="1000" value="117">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadEuclides" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoEuclides1">Calcular Rápido</a></li>
+															<li><a id="tipoEuclides2">Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-comenzarEuclides" tabindex="-1" value="2">Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarEuclides" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="EUdiv1"></div>
+								<div class="col-md-12">
+									<div class="text-center" id="EUdivOperacion"></div>
+								</div>
+								<div class="col-md-12">
+									<div id="valorEuclides" class="text-center"></div>
+								</div>
+								<div class="container"><br>
+									<div class="row">
+										<div class="col-sm-3 text-primary"></div>
+										<div class="col-sm-6 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="out-euclides">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalPhiEuler" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Phi de Euler</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalPhiEulerTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalPhiEulerAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalPhiEulerTeoria">
+							<p>Se considera el anillo <label class="formula2">Z<sub>m</sub></label>, es decir, el conjunto de enteros <label class="formula2">{0 , 1 , ... , m-1}</label>. Se está interesado en el problema de conocer cuántos números en este conjunto con coprimos con <label class="formula2">m</label>. Esta cantidad es dada por la función <b>Phi de Euler</b>, la cual se define como sigue:</p>
+							<p align="center">El número de enteros en <label class="formula2">Z<sub>m</sub></label> coprimos a <label class="formula2">m</label> es denotado por <label class="formula2">φ(m)</label>.</p><br>
+							<p>Por ejemplo:</p>
+							<p>Sea m = 6. El conjunto asociado es <label class="formula2">Z<sub>6</sub> = {0 , 1 , 2 , 3 , 4 , 5}</label>.</p>
+							<p><label class="formula2">
+								mcd(0 , 6) = 6<br>
+								mcd(1 , 6) = 1 *<br>
+								mcd(2 , 6) = 2<br>
+								mcd(3 , 6) = 3<br>
+								mcd(4 , 6) = 2<br>
+								mcd(5 , 6) = 1 *<br>
+							</label></p>
+							<p>Ya que hay dos números en el conjunto que son coprimos a 6, sean 1 y 5, la función phi toma el valor de 2, es decir <label class="formula2">φ(6) = 2</label>.</p>
+							<br>
+							<p>Para números pequeños no supone ningún problema, pero para números grandes tomaría mucho tiempo en calcular el mcd entre m y todos los valores de Z<sub>m</sub>.</p>
+							<p>Propiedades de Phi de Euler:</p>
+							<ol>
+								<li>Si <label class="formula2">p</label> es primo ⇒ <label class="formula2">φ(p) = p - 1</label>.</li>
+								<li>Si <label class="formula2">p</label> es primo ⇒ <label class="formula2">φ(p<sup>e</sup>) = p<sup>e</sup> * (1 - 1/p)</label>.</li>
+								<li>Sea <label class="formula2">m = a * b</label>. Si <label class="formula2">MCD(a , b) = 1</label> ⇒ <label class="formula2">φ(a * b) = φ(a) * φ(b)</label>.</li>
+								<li>Sea <label class="formula2">m = p<sub>1</sub><sup>e<sub>1</sub></sup> * p<sub>2</sub><sup>e<sub>2</sub></sup> ... p<sub>k</sub><sup>e<sub>k</sub></sup></label> ⇒ <label class="formula2">φ(m) = m * (1 - 1/p<sub>1</sub> ) * (1 - 1/p<sub>2</sub> ) ... (1 - 1/p<sub>k</sub> )</label>.</li>
+							</ol>
+							<br>
+							<p>Por ejemplo:</p>
+							<p>Propiedad 1.</p>
+							<p>Sea <label class="formula2">m = 19</label> ⇒ <label class="formula2">φ(19) = 19 - 1 = 18</label></p><br>
+							<p>Propiedad 2.</p>
+							<p>Sea <label class="formula2">m = 81 = 3<sup>4</sup></label> ⇒ <label class="formula2">φ(3<sup>4</sup>) = 3<sup>4</sup> * (1 - 1/3) = 54</label></p><br>
+							<p>Propiedad 3.</p>
+							<p>Sea <label class="formula2">m = 5 * 4. MCD(5 , 4) = 1</label> ⇒ <label class="formula2">φ(5 * 4) = φ(5) * φ(4) = (5-1)*(2<sup>2</sup>*(1-1/2)) = 8</label></p><br>
+							<p>Propiedad 4.</p>
+							<p>Sea <label class="formula2">m = 360 = 2<sup>3</sup> * 3<sup>2</sup> * 5 ⇒ <label class="formula2">φ(360) = 360 * (1 - 1/2) * (1 - 1/3 ) * (1 - 1/5 ) = 96</label></label></p><br>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol type="”1”" start="”1”">
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalPhiEulerAnimacion">
+							<div id="operacionPhi">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-4"></div>
+										<div class="col-sm-4 text-primary">N:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="in-valorPhi" min="2" max="1000" value="540">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadPhi" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoPhi1">Calcular Rápido</a></li>
+															<li><a id="tipoPhi2">Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-comenzarPhi" tabindex="-1" value="2">Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarPhi" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="PHIdiv1"></div>
+								<div class="col-md-12">
+									<div class="col-md-4"></div>
+									<div class="col-md-4" id="PHIcentro"></div>
+									<div class="col-md-12">
+										<div class="col-md-5" id="PHIizquierda"></div>
+										<div class="col-md-7" id="PHIderecha"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div id="valorPhi" class="text-center"></div>
+								</div>
+								<div class="container"><br>
+									<div class="row">
+										<div class="col-sm-4 text-primary"></div>
+										<div class="col-sm-4 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="out-phi">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalRaicesPrimitivas" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Raices Primitivas</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalRaicesPrimitivasTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalRaicesPrimitivasTeoria">
+							<p>Cuando <label class="formula2">p</label> es un primo, una <b>raíz primitiva</b> mod <label class="formula2">p</label> es un número cuyas potencias producen todos los números mod <label class="formula2">p</label> con excepción del 0 <label class="formula2">(1, 2, 3, ... p-1)</label>.</p><br>
+					    	<p>Considere las potencias de <label class="formula2">3 mod 7</label>:</p>
+					    	<center><label class="formula2">
+					    		3<sup>1</sup> ≡ 3<br>
+					    		3<sup>2</sup> ≡ 2<br>
+					    		3<sup>3</sup> ≡ 6<br>
+					    		3<sup>4</sup> ≡ 4<br>
+					    		3<sup>5</sup> ≡ 5<br>
+					    		3<sup>6</sup> ≡ 1
+					    	</label></center><br>
+					    	<p>Obsérvese que se obtienen todos los números mod 7 con excepción del <b>0</b> como potencias de 3 <b>(1, 2, 3, 4, 5, 6)</b>. Esto significa que 3 es una <b>raíz primitiva</b> mod 7.</p>
+					    	<p>Ahora consideramos las potencias de <label class="formula2"> 2 mod 7</label>:</p>
+					    	<center><label class="formula2">
+					    		2<sup>1</sup> ≡ 2<br>
+					    		2<sup>2</sup> ≡ 4<br>
+					    		2<sup>3</sup> ≡ 1<br>
+					    		2<sup>4</sup> ≡ 2<br>
+					    		2<sup>5</sup> ≡ 4<br>
+					    		2<sup>6</sup> ≡ 1
+					    	</label></center><br>
+					    	<p>Obsérvese que <b>no</b> se obtienen todos los números mod 7 con excepción del <b>0</b> como potencias de 2 (1, 2, 3, 4, 5, 6). Esto significa que 2 <b>NO</b> es una raíz primitiva mod 7.</p>
+					    	<hr>
+					    	<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol>
+								<li>
+									Trappe, W., Washington, L. (2006). Discrete Logarithms. En Introduction to Cryptography with Coding Theory(210-212). United States of America: Prentice Hall.
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalMatrices" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Matrices</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalMatricesTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalMatricesTeoria">
+							<p>Una matriz es un arreglo rectangular de números en renglones y columnas.<br><br>
+							Por ejemplo, la matriz A tiene dos renglones y tres columnas.<br><br></p>
+							<center><img src="../../../includes/img/fundMatriz1.png"></center>
+							<h4 class="text-primary">Dimensiones de la matriz</h4>
+							<p>Las dimensiones de una matriz nos dicen su tamaño: el número de renglones y columnas de la matriz, en ese orden.<br><br>
+							Como la matriz A tiene dos renglones y tres columnas, escribimos sus dimensiones como 2×3, que se pronuncia "dos por tres".<br><br>
+							En contraste, la matriz B tiene tres renglones dos columnas, así que es una matriz de 3×2.<br><br></p>
+							<center><img src="../../../includes/img/fundMatriz2.png"></center>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<p align="justify"> <ol type=”1” start=”1”>
+								<li>S/A. (S/F). Matrices. Febrero 15, 2017, de KHANACADEMY. Sitio web: <a href="https://es.khanacademy.org/math/precalculus/precalc-matrices">KHANACADEMY - Matrices</a></li>
+							</ol></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalMultiplicacionMatrices" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Multiplicación de Matrices</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalMultiplicacionMatricesTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalMultiplicacionMatricesTeoria">
+							<p>Dos matrices A y B son multiplicables si el número de columnas de A coincide con el número de filas de B.</p>
+							<center><img src="../../../includes/img/multiMatrices.png"></center><br>
+							<p>El elemento Cik de la matriz producto se obtiene multiplicando cada elemento de la fila i de la matriz A por cada elemento de la columna j de la matriz B y sumándolos.<br></p>
+							<center><img src="../../../includes/img/multiMatrices2.png"></center>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<p align="justify"> <ol type=”1” start=”1”>
+								<li>S/A. (S/F). Matrices. Febrero 15, 2017, de KHANACADEMY. Sitio web: <a href="https://es.khanacademy.org/math/precalculus/precalc-matrices">KHANACADEMY - Matrices</a></li>
+							</ol></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalDeterminanteMatrices" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Determinanate de una Matriz</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalDeterminanteMatricesTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalDeterminanteMatricesTeoria">
+							<p>El determinante se define para matrices cuadradas. Su definición formal es complicada y se basa en el conjunto de permutaciones, pero existen varios métodos para calcularlos según la dimensión de la matriz.<br>
+							Para este apartado se usa una dimensión de 3 dando como resultado la matriz de la forma<br></p>
+							<center><img src="../../../includes/img/deterMatrices.png"></center>
+							<p>Se define su determinante como:<br><br></p>
+							<center><img src="../../../includes/img/deterMatrices2.png"></center>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<p align="justify"> <ol type=”1” start=”1”>
+								<li>S/A. (S/F). Matrices. Febrero 15, 2017, de KHANACADEMY. Sitio web: <a href="https://es.khanacademy.org/math/precalculus/precalc-matrices">KHANACADEMY - Matrices</a></li>
+							</ol></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalCofactoresMatrices" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Matriz de cofactores</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalCofactoresMatricesTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalCofactoresMatricesTeoria">
+							<p>Suponga una matriz A(n*n), el cofactor i, j de la matriz A se define como:<br></p>
+							<center><img src="../../../includes/img/cofMatrices.png"></center>
+							<p>Para determinar la matriz C_32 de la matriz A que está dada por<br></p>
+							<center><img src="../../../includes/img/cofMatrices2.png"></center>
+							<p>Se puede decir que para calcular Bij se obtienen el determinante de la matriz excluyendo la fila y columna indicadas por los subíndices<br></p>
+							<center><img src="../../../includes/img/cofMatrices3.png"></center><br>
+							<p>Por lo tanto <img src="../../../includes/img/cofMatrices4.png"></p>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<p align="justify"> <ol type=”1” start=”1”>
+								<li>S/A. (S/F). Matrices. Febrero 15, 2017, de KHANACADEMY. Sitio web: <a href="https://es.khanacademy.org/math/precalculus/precalc-matrices">KHANACADEMY - Matrices</a></li>
+							</ol></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalTranspuestaMatrices" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Transpuesta de una matriz</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalTranspuestaMatricesTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalTranspuestaMatricesTeoria">
+							<p>La transpuesta A^T de una matriz A puede ser obtenida reflejando los elementos a lo largo de su diagonal.<br></p>
+							<center><img src="../../../includes/img/transpMatrices.png"></center>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<p align="justify"> <ol type=”1” start=”1”>
+								<li>S/A. (S/F). Matrices. Febrero 15, 2017, de KHANACADEMY. Sitio web: <a href="https://es.khanacademy.org/math/precalculus/precalc-matrices">KHANACADEMY - Matrices</a></li>
+							</ol></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalConvertirGF" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Elementos en GF(2<sup>8</sup>)</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalConvertirGFTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalConvertirGFAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalConvertirGFTeoria">
+							<p>Un campo finito, a veces también llamado campo de Galois, es un conjunto con un número finito de elementos. A grandes rasgos, un campo de Galois es un conjunto finito de elementos en los que podemos sumar, restar, multiplicar e invertir. Antes de introducir la definición de un campo, primero se necesita el concepto de una estructura algebraica más simple, un grupo.</p><br>
+							<h4 class="text-primary">Grupo</h4>
+							<p>Un grupo es un conjunto de elementos <label class="formula2">G</label> junto con una operación <label class="formula2">∘</label> que combina dos elementos de <label class="formula2">G</label>. Un grupo tiene las siguientes propiedades:</p>
+							<ol>
+							<li>La operación de grupo <label class="formula2">∘</label> es cerrada. Es decir, para todo <label class="formula2">a</label>, <label class="formula2">b</label>, &isin; <label class="formula2">G</label>, sostiene que <label class="formula2">a ∘ b = c &isin; G</label>.</li>
+							<li>La operación de grupo es asociativa. Es decir, <label class="formula2">a ∘ (b ∘ c) = (a ∘ b) ∘ c</label> para todo <label class="formula2">a</label>, <label class="formula2">b</label>, <label class="formula2">c &isin; G</label>.</li>
+							<li>Existe un elemento <label class="formula2">1 &isin; G</label>, llamado elemento neutro (o elemento de identidad), tal que <label class="formula2">a ∘ 1 = 1 ∘ a = a</label> para todo <label class="formula2">a &isin; G</label>.</li>
+							<li>Para cada <label class="formula2">a &isin; G</label> existe un elemento <label class="formula2">a<sup>-1</sup> &isin; G</label>, llamado inverso de <label class="formula2">a</label>, tal que <label class="formula2">a ∘ a<sup>-1</sup> = a<sup>-1</sup> ∘ a = 1</label>.</li>
+							<li>Un grupo <label class="formula2">G</label> es conmutativo si, además, <label class="formula2">a ∘ b = b ∘ a</label> para todo <label class="formula2">a</label>, <label class="formula2">b &isin; G</label>.</li>
+							</ol>
+							<p>Para tener las cuatro operaciones aritméticas básicas (es decir, suma, resta, multiplicación, división) en una estructura, necesitamos un conjunto que contenga un grupo aditivo y un grupo multiplicativo. Esto es lo que llamamos un <b>campo</b>.</p><br>
+							<h4 class="text-primary">Campo</h4>
+							Un campo <label class="formula2">F</label> es un conjunto de elementos con las siguientes propiedades:<br>
+							<ol>
+							<li>Todos los elementos de <label class="formula2">F</label> forman un grupo aditivo con la operación de grupo "<b>+</b>" Y el elemento neutro <label class="formula2">0</label>.</li>
+							<li>Todos los elementos de <label class="formula2">F</label> excepto <label class="formula2">0</label> forman un grupo multiplicativo con la operación de grupo <label class="formula2">x</label> y el elemento neutro <label class="formula2">1</label>.</li>
+							<li>Cuando las dos operaciones del grupo están mezcladas, la ley de distributividad se mantiene, es decir, para todos <label class="formula2">a</label>, <label class="formula2">b</label>, <label class="formula2">c &isin; F: a (b + c) = (ab) + (ac)</label>.</li>
+							</ol><br>
+							<p>Por ejemplo. El conjunto <label class="formula2">E</label> de números reales es un campo con el elemento neutro <label class="formula2">0</label> para el grupo aditivo y el elemento neutro <label class="formula2">1</label> para el grupo multiplicativo. Cada número real <label class="formula2">a</label> tiene un inverso aditivo, llamado <label class="formula2">-a</label>, y cada elemento no nulo a tiene un inverso multiplicativo <label class="formula2">1/a</label>.</p>
+							<p>En la criptografía, casi siempre se está interesado ​​en campos con un número finito de elementos, que llamamos campos finitos o campos de Galois. El número de elementos en el campo se denomina orden o cardinalidad del campo. Es de importancia fundamental el siguiente teorema:</p><br>
+							<p align="center"><i>Un campo con orden <label class="formula2">m</label> sólo existe si <label class="formula2">m</label> es una potencia prima, es decir, <label class="formula2">m = p<sup>n</sup></label>, para algún número entero positivo <label class="formula2">n</label> y entero primo <label class="formula2">p</label>. <label class="formula2">p</label> es llamado característica del campo finito.</i></p><br>
+							<p>Este teorema implica que existen, por ejemplo, campos finitos con 11 elementos, o con 81 elementos (desde <label class="formula2">81 = 3<sup>4</sup></label>) o con 256 elementos (ya que <label class="formula2">256 = 2<sup>8</sup></label>, y 2 es un primo). Sin embargo, no hay campo finito con 12 elementos desde <label class="formula2">12 = 2<sup>2</sup> · 3</label>, y 12 no es, por lo tanto, una potencia prima.</p><br>
+							
+							<h3 class="text-primary">Campos primos</h3>
+							<p>Los ejemplos más intuitivos de campos finitos son campos de orden primo, es decir, campos con <label class="formula2">n = 1</label>. Los elementos del campo <label class="formula2">GF(p)</label> pueden ser representados por enteros <label class="formula2">0, 1, ... , p-1</label>. Las dos operaciones del campo son la adición entera modular y la multiplicación entera módulo <label class="formula2">p</label>.</p><br>
+							<p align="center"><i>Sea <label class="formula2">p</label> un primo. El anillo entero <label class="formula2">Z<sub>p</sub></label> se denomina <label class="formula2">GF(p)</label> y se denomina campo primo, o como campo Galois con un número primo de elementos. Todos los elementos no nulos de <label class="formula2">GF(p)</label> tienen un inverso. La aritmética en <label class="formula2">GF(p)</label> se hace módulo <label class="formula2">p</label></i></p><br>
+							<p>Para hacer la aritmética en un campo primo, se deben seguir las reglas para los anillos enteros: La adición y la multiplicación se hacen módulo <label class="formula2">p</label>, el aditivo inverso de cualquier elemento <label class="formula2">a</label> está dado por <label class="formula2">a + (-a) = 0 mod p</label>, y el inverso multiplicativo de cualquier elemento no nulo <label class="formula2">a</label> se define como <label class="formula2">a · a<sup>-1</sup> = 1</label>.</p>
+							<p>Por ejemplo. Consideramos el campo finito <label class="formula2">GF(5) = {0, 1, 2, 3, 4}</label>. Las tablas a continuación describen cómo sumar y multiplicar  dos elementos cualquiera, así como el inverso aditivo y multiplicativo de los elementos del campo. Utilizando estas tablas, podemos realizar todos los cálculos en este campo sin utilizar explícitamente la reducción modular.</p>
+							<center><img src="../../../includes/img/AES/16.png"></center>
+							<center>Tablas de las operaciones aritméticas para <label class="formula2">GF(5)</label></center><br>
+							<p>Un campo primo muy importante es <label class="formula2">GF(2)</label>, que es el campo finito más pequeño que existe. Ahora veamos las tablas de multiplicación y suma para el campo.
+							Ejemplo. Consideremos el campo finito pequeño <label class="formula2">GF(2) = {0,1}</label>. La aritmética se hace simplemente módulo 2, produciendo las siguientes tablas aritméticas:</p>
+							<center><img src="../../../includes/img/AES/17.png"></center>
+							<center>Tablas de suma y multiplicación para <label class="formula2">GF(2)</label></center><br>
+							
+							<h3 class="text-primary">Campos de extensión GF(2<sup>m</sup>)</h3>
+							<p>En AES el campo finito contiene 256 elementos y se denomina <label class="formula2">GF(2<sup>8</sup>)</label>. Este campo fue elegido porque cada uno de los elementos de campo puede ser representado por un byte. Para las transformaciones <b>S-Box</b> y <b>MixColumn</b>, AES trata cada byte como un elemento del campo <label class="formula2">GF(2<sup>8</sup>)</label> y manipula los datos realizando la aritmética en este campo finito.</p>
+							<p>En el campo <label class="formula2">GF(2<sup>8</sup>)</label>, que se utiliza en AES, cada elemento <label class="formula2">A &isin; GF(2<sup>8</sup>)</label> se representa así:</p>
+							<div class="formula">A (x) = a<sub>7</sub>x<sup>7</sup> + ··· + a<sub>1</sub>x + a<sub>0</sub>, a<sub>i</sub></label> &isin; GF(2) = {0,1}</div><br>
+							<p>Observe que hay exactamente <label class="formula2">256 = 2<sup>8</sup></label> tales polinomios. El conjunto de estos 256 polinomios es el campo finito <label class="formula2">GF(2<sup>8</sup>)</label>. También es importante observar que cada polinomio puede ser simplemente almacenado en forma digital como un vector de 8 bits <label class="formula2">A = (a<sub>7</sub>, a<sub>6</sub>, a<sub>5</sub>, a<sub>4</sub>, a<sub>3</sub>, a<sub>2</sub>, a<sub>1</sub>, a<sub>0</sub>)</label>. En particular, no tenemos que almacenar los factores <label class="formula2">x<sup>7</sup>, x<sup>6</sup></label>, etc. Está claro que de las posiciones de los bits, a que potencia <label class="formula2">x<sup>i</sup></label> pertenece cada coeficiente.</p>
+
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol>
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalConvertirGFAnimacion">
+							<div id="operacionConvertirNP">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-4"></div>
+										<div class="col-sm-4 text-primary">Número (n):
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="aoperacionConvertirNP" value="1" min="0" max="255">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadOCNP" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="CalcularRapidoOCNP">Calcular Rápido</a></li>
+															<li><a id="CalcularNormalOCNP">Calcular Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btnCalcularOCNP" tabindex="-1" value="2">Calcular Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btnCancelarOCNP" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="seccionRepresentacionBinariaPolinomiaOCNP" style="display: none;">
+									<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="informacion1OCNP"></div>
+									<div id="representacionBinariaOCNP" class="text-center"></div><br>
+									<div id="representacionPolinomialOCNP" class="text-center"></div><br>
+								</div>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-4"></div>
+										<div class="col-sm-4 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="resultadoOCNP">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalInversoMultiplicativoGF" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">>Inverso multiplicativo en GF(2<sup>8</sup>)</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalInversoMultiplicativoGFTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalInversoMultiplicativoGFAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalInversoMultiplicativoGFTeoria">
+							<p>La inversión en <label class="formula2">GF(2<sup>8</sup>)</label> es la operación principal de la operación de sustitución de bytes, que contiene la caja <b>S</b> de AES. Para un campo finito dado <label class="formula2">GF(2<sup>m</sup>)</label> y el correspondiente polinomio de reducción irreducible <label class="formula2">P(x)</label>, la inversa <label class="formula2">A<sup>-1</sup></sup></label> de un elemento no nulo <label class="formula2">A</label> &isin; <label class="formula2">GF(2<sup>m</sup>)</label> se define como:</p>
+							<center><label class="formula2">A<sup>-1</sup>(x)·A(x) = 1 mod P(x)</label></center><br>
+							<p>La tabla siguiente contiene todos los inversos en <label class="formula2">GF(2<sup>8</sup>)</label> módulo <label class="formula2">P(x) = x<sup>8</sup> + x<sup>4</sup> + x<sup>3</sup> + x + 1</label> en notación hexadecimal. Un caso especial es la entrada para el elemento de campo 0, para el que no existe una inversa. Sin embargo, para la <b>S-Box</b> del AES, se necesita una tabla de sustitución que se define para cada posible valor de entrada. Por lo tanto, los diseñadores definieron el S-Box de tal manera que el valor de entrada 0 se asigna al valor de salida 0.</p>
+							<center><img src="../../../includes/img/AES/18.png"></center>
+							<center>Tablas de los inversos en <label class="formula2">GF(2<sup>8</sup>)</label></center><br>
+							<p>Por ejemplo:</p>
+							<p>A partir de la tabla anterior, el inverso de <label class="formula2">x<sup>7</sup> + x<sup>6</sup> + x = (11000010)<sub>2</sub> = (C2)<sub>hex</sub> = (xy)</label></p>
+							<p>Está dado por el elemento en la fila C, columna 2:</p>
+							<p><label class="formula2">(2F)<sub>hex</sub> = (00101111)<sub>2</sub> = x<sup>5</sup> + x<sup>3</sup> + x<sup>2</sup> + x + 1</label>.</p>
+							<p>Esto se puede verificar mediante la multiplicación:</p>
+							<label class="formula2">(x<sup>7</sup> + x<sup>6</sup> + x) · (x<sup>5</sup> + x<sup>3</sup> + x<sup>2</sup> + x + 1) ≡ 1 mod P(x)</label>.
+
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol>
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalInversoMultiplicativoGFAnimacion">
+							<div id="OIMEF">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-4"></div>
+										<div class="col-sm-4 text-primary">A:
+											<div class="form-group">
+												<div class="input-group">
+										 			<input class="form-control" type="number" id="aOIMEF" min="0" max="255" value="1">
+										 			<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadOIMEF" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="CalcularRapidoOIMEF">Calcular Rápido</a></li>
+															<li><a id="CalcularNormalOIMEF">Calcular Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btnCalcularOIMEF" tabindex="-1" value="2">Calcular Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btnCancelarOIMEF" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="seccionOIMEF" style="display: none;">
+									<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="informacionOIMEF"></div>
+									<div class="table">
+										<table class="table table-bordered" id="tablaOIMEF">											
+										</table>
+									</div>
+								</div><br>
+								<div id="seccionComprobacionOIMEF" style="display: none;">
+									<div class="row"><div id="representacionPolinomialAOIMEF" class="text-center"></div><div id="operadorOIMEF" class="text-center"></div><div id="representacionPolinomialBOIMEF" class="text-center"></div></div>
+									<div id="representacionPolinomialROIMEF" class="text-center"></div>
+									<div id="representacionBinariaROIMEF" class="text-center"></div>
+								</div>	
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-4"></div>
+										<div class="col-sm-4 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="resultadoOIMEF">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalMultiplicacionGF" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Multiplicación en GF(2<sup>8</sup>)</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalMultiplicacionGFTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalMultiplicacionGFAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalMultiplicacionGFTeoria">
+							<p>La multiplicación en <label class="formula2">GF(2<sup>8</sup>)</label> es la operación básica de la operación MixColumn de AES. En un primer paso, se multiplican dos elementos (representados por sus polinomios) de un campo finito <label class="formula2">GF(2<sup>m</sup>)</label> usando la regla de multiplicación polinomial estándar:</p>
+							<center><label class="formula2">A(x)·B(x) = (a<sub>m-1</sub>x<sup>m-1</sup> + ··· + a<sub>0</sub>)·(b<sub>m-1</sub>x<sup>m-1</sup> + ···+ b<sub>0</sub>)<br><br>
+							C&rsquo;(x) = c&rsquo;<sub>2m-2</sub>x<sup>2m-2</sup> + ··· + c&rsquo;<sub>0</sub></label>,</center><br>
+							donde,<br>
+							<center>
+							<label class="formula2">
+							c&rsquo;<sub>0</sub> = a<sub>0</sub>b<sub>0</sub> mod 2<br>
+							c&rsquo;<sub>1</sub> = a<sub>0</sub>b<sub>1</sub> + a<sub>1</sub>b<sub>0</sub> mod 2<br>
+							.<br>
+							.<br>
+							.<br>
+							c&rsquo;<sub>2m-2</sub> = a<sub>m-1</sub>b<sub>m-1</sub> mod 2</label>
+							</center><br>
+							<p>Se debe tener en cuenta que todos los coeficientes <label class="formula2">a<sub>i</sub></label>, <label class="formula2">b<sub>i</sub></label> y <label class="formula2">c<sub>i</sub></label> son elementos de <label class="formula2">GF(2)</label>, y que el coeficiente aritmético se realiza en <label class="formula2">GF(2)</label>. En general, el polinomio producto <label class="formula2">C(x)</label> tendrá un grado mayor que <label class="formula2">m-1</label> y deberá ser reducido. Esto se hace de la siguiente manera: El producto de la multiplicación será dividido por un cierto polinomio, y se considera solamente el resto después de la división polinomial. Son necesarios polinomios irreducibles para la reducción del módulo.</p>
+							<br>
+							<h4 class="text-primary">Definición. Multiplicación de campo de extensión:</h4>
+							<p>Sea <label class="formula2">A(x)</label>, <label class="formula2">B(x)</label> &isin; <label class="formula2">GF(2<sup>m</sup>)</label> y sea</p>
+							<center><img src="../../../includes/img/multiplicacionCF1.jpg"></center><br>
+							<p>un polinomio irreducible. La multiplicación de los dos elementos <label class="formula2">A(x)</label>, <label class="formula2">B(x)</label> se realiza como:</p>
+							<center><label class="formula2">C(x) ≡ A(x) · B(x) mod P(x)</label>.</center><br>
+							<p>Para AES, el polinomio irreducible que se utiliza es <b><label class="formula2">P(x) = x<sup>8</sup> + x<sup>4</sup> + x<sup>3</sup> + x + 1</label></b>. Es parte de la especificación del cifrado AES.</p><br>
+							<p> Por ejemplo.</p>
+							<p>Queremos multiplicar los dos polinomios <label class="formula2">A(x) = x<sup>3</sup> + x<sup>2</sup> + 1</label> y <label class="formula2">B(x) = x<sup>2</sup> + x</label> en el campo <label class="formula2">GF(2<sup>4</sup>)</label>. El polinomio irreducible de este campo se da como:</p>
+							<center><label class="formula2">P(x) = x<sup>4</sup> + x + 1</label>.</center>
+							<p>El producto polinomial se calcula como:</p>
+							<center><label class="formula2">C&rsquo;(x) = A(x)·B(x) = x<sup>5</sup> + x<sup>3</sup> + x<sup>2</sup> + x</label>.</center><br>
+							<p>Ahora podemos reducir <label class="formula2">C&rsquo;(x)</label> usando el método de división polinómica que se aprende en la escuela. Sin embargo, a veces es más fácil reducir cada uno de los términos principales <label class="formula2">x<sup>4</sup></label> y <label class="formula2">x<sup>5</sup></label> individualmente:</p>
+							<center>
+							<label class="formula2">
+							x<sup>4</sup> = 1·P(x)+(x+1)<br>
+							x<sup>4</sup> ≡ x+1 mod P(x)<br>
+							x<sup>5</sup> ≡ x<sup>2</sup> +x mod P(x).
+							</label>
+							</center><br>
+							<p>Ahora, sólo tenemos que insertar la expresión reducida para <label class="formula2">x<sup>5</sup></label> en el resultado intermedio <label class="formula2">C&rsquo;(x)</label>:</p>
+							<center>
+							<label class="formula2">
+							C(x) ≡ x<sup>5</sup> +x<sup>3</sup> +x<sup>2</sup> +x mod P(x)<br>
+							C(x) ≡ (x<sup>2</sup> +x)+(x<sup>3</sup> +x<sup>2</sup> +x) = x<sup>3</sup><br>
+							A(x)·B(x) ≡ x<sup>3</sup></label>.
+							</center><br>
+							<p>Es importante no confundir la multiplicación en <label class="formula2">GF(2<sup>m</sup>)</label> con la multiplicación normal.</p>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol>
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalMultiplicacionGFAnimacion">
+							<div id="operacionMultiplicacionEF">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-2 text-primary">A:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="aOperacionMultiplicacionEF" min="0" max="255" value="1">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 text-primary">B:
+											<div class="form-group">
+												<div class="input-group">
+										 			<input class="form-control" type="number" id="bOperacionMultiplicacionEF" min="0" max="255" value="1">
+										 			<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadOMEF" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="CalcularRapidoOMEF">Calcular Rápido</a></li>
+															<li><a id="CalcularNormalOMEF">Calcular Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btnCalcularOMEF" tabindex="-1" value="2">Calcular Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btnCancelarOMEF" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="seccionOMEF" style="display: none;">
+									<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="informacion1OMEF"></div>
+									<div class="row"><div id="representacionPolinomialAOMEF" class="text-center"></div><div id="operadorOMEF" class="text-center"></div><div id="representacionPolinomialBOMEF" class="text-center"></div></div>
+									<div id="representacionPolinomialROMEF" class="text-center"></div>
+									<div id="representacionBinariaROMEF" class="text-center"></div>
+								</div>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-6 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="resultadoOMEF">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalSumaGF" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Suma en GF(2<sup>8</sup>)</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalSumaGFTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalSumaGFAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalSumaGFTeoria">
+							<p>Definición. Sea <label class="formula2">A(x)</label>, <label class="formula2">B(x)</label> &isin; <label class="formula2">GF(2<sup>m</sup>)</label>. La suma de los dos elementos se calcula a continuación de acuerdo a:</p>
+							<center><img src="../../../includes/img/sumaCF1.jpg"></center>
+							<p>Y la resta se calcula de acuerdo con:</p>
+							<center><img src="../../../includes/img/sumaCF1.jpg"></center><br>
+							<p>En otras palabras: elemento del mismo grado (que tienen la misma potencia), se eliminan.</p>
+							<p>Ejemplo. Aquí se calcula la suma <label class="formula2">C(x) = A(x) + B(x)</label> de dos elementos de <label class="formula2">GF(2<sup>8</sup>)</label>:</p>
+							<img src="../../../includes/img/sumaCF3.jpg"><br><br>
+							<p>Obsérvese que si calculamos la diferencia de los dos polinomios <label class="formula2">A(x) - B(x)</label> del ejemplo anterior, obtendríamos el mismo resultado que para la suma.</p>
+
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol>
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalSumaGFAnimacion">
+							<div id="operacionSumaEF">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-2 text-primary">A:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="aOperacionSumaEF" min="0" max="255" value="1">
+												</div>											 
+											</div>
+										</div>
+										<div class="col-sm-4 text-primary">B:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="number" id="bOperacionSumaEF" min="0" max="255" value="1">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadOSEF" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="CalcularRapidoOSEF">Calcular Rápido</a></li>
+															<li><a id="CalcularNormalOSEF">Calcular Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btnCalcularOSEF" tabindex="-1" value="2">Calcular Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btnCancelarOSEF" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="seccionOSEF" style="display: none;">
+									<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="informacion1OSEF"></div>
+									<div id="representacionPolinomialAOSEF" class="text-center"></div>
+									<div id="operadorOSEF" class="text-center"></div>
+									<div id="representacionPolinomialBOSEF" class="text-center"></div>
+									<div id="barraOSEF" class="text-center"></div>
+									<div id="representacionPolinomialROSEF" class="text-center"></div>
+									<div id="representacionBinariaROSEF" class="text-center"></div>
+								</div>		
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-6 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="resultadoOSEF">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalCurvaEliptica" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Curva Elíptica</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalCurvaElipticaTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalCurvaElipticaTeoria">
+							<p>Una curva elíptica es un tipo especial de ecuación polinomial. Para el uso criptográfico, debemos considerar la curva no sobre los números reales sino sobre un campo finito. La elección más popular son los campos primos <label class="formula2">GF(p)</label>, donde toda la aritmética se realiza módulo un primo <label class="formula2">p</label>.</p>
+
+							<h3 class="text-primary">Curva elíptica</h3>
+							<p>La curva elíptica sobre <label class="formula2">Z<sub>p</sub>, p > 3</label>, es el conjunto de todos los pares <label class="formula2">(x, y) ∈ Z<sub>p</sub></label> que cumplen:</p>
+							<div class="formula">y<sup>2</sup> ≡ x<sup>3</sup> + a · x + b mod p</div><br>
+							<p>junto con un punto imaginario de infinito <label class="formula2">O</label>, donde
+							<label class="formula2">a, b ∈ Z<sub>p</sub></label> y la condición <label class="formula2">4 · a<sup>3</sup> + 27 · b<sup>2</sup> &ne; 0 mod p</label>.</p>
+
+							<p>La definición de curva elíptica requiere que la curva sea no singular. Geométricamente hablando, esto significa que la gráfica no tiene intersecciones o vértices, lo cual se logra si el discriminante de la curva <label class="formula2">-16 (4a<sup>3</sup> + 27b<sub>2</sub>)</label> es distinto de cero.</p>
+							Para uso criptográfico estamos interesados ​​en estudiar la curva sobre un campo primo como en la definición.
+							
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol>
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalDobladoPuntos" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Doblado de Puntos</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalDobladoPuntosTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalDobladoPuntosAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalDobladoPuntosTeoria">
+							<p>La suma de puntos se define como <label class="formula2">R = P + Q</label> donde <label class="formula2">P != O</label> (punto al infinito). El doblado de puntos se define como <label class="formula2">R = P + P = 2P</label>, de lo anterior podemos ver que el doblado de puntos sería simplemente una serie de suma de puntos. Por lo tanto existen 2 fórmulas para llevar a cabo estas operaciones.</p>
+							<p>Para sumar 2 puntos diferentes:</p>
+							<center><img src="../../../includes/img/curvas1.jpg"></center><br>
+							<p>Para sumar 2 puntos iguales:</p>
+							<center><img src="../../../includes/img/curvas2.jpg"></center><br>
+							
+							<h5 class="text-primary">Ejemplo</h5>
+							<p>Trabajando en el campo pequeño <label class="formula2">Z<sub>23</sub></label></p>
+							<ol>
+								<li>
+								<p>Sea <label class="formula2">P = (4,7)</label> y <label class="formula2">Q = (13, 11)</label>, obtener <label class="formula2">P + Q = (x<sub>3</sub> , y<sub>3</sub>)</label>:</p>
+								<center>
+								<label class="formula2">
+								x<sub>3</sub> = (11 - 7/13 - 4)<sup>2</sup> - 4 - 13<br>
+								x<sub>3</sub> = (4/9)<sup>2</sup> - 17<br>
+								x<sub>3</sub> = (9<sup>-1</sup>*4)<sup>2</sup> - 17<br>
+								x<sub>3</sub> = (18*4)<sup>2</sup> - 17<br>
+								x<sub>3</sub> = 72<sup>2</sup> - 17<br>
+								x<sub>3</sub> = 5184 - 17<br>
+								x<sub>3</sub> = 5167 mod 23<br>
+								x<sub>3</sub> = 15<br><br>
+								y<sub>3</sub> = 72(4 - 15) - 7<br>
+								y<sub>3</sub> = 72*(-11) - 7<br>
+								y<sub>3</sub> = -792 - 7<br>
+								y<sub>3</sub> = -799 mod 23<br>
+								y<sub>3</sub> = -17 mod 23<br>
+								y<sub>3</sub> = 6</label><br>
+								</center><br>
+								<p>Por lo tanto <label class="formula2">P+Q= (15,6)</label>.</p>
+								</li>
+								<li>
+								<p>Sea <label class="formula2">P = (4,7)</label>, obtener <label class="formula2">2P = P + P = (x<sub>3</sub> , y<sub>3</sub>)</label>:</p>
+								<center>
+								<label class="formula2">
+								x<sub>3</sub> = ((3(4)<sup>2</sup> + 1)/14)<sup>2</sup> - 8<br>
+								x<sub>3</sub> = (14<sup>-1</sup>*49)<sup>2</sup> - 8<br>
+								x<sub>3</sub> = (5*49)<sup>2</sup> - 8<br>
+								x<sub>3</sub> = 245<sup>2</sup> - 8<br>
+								x<sub>3</sub> = 60025 - 8<br>
+								x<sub>3</sub> = 60017 mod 23<br>
+								x<sub>3</sub> = 10<br><br>
+								y<sub>3</sub> = 245(4 - 10) - 7<br>
+								y<sub>3</sub> = 245*(-6) - 7<br>
+								y<sub>3</sub> = -1470 - 7<br>
+								y<sub>3</sub> = -1477 mod 23<br>
+								y<sub>3</sub> = -5 mod 23<br>
+								y<sub>3</sub> = 18</label>
+								</center><br>
+								<p>Por lo tanto <label class="formula2">2P= (10, 18)</label>.</p>
+								</li>
+							</ol>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol>
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalDobladoPuntosAnimacion">
+							<div id="operacionDobladoPuntosCE">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-2 text-primary">P:
+											<div class="form-group">
+												<div class="input-group">
+											 		<select class="form-control" id="POperacionDobladoPuntosCE"><option value="0,2">0,2</option><option value="0,21">0,21</option><option value="1,11">1,11</option><option value="1,12">1,12</option><option value="4,7">4,7</option><option value="4,16">4,16</option><option value="7,3">7,3</option><option value="7,20">7,20</option><option value="8,8">8,8</option><option value="8,15">8,15</option><option value="9,11">9,11</option><option value="9,12">9,12</option><option value="10,5">10,5</option><option value="10,18">10,18</option><option value="11,9">11,9</option><option value="11,14">11,14</option><option value="13,11">13,11</option><option value="13,12">13,12</option><option value="14,5">14,5</option><option value="14,18">14,18</option><option value="15,6">15,6</option><option value="15,17">15,17</option><option value="17,9">17,9</option><option value="17,14">17,14</option><option value="18,9">18,9</option><option value="18,14">18,14</option><option value="22,5">22,5</option><option value="22,18">22,18</option><option value="0,2">0,2</option><option value="0,21">0,21</option><option value="1,11">1,11</option><option value="1,12">1,12</option><option value="4,7">4,7</option><option value="4,16">4,16</option><option value="7,3">7,3</option><option value="7,20">7,20</option><option value="8,8">8,8</option><option value="8,15">8,15</option><option value="9,11">9,11</option><option value="9,12">9,12</option><option value="10,5">10,5</option><option value="10,18">10,18</option><option value="11,9">11,9</option><option value="11,14">11,14</option><option value="13,11">13,11</option><option value="13,12">13,12</option><option value="14,5">14,5</option><option value="14,18">14,18</option><option value="15,6">15,6</option><option value="15,17">15,17</option><option value="17,9">17,9</option><option value="17,14">17,14</option><option value="18,9">18,9</option><option value="18,14">18,14</option><option value="22,5">22,5</option><option value="22,18">22,18</option></select>
+											 	</div>
+											</div>
+										</div>
+										<div class="col-sm-4 text-primary">k:
+											<div class="form-group">
+												<div class="input-group">
+											 		<input class="form-control" type="number" id="kOperacionDobladoPuntosCE" min="1" max="29" value="1">
+											 		<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadODPCE" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="CalcularRapidoODPCE">Calcular Rápido</a></li>
+															<li><a id="CalcularNormalODPCE">Calcular Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btnCalcularODPCE" tabindex="-1" value="2">Calcular Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btnCancelarODPCE" style="display: none;">Cancelar</button>
+													</div>	
+											 	</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="seccionOperacionDobladoPuntosCE" style="display: none;">
+									<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="informacionOperacionDobladoPuntosCE"></div>
+									<div id="informacionODPCE" class="text-center"></div><br>
+									<div id="informacionPuntosDobladoCE" class="text-center"></div><br>
+									<div id="informacionVariablesCE" class="text-center"></div><br>
+									<div id="campoX3OperacionDobladoPuntosCE" class="text-center"></div><br>
+									<div id="campoY3OperacionDobladoPuntosCE" class="text-center"></div><br>
+								</div>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-6 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="resultadoDobladoPuntosCE">
+										</div>
+									</div>
+								</div>	
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalObtencionPuntos" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Obtencion de Puntos</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalObtencionPuntosTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalObtencionPuntosAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalObtencionPuntosTeoria">
+							<p>La curva elíptica con la que trabajaremos es:</p>
+							<div class="formula">E= y<sup>2</sup>= x<sup>3</sup> + x + 4 mod 23</div><br>
+							<p>Para el uso criptográfico, tenemos que considerar la curva no sobre los números reales sino sobre un campo finito. La opción más popular son los campos primos <label class="formula2">GF(p)</label>, donde toda la aritmética se hace módulo un primo <label class="formula2">p</label>. Es por esto que se eligió el número <label class="formula2">23</label> ya que es primo. Los coeficientes <label class="formula2">a</label> y <label class="formula2">b</label> deben satisfacer que primero pertenezcan al campo primo, en este caso, <label class="formula2">23</label> y que <label class="formula2">4a<sup>3</sup> + 27b<sup>2</sup> != 0 mod p</label>, verificamos lo anterior, <label class="formula2">a = 1</label> y <label class="formula2">b = 4</label>, ambos están en el campo y</p>
+							<center><label class="formula2">
+								E = 4(1)<sup>3</sup> + 27(4)<sup>2</sup> mod 23<br>
+								E = 4 + 432 mod 23<br>
+								E = 436 mod 23<br>
+								E = 22
+							</label></center><br>
+							<p>por lo tanto tenemos una curva elíptica válida.</p><br>
+							<h4 class="text-primary">Obtener puntos</h4>
+							<p>Como se explica en la teoría, se necesita de un punto que pertenezca a la curva para realizar las operaciones, a este punto se le conoce como <b>punto generador</b>, pero antes de hablar más sobre él, explicaremos como obtener los puntos de la curva.</p>
+							<ol>
+								<li>
+								<p>Obtener los residuos cuadráticos:</p>
+								<table class="table" style="font-weight:bold; text-align: center;">
+									<tbody>
+										<tr><td>Elementos de p(1-22)</td><td>mod p</td><td>Residuo</td></tr>
+										<tr><td>1<sup>2</sup></td><td>mod 23</td><td>1</td></tr>
+										<tr><td>2<sup>2</sup></td><td>mod 23</td><td>4</td></tr>
+										<tr><td>3<sup>2</sup></td><td>mod 23</td><td>9</td></tr>
+										<tr><td>4<sup>2</sup></td><td>mod 23</td><td>16</td></tr>
+										<tr><td>5<sup>2</sup></td><td>mod 23</td><td>2</td></tr>
+										<tr><td>6<sup>2</sup></td><td>mod 23</td><td>13</td></tr>
+										<tr><td>7<sup>2</sup></td><td>mod 23</td><td>3</td></tr>
+										<tr><td>8<sup>2</sup></td><td>mod 23</td><td>18</td></tr>
+										<tr><td>9<sup>2</sup></td><td>mod 23</td><td>12</td></tr>
+										<tr><td>10<sup>2</sup></td><td>mod 23</td><td>8</td></tr>
+										<tr><td>11<sup>2</sup></td><td>mod 23</td><td>6</td></tr>
+										<tr><td>12<sup>2</sup></td><td>mod 23</td><td>6</td></tr>
+										<tr><td>13<sup>2</sup></td><td>mod 23</td><td>8</td></tr>
+										<tr><td>14<sup>2</sup></td><td>mod 23</td><td>12</td></tr>
+										<tr><td>15<sup>2</sup></td><td>mod 23</td><td>18</td></tr>
+										<tr><td>16<sup>2</sup></td><td>mod 23</td><td>3</td></tr>
+										<tr><td>17<sup>2</sup></td><td>mod 23</td><td>13</td></tr>
+										<tr><td>18<sup>2</sup></td><td>mod 23</td><td>2</td></tr>
+										<tr><td>19<sup>2</sup></td><td>mod 23</td><td>16</td></tr>
+										<tr><td>20<sup>2</sup></td><td>mod 23</td><td>9</td></tr>
+										<tr><td>21<sup>2</sup></td><td>mod 23</td><td>4</td></tr>
+										<tr><td>22<sup>2</sup></td><td>mod 23</td><td>1</td></tr>
+									</tbody>
+								</table>
+								<center>Tabla 1</center><br>
+								<p>Por lo tanto los residuos cuadráticos para <label class="formula2">p = 23</label> son <label class="formula2">RC(23) = {1, 4, 9, 16, 2, 13, 3, 18, 12, 8, 6}</label>.</p>
+								</li>
+								<br><li>
+								<p>Para obtener los puntos, vamos a sustituir en la curva los valores de <label class="formula2">(0, p-1)</label> o sea <label class="formula2">(0, 22)</label>, buscamos si el resultado se encuentra en los residuos cuadráticos obtenidos, si se encuentra entonces en la siguiente columna tenemos la pareja de números con los que obtuvimos ese residuo y en la columna final anotamos la pareja de puntos que son resultado de la combinación del valor de <label class="formula2">x</label> con cada número de la pareja:</p>
+								<table class="table" style="font-weight:bold; text-align: center;">
+									<tbody>
+										<tr><td>x</td><td>E= y<sup>2</sup>= x<sup>3</sup> + x + 4 mod 23</td><td>¿Se encuentra en RC(23)?</td><td>Valores con los que se obtuvo el residuo</td><td>Puntos</td></tr>
+										<tr><td>0</td><td>4</td><td>Sí</td><td>(2,21)</td><td>(0,2)(0,21)</td></tr>
+										<tr><td>1</td><td>6</td><td>Sí</td><td>(11,12)</td><td>(1,11)(1,12)</td></tr>
+										<tr><td>2</td><td>14</td><td>No</td><td>()</td><td>()()</td></tr>
+										<tr><td>3</td><td>11</td><td>No</td><td>()</td><td>()()</td></tr>
+										<tr><td>4</td><td>3</td><td>Sí</td><td>(7,16)</td><td>(4,7)(4,16)</td></tr>
+										<tr><td>5</td><td>19</td><td>No</td><td>()</td><td>()()</td></tr>
+										<tr><td>6</td><td>19</td><td>No</td><td>()</td><td>()()</td></tr>
+										<tr><td>7</td><td>9</td><td>Sí</td><td>(3,20)</td><td>(7,3)(7,20)</td></tr>
+										<tr><td>8</td><td>18</td><td>Sí</td><td>(8,15)</td><td>(8,8)(8,15)</td></tr>
+										<tr><td>9</td><td>6</td><td>Sí</td><td>(11,12)</td><td>(9,11)(9,12)</td></tr>
+										<tr><td>10</td><td>2</td><td>Sí</td><td>(5,18)</td><td>(10,5)(10,18)</td></tr>
+										<tr><td>11</td><td>12</td><td>Sí</td><td>(9,14)</td><td>(11,9)(11,14)</td></tr>
+										<tr><td>12</td><td>19</td><td>No</td><td>()</td><td>()()</td></tr>
+										<tr><td>13</td><td>6</td><td>Sí</td><td>(11,12)</td><td>(13,11)(13,12)</td></tr>
+										<tr><td>14</td><td>2</td><td>Sí</td><td>(5,18)</td><td>(14,5)(14,18)</td></tr>
+										<tr><td>15</td><td>13</td><td>Sí</td><td>(6,17)</td><td>(15,6)(15,17)</td></tr>
+										<tr><td>16</td><td>22</td><td>No</td><td>()</td><td>()()</td></tr>
+										<tr><td>17</td><td>12</td><td>Sí</td><td>(9,14)</td><td>(17,9)(17,14)</td></tr>
+										<tr><td>18</td><td>12</td><td>Sí</td><td>(9,14)</td><td>(18,9)(18,14)</td></tr>
+										<tr><td>19</td><td>5</td><td>No</td><td>()</td><td>()()</td></tr>
+										<tr><td>20</td><td>20</td><td>No</td><td>()</td><td>()()</td></tr>
+										<tr><td>21</td><td>17</td><td>No</td><td>()</td><td>()()</td></tr>
+										<tr><td>22</td><td>2</td><td>Sí</td><td>(5,18)</td><td>(22,5)(22,18)</td></tr>
+									</tbody>
+								</table>
+								<center>Tabla 2</center>
+								<br>
+								<p>De la tabla se podemos ver que obtuvimos 28 puntos, a estos se les suma un punto que se conoce como <b>punto al infinito</b>, se trata de un elemento neutral que tiene la propiedad: <label class="formula2">P + O = P</label>, donde <label class="formula2">O</label> es el punto al infinito.</p>
+								<p>Otro concepto importante que nace es que se le conoce como <b>orden de la curva</b> al número de puntos que existen, por lo tanto para esta curva decimos que tiene un orden de <b>29</b>.</p>
+								</li>
+							</ol>
+							<br>
+							<p>Para finalizar es importante hablar sobre el <b>punto generador</b>. El punto generador es un punto con el cual a partir de él se pueden obtener los demás puntos del grupo haciendo uso del doblado y suma de puntos, para ver si un punto es generador o no, lo tomamos y realizamos la operación 2P, si el punto resultado se encuentra dentro de los puntos de la curva, habrá que calcular 3P y así hasta obtener todos los puntos de la curva, si el punto seleccionado nos da un punto que no existe dentro de la curva, habrá que elegir a otro punto y realizar el mismo proceso. Es necesario aclarar que cuando se llegue al último cálculo de estos puntos el resultado se va a indeterminar lo que significa que obtuvimos el punto al infinito(<label class="formula2">O</label>).</p>
+							<p>Dado que el orden de la curva (<label class="formula2">29</label>) con la que estaremos trabajando en la animación es primo, nos dice que el grupo con el que decidimos trabajar (<label class="formula2">23</label>) es cíclico y cualquier punto es generador de todo el grupo de puntos que calculamos en la tabla 2, para el caso en el que no sea primo habrá que ir probando punto por punto del grupo. El punto seleccionado para trabajar en las animaciones es el (0,2). A continuación en la figura 1 se muestran cómo se obtuvieron todos los puntos de la tabla 2, a partir del (0,2):</p>
+							<center><img src="../../../includes/img/ECDSA/1.png"></center>
+							<center>Figura 1</center><br>
+
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol>
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalObtencionPuntosAnimacion">
+							<div id="operacionObtencionPuntosCE">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-6 text-primary">Curva elíptica:
+											<div class="form-group">
+												<div class="input-group">
+											 		<input class="form-control" type="text" value="y²= x³ + x + 4 mod 23" readonly="">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadOOPCE" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="CalcularRapidoOOPCE">Calcular Rápido</a></li>
+															<li><a id="CalcularNormalOOPCE">Calcular Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btnCalcularOOPCE" tabindex="-1" value="2">Calcular Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btnCancelarOOPCE" style="display: none;">Cancelar</button>
+													</div>												
+												</div>
+											</div>	
+										</div>
+									</div>
+								</div>
+								<div id="seccionOperacionObtencionPuntosCE" style="display: none;">
+									<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="informacionOperacionObtencionPuntosCE"></div>
+									<div id="zonaResiduosCuadraticosFOperacionObtencionPuntosCE" class="text-center"></div><br>
+									<div id="zonaResiduosCuadraticosAOperacionObtencionPuntosCE" class="text-center"></div>
+									<div id="zonaIdentificacionVariablesOperacionObtencionPuntosCE" class="text-center"></div><br>
+									<div id="zonaCalculoPuntosOperacionObtencionPuntosCE" class="text-center"></div><br>
+									<div id="zonaPuntosObtenidosOperacionObtencionPuntosCE" class="text-center"></div><br>
+								</div>													
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-6 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="resultadoDobladoPuntosCE">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalSumaPuntos" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Suma de Puntos</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalSumaPuntosTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalSumaPuntosAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalSumaPuntosTeoria">
+							<p>La suma de puntos se define como <label class="formula2">R = P + Q</label> donde <label class="formula2">P != O</label> (punto al infinito). El doblado de puntos se define como <label class="formula2">R = P + P = 2P</label>, de lo anterior podemos ver que el doblado de puntos sería simplemente una serie de suma de puntos. Por lo tanto existen 2 fórmulas para llevar a cabo estas operaciones.</p>
+							<p>Para sumar 2 puntos diferentes:</p>
+							<center><img src="../../../includes/img/curvas1.jpg"></center><br>
+							<p>Para sumar 2 puntos iguales:</p>
+							<center><img src="../../../includes/img/curvas2.jpg"></center><br>
+							
+							<h5 class="text-primary">Ejemplo</h5>
+							<p>Trabajando en el campo pequeño <label class="formula2">Z<sub>23</sub></label></p>
+							<ol>
+								<li>
+								<p>Sea <label class="formula2">P = (4,7)</label> y <label class="formula2">Q = (13, 11)</label>, obtener <label class="formula2">P + Q = (x<sub>3</sub> , y<sub>3</sub>)</label>:</p>
+								<center>
+								<label class="formula2">
+								x<sub>3</sub> = (11 - 7/13 - 4)<sup>2</sup> - 4 - 13<br>
+								x<sub>3</sub> = (4/9)<sup>2</sup> - 17<br>
+								x<sub>3</sub> = (9<sup>-1</sup>*4)<sup>2</sup> - 17<br>
+								x<sub>3</sub> = (18*4)<sup>2</sup> - 17<br>
+								x<sub>3</sub> = 72<sup>2</sup> - 17<br>
+								x<sub>3</sub> = 5184 - 17<br>
+								x<sub>3</sub> = 5167 mod 23<br>
+								x<sub>3</sub> = 15<br><br>
+								y<sub>3</sub> = 72(4 - 15) - 7<br>
+								y<sub>3</sub> = 72*(-11) - 7<br>
+								y<sub>3</sub> = -792 - 7<br>
+								y<sub>3</sub> = -799 mod 23<br>
+								y<sub>3</sub> = -17 mod 23<br>
+								y<sub>3</sub> = 6</label><br>
+								</center><br>
+								<p>Por lo tanto <label class="formula2">P+Q= (15,6)</label>.</p>
+								</li>
+								<li>
+								<p>Sea <label class="formula2">P = (4,7)</label>, obtener <label class="formula2">2P = P + P = (x<sub>3</sub> , y<sub>3</sub>)</label>:</p>
+								<center>
+								<label class="formula2">
+								x<sub>3</sub> = ((3(4)<sup>2</sup> + 1)/14)<sup>2</sup> - 8<br>
+								x<sub>3</sub> = (14<sup>-1</sup>*49)<sup>2</sup> - 8<br>
+								x<sub>3</sub> = (5*49)<sup>2</sup> - 8<br>
+								x<sub>3</sub> = 245<sup>2</sup> - 8<br>
+								x<sub>3</sub> = 60025 - 8<br>
+								x<sub>3</sub> = 60017 mod 23<br>
+								x<sub>3</sub> = 10<br><br>
+								y<sub>3</sub> = 245(4 - 10) - 7<br>
+								y<sub>3</sub> = 245*(-6) - 7<br>
+								y<sub>3</sub> = -1470 - 7<br>
+								y<sub>3</sub> = -1477 mod 23<br>
+								y<sub>3</sub> = -5 mod 23<br>
+								y<sub>3</sub> = 18</label>
+								</center><br>
+								<p>Por lo tanto <label class="formula2">2P= (10, 18)</label>.</p>
+								</li>
+							</ol>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<ol>
+								<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+							</ol>
+						</div>
+						<div class="tab-pane fade" id="modalSumaPuntosAnimacion">
+							<div id="operacionSumaPuntosCE">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-2 text-primary">P1:
+											<div class="form-group">
+												<div class="input-group">
+													<select class="form-control" id="P1OperacionSumaPuntosCE"><option value="0,2">0,2</option><option value="0,21">0,21</option><option value="1,11">1,11</option><option value="1,12">1,12</option><option value="4,7">4,7</option><option value="4,16">4,16</option><option value="7,3">7,3</option><option value="7,20">7,20</option><option value="8,8">8,8</option><option value="8,15">8,15</option><option value="9,11">9,11</option><option value="9,12">9,12</option><option value="10,5">10,5</option><option value="10,18">10,18</option><option value="11,9">11,9</option><option value="11,14">11,14</option><option value="13,11">13,11</option><option value="13,12">13,12</option><option value="14,5">14,5</option><option value="14,18">14,18</option><option value="15,6">15,6</option><option value="15,17">15,17</option><option value="17,9">17,9</option><option value="17,14">17,14</option><option value="18,9">18,9</option><option value="18,14">18,14</option><option value="22,5">22,5</option><option value="22,18">22,18</option><option value="0,2">0,2</option><option value="0,21">0,21</option><option value="1,11">1,11</option><option value="1,12">1,12</option><option value="4,7">4,7</option><option value="4,16">4,16</option><option value="7,3">7,3</option><option value="7,20">7,20</option><option value="8,8">8,8</option><option value="8,15">8,15</option><option value="9,11">9,11</option><option value="9,12">9,12</option><option value="10,5">10,5</option><option value="10,18">10,18</option><option value="11,9">11,9</option><option value="11,14">11,14</option><option value="13,11">13,11</option><option value="13,12">13,12</option><option value="14,5">14,5</option><option value="14,18">14,18</option><option value="15,6">15,6</option><option value="15,17">15,17</option><option value="17,9">17,9</option><option value="17,14">17,14</option><option value="18,9">18,9</option><option value="18,14">18,14</option><option value="22,5">22,5</option><option value="22,18">22,18</option></select>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 text-primary">P2:
+											<div class="form-group">
+												<div class="input-group">
+											 		<select class="form-control" id="P2OperacionSumaPuntosCE"><option value="0,2">0,2</option><option value="0,21">0,21</option><option value="1,11">1,11</option><option value="1,12">1,12</option><option value="4,7">4,7</option><option value="4,16">4,16</option><option value="7,3">7,3</option><option value="7,20">7,20</option><option value="8,8">8,8</option><option value="8,15">8,15</option><option value="9,11">9,11</option><option value="9,12">9,12</option><option value="10,5">10,5</option><option value="10,18">10,18</option><option value="11,9">11,9</option><option value="11,14">11,14</option><option value="13,11">13,11</option><option value="13,12">13,12</option><option value="14,5">14,5</option><option value="14,18">14,18</option><option value="15,6">15,6</option><option value="15,17">15,17</option><option value="17,9">17,9</option><option value="17,14">17,14</option><option value="18,9">18,9</option><option value="18,14">18,14</option><option value="22,5">22,5</option><option value="22,18">22,18</option><option value="0,2">0,2</option><option value="0,21">0,21</option><option value="1,11">1,11</option><option value="1,12">1,12</option><option value="4,7">4,7</option><option value="4,16">4,16</option><option value="7,3">7,3</option><option value="7,20">7,20</option><option value="8,8">8,8</option><option value="8,15">8,15</option><option value="9,11">9,11</option><option value="9,12">9,12</option><option value="10,5">10,5</option><option value="10,18">10,18</option><option value="11,9">11,9</option><option value="11,14">11,14</option><option value="13,11">13,11</option><option value="13,12">13,12</option><option value="14,5">14,5</option><option value="14,18">14,18</option><option value="15,6">15,6</option><option value="15,17">15,17</option><option value="17,9">17,9</option><option value="17,14">17,14</option><option value="18,9">18,9</option><option value="18,14">18,14</option><option value="22,5">22,5</option><option value="22,18">22,18</option></select>
+											 		<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadOSPCE" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="CalcularRapidoOSPCE">Calcular Rápido</a></li>
+															<li><a id="CalcularNormalOSPCE">Calcular Normal</a></li>
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btnCalcularOSPCE" tabindex="-1" value="2">Calcular Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btnCancelarOSPCE" style="display: none;">Cancelar</button>
+													</div>
+											 	</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="seccionOperacionSumaPuntosCE" style="display: none;">
+									<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="informacionOperacionSumaPuntosCE"></div>
+									<div id="informacionCE" class="text-center"></div><br>
+									<div id="informacionPuntosCE" class="text-center"></div><br>
+									<div id="campoX3OperacionSumaPuntosCE" class="text-center"></div><br>
+									<div id="campoY3OperacionSumaPuntosCE" class="text-center"></div><br>
+								</div>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-6 text-primary">Resultado:
+											<input type="text" class="form-control" placeholder="Resultado" readonly="" id="resultadoSumaPuntosCE">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalOperadoresLogicos" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Operadores Lógicos</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalOperadoresLogicosTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalOperadoresLogicosTeoria">
+							<p>Los datos numéricos, los datos de serie y el valor nulo pueden funcionar como datos lógicos. Los datos numéricos y de serie pueden tener el valor lógico verdadero o falso. El valor numérico 0 (cero) es falso; todos los demás valores numéricos son verdaderos. Los datos de serie de caracteres que no son una serie vacía son verdaderos; una serie vacía es falsa. El valor nulo no es verdadero ni falso. Tiene el valor lógico especial nulo.<br><br>Los operadores lógicos realizan pruebas en expresiones lógicas. Las expresiones lógicas que se evalúan como cero o una serie vacía son falsas. Las expresiones lógicas que se evalúan como valor nulo son nulas. Las expresiones que se evalúan como cualquier otro valor son verdaderas.</p>
+							<p>Los operadores lógicos son:
+								<ul>
+									<li>AND</li>
+									<li>OR</li>
+									<li>NOT</li>
+									<li>XOR</li>
+								</ul>
+							</p>
+							<h4 class="text-primary">Tablas de vardad</h4>
+							<div class="row">
+								<div class="col-md-3">
+									<b style="margin: auto;">Operador AND</b>
+									<table class="table table-bordered" style="width: 50%; margin: auto;">
+									<thead><tr><th colspan="2">And</th><th rowspan="2">Output</th></tr>
+									<tr><th>A</th><th>B</th></tr></thead>
+									<tbody><tr><td>0</td><td>0</td><td>0</td></tr>
+									<tr><td>0</td><td>1</td><td>0</td></tr>
+									<tr><td>1</td><td>0</td><td>0</td></tr>
+									<tr><td>1</td><td>1</td><td>1</td></tr>
+									</tbody></table>
+								</div>
+								<div class="col-md-3">
+									<b style="margin: auto;">Operador OR</b>
+									<table class="table table-bordered" style="width: 50%; margin: auto;">
+									<thead><tr><th colspan="2">Or</th><th rowspan="2">Output</th></tr>
+									<tr><th>A</th><th>B</th></tr></thead>
+									<tbody><tr><td>0</td><td>0</td><td>0</td></tr>
+									<tr><td>0</td><td>1</td><td>1</td></tr>
+									<tr><td>1</td><td>0</td><td>1</td></tr>
+									<tr><td>1</td><td>1</td><td>1</td></tr>
+									</tbody></table>
+								</div>
+								<div class="col-md-3">
+									<b style="margin: auto;">Operador NOT</b>
+									<table class="table table-bordered" style="width: 50%; margin: auto;">
+									<thead><tr><th>Not</th><th rowspan="2">Output</th></tr>
+									<tr><th>A</th></tr></thead>
+									<tbody><tr><td>0</td><td>1</td></tr>
+									<tr><td>1</td><td>0</td></tr>
+									</tbody></table>
+								</div>
+								<div class="col-md-3">
+									<b style="margin: auto;">Operador XOR</b>
+									<table class="table table-bordered" style="width: 50%; margin: auto;">
+									<thead><tr><th colspan="2">Xor</th><th rowspan="2">Output</th></tr>
+									<tr><th>A</th><th>B</th></tr></thead>
+									<tbody><tr><td>0</td><td>0</td><td>0</td></tr>
+									<tr><td>0</td><td>1</td><td>1</td></tr>
+									<tr><td>1</td><td>0</td><td>1</td></tr>
+									<tr><td>1</td><td>1</td><td>0</td></tr>
+									</tbody></table>
+								</div>
+							</div>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<p align="justify"> <ol type=”1” start=”1”>
+								<li>S/A. (S/F). Operadores lógicos. Febrero 17, 2017, de IBM Knowledge Center. Sitio web: <a href="https://www.ibm.com/support/knowledgecenter/es/SSZJPZ_9.1.0/com.ibm.swg.im.iis.ds.basic.doc/topics/r_dsbasic_Logical_Operators.html">IBM Knowledge Center - Operadores lógicos</a></li>
+							</ol></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalRotacionBits" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Rotación de Bits</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalRotacionBitsTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalRotacionBitsTeoria">
+							<p>Una forma de desplazamiento de bits es el desplazamiento circular o rotación de bits. En esta operación, los bits de un registro son “rotados” de una manera circular como si los extremos izquierdo y derecho del registro estuvieran conectados. En la rotación hacia la izquierda, el bit que sale por el extremo izquierdo entrará por el extremo derecho, y viceversa con la rotación hacia la derecha.</p>
+							<div class="row">
+								<div class="col-md-6 text-center"><center><img src="../../../includes/img/MD5/rotacionIzq.png"></center>Desplazamiento o rotación circular hacia la izquierda</div>
+								<div class="col-md-6 text-center"><center><img src="../../../includes/img/MD5/rotacionDer.png"></center>Desplazamiento o rotación circular hacia la derecha</div>
+							</div>
+							<hr>
+							<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+							<p align="justify"> <ol type=”1” start=”1”>
+								<li>Fundación Wikimedia, Inc. (Julio 2004). Operador a nivel de bits. Febrero 2017, de Wikipedia Sitio web: <a href="https://es.wikipedia.org/wiki/Operador_a_nivel_de_bits" target="_blanc">Wikipedia - Operador a nivel de bits</a></li>
+							</ol></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <div class="modal fade" id="modalMultiplicacionModular" role="dialog" style="padding-right: 12px; width: 100%;">
+	<div class="modal-dialog" style="width: 80%;">
+		<div class="modal-content">
+			<div class="panel panel-tab">
+				<div class="panel-heading">
+					<h3 class="panel-title">Multiplicación Modular</h3>
+					<ul class="nav nav-tabs pull-right" style="margin-right: 39px;">
+						<li class="active"><a href="#modalMultiplicacionModularTeoria" data-toggle="tab"><i class="fa fa-superscript"></i> Teoría</a></li>
+						<li><a href="#modalMultiplicacionModularAnimacion" data-toggle="tab"><i class="fa fa-cog fa-spin"></i> Operación</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger cerrarModalTabs" data-dismiss="modal">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content no-padding">
+						<div class="tab-pane fade in active" id="modalMultiplicacionModularTeoria">
+							Fundamentos
+						</div>
+						<div class="tab-pane fade" id="modalMultiplicacionModularAnimacion">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<script src="../../../includes/scripts/animacionTT/animation.js"></script>
+
+<script src="../../../views/matematicaModular/sumaModular/sumaModular.js""></script>
+<script src="../../../views/matematicaModular/multiplicacionModular/multiplicacionModular.js""></script>
+<script src="../../../views/matematicaModular/inversoAditivo/inversoAditivo.js""></script>
+<script src="../../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.js""></script>
+<script src="../../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.js""></script>
+<script src="../../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.js""></script>
+<script src="../../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.js""></script>
+<script src="../../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.js""></script>
+<script src="../../../views/matematicaModular/phiEuler/phiEuler.js""></script>
+
+<script src="../../../views/campoGF2/convertirGF/convertirGF.js""></script>
+<script src="../../../views/campoGF2/sumaGF/sumaGF.js""></script>
+<script src="../../../views/campoGF2/multiplicacionGF/multiplicacionGF.js""></script>
+<script src="../../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.js""></script>
+
+<script src="../../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.js""></script>
+<script src="../../../views/curvaEliptica/sumaPuntos/sumaPuntos.js""></script>
+<script src="../../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.js""></script>

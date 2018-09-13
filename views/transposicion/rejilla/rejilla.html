@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>X-CRIPTOZ | Aprende Criptografía</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- VENDOR CSS -->
+		<link rel="stylesheet" href="../../../includes/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../includes/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../../includes/vendor/themify-icons/css/themify-icons.css">
+		<link rel="stylesheet" href="../../../includes/vendor/toastr/toastr.min.css">
+		<link rel="StyleSheet" href="../../../includes/css/animacionTT/panelFlotante.css">
+		<link rel="StyleSheet" href="../../../includes/css/animacionTT/animation.css">
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="../../../includes/css/main.min.css">
+		<!-- ICONS -->
+		<link rel="apple-touch-icon" sizes="76x76" href="../../../includes/img/apple-iconTT.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../../../includes/img/faviconTT.png">
+		<link id="css-skin" rel="stylesheet" href="../../../includes/css/skins/sidebar-nav-darkblue.css" type="text/css">
+	</head>
+	<body>
+		<!-- WRAPPER -->
+		<div id="wrapper">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="brand">
+					<a href="../../../layouts/main.html">
+						<img src="../../../includes/img/logo-white.png" alt="X-CRIPTOZ Logo" class="img-responsive logo">
+					</a>
+				</div>
+				<div class="container-fluid">
+					<div id="tour-fullwidth" class="navbar-btn">
+						<button type="button" class="btn-toggle-fullwidth btn"><i class="fa fa-bars"></i></button>
+					</div>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#creditos">
+									<i class="fa fa-address-card-o"></i>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.escom.ipn.mx/" target="_blanc">
+									<img src="../../../includes/img/escomWhiteMin.png" alt="ESCOM">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar">
+				<nav>				
+					<ul class="nav" id="sidebar-nav-menu">						
+						<li class="menu-group">Inicio</li>
+						<li><a href="../../../layouts/main.html"><i class="ti-home"></i> <span class="title">Inicio</span></a></li>
+						<li><a href="../../../views/archivos/archivos.html"><i class="ti-envelope"></i> <span class="title">Cifrado de archivos</span></a></li>
+						<li><a href="../../../views/calculadora/calculadora.html"><i class="ti-panel"></i> <span class="title">Calculadora</span></a></li>
+						<li class="panel">
+							<a href="#" data-toggle="collapse" data-target="#submenuDemo" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="fa fa-superscript"></i> <span class="title">Fundamentos Matemáticos</span><i class="icon-submenu ti-angle-left"></i></a>
+							<div id="submenuDemo" class="collapse" aria-expanded="false">
+								<ul class="submenu" id="submenu">
+									<li class="panel">
+										<a href="#SubmenuMatematicaModular" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Aritmética Modular</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatematicaModular" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/matematicaModular/matematicaModular/matematicaModular.html">¿Qué es Aritmética Modular?</a></li>
+												<li><a href="../../../views/matematicaModular/sumaModular/sumaModular.html">Suma Modular</a></li>
+												<li><a href="../../../views/matematicaModular/multiplicacionModular/multiplicacionModular.html">Multiplicación modular</a></li>
+												<li><a href="../../../views/matematicaModular/inversoAditivo/inversoAditivo.html">Inverso aditivo</a></li>
+												<li><a href="../../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.html">Inverso multiplicativo</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.html">Exponenciación clásica</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.html">Exponenciación binaria</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.html">Exponenciación por Teorema de Euler</a></li>
+												<li><a href="../../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.html">Algoritmo Euclides</a></li>
+												<li><a href="../../../views/matematicaModular/phiEuler/phiEuler.html">Phi de Euler</a></li>
+												<li><a href="../../../views/matematicaModular/raicesPrimitivas/raicesPrimitivas.html">Raices Primitivas</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuMatrices" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Matrices</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatrices" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/matrices/matrices/matrices.html">Que es una Matriz</a></li>
+												<li><a href="../../../views/matrices/multiplicacionMatrices/multiplicacionMatrices.html">Multiplicación de matrices</a></li>
+												<li><a href="../../../views/matrices/determinanteMatrices/determinanteMatrices.html">Determinante de una matriz</a></li>
+												<li><a href="../../../views/matrices/cofactoresMatrices/cofactoresMatrices.html">Matriz de cofactores</a></li>
+												<li><a href="../../../views/matrices/transpuestaMatrices/transpuestaMatrices.html">Transpuesta de una matriz</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCampoGF2" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Campo GF(2<sup>8</sup>)</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCampoGF2" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/campoGF2/convertirGF/convertirGF.html">Elementos en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/sumaGF/sumaGF.html">Suma en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/multiplicacionGF/multiplicacionGF.html">Multiplicación en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.html">Inverso multiplicativo en GF(2<sup>8</sup>)</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCurva" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Curva elíptica</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCurva" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/curvaEliptica/curvaEliptica/curvaEliptica.html">¿Qué es la Curva Elíptica?</a></li>
+												<li><a href="../../../views/curvaEliptica/sumaPuntos/sumaPuntos.html">Suma de puntos</a></li>
+												<li><a href="../../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.html">Doblado de puntos</a></li>
+												<li><a href="../../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.html">Obtención de puntos</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuBits" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Operaciones a nivel<br>de bits</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuBits" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/operacionesBits/operadoresLogicos/operadoresLogicos.html">Operadores lógicos </a></li>
+												<li><a href="../../../views/operacionesBits/rotacionBits/rotacionBits.html">Rotación bits</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía clásica</li>
+						<li><a href="../../../views/criptografia/clasica/clasica.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía clásica</span></a></li>
+						<li class="panel">
+							<a href="#Monoalfabetica" onclick="sustitucionMonoalfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución monoalfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Monoalfabetica" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/monoalfabetica/cesar/cesar.html">Cesar</a></li>
+									<li><a href="../../../views/monoalfabetica/atbash/atbash.html">Atbash</a></li>
+									<li><a href="../../../views/monoalfabetica/polybios/polybios.html">Polybios</a></li>
+									<li><a href="../../../views/monoalfabetica/playfair/playfair.html">Playfair</a></li>
+									<li><a href="../../../views/monoalfabetica/afin/afin.html">Afin</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Polialfabetica" onclick="sustitucionPolialfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución polialfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Polialfabetica" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/polialfabetica/desplazamiento/desplazamiento.html">Desplazamiento</a></li>
+									<li><a href="../../../views/polialfabetica/vigenere/vigenere.html">Vigenere</a></li>
+									<li><a href="../../../views/polialfabetica/vernam/vernam.html">Vernam</a></li>
+									<li><a href="../../../views/polialfabetica/hill/hill.html">Hill</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Transposicion" onclick="transposicion();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="active collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por<br>transposición</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Transposicion" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="rejilla.html" class="active">Rejilla</a></li>
+									<li><a href="../../../views/transposicion/inversa/inversa.html">Inversa</a></li>
+									<li><a href="../../../views/transposicion/simple/simple.html">Simple</a></li>
+									<li><a href="../../../views/transposicion/riel/riel.html">Por Riel</a></li>
+									<li><a href="../../../views/transposicion/columnas/columnas.html">Por Columnas</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía moderna</li>
+						<li><a href="../../../views/criptografia/moderna/moderna.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía moderna</span></a></li>
+						<li class="panel">
+							<a href="#Simetrico" onclick="cifradoSimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado simétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Simetrico" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/simetrico/feistel/feistel.html">Feistel</a></li>
+									<li><a href="../../../views/simetrico/des/des.html">DES</a></li>
+									<li><a href="../../../views/simetrico/aes/aes.html">AES</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Asimetrico" onclick="cifradoAsimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado asimétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Asimetrico" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/asimetrico/diffieHellman/diffieHellman.html">Diffie Hellman</a></li>
+									<li><a href="../../../views/asimetrico/rsa/rsa.html">RSA</a></li>
+									<!-- <li><a href="../../../views/asimetrico/dsa/dsa.html">DSA</a></li> -->
+									<li><a href="../../../views/asimetrico/gammal/gammal.html">ElGamal</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Hash" onclick="funcionesHash();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Funciones Hash</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Hash" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/hash/md5/md5.html">MD5</a></li>
+									<li><a href="../../../views/hash/sha1/sha1.html">SHA-1</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Firma" onclick="firmaDigital();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Firma Digital</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Firma" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/firmas/firmaRsa/firmaRsa.html">Firma RSA</a></li>
+									<li><a href="../../../views/firmas/firmaECDSA/firmaECDSA.html">Firma ECDSA</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content" id="contenidoPagina">
+					<div class="content-heading clearfix">
+						<ul class="breadcrumb">
+							<li><i class="fa fa-home"></i> Criptografía clásica</li>
+							<li>Transposición</li>
+							<li class="active"><a href="#">Rejilla</a></li>
+						</ul>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="panel">
+									<div class="panel-heading" style="background-color: #1c79d2 !important;">
+										<h4 class="panel-title" style="color: white !important; font-size: 20px;">Cifrado Rejilla</h4>
+										<button type="button" class="btn btn-primary" style="float: right; position: relative; top: -0.4em;" onclick="mostrarPanelRejillaC();">
+											<span>Ver cifrado</span>
+											<i class="fa fa-cog fa-spin"></i>
+										</button>
+									</div>
+									<div class="panel-body text-justify">
+										<div class="pull-right imagenDerecha">
+											<img src="../../../includes/img/Rejilla/cardano.jpg" width="180">
+											<p>Girolamo Cardano</p>
+										</div>
+										<p>El primero en describir este cifrado fue Girolamo Cardano (1501-1576) en 1550 en su obra “De Subtilitat”. Su descripción del método de rejilla se expone a continuación.</p>							
+										<p>Se obtienen dos piezas idénticas de pergamino y se realizan cortes de agujeros en ellos de dimensiones similares al tamaño normal de las letras, alguno de ellos para albergar siete, tres, ocho o diez, suficiente para contener sobre unas ciento veinte letras en total. Uno de estos pergaminos se da a su corresponsal y el otro lo conserva uno mismo. Cuando se quiera comunicar un secreto se escriba lo que quiera, teniendo cuidado en poner una frase solo en cada hoja a través de los agujeros del pergamino, y después se debe intentar componer un mensaje que parezca inocente para rellenar los huecos.</p>
+										<p>Se debe tener cuidado en evitar cualquier sospecha, y preservar la continuidad del asunto en toda la carta. Cuando el corresponsal la reciba, todo lo que tiene que hacer es cubrir la hoja con el segundo pergamino, y el mensaje secreto aparecerá inmediatamente.</p>
+										<p>Sobre la rejilla hay que tener en cuenta su formato y la manera en que se inscribe y recupera el texto. Si bien lo usual es que el texto se inscriba en la forma normal, es decir de izquierda a derecha y de arriba abajo, es posible, incluso frecuente, la utilización de formas alternativas de inscripción del mensaje, por columnas, en diagonal, etc., principalmente en las rejillas de caracteres, es decir, en las que todos los orificios corresponden a una letra.</p>
+										<p>En las rejillas rotativas el número total de aperturas es un cuarto del total de posiciones de la misma. La escritura del mensaje se realiza girando sucesivamente la rejilla 90º y rellenando las aperturas hasta volver a la posición original. Para hacer una rejilla con la propiedad de que al rotar no coincidan dos casillas de mensaje, basta con ir fila a fila escogiendo una serie de posiciones que no hayan sido previamente marcadas, y marcar con una x o cualquier otro símbolo las posiciones que ocuparán al hacer las rotaciones.</p>
+										
+										<center><img src="../../../includes/img/Rejilla/rf.jpg" width="200" height="200"></center><br>
+										
+										<p>El método que se presenta a continuación es una manera muy sencilla de diseñar un tipo de rejillas llamadas <b>Rejillas de Fleissner</b>, en honor a su inventor, el criptólogo austriaco Eduard Fleissner von Wostrowitz. Este tipo de rejilla tiene un número par de celdas y para su preparación primero se debe dividir la rejilla en cuatro zonas cuadradas con el mismo número de celdas. El siguiente paso consiste en marcar las celdas correspondientes a cada una de las zonas con un número consecutivo, de forma que la orientación de los números de cada zona esté rotada 90º.</p>
+										<p>Por último se descubren las celdas que interesen de forma que no haya dos celdas descubiertas con el mismo número. Por ejemplo sea la rejilla siguiente ya dividida en cuatro cuartos:</p>
+										<center><img src="../../../includes/img/Rejilla/1.png"></center><br>
+										Marcamos los números que queremos descubrir, en nuestro caso los marcamos con un fondo oscuro:<br>
+										<center><img src="../../../includes/img/Rejilla/2.png"></center><br><p></p>
+										<hr>	
+										<img src="../../../includes/img/sketch/class-hand-drawn-persons-group.png" width="70" align="middle" class="sketch pull-right">
+										<h3 class="text-primary">Cifrado</h3>
+										<p>Si se quiere cifrar la frase <b>LA VUELTA AL MUNDO EN OCHENTA DIAS</b> se empieza por generar la rejilla poniendo cada letra en una posición y en el caso de no completarse, se rellena con caracteres nulos.</p>
+										<center><img src="../../../includes/img/Rejilla/3.png"></center><br>
+										<p>El primer grupo viene dado por las letras <b>LUADNCNAE</b>. Rotando la rejilla obtendríamos:</p>
+										<center><img src="../../../includes/img/Rejilla/4.png"></center><br>
+										<p>Con lo que el cifrado en este paso sería <b>VLTLMEADS</b>, volvemos a rotar 90º la rejilla y obtenemos el siguiente resultado:</p>
+										<center><img src="../../../includes/img/Rejilla/5.png"></center><br>
+										<p>El cifrado sería pues <b>AEOOHTQMZ</b>. Hacemos la última rotación, y obtenemos la última parte del texto cifrado, <b>AUNEIAXLS</b> tal como muestra la figura siguiente:</p>
+										<center><img src="../../../includes/img/Rejilla/51.png"></center><br>
+										En este caso el texto cifrado completo sería <b>LUADNCNAEVLTLMEADSAEOOHTQMZAUNEIAXLS</b>.
+										<hr>
+										<img src="../../../includes/img/sketch/class-hand-drawn-persons-group.png" width="70" align="middle" class="sketch pull-right">
+										<h3 class="text-primary">Descifrado</h3>
+										<p>Para recomponer el mensaje claro simplemente se pone la rejilla sobre un papel en blanco y se van rellenando los espacios abiertos, de manera que una vez rellenados todos, se da la vuelta 90º a la rejilla y se sigue el proceso hasta haber completado el mensaje.</p>
+										<center><img src="../../../includes/img/Rejilla/6.png"></center><br>
+										<p>Acomodamos el primer grupo <b>LUADNCNAE</b>:</p>
+										<center><img src="../../../includes/img/Rejilla/7.png"></center><br>
+										<p>El segundo grupo <b>VLTLMEADS</b>:</p>
+										<center><img src="../../../includes/img/Rejilla/8.png"></center><br>
+										<p>El tercer grupo <b>AEOOHTQMZ</b>:</p>
+										<center><img src="../../../includes/img/Rejilla/9.png"></center><br>
+										<p>Y para el último grupo <b>AUNEIAXLS</b>:</p>
+										<center><img src="../../../includes/img/Rejilla/10.png"></center><br>
+										<p>Y se obtienes el mensaje claro: <b>lavueltaalmundoenochentadiasqzlamsez</b>.</p>
+										<hr>
+										<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+										<p align="justify">
+										</p><ol type="”1”" start="”1”">
+										<li>José Ramón Soler Fuensanta. (S/F). La rejilla. Historia de un instrumento de cifrado. Febrero 21, 2017, de sin asociación. Sitio web: <a href="http://www.criptohistoria.es/files/rejilla.pdf" target="_blanc">La rejilla. Historia de un instrumento de cifrado</a></li>
+										</ol>
+										<p></p>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="panel" id="panelInteractivo-CifradoRejillaC" style="display: none; margin: 10px 10px 10px;">
+					<div class="panel-heading" style="background-color: #1c79d2 !important; height: 47px;">
+						<h4 class="panel-title" style="color: white !important; font-size: 20px;">Cifrado Rejilla</h4>
+						<div class="right" style="margin-left: 20px;">
+							<button type="button" class="btn btn-danger btn-sm" onclick="cerrarPanelRejillaC();">
+								<span>Volver</span>
+								<i class="fa fa-arrow-left"></i>
+							</button>
+						</div>
+					</div>
+					<div class="panel-body" style="padding-top: 10px;">
+						<div class="custom-tabs-line tabs-line-bottom left-aligned">
+							<ul class="nav" role="tablist" style="width: 100%;">
+								<li class="active" style="width: 50%;"><a href="#aiCifradoRejilla" data-toggle="tab" class="text-center">Cifrado</a></li>
+								<li style="width: 50%;"><a href="#aiDescifradoRejilla" data-toggle="tab" class="text-center">Descifrado</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div id="aiCifradoRejilla" class="tab-pane fade in active" style="padding: 10px;">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-8 text-primary">Texto claro:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="text" id="textoPlanoRejillaC" placeholder="Texto claro">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadCRejilla" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="CifradoRapidoRejilla">Cifrado Rápido</a></li>
+															<li><a id="CifradoNormalRejilla">Cifrado Normal</a></li>
+															<!-- <li><a id="CifradoLentoRejilla">Cifrado Lento</a></li> -->
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-cifrarRejilla-cifrado" tabindex="-1" value="2">Cifrado Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarCifrarRejilla-cifrado" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-8 text-primary">
+											<div class="alert alert-info" style="font-weight:bold; text-align: center; padding: 5px;" id="informacionRejilla3C">Selecciona los números de las celdas que quieras que formen una rejilla (huecos), recuerda que debes elegir 9 números (celdas) y éstos no pueden ser los mismos:</div>
+											<table class="table table-bordered" style="margin:0 auto;width:50%"><thead>
+												<tr><td><b>REJILLA</b></td><td>
+													<table class="table table-bordered" id="rejillaCifrado-C">
+														<tbody>						
+															<tr><td style="text-align:center;" id="A1C-6X6A-0" onclick="SCAC(this)">A1</td><td style="text-align:center;" id="B1C-6X6A-1" onclick="SCAC(this)">B1</td><td style="text-align:center;" id="C1C-6X6A-2" onclick="SCAC(this)">C1</td><td style="text-align:center;" id="G2C-6X6A-3" onclick="SCAC(this)">G2</td><td style="text-align:center;" id="D2C-6X6A-4" onclick="SCAC(this)">D2</td><td style="text-align:center;" id="A2C-6X6A-5" onclick="SCAC(this)">A2</td></tr>
+															<tr><td style="text-align:center;" id="D1C-6X6A-6" onclick="SCAC(this)">D1</td><td style="text-align:center;" id="E1C-6X6A-7" onclick="SCAC(this)">E1</td><td style="text-align:center;" id="F1C-6X6A-8" onclick="SCAC(this)">F1</td><td style="text-align:center;" id="H2C-6X6A-9" onclick="SCAC(this)">H2</td><td style="text-align:center;" id="E2C-6X6A-10" onclick="SCAC(this)">E2</td><td style="text-align:center;" id="B2C-6X6A-11" onclick="SCAC(this)">B2</td></tr>
+															<tr><td style="text-align:center;" id="G1C-6X6A-12" onclick="SCAC(this)">G1</td><td style="text-align:center;" id="H1C-6X6A-13" onclick="SCAC(this)">H1</td><td style="text-align:center;" id="I1C-6X6A-14" onclick="SCAC(this)">I1</td><td style="text-align:center;" id="I2C-6X6A-15" onclick="SCAC(this)">I2</td><td style="text-align:center;" id="F2C-6X6A-16" onclick="SCAC(this)">F2</td><td style="text-align:center;" id="C2C-6X6A-17" onclick="SCAC(this)">C2</td></tr>
+															<tr><td style="text-align:center;" id="C4C-6X6A-18" onclick="SCAC(this)">C4</td><td style="text-align:center;" id="F4C-6X6A-19" onclick="SCAC(this)">F4</td><td style="text-align:center;" id="I4C-6X6A-20" onclick="SCAC(this)">I4</td><td style="text-align:center;" id="I3C-6X6A-21" onclick="SCAC(this)">I3</td><td style="text-align:center;" id="H3C-6X6A-22" onclick="SCAC(this)">H3</td><td style="text-align:center;" id="G3C-6X6A-23" onclick="SCAC(this)">G3</td></tr>
+															<tr><td style="text-align:center;" id="B4C-6X6A-24" onclick="SCAC(this)">B4</td><td style="text-align:center;" id="E4C-6X6A-25" onclick="SCAC(this)">E4</td><td style="text-align:center;" id="H4C-6X6A-26" onclick="SCAC(this)">H4</td><td style="text-align:center;" id="F3C-6X6A-27" onclick="SCAC(this)">F3</td><td style="text-align:center;" id="E3C-6X6A-28" onclick="SCAC(this)">E3</td><td style="text-align:center;" id="D3C-6X6A-29" onclick="SCAC(this)">D3</td></tr>
+															<tr><td style="text-align:center;" id="A4C-6X6A-30" onclick="SCAC(this)">A4</td><td style="text-align:center;" id="D4C-6X6A-31" onclick="SCAC(this)">D4</td><td style="text-align:center;" id="G4C-6X6A-32" onclick="SCAC(this)">G4</td><td style="text-align:center;" id="C3C-6X6A-33" onclick="SCAC(this)">C3</td><td style="text-align:center;" id="B3C-6X6A-34" onclick="SCAC(this)">B3</td><td style="text-align:center;" id="A3C-6X6A-35" onclick="SCAC(this)">A3</td></tr>
+														</tbody>
+													</table>
+												</td></tr>
+											</thead></table>
+										</div>
+									</div>
+								</div>
+								<br>
+								<div class="alert alert-info" style="display:none; font-weight:bold; text-align: center;" id="informacionRejilla1C"></div>
+								<div class="table-responsive">						
+									<table class="table table-bordered" style="display:none;" id="tablaTextoPlanoRejillaC">
+										<tbody>							
+											<tr id="f1"></tr>
+											<tr id="f2"></tr>
+											<tr id="f3"></tr>
+											<tr id="f4"></tr>
+											<tr id="f5"></tr>
+											<tr id="f6"></tr>
+										</tbody>
+									</table>
+								</div><br>
+								<div id="textoCifradoRejillaC3" class="text-center"></div><br>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-8 text-primary">Texto cifrado:
+											<input type="text" class="form-control" placeholder="Texto cifrado" readonly="" id="textoCifradoRejillaC2">
+										</div>
+									</div>
+								</div>								
+							</div>
+							<div id="aiDescifradoRejilla" class="tab-pane fade in" style="padding: 10px;">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-8 text-primary">Texto cifrado:
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-btn"><button class="btn btn-primary btnVelocidadCopiar" type="button" id="btn-copiarTextoRejilla" data-toggle="tooltip" title="" data-original-title="Copiar Texto cifrado"><i class="fa fa-clone" aria-hidden="true"></i></button></span>
+													<input class="form-control" type="text" id="textoCriptogramaRejillaDescifrado" placeholder="Texto cifrado">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadDRejilla" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="DescifradoRapidoRejilla">Descifrado Rápido</a></li>
+															<li><a id="DescifradoNormalRejilla">Descifrado Normal</a></li>
+															<!-- <li><a id="DescifradoLentoRejilla">Descifrado Lento</a></li> -->
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-descifrarRejilla-descifrado" tabindex="-1" value="2">Descifrado Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarDescifrarRejilla-descifrado" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-8 text-primary">
+											<div class="alert alert-info" style="font-weight:bold; text-align: center; padding: 5px;" id="informacionRejilla3D">Selecciona los números de las celdas que quieras que formen una rejilla (huecos), recuerda que debes elegir 9 números (celdas) y éstos no pueden ser los mismos:</div>
+											<table class="table table-bordered" style="margin:0 auto;width:50%"><thead>
+												<tr><td><b>REJILLA</b></td><td>
+													<table class="table table-bordered">
+														<tbody>
+															<tr><td style="text-align:center;" id="A1D-6X6A-0" onclick="SCAD(this)">A1</td><td style="text-align:center;" id="B1D-6X6A-1" onclick="SCAD(this)">B1</td><td style="text-align:center;" id="C1D-6X6A-2" onclick="SCAD(this)">C1</td><td style="text-align:center;" id="G2D-6X6A-3" onclick="SCAD(this)">G2</td><td style="text-align:center;" id="D2D-6X6A-4" onclick="SCAD(this)">D2</td><td style="text-align:center;" id="A2D-6X6A-5" onclick="SCAD(this)">A2</td></tr>
+															<tr><td style="text-align:center;" id="D1D-6X6A-6" onclick="SCAD(this)">D1</td><td style="text-align:center;" id="E1D-6X6A-7" onclick="SCAD(this)">E1</td><td style="text-align:center;" id="F1D-6X6A-8" onclick="SCAD(this)">F1</td><td style="text-align:center;" id="H2D-6X6A-9" onclick="SCAD(this)">H2</td><td style="text-align:center;" id="E2D-6X6A-10" onclick="SCAD(this)">E2</td><td style="text-align:center;" id="B2D-6X6A-11" onclick="SCAD(this)">B2</td></tr>
+															<tr><td style="text-align:center;" id="G1D-6X6A-12" onclick="SCAD(this)">G1</td><td style="text-align:center;" id="H1D-6X6A-13" onclick="SCAD(this)">H1</td><td style="text-align:center;" id="I1D-6X6A-14" onclick="SCAD(this)">I1</td><td style="text-align:center;" id="I2D-6X6A-15" onclick="SCAD(this)">I2</td><td style="text-align:center;" id="F2D-6X6A-16" onclick="SCAD(this)">F2</td><td style="text-align:center;" id="C2D-6X6A-17" onclick="SCAD(this)">C2</td></tr>
+															<tr><td style="text-align:center;" id="C4D-6X6A-18" onclick="SCAD(this)">C4</td><td style="text-align:center;" id="F4D-6X6A-19" onclick="SCAD(this)">F4</td><td style="text-align:center;" id="I4D-6X6A-20" onclick="SCAD(this)">I4</td><td style="text-align:center;" id="I3D-6X6A-21" onclick="SCAD(this)">I3</td><td style="text-align:center;" id="H3D-6X6A-22" onclick="SCAD(this)">H3</td><td style="text-align:center;" id="G3D-6X6A-23" onclick="SCAD(this)">G3</td></tr>
+															<tr><td style="text-align:center;" id="B4D-6X6A-24" onclick="SCAD(this)">B4</td><td style="text-align:center;" id="E4D-6X6A-25" onclick="SCAD(this)">E4</td><td style="text-align:center;" id="H4D-6X6A-26" onclick="SCAD(this)">H4</td><td style="text-align:center;" id="F3D-6X6A-27" onclick="SCAD(this)">F3</td><td style="text-align:center;" id="E3D-6X6A-28" onclick="SCAD(this)">E3</td><td style="text-align:center;" id="D3D-6X6A-29" onclick="SCAD(this)">D3</td></tr>
+															<tr><td style="text-align:center;" id="A4D-6X6A-30" onclick="SCAD(this)">A4</td><td style="text-align:center;" id="D4D-6X6A-31" onclick="SCAD(this)">D4</td><td style="text-align:center;" id="G4D-6X6A-32" onclick="SCAD(this)">G4</td><td style="text-align:center;" id="C3D-6X6A-33" onclick="SCAD(this)">C3</td><td style="text-align:center;" id="B3D-6X6A-34" onclick="SCAD(this)">B3</td><td style="text-align:center;" id="A3D-6X6A-35" onclick="SCAD(this)">A3</td></tr>
+														</tbody>
+													</table>
+												</td></tr>
+											</thead></table>
+										</div>
+									</div>
+								</div><br>
+								<div class="alert alert-info" style="display:none; font-weight:bold; text-align: center;" id="informacionRejilla1D"></div>
+								<div class="table-responsive">						
+									<table class="table table-bordered" style="display:none;" id="tablaTextoCifradoRejillaD">
+										<tbody>							
+											<tr id="fDR1"></tr>
+											<tr id="fDR2"></tr>
+											<tr id="fDR3"></tr>
+											<tr id="fDR4"></tr>
+											<tr id="fDR5"></tr>
+											<tr id="fDR6"></tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="container"> 
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-8 text-primary">Texto claro:
+											<input type="text" class="form-control" placeholder="Texto claro" readonly="" id="textoDescifradoRejillaD2">
+										</div>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+				</div>
+				<!-- END MAIN CONTENT -->
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="../../../includes/vendor/jquery/jquery.min.js"></script>
+		<script src="../../../includes/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../includes/vendor/toastr/toastr.min.js"></script>
+		<script src="../../../includes/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="../../../includes/scripts/klorofilpro-common.min.js"></script>
+		<script src="../../../includes/scripts/animacionTT/infoTipoCifrados.js"></script>
+
+		<script src="rejilla.js"></script>
+		<script src="../../../views/fundamentos/modalFundamentos.js""></script>
+		<script src="../../../includes/scripts/animacionTT/animation.js"></script>
+		<script src="../../../includes/scripts/animacionTT/BigInteger.min.js"></script>
+		<script>
+			var togglePanelFundamentos = function(e) {
+				e.preventDefault();
+				var panel = document.getElementById('panel-fundamentos');
+				if (panel.className) panel.className = '';
+				else panel.className = 'active';
+			}
+			$(document).ready(function(){
+				$("body").append(modales);
+				$("#listaFundamentos .panel-body").slimScroll({height:"600px",wheelStep:20,color:"rgba(160, 174, 186, 1)"});
+			});
+		</script>
+		<div id="panel-fundamentos">
+			<div class="panel-row"></div>
+			<a href="#" onclick="togglePanelFundamentos(event);" style="background-color: #2b333e;"><i class="fa fa-superscript"></i></a>
+			<div id="listaFundamentos">
+				<div class="panel-heading">
+					<h2 class="panel-title">Fundamentos Matematicos </h2>
+				</div>
+				<div class="panel-body">
+					<nav>
+						<span><i class="fa fa-pencil"></i> Del Cifrado por Rejilla</span>
+						<ul>
+							Al ser un algoritmo que no realiza un procedimineto complejo, no utiliza ninguna operación matematica en ninguno de sus paso.
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-purple"></i> Aritmética Modular</span>
+						<ul>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalMatematicaModular">¿Qué es Aritmética Modular?</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalSumaModular">Suma Modular</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionModular">Multiplicación Modular</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalInversoAditivo">Inverso aditivo</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalInversoMultiplicativo">Inverso multiplicativo</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionClasica">Exponencicación Clásica</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionBinaria">Exponencicación Binaria</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionEuler">Exponencicación por Teorema de Euler</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalAlgoritmoEuclides">Algoritmo de Euclides</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalPhiEuler">Phi de Euler</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalRaicesPrimitivas">Raices Primitivas</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-green"></i> Matrices</span>
+						<ul>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalMatrices"> Que es una Matriz</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionMatrices">Multiplicacion de matrices</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalDeterminanteMatrices">Determinante de una matriz</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalCofactoresMatrices">Matriz de cofactores</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalTranspuestaMatrices">Transpuesta de una matriz</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-red"></i> Campo GF(2<sup>8</sup>)</span>
+						<ul>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalConvertirGF">Elementos en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalSumaGF">Suma en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionGF">Multiplicación en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalInversoMultiplicativoGF">Inverso Multiplicativo en GF(2<sup>8</sup>)</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-yellow"></i> Curva Elíptica</span>
+						<ul>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalCurvaEliptica">¿Qué es la Curva Elíptica?</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalSumaPuntos">Suma de Puntos</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalDobladoPuntos">Doblado de Puntos</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalObtencionPuntos">Obtención de Putos</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-blue"></i> Operaciones a nivel de Bits</span>
+						<ul>
+							<li class="file-tag tag-blue"><a href="#" data-toggle="modal" data-target="#modalOperadoresLogicos">Operadores lógicos</a></li>
+							<li class="file-tag tag-blue"><a href="#" data-toggle="modal" data-target="#modalRotacionBits">Rotación de bits</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<script src="../../../views/matematicaModular/sumaModular/sumaModular.js""></script>
+		<script src="../../../views/matematicaModular/multiplicacionModular/multiplicacionModular.js""></script>
+		<script src="../../../views/matematicaModular/inversoAditivo/inversoAditivo.js""></script>
+		<script src="../../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.js""></script>
+		<script src="../../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.js""></script>
+		<script src="../../../views/matematicaModular/phiEuler/phiEuler.js""></script>
+		<script src="../../../views/campoGF2/convertirGF/convertirGF.js""></script>
+		<script src="../../../views/campoGF2/sumaGF/sumaGF.js""></script>
+		<script src="../../../views/campoGF2/multiplicacionGF/multiplicacionGF.js""></script>
+		<script src="../../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.js""></script>
+		<script src="../../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.js""></script>
+		<script src="../../../views/curvaEliptica/sumaPuntos/sumaPuntos.js""></script>
+		<script src="../../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.js""></script>
+		<script src="../../../includes/scripts/animacionTT/mensajes.js""></script>
+	</body>
+</html>

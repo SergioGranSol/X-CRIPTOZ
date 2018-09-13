@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>X-CRIPTOZ | Aprende Criptografía</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- VENDOR CSS -->
+		<link rel="stylesheet" href="../../../includes/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../includes/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../../includes/vendor/themify-icons/css/themify-icons.css">
+		<link rel="stylesheet" href="../../../includes/vendor/toastr/toastr.min.css">
+		<link rel="StyleSheet" href="../../../includes/css/animacionTT/panelFlotante.css">
+		<link rel="StyleSheet" href="../../../includes/css/animacionTT/animation.css">
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="../../../includes/css/main.min.css">
+		<!-- ICONS -->
+		<link rel="apple-touch-icon" sizes="76x76" href="../../../includes/img/apple-iconTT.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../../../includes/img/faviconTT.png">
+		<link id="css-skin" rel="stylesheet" href="../../../includes/css/skins/sidebar-nav-darkblue.css" type="text/css">
+	</head>
+	<body>
+		<!-- WRAPPER -->
+		<div id="wrapper">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="brand">
+					<a href="../../../layouts/main.html">
+						<img src="../../../includes/img/logo-white.png" alt="X-CRIPTOZ Logo" class="img-responsive logo">
+					</a>
+				</div>
+				<div class="container-fluid">
+					<div id="tour-fullwidth" class="navbar-btn">
+						<button type="button" class="btn-toggle-fullwidth btn"><i class="fa fa-bars"></i></button>
+					</div>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#creditos">
+									<i class="fa fa-address-card-o"></i>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.escom.ipn.mx/" target="_blanc">
+									<img src="../../../includes/img/escomWhiteMin.png" alt="ESCOM">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar">
+				<nav>
+					<ul class="nav" id="sidebar-nav-menu">						
+						<li class="menu-group">Inicio</li>
+						<li><a href="../../../layouts/main.html"><i class="ti-home"></i> <span class="title">Inicio</span></a></li>
+						<li><a href="../../../views/archivos/archivos.html"><i class="ti-envelope"></i> <span class="title">Cifrado de archivos</span></a></li>
+						<li><a href="../../../views/calculadora/calculadora.html"><i class="ti-panel"></i> <span class="title">Calculadora</span></a></li>
+						<li class="panel">
+							<a href="#" data-toggle="collapse" data-target="#submenuDemo" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="fa fa-superscript"></i> <span class="title">Fundamentos Matemáticos</span><i class="icon-submenu ti-angle-left"></i></a>
+							<div id="submenuDemo" class="collapse" aria-expanded="false">
+								<ul class="submenu" id="submenu">
+									<li class="panel">
+										<a href="#SubmenuMatematicaModular" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Aritmética Modular</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatematicaModular" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/matematicaModular/matematicaModular/matematicaModular.html">¿Qué es Aritmética Modular?</a></li>
+												<li><a href="../../../views/matematicaModular/sumaModular/sumaModular.html">Suma Modular</a></li>
+												<li><a href="../../../views/matematicaModular/multiplicacionModular/multiplicacionModular.html">Multiplicación modular</a></li>
+												<li><a href="../../../views/matematicaModular/inversoAditivo/inversoAditivo.html">Inverso aditivo</a></li>
+												<li><a href="../../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.html">Inverso multiplicativo</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.html">Exponenciación clásica</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.html">Exponenciación binaria</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.html">Exponenciación por Teorema de Euler</a></li>
+												<li><a href="../../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.html">Algoritmo Euclides</a></li>
+												<li><a href="../../../views/matematicaModular/phiEuler/phiEuler.html">Phi de Euler</a></li>
+												<li><a href="../../../views/matematicaModular/raicesPrimitivas/raicesPrimitivas.html">Raices Primitivas</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuMatrices" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Matrices</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatrices" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/matrices/matrices/matrices.html">Que es una Matriz</a></li>
+												<li><a href="../../../views/matrices/multiplicacionMatrices/multiplicacionMatrices.html">Multiplicación de matrices</a></li>
+												<li><a href="../../../views/matrices/determinanteMatrices/determinanteMatrices.html">Determinante de una matriz</a></li>
+												<li><a href="../../../views/matrices/cofactoresMatrices/cofactoresMatrices.html">Matriz de cofactores</a></li>
+												<li><a href="../../../views/matrices/transpuestaMatrices/transpuestaMatrices.html">Transpuesta de una matriz</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCampoGF2" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Campo GF(2<sup>8</sup>)</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCampoGF2" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/campoGF2/convertirGF/convertirGF.html">Elementos en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/sumaGF/sumaGF.html">Suma en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/multiplicacionGF/multiplicacionGF.html">Multiplicación en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.html">Inverso multiplicativo en GF(2<sup>8</sup>)</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCurva" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Curva elíptica</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCurva" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/curvaEliptica/curvaEliptica/curvaEliptica.html">¿Qué es la Curva Elíptica?</a></li>
+												<li><a href="../../../views/curvaEliptica/sumaPuntos/sumaPuntos.html">Suma de puntos</a></li>
+												<li><a href="../../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.html">Doblado de puntos</a></li>
+												<li><a href="../../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.html">Obtención de puntos</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuBits" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Operaciones a nivel<br>de bits</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuBits" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/operacionesBits/operadoresLogicos/operadoresLogicos.html">Operadores lógicos </a></li>
+												<li><a href="../../../views/operacionesBits/rotacionBits/rotacionBits.html">Rotación bits</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía clásica</li>
+						<li><a href="../../../views/criptografia/clasica/clasica.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía clásica</span></a></li>
+						<li class="panel">
+							<a href="#Monoalfabetica" onclick="sustitucionMonoalfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución monoalfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Monoalfabetica" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/monoalfabetica/cesar/cesar.html">Cesar</a></li>
+									<li><a href="../../../views/monoalfabetica/atbash/atbash.html">Atbash</a></li>
+									<li><a href="../../../views/monoalfabetica/polybios/polybios.html">Polybios</a></li>
+									<li><a href="../../../views/monoalfabetica/playfair/playfair.html">Playfair</a></li>
+									<li><a href="../../../views/monoalfabetica/afin/afin.html">Afin</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Polialfabetica" onclick="sustitucionPolialfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución polialfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Polialfabetica" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/polialfabetica/desplazamiento/desplazamiento.html">Desplazamiento</a></li>
+									<li><a href="../../../views/polialfabetica/vigenere/vigenere.html">Vigenere</a></li>
+									<li><a href="../../../views/polialfabetica/vernam/vernam.html">Vernam</a></li>
+									<li><a href="../../../views/polialfabetica/hill/hill.html">Hill</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Transposicion" onclick="transposicion();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por<br>transposición</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Transposicion" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/transposicion/rejilla/rejilla.html">Rejilla</a></li>
+									<li><a href="../../../views/transposicion/inversa/inversa.html">Inversa</a></li>
+									<li><a href="../../../views/transposicion/simple/simple.html">Simple</a></li>
+									<li><a href="../../../views/transposicion/riel/riel.html">Por Riel</a></li>
+									<li><a href="../../../views/transposicion/columnas/columnas.html">Por Columnas</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía moderna</li>
+						<li><a href="../../../views/criptografia/moderna/moderna.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía moderna</span></a></li>
+						<li class="panel">
+							<a href="#Simetrico" onclick="cifradoSimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado simétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Simetrico" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/simetrico/feistel/feistel.html" >Feistel</a></li>
+									<li><a href="../../../views/simetrico/des/des.html">DES</a></li>
+									<li><a href="../../../views/simetrico/aes/aes.html">AES</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Asimetrico" onclick="cifradoAsimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado asimétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Asimetrico" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/asimetrico/diffieHellman/diffieHellman.html">Diffie Hellman</a></li>
+									<li><a href="../../../views/asimetrico/rsa/rsa.html">RSA</a></li>
+									<!-- <li><a href="../../../views/asimetrico/dsa/dsa.html">DSA</a></li> -->
+									<li><a href="../../../views/asimetrico/gammal/gammal.html">ElGamal</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Hash" onclick="funcionesHash();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="active collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Funciones Hash</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Hash" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="md5.html" class="active">MD5</a></li>
+									<li><a href="../../../views/hash/sha1/sha1.html">SHA-1</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Firma" onclick="firmaDigital();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Firma Digital</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Firma" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/firmas/firmaRsa/firmaRsa.html">Firma RSA</a></li>
+									<li><a href="../../../views/firmas/firmaECDSA/firmaECDSA.html">Firma ECDSA</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content" id="contenidoPagina">
+					<div class="content-heading clearfix">
+						<ul class="breadcrumb">
+							<li><i class="fa fa-home"></i> Criptografía moderna</li>
+							<li>Funciones Hash</li>
+							<li class="active"><a href="#">MD5</a></li>
+						</ul>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="panel">
+									<div class="panel-heading" style="background-color: #1c79d2 !important;">
+										<h4 class="panel-title" style="color: white !important; font-size: 20px;">Función MD5</h4>
+										<button type="button" class="btn btn-primary" style="float: right; position: relative; top: -0.4em;" onclick="mostrarPanelMD5();">
+											<span>Ver cifrado</span>
+											<i class="fa fa-cog fa-spin"></i>
+										</button>
+									</div>
+									<div class="panel-body text-justify">
+										<p>La función MD5 es un algoritmo criptográfico que toma una entrada de cualquier longitud y produce un resumen del mensaje de 128 bits de longitud. El resumen también es llamado “hash” o “huella digital” de la entrada. MD5 es usado en situaciones donde un mensaje muy largo necesita ser procesado o comparado rápidamente. Se aplica comúnmente en la creación y verificación de firmas digitales y la comprobación de la modificación de algún archivo.</p>
+										<p>MD5 fue diseñado por el criptógrafo Ronald Rivest del MIT (Massachusetts Institute of Technology, Instituto Tecnológico de Massachusetts) en 1991.</p>
+										<p>La codificación del MD5 de 128 bits es representada típicamente como un número de 32 símbolos hexadecimales. </p>
+										<p>Al aplicar la función MD5 a una entrada cualquiera se produce una codificación. En caso de que la entrada cambie aunque sea un bit se producirá una codificación totalmente diferente.</p><br>
+										<p>Por ejemplo:</p>
+										<p>MD5("<b>hola mundo</b>") = <b>0ad066a5d29f3f2a2a1c7c17dd082a79</b></p>
+										<p>Un cambio en el texto produce una salida completamente diferente.</p>
+										<p>MD5("<b>Hola mundo</b>") = <b>f822102f4515609fc31927a84c6db7f8</b></p>
+										<p>Otro ejemplo sería la codificación de un campo vacío:</p>
+										<p>MD5("") = <b>d41d8cd98f00b204e9800998ecf8427e</b></p>
+										<hr>
+										<img src="../../../includes/img/sketch/class-hand-drawn-persons-group.png" width="70" align="middle" class="sketch pull-right">
+										<h3 class="text-primary">Codificado</h3>
+										<p>El algoritmo MD5 divide la entrada en bloques de <b>512 bits</b> cada uno. 64 bits son insertados al final del último bloque, los cuales son usados para almacenar la longitud original del mensaje. Si el último bloque es menor a 512 bits, son agregados bits extra al final del bloque.</p>
+										<p>Después cada boque es dividido en 16 palabras de 32 bits cada uno. Estos serán denotados por <label class="formula2">X0 … X15</label>.</p><br>
+										<h4 class="text-primary">Inicialización del buffer</h4>
+										<p>Un búfer de cuatro palabras (A, B, C, D) se usa para calcular el resumen del mensaje. Aquí cada una de las letras A, B, C, D representa un registro de 32 bits. Estos registros se inicializan con los siguientes valores hexadecimales:</p>
+										<p style="margin-left: 10px">palabra A:&nbsp;&nbsp;&nbsp;<b>01 23 45 67</b><br>
+										palabra B:&nbsp;&nbsp;&nbsp;<b>89 ab cd ef</b><br>
+										palabra C:&nbsp;&nbsp;&nbsp;<b>fe dc ba 98</b><br>
+										palabra D:&nbsp;&nbsp;&nbsp;<b>76 54 32 10</b></p>
+										<br>
+										<h4 class="text-primary">Tabal T</h4>
+										<p>MD5 usa una tabla T de 64 elementos. Cada elemento es obtenido de la función aritmética<br></p>
+										<div class="formula">T<sub>i</sub> = abs(sin(i + 1)) * 2<sup>32</sup></div>
+										<br>
+										<h4 class="text-primary">Funciones auxiliares</h4>
+										<p>El algoritmo MD5 usa cuatro funciones auxiliares, cada una tiene una entrada tres palabras de 32 bits y produce una salida de una palabra de 32 bits. Cada función aplica operaciones lógicas AND, OR, NOT y XOR.<br></p>
+										<div class="formula">F(X, Y, Z) = (X and Y) or (not(X) and Z)<br>
+										G(X, Y, Z) = (X and Z) or (Y and not(Z))<br>
+										H(X, Y, Z) = X xor Y xor Z<br>
+										I(X, Y, Z) = Y xor (X or not(Z))</div>
+										<br>
+										<h4 class="text-primary">Procesamiento</h4>
+										<p>El valor de los cuatro buffers es mezclado con la entrada, usando las funciones auxiliares. Existen cuatro rondas, cada una de 16 operaciones</p>
+										<p style="margin-left: 10px">Ronda 1. <br>[abcd k s i] denotarán la operación:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="formula2">a = b + ((a + F(b, c, d) + X[k] + T[i]) &lt;&lt;&lt; s)</label><br></p>
+										<p style="margin-left: 20px">Hacer las siguientes 16 operaciones.<br>
+										[ABCD 0 7 1] [DABC 1 12 2] [CDAB 2 17 3] [BCDA 3 22 4]<br>
+										[ABCD 4 7 5] [DABC 5 12 6] [CDAB 6 17 7] [BCDA 7 22 8]<br>
+										[ABCD 8 7 9] [DABC 9 12 10] [CDAB 10 17 11] [BCDA 11 22 12]<br>
+										[ABCD 12 7 13] [DABC 13 12 14] [CDAB 14 17 15] [BCDA 15 22 16]</p>
+										<br>
+										<p style="margin-left: 10px">Ronda 2. <br>[abcd k s i] denotarán la operación:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="formula2">a = b + ((a + G(b, c, d) + X[k] + T[i]) &lt;&lt;&lt; s)</label><br></p>
+										<p style="margin-left: 20px">Hacer las siguientes 16 operaciones.<br>
+										[ABCD 1 5 17] [DABC 6 9 18] [CDAB 11 14 19] [BCDA 0 20 20]<br>
+		 								[ABCD 5 5 21] [DABC 10 9 22] [CDAB 15 14 23] [BCDA 4 20 24]<br>
+		 								[ABCD 9 5 25] [DABC 14 9 26] [CDAB 3 14 27] [BCDA 8 20 28]<br>
+		 								[ABCD 13 5 29] [DABC 2 9 30] [CDAB 7 14 31] [BCDA 12 20 32]</p>
+		 								<br>
+		 								<p style="margin-left: 10px">Ronda 3. <br>[abcd k s i] denotarán la operación:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="formula2">a = b + ((a + H(b, c, d) + X[k] + T[i]) &lt;&lt;&lt; s)</label><br></p>
+										<p style="margin-left: 20px">Hacer las siguientes 16 operaciones.<br>
+										[ABCD 5 4 33] [DABC 8 11 34] [CDAB 11 16 35] [BCDA 14 23 36]<br>
+		 								[ABCD 1 4 37] [DABC 4 11 38] [CDAB 7 16 39] [BCDA 10 23 40]<br>
+		 								[ABCD 13 4 41] [DABC 0 11 42] [CDAB 3 16 43] [BCDA 6 23 44]<br>
+		 								[ABCD 9 4 45] [DABC 12 11 46] [CDAB 15 16 47] [BCDA 2 23 48]</p>
+										<br>
+										<p style="margin-left: 10px">Ronda 4. <br>[abcd k s i] denotarán la operación:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="formula2">a = b + ((a + I(b, c, d) + X[k] + T[i]) &lt;&lt;&lt; s)</label><br></p>
+										<p style="margin-left: 20px">Hacer las siguientes 16 operaciones.<br>
+										[ABCD 0 6 49] [DABC 7 10 50] [CDAB 14 15 51] [BCDA 5 21 52]<br>
+		 								[ABCD 12 6 53] [DABC 3 10 54] [CDAB 10 15 55] [BCDA 1 21 56]<br>
+		 								[ABCD 8 6 57] [DABC 15 10 58] [CDAB 6 15 59] [BCDA 13 21 60]<br>
+		 								[ABCD 4 6 61] [DABC 11 10 62] [CDAB 2 15 63] [BCDA 9 21 64]</p>
+		 								<p>Ahora se realizan las sumas.<br></p>
+										<p><label class="formula2">A = A + AA<br>
+										B = B + BB<br>
+										C = C + CC<br>
+										D = D + DD</label></p>
+										<p>Donde <label class="formula2">AA</label>, <label class="formula2">BB</label>, <label class="formula2">CC</label> y <label class="formula2">DD</label> son los valores iniciales del buffer.</p>
+										<p>El resumen del mensaje es la salida producida por <label class="formula2">A</label>, <label class="formula2">B</label>, <label class="formula2">C</label> y <label class="formula2">D</label>.</p>
+										<hr>
+										<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+										<p align="justify"></p><ol type="”1”" start="”1”">
+											<li>Wade Trappe, Lawrence C. Washington. (2006). Introduction to Cryptography with Coding Theory. United States: Prentice Hall.</li>
+										</ol><p></p>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="panel" id="pnl-InteractivoMD5" style="display: none; margin: 10px 10px 10px;">
+					<div class="panel-heading" style="background-color: #1c79d2 !important; height: 47px;">
+						<h4 class="panel-title" style="color: white !important; font-size: 20px;">Función MD5</h4>
+						<div class="right" style="margin-left: 20px;">
+							<button type="button" class="btn btn-danger btn-sm" id="btn-cerrarPanelMD5">
+								<span>Volver</span>
+								<i class="fa fa-arrow-left"></i>
+							</button>
+						</div>
+					</div>
+					<div class="panel-body" style="padding-top: 10px;">
+						<div class="custom-tabs-line tabs-line-bottom left-aligned">
+							<ul class="nav" role="tablist" style="width: 100%;">
+								<li class="active" style="width: 100%;"><a href="#animacionCifradoMD5" id="btn-animacionCifradoMD5" data-toggle="tab" class="text-center">Función</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div id="animacionCifradoMD5" class="tab-pane fade in active" style="padding: 10px;">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-6 text-primary">Texto claro:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="text" id="in-txtPlanoMD5" maxlength="32" placeholder="Texto claro">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" data-toggle="dropdown" tabindex="-1" aria-expanded="false" id="btn-tipoCiMD5">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoCiMD51">Obtener Hash Rápido</a></li>
+															<li><a id="tipoCiMD52">Obtener Hash Normal</a></li>
+															<!-- <li><a id="tipoCiMD53">Cifrado Lento</a></li> -->
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-cifrarMD5" tabindex="-1" value="2">Obtener Hash Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarCifrarMD5" tabindex="-1" style="display:none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="infoAnimacion1CiMD5" class="alert alert-info text-center" role="alert" style="display:none">
+									<strong> El algoritmo MD5 divide la entrada en bloques de 512 bits cada una. 64 bits son insertados al final de cada bloque, los cuales son usados para almacenar el tamaño de la entrada original. Si el ultimo bloque es menor de 512 bits, se añaden bits extra al final.<br>
+									Despues cada bloque es dividido en 16 sub bloques de 32 bits cada uno</strong>
+								</div>
+								<br>
+								<div id="palabraMD5C" class="text-center"></div>
+								<br>
+								<div id="infoAnimacion1CiMD5" class="alert alert-info text-center" role="alert" style="display:none">
+									<strong> El algoritmo MD5 divide la entrada en bloques de 512 bits cada una. 64 bits son insertados al final de cada bloque, los cuales son usados para almacenar el tamaño de la entrada original. Si el ultimo bloque es menor de 512 bits, se añaden bits extra al final.<br>
+									Despues cada bloque es dividido en 16 sub bloques de 32 bits cada uno</strong>
+								</div>
+								<div id="palabraMD5C" class="text-center"></div>
+								<br>
+								<div id="infoAnimacion2CiMD5" class="alert alert-info text-center" role="alert" style="display:none">
+									<strong> Se hace uso de un búfer de cuatro registros de 32 bits (A, B, C, D) para calcular el resumen del mensaje. Estos registros se inicializan con los siguientes valores hexadecimales</strong>
+								</div>
+								<div id="bufferMD5C" class="text-center" style="display: none;">
+									Bloque A: <label class="circulo">01234567</label><br>
+									Bloque B: <label class="circulo">89abcdef</label><br>
+									Bloque C: <label class="circulo">fedcba98</label><br>
+									Bloque D: <label class="circulo">76543210</label><br><br>
+								</div>
+								<div id="infoAnimacion3CiMD5" class="alert alert-info text-center" role="alert" style="display:none">
+									<strong> Ahora se procesa cada sub bloque con las funciones auxiliares F(X,Y,Z), G(X,Y,Z), H(X,Y,Z), I(X,Y,Z) en 4 rondas</strong>
+								</div>
+								<div id="funcionesR1MD5C" class="alert alert-info text-center" role="alert" style="display:none">
+									<strong>Ronda 1<br><br>[abcd k s i] denotará la operación: </strong><br>
+									<i>a = b + ((a + F(b, c, d) + X[k] + T[i]) <<< s)</i><br><br><strong>Donde: A, B, C, D son los bloques del buffer, X[k] es un bloque del mensaje y T[i] es un elemento de la tabla construida con la funcion Seno.<br><br> Dentro de la ronda 1 se realizaran 16 operaciones, la primer operación se denota como: </strong>
+								</div>
+								<div id="R1MD5C" class="text-center"></div>
+								<div id="funcionR1MD5C" class="text-center"></div>
+								<br>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-6 text-primary">Hash:
+											<input class="form-control" type="text" placeholder="Hash" id="out-txtCifradoMD5" readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END MAIN CONTENT -->
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="../../../includes/vendor/jquery/jquery.min.js"></script>
+		<script src="../../../includes/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../includes/vendor/toastr/toastr.min.js"></script>
+		<script src="../../../includes/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="../../../includes/scripts/klorofilpro-common.min.js"></script>
+		<script src="../../../includes/scripts/animacionTT/infoTipoCifrados.js"></script>
+
+		<script src="md5.js"></script>
+		<script src="../../../views/fundamentos/modalFundamentos.js""></script>
+		<script src="../../../includes/scripts/animacionTT/animation.js"></script>
+		<script src="../../../includes/scripts/animacionTT/BigInteger.min.js"></script>
+		<script>
+			var togglePanelFundamentos = function(e) {
+				e.preventDefault();
+				var panel = document.getElementById('panel-fundamentos');
+				if (panel.className) panel.className = '';
+				else panel.className = 'active';
+			}
+			$(document).ready(function(){
+				$("body").append(modales);
+				$("#listaFundamentos .panel-body").slimScroll({height:"600px",wheelStep:20,color:"rgba(160, 174, 186, 1)"});
+			});
+		</script>
+		<div id="panel-fundamentos">
+			<div class="panel-row"></div>
+			<a href="#" onclick="togglePanelFundamentos(event);" style="background-color: #2b333e;"><i class="fa fa-superscript"></i></a>
+			<div id="listaFundamentos">
+				<div class="panel-heading">
+					<h2 class="panel-title">Fundamentos Matematicos </h2>
+				</div>
+				<div class="panel-body">
+					<nav>
+						<span><i class="fa fa-pencil"></i> De la Función MD5</span>
+						<ul>
+							<li class="file-tag tag-blue"><a href="#" data-toggle="modal" data-target="#modalOperadoresLogicos">Operadores lógicos</a></li>
+							<li class="file-tag tag-blue"><a href="#" data-toggle="modal" data-target="#modalRotacionBits">Rotación de bits</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-purple"></i> Aritmética Modular</span>
+						<ul>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalMatematicaModular">¿Qué es Aritmética Modular?</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalSumaModular">Suma Modular</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionModular">Multiplicación Modular</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalInversoAditivo">Inverso aditivo</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalInversoMultiplicativo">Inverso multiplicativo</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionClasica">Exponencicación Clásica</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionBinaria">Exponencicación Binaria</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionEuler">Exponencicación por Teorema de Euler</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalAlgoritmoEuclides">Algoritmo de Euclides</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalPhiEuler">Phi de Euler</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalRaicesPrimitivas">Raices Primitivas</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-green"></i> Matrices</span>
+						<ul>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalMatrices"> Que es una Matriz</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionMatrices">Multiplicacion de matrices</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalDeterminanteMatrices">Determinante de una matriz</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalCofactoresMatrices">Matriz de cofactores</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalTranspuestaMatrices">Transpuesta de una matriz</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-red"></i> Campo GF(2<sup>8</sup>)</span>
+						<ul>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalConvertirGF">Elementos en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalSumaGF">Suma en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionGF">Multiplicación en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalInversoMultiplicativoGF">Inverso Multiplicativo en GF(2<sup>8</sup>)</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-yellow"></i> Curva Elíptica</span>
+						<ul>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalCurvaEliptica">¿Qué es la Curva Elíptica?</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalSumaPuntos">Suma de Puntos</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalDobladoPuntos">Doblado de Puntos</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalObtencionPuntos">Obtención de Putos</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-blue"></i> Operaciones a nivel de Bits</span>
+						<ul>
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<script src="../../../views/matematicaModular/sumaModular/sumaModular.js""></script>
+		<script src="../../../views/matematicaModular/multiplicacionModular/multiplicacionModular.js""></script>
+		<script src="../../../views/matematicaModular/inversoAditivo/inversoAditivo.js""></script>
+		<script src="../../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.js""></script>
+		<script src="../../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.js""></script>
+		<script src="../../../views/matematicaModular/phiEuler/phiEuler.js""></script>
+		<script src="../../../views/campoGF2/convertirGF/convertirGF.js""></script>
+		<script src="../../../views/campoGF2/sumaGF/sumaGF.js""></script>
+		<script src="../../../views/campoGF2/multiplicacionGF/multiplicacionGF.js""></script>
+		<script src="../../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.js""></script>
+		<script src="../../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.js""></script>
+		<script src="../../../views/curvaEliptica/sumaPuntos/sumaPuntos.js""></script>
+		<script src="../../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.js""></script>
+		<script src="../../../includes/scripts/animacionTT/mensajes.js""></script>
+	</body>
+</html>

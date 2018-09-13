@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>X-CRIPTOZ | Aprende Criptografía</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- VENDOR CSS -->
+		<link rel="stylesheet" href="../../../includes/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../includes/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../../includes/vendor/themify-icons/css/themify-icons.css">
+		<link rel="stylesheet" href="../../../includes/vendor/toastr/toastr.min.css">
+		<link rel="StyleSheet" href="../../../includes/css/animacionTT/panelFlotante.css">
+		<link rel="StyleSheet" href="../../../includes/css/animacionTT/animation.css">
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="../../../includes/css/main.min.css">
+		<!-- ICONS -->
+		<link rel="apple-touch-icon" sizes="76x76" href="../../../includes/img/apple-iconTT.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../../../includes/img/faviconTT.png">
+		<link id="css-skin" rel="stylesheet" href="../../../includes/css/skins/sidebar-nav-darkblue.css" type="text/css">
+	</head>
+	<body>
+		<!-- WRAPPER -->
+		<div id="wrapper">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="brand">
+					<a href="../../../layouts/main.html">
+						<img src="../../../includes/img/logo-white.png" alt="X-CRIPTOZ Logo" class="img-responsive logo">
+					</a>
+				</div>
+				<div class="container-fluid">
+					<div id="tour-fullwidth" class="navbar-btn">
+						<button type="button" class="btn-toggle-fullwidth btn"><i class="fa fa-bars"></i></button>
+					</div>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#creditos">
+									<i class="fa fa-address-card-o"></i>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.escom.ipn.mx/" target="_blanc">
+									<img src="../../../includes/img/escomWhiteMin.png" alt="ESCOM">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar">
+				<nav>
+					<ul class="nav" id="sidebar-nav-menu">						
+						<li class="menu-group">Inicio</li>
+						<li><a href="../../../layouts/main.html"><i class="ti-home"></i> <span class="title">Inicio</span></a></li>
+						<li><a href="../../../views/archivos/archivos.html"><i class="ti-envelope"></i> <span class="title">Cifrado de archivos</span></a></li>
+						<li><a href="../../../views/calculadora/calculadora.html"><i class="ti-panel"></i> <span class="title">Calculadora</span></a></li>
+						<li class="panel">
+							<a href="#" data-toggle="collapse" data-target="#submenuDemo" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="fa fa-superscript"></i> <span class="title">Fundamentos Matemáticos</span><i class="icon-submenu ti-angle-left"></i></a>
+							<div id="submenuDemo" class="collapse" aria-expanded="false">
+								<ul class="submenu" id="submenu">
+									<li class="panel">
+										<a href="#SubmenuMatematicaModular" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Aritmética Modular</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatematicaModular" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/matematicaModular/matematicaModular/matematicaModular.html">¿Qué es Aritmética Modular?</a></li>
+												<li><a href="../../../views/matematicaModular/sumaModular/sumaModular.html">Suma Modular</a></li>
+												<li><a href="../../../views/matematicaModular/multiplicacionModular/multiplicacionModular.html">Multiplicación modular</a></li>
+												<li><a href="../../../views/matematicaModular/inversoAditivo/inversoAditivo.html">Inverso aditivo</a></li>
+												<li><a href="../../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.html">Inverso multiplicativo</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.html">Exponenciación clásica</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.html">Exponenciación binaria</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.html">Exponenciación por Teorema de Euler</a></li>
+												<li><a href="../../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.html">Algoritmo Euclides</a></li>
+												<li><a href="../../../views/matematicaModular/phiEuler/phiEuler.html">Phi de Euler</a></li>
+												<li><a href="../../../views/matematicaModular/raicesPrimitivas/raicesPrimitivas.html">Raices Primitivas</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuMatrices" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Matrices</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatrices" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/matrices/matrices/matrices.html">Que es una Matriz</a></li>
+												<li><a href="../../../views/matrices/multiplicacionMatrices/multiplicacionMatrices.html">Multiplicación de matrices</a></li>
+												<li><a href="../../../views/matrices/determinanteMatrices/determinanteMatrices.html">Determinante de una matriz</a></li>
+												<li><a href="../../../views/matrices/cofactoresMatrices/cofactoresMatrices.html">Matriz de cofactores</a></li>
+												<li><a href="../../../views/matrices/transpuestaMatrices/transpuestaMatrices.html">Transpuesta de una matriz</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCampoGF2" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Campo GF(2<sup>8</sup>)</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCampoGF2" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/campoGF2/convertirGF/convertirGF.html">Elementos en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/sumaGF/sumaGF.html">Suma en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/multiplicacionGF/multiplicacionGF.html">Multiplicación en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.html">Inverso multiplicativo en GF(2<sup>8</sup>)</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCurva" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Curva elíptica</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCurva" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/curvaEliptica/curvaEliptica/curvaEliptica.html">¿Qué es la Curva Elíptica?</a></li>
+												<li><a href="../../../views/curvaEliptica/sumaPuntos/sumaPuntos.html">Suma de puntos</a></li>
+												<li><a href="../../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.html">Doblado de puntos</a></li>
+												<li><a href="../../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.html">Obtención de puntos</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuBits" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Operaciones a nivel<br>de bits</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuBits" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/operacionesBits/operadoresLogicos/operadoresLogicos.html">Operadores lógicos </a></li>
+												<li><a href="../../../views/operacionesBits/rotacionBits/rotacionBits.html">Rotación bits</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía clásica</li>
+						<li><a href="../../../views/criptografia/clasica/clasica.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía clásica</span></a></li>
+						<li class="panel">
+							<a href="#Monoalfabetica" onclick="sustitucionMonoalfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="active collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución monoalfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Monoalfabetica" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/monoalfabetica/cesar/cesar.html">Cesar</a></li>
+									<li><a href="../../../views/monoalfabetica/atbash/atbash.html">Atbash</a></li>
+									<li><a href="../../../views/monoalfabetica/polybios/polybios.html">Polybios</a></li>
+									<li><a href="playfair.html" class="active">Playfair</a></li>
+									<li><a href="../../../views/monoalfabetica/afin/afin.html">Afin</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Polialfabetica" onclick="sustitucionPolialfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución polialfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Polialfabetica" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/polialfabetica/desplazamiento/desplazamiento.html">Desplazamiento</a></li>
+									<li><a href="../../../views/polialfabetica/vigenere/vigenere.html">Vigenere</a></li>
+									<li><a href="../../../views/polialfabetica/vernam/vernam.html">Vernam</a></li>
+									<li><a href="../../../views/polialfabetica/hill/hill.html">Hill</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Transposicion" onclick="transposicion();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por<br>transposición</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Transposicion" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/transposicion/rejilla/rejilla.html">Rejilla</a></li>
+									<li><a href="../../../views/transposicion/inversa/inversa.html">Inversa</a></li>
+									<li><a href="../../../views/transposicion/simple/simple.html">Simple</a></li>
+									<li><a href="../../../views/transposicion/riel/riel.html">Por Riel</a></li>
+									<li><a href="../../../views/transposicion/columnas/columnas.html">Por Columnas</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía moderna</li>
+						<li><a href="../../../views/criptografia/moderna/moderna.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía moderna</span></a></li>
+						<li class="panel">
+							<a href="#Simetrico" onclick="cifradoSimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado simétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Simetrico" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/simetrico/feistel/feistel.html">Feistel</a></li>
+									<li><a href="../../../views/simetrico/des/des.html">DES</a></li>
+									<li><a href="../../../views/simetrico/aes/aes.html">AES</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Asimetrico" onclick="cifradoAsimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado asimétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Asimetrico" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/asimetrico/diffieHellman/diffieHellman.html">Diffie Hellman</a></li>
+									<li><a href="../../../views/asimetrico/rsa/rsa.html">RSA</a></li>
+									<!-- <li><a href="../../../views/asimetrico/dsa/dsa.html">DSA</a></li> -->
+									<li><a href="../../../views/asimetrico/gammal/gammal.html">ElGamal</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Hash" onclick="funcionesHash();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Funciones Hash</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Hash" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/hash/md5/md5.html">MD5</a></li>
+									<li><a href="../../../views/hash/sha1/sha1.html">SHA-1</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Firma" onclick="firmaDigital();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Firma Digital</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Firma" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/firmas/firmaRsa/firmaRsa.html">Firma RSA</a></li>
+									<li><a href="../../../views/firmas/firmaECDSA/firmaECDSA.html">Firma ECDSA</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content" id="contenidoPagina">
+					<div class="content-heading clearfix">
+						<ul class="breadcrumb">
+							<li><i class="fa fa-home"></i> Criptografía clásica</li>
+							<li>Sustitución monoalfabética</li>
+							<li class="active"><a href="#">Playfair</a></li>
+						</ul>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="panel">
+									<div class="panel-heading" style="background-color: #1c79d2 !important;">
+										<h4 class="panel-title" style="color: white !important; font-size: 20px;">Cifrado Playfair</h4>
+										<button type="button" class="btn btn-primary" style="float: right; position: relative; top: -0.4em;" onclick="mostrarPanelPlayfair();">
+											<span>Ver cifrado</span>
+											<i class="fa fa-cog fa-spin"></i>
+										</button>
+									</div>
+									<div class="panel-body text-justify">
+										<div class="pull-right imagenDerecha">
+											<img src="../../../includes/img/playfair.jpg" width="180">
+											<p>Charles Wheatstone</p>
+										</div>
+										<p>El cifrado de Playfair es un ejemplo de sustitución mono alfabética, donde un par de letras de un texto en claro se convierten en otro par distinto.<br><br>
+										Este algoritmo surge alrededor de 1850 y es desarrollado por Charles Wheatstone quien fue un científico e inventor británico. Fue  implementado en un disco desarrollado por él y nombrado así Disco de Wheatstone, sin embargo, al procedimiento empleado se le llama Playfair en honor a su amigo Lord Playfair.<br><br>
+										Realiza el proceso de cifrado por bloques de caracteres. En esta sustitución, la clave está dada por una matriz de cifrado de tamaño <b>5x5</b>, la cual contiene las letras del alfabeto sin las letras J y Ñ, el orden de la matriz está dado por la secuencia correspondiente a la palabra clave <b>K</b>.</p><br>
+										<hr>
+										<img src="../../../includes/img/sketch/class-hand-drawn-persons-group.png" width="70" align="middle" class="sketch pull-right">
+										<h3 class="text-primary">Cifrado</h3>
+										<p>Para empezar el cifrado de un texto plano, primero se construye la matriz de cifrado, para ello colocamos en la primera fila de la matriz la palabra clave sin letras repetidas.</p>
+										<p>Por ejemplo:</p>
+										<center><img src="../../../includes/img/matrizPlayfair1.png" style="border: 1px solid #d2d2d2;"></center><br>
+										<p>La matriz se escribe sin repetir las letras de la llave K, además de excluir la letra J, sustituyendo la misma por una letra I.</p><br>
+										<p>La sustitución del texto plano se realiza usando la matriz de cifrado generada y siguiendo las siguientes reglas:</p>
+										<ol>
+											<li>Si <label class="formula2">P<sub>n</sub></label> y <label class="formula2">P<sub>n+1</sub></label> se encuentran en la misma fila, escoger <label class="formula2">C<sub>n</sub></label> y <label class="formula2">C<sub>n+1</sub></label> situados a su derecha (circularmente)</li>
+											<li>Si <label class="formula2">P<sub>n</sub></label> y <label class="formula2">P<sub>n+1</sub></label> se encuentran en la misma columna, escoger <label class="formula2">C<sub>n</sub></label> y <label class="formula2">C<sub>n+1</sub></label> situados debajo (circularmente)</li>
+											<li>Si <label class="formula2">P<sub>n</sub></label> y <label class="formula2">P<sub>n+1</sub></label> se encuentran en distintas filas y columnas, escoger <label class="formula2">C<sub>n</sub></label> y <label class="formula2">C<sub>n+1</sub></label> situados en la diagonal opuesta</li>
+											<li>Si <label class="formula2">P<sub>n</sub> = P<sub>n+1</sub></label>, insertar carácter sin significado entre <label class="formula2">P<sub>n</sub></label> y <label class="formula2">P<sub>n+1</sub></label> para evitar su repetición, y después aplicar las reglas 1-3</li>
+											<li>Si el número de letras es impar, añadir una sin significado al final del texto</li>
+										</ol>
+										<p>Por ejemplo, usando K = NORIA, la matriz de cifrado es:<br><br></p>
+										<center><img src="../../../includes/img/matrizPlayfair2.png" style="border: 1px solid #d2d2d2;"></center><br>
+										<table class="table table-bordered" style="background-color: #F2F4F7;">
+											<tbody><tr><td>Texto en claro:</td>
+											<td style="margin-left:5px">a t a q u e&nbsp; c e r o&nbsp; h o r a s</td></tr>
+											<tr><td>Texto cifrado:</td>
+											<td style="margin-left:5px">I U O U T F   D F I R   Q C I N X R</td></tr>
+										</tbody></table><br>
+										<p>Dónde</p>
+										<ul>
+											<li><label class="formula2">n</label> es la longitud del texto plano</li>
+											<li><label class="formula2">K</label> es la llave del sistema</li>
+											<li><label class="formula2">C<sub>n</sub></label> es la letra resultante de la posición <label class="formula2">n</label> del texto cifrado</li>
+											<li><label class="formula2">P<sub>n</sub></label> es la letra de la posición <label class="formula2">n</label> del texto plano</li>
+										</ul>
+										<hr>
+										<img src="../../../includes/img/sketch/class-hand-drawn-persons-group.png" width="70" align="middle" class="sketch pull-right">
+										<h3 class="text-primary">Descifrado</h3>
+										<p>Para realizar el descifrado de un texto cifrado, se construye la matriz de cifrado al igual que al cifrar, para ello colocamos en la primera fila de la matriz la palabra clave sin letras repetidas.</p>
+										<p>Por ejemplo:</p>
+										<center><img src="../../../includes/img/matrizPlayfair1.png" style="border: 1px solid #d2d2d2;"></center><br>
+										<p>La matriz se escribe sin repetir las letras de la llave K, además de excluir la letra J, sustituyendo la misma por una letra I.</p><br>
+										<p>La sustitución del texto cifrado se realiza usando la matriz de cifrado generada y siguiendo las siguientes reglas:</p>
+										<ol>
+											<li>Si <label class="formula2">C<sub>n</sub></label> y <label class="formula2">C<sub>n+1</sub></label> se encuentran en la misma fila, escoger <label class="formula2">P<sub>n</sub></label> y <label class="formula2">P<sub>n+1</sub></label> situados a su izquierda (circularmente)</li>
+											<li>Si <label class="formula2">C<sub>n</sub></label> y <label class="formula2">C<sub>n+1</sub></label> se encuentran en la misma columna, escoger <label class="formula2">P<sub>n</sub></label> y <label class="formula2">P<sub>n+1</sub></label> situados arriba (circularmente)</li>
+											<li>Si <label class="formula2">C<sub>n</sub></label> y <label class="formula2">C<sub>n+1</sub></label> se encuentran en distintas filas y columnas, escoger <label class="formula2">P<sub>n</sub></label> y <label class="formula2">P<sub>n+1</sub></label> situados en la diagonal opuesta</li>
+											<li>Si <label class="formula2">C<sub>n</sub> = C<sub>n+1</sub></label>, insertar carácter sin significado entre <label class="formula2">C<sub>n</sub></label> y <label class="formula2">C<sub>n+1</sub></label> para evitar su repetición, y después aplicar las reglas 1-3</li>
+											<li>Si el número de letras es impar, añadir una sin significado al final del texto</li>
+										</ol>
+										<p>Por ejemplo, usando K = NORIA, la matriz de cifrado es:<br><br></p>
+										<center><img src="../../../includes/img/matrizPlayfair2.png" style="border: 1px solid #d2d2d2;"></center><br>
+										<table class="table table-bordered" style="background-color: #F2F4F7;">
+											<tbody><tr><td>Texto cifrado:</td>
+											<td style="margin-left:5px">I U O U T F   D F I R   Q C I N X R</td></tr>
+											<tr><td>Texto en claro:</td>
+											<td style="margin-left:5px">a t a q u e&nbsp; c e r o&nbsp; h o r a s x</td></tr>
+										</tbody></table><br>
+										<p>Dónde</p>
+										<ul>
+											<li><label class="formula2">n</label> es la longitud del texto cifrado</li>
+											<li><label class="formula2">K</label> es la llave del sistema</li>
+											<li><label class="formula2">P<sub>n</sub></label> es la letra resultante de la posición <label class="formula2">n</label> del texto plano</li>
+											<li><label class="formula2">C<sub>n</sub></label> es la letra de la posición <label class="formula2">n</label> del texto cifrado</li>
+										</ul>
+										<hr>
+										<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+										<p align="justify">
+											</p><ol type="”1”" start="”1”">
+												<li>Prof. Dr. Eng. Monica Borda. (2011). Fundamentals in Information Theory and Coding. Berlin Heidelberg: Springer.</li>
+												<li>Wade Trappe, Lawrence C. Washington. (2006). Introduction to Cryptography with Coding Theory. United States: Prentice Hall.</li>
+											</ol>
+										<p></p>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="panel" id="pnl-InteractivoPlayfair" style="display: none; margin: 10px 10px 10px;">
+					<div class="panel-heading" style="background-color: #1c79d2 !important; height: 47px;">
+						<h4 class="panel-title" style="color: white !important; font-size: 20px;">Cifrado Playfair</h4>
+						<div class="right" style="margin-left: 20px;">
+							<button type="button" class="btn btn-danger btn-sm" id="btn-cerrarPanelPlayfair">
+								<span>Volver</span>
+								<i class="fa fa-arrow-left"></i>
+							</button>
+						</div>
+					</div>
+					<div class="panel-body" style="padding-top: 10px;">
+						<div class="custom-tabs-line tabs-line-bottom left-aligned">
+							<ul class="nav" role="tablist" style="width: 100%;">
+								<li class="active" style="width: 50%;"><a href="#animacionCifradoPlayfair" id="btn-animacionCifradoPlayfair" data-toggle="tab" class="text-center">Cifrado</a></li>
+								<li style="width: 50%;"><a href="#animacionDesifradoPlayfair" id="btn-animacionDesifradoPlayfair" data-toggle="tab" class="text-center">Descifrado</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div id="animacionCifradoPlayfair" class="tab-pane fade in active" style="padding: 10px;">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-3 text-primary">Llave Alfabética:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="text" id="in-keyPlayfairC" placeholder="Llave Alfabética">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-5 text-primary">Texto claro:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="text" id="in-txtPlanoPlayfair" placeholder="Texto claro">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" data-toggle="dropdown" tabindex="-1" aria-expanded="false" id="btn-tipoCiPlayfair">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoCiPlayfair1">Cifrado Rápido</a></li>
+															<li><a id="tipoCiPlayfair2">Cifrado Normal</a></li>
+															<!-- <li><a id="tipoCiPlayfair3">Cifrado Lento</a></li> -->
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-cifrarPlayfair" tabindex="-1" value="2">Cifrado Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarCifrarPlayfair" tabindex="-1" style="display:none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>										
+									</div>
+								</div>
+								<div id="infoAnimacionCiPlayfairExtra" class="alert alert-info text-center" role="alert" style="display:none">
+									<strong>Para evitar errores, insertar un carácter sin significado (</strong><i>x</i><strong>) entre las letras repertidas</strong>
+								</div>
+								<div id="infoAnimacionCiPlayfairExtra2" class="alert alert-info text-center" role="alert" style="display:none">
+									<strong>El texto no es impar, por ello se debe insertar un carácter sin significado al final (</strong><i>x</i><strong>)</strong>
+								</div>
+								<div id="infoAnimacionCiPlayfair" class="alert alert-info text-center" role="alert" style="display:none">
+									<strong>Para obtener el texto cifrado se toman pares de letras del mensaje claro</strong>
+									<p id="infoCiPlayfair" class="text-center"></p>
+								</div>
+								<br>
+								<div id="textoPlanoPlayfairC" class="text-center circulo"></div>
+								<br>
+								<table id="matrizPlano" style="margin:0 auto;">
+									<tr id="m1c"></tr>
+									<tr id="m2c"></tr>
+									<tr id="m3c"></tr>
+									<tr id="m4c"></tr>
+									<tr id="m5c"></tr>
+								</table>
+								<br>
+								<div id="textoCifradoPlayfairC" class="text-center"></div>
+								<br>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-8 text-primary">Texto cifrado:
+											<input class="form-control" type="text" placeholder="Texto cifrado" id="out-txtCifradoPlayfair" readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="animacionDesifradoPlayfair" class="tab-pane fade in" style="padding: 10px;">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-3 text-primary">Llave Alfabética:
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-btn"><button class="btn btn-primary btnVelocidadCopiar" type="button" id="btn-copiarTextoPlayfair" data-toggle="tooltip" title="Copiar Texto cifrado"><i class="fa fa-clone" aria-hidden="true"></i></button></span>
+													<input class="form-control" type="text" id="in-keyPlayfairD" placeholder="Llave Alfabética">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-5 text-primary">Texto cifrado:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="text" id="in-txtCifradoPlayfair" placeholder="Texto cifrado">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" data-toggle="dropdown" tabindex="-1" aria-expanded="false" id="btn-tipoDePlayfair">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoDePlayfair1">Descifrado Rápido</a></li>
+															<li><a id="tipoDePlayfair2">Descifrado Normal</a></li>
+															<!-- <li><a id="tipoDePlayfair3">Descifrado Lento</a></li> -->
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-descifrarPlayfair" tabindex="-1" value="2">Descifrado Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarDescifrarPlayfair" tabindex="-1" style="display:none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="infoAnimacionDePlayfair" class="alert alert-info text-center" role="alert" style="display:none">
+									<strong>Para obtener el mensaje claro se toman pares de letras del texto cifrado</strong>
+									<p id="infoDePlayfair" class="text-center"></p>
+								</div>
+								<div id="infoAnimacionDePlayfairExtra" class="alert alert-info text-center" role="alert" style="display:none"><strong>Al obtener el mensaje claro se quitan todas las letras sin significado (</strong><i>x</i><strong>)</strong></div>
+								<br>
+								<div id="textoCifradoPlayfairD" class="text-center"></div>
+								<br>
+								<table id="matrizCifrado" style="margin:0 auto;">
+									<tr id="m1d"></tr>
+									<tr id="m2d"></tr>
+									<tr id="m3d"></tr>
+									<tr id="m4d"></tr>
+									<tr id="m5d"></tr>
+								</table>
+								<br>
+								<div id="textoPlanoPlayfairD" class="text-center"></div>
+								<br>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-8 text-primary">Texto claro:
+											<input class="form-control" type="text" placeholder="Texto claro" id="out-txtPlanoPlayfair" readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END MAIN CONTENT -->
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="../../../includes/vendor/jquery/jquery.min.js"></script>
+		<script src="../../../includes/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../includes/vendor/toastr/toastr.min.js"></script>
+		<script src="../../../includes/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="../../../includes/scripts/klorofilpro-common.min.js"></script>
+		<script src="../../../includes/scripts/animacionTT/infoTipoCifrados.js"></script>
+
+		<script src="playfair.js"></script>
+		<script src="../../../views/fundamentos/modalFundamentos.js""></script>
+		<script src="../../../includes/scripts/animacionTT/animation.js"></script>
+		<script src="../../../includes/scripts/animacionTT/BigInteger.min.js"></script>
+		<script>
+			var togglePanelFundamentos = function(e) {
+				e.preventDefault();
+				var panel = document.getElementById('panel-fundamentos');
+				if (panel.className) panel.className = '';
+				else panel.className = 'active';
+			}
+			$(document).ready(function(){
+				$("body").append(modales);
+				$("#listaFundamentos .panel-body").slimScroll({height:"600px",wheelStep:20,color:"rgba(160, 174, 186, 1)"});
+			});
+		</script>
+		<div id="panel-fundamentos">
+			<div class="panel-row"></div>
+			<a href="#" onclick="togglePanelFundamentos(event);" style="background-color: #2b333e;"><i class="fa fa-superscript"></i></a>
+			<div id="listaFundamentos">
+				<div class="panel-heading">
+					<h2 class="panel-title">Fundamentos Matematicos </h2>
+				</div>
+				<div class="panel-body">
+					<nav>
+						<span><i class="fa fa-pencil"></i> Del Cifrado Playfair</span>
+						<ul>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalMatrices"> Que es una Matriz</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-purple"></i> Aritmética Modular</span>
+						<ul>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalMatematicaModular">¿Qué es Aritmética Modular?</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalSumaModular">Suma Modular</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionModular">Multiplicación Modular</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalInversoAditivo">Inverso aditivo</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalInversoMultiplicativo">Inverso multiplicativo</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionClasica">Exponencicación Clásica</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionBinaria">Exponencicación Binaria</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionEuler">Exponencicación por Teorema de Euler</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalAlgoritmoEuclides">Algoritmo de Euclides</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalPhiEuler">Phi de Euler</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalRaicesPrimitivas">Raices Primitivas</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-green"></i> Matrices</span>
+						<ul>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionMatrices">Multiplicacion de matrices</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalDeterminanteMatrices">Determinante de una matriz</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalCofactoresMatrices">Matriz de cofactores</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalTranspuestaMatrices">Transpuesta de una matriz</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-red"></i> Campo GF(2<sup>8</sup>)</span>
+						<ul>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalConvertirGF">Elementos en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalSumaGF">Suma en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionGF">Multiplicación en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalInversoMultiplicativoGF">Inverso Multiplicativo en GF(2<sup>8</sup>)</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-yellow"></i> Curva Elíptica</span>
+						<ul>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalCurvaEliptica">¿Qué es la Curva Elíptica?</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalSumaPuntos">Suma de Puntos</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalDobladoPuntos">Doblado de Puntos</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalObtencionPuntos">Obtención de Putos</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-blue"></i> Operaciones a nivel de Bits</span>
+						<ul>
+							<li class="file-tag tag-blue"><a href="#" data-toggle="modal" data-target="#modalOperadoresLogicos">Operadores lógicos</a></li>
+							<li class="file-tag tag-blue"><a href="#" data-toggle="modal" data-target="#modalRotacionBits">Rotación de bits</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<script src="../../../views/matematicaModular/sumaModular/sumaModular.js""></script>
+		<script src="../../../views/matematicaModular/multiplicacionModular/multiplicacionModular.js""></script>
+		<script src="../../../views/matematicaModular/inversoAditivo/inversoAditivo.js""></script>
+		<script src="../../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.js""></script>
+		<script src="../../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.js""></script>
+		<script src="../../../views/matematicaModular/phiEuler/phiEuler.js""></script>
+		<script src="../../../views/campoGF2/convertirGF/convertirGF.js""></script>
+		<script src="../../../views/campoGF2/sumaGF/sumaGF.js""></script>
+		<script src="../../../views/campoGF2/multiplicacionGF/multiplicacionGF.js""></script>
+		<script src="../../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.js""></script>
+		<script src="../../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.js""></script>
+		<script src="../../../views/curvaEliptica/sumaPuntos/sumaPuntos.js""></script>
+		<script src="../../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.js""></script>
+		<script src="../../../includes/scripts/animacionTT/mensajes.js""></script>
+	</body>
+</html>

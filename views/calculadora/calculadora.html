@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>X-CRIPTOZ | Aprende Criptografía</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- VENDOR CSS -->
+		<link rel="stylesheet" href="../../includes/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../includes/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../includes/vendor/themify-icons/css/themify-icons.css">
+		<link rel="StyleSheet" href="../../includes/css/animacionTT/panelFlotante.css">
+		<link rel="StyleSheet" href="../../includes/css/animacionTT/animation.css">
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="../../includes/css/main.min.css">
+		<!-- ICONS -->
+		<link rel="apple-touch-icon" sizes="76x76" href="../../includes/img/apple-iconTT.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../../includes/img/faviconTT.png">
+		<link id="css-skin" rel="stylesheet" href="../../includes/css/skins/sidebar-nav-darkblue.css" type="text/css">
+	</head>
+	<body>
+		<!-- WRAPPER -->
+		<div id="wrapper">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="brand">
+					<a href="../../layouts/main.html">
+						<img src="../../includes/img/logo-white.png" alt="X-CRIPTOZ Logo" class="img-responsive logo">
+					</a>
+				</div>
+				<div class="container-fluid">
+					<div id="tour-fullwidth" class="navbar-btn">
+						<button type="button" class="btn-toggle-fullwidth btn"><i class="fa fa-bars"></i></button>
+					</div>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#creditos">
+									<i class="fa fa-address-card-o"></i>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.escom.ipn.mx/" target="_blanc">
+									<img src="../../includes/img/escomWhiteMin.png" alt="ESCOM">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar">
+				<nav>
+					<ul class="nav" id="sidebar-nav-menu">						
+						<li class="menu-group">Inicio</li>
+						<li><a href="../../layouts/main.html"><i class="ti-home"></i> <span class="title">Inicio</span></a></li>
+						<li><a href="../../views/archivos/archivos.html"><i class="ti-envelope"></i> <span class="title">Cifrado de archivos</span></a></li>
+						<li><a href="../../views/calculadora/calculadora.html" class="active"><i class="ti-panel"></i> <span class="title">Calculadora</span></a></li>
+						<li class="panel">
+							<a href="#" data-toggle="collapse" data-target="#submenuDemo" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="fa fa-superscript"></i> <span class="title">Fundamentos Matemáticos</span><i class="icon-submenu ti-angle-left"></i></a>
+							<div id="submenuDemo" class="collapse" aria-expanded="false">
+								<ul class="submenu" id="submenu">
+									<li class="panel">
+										<a href="#SubmenuMatematicaModular" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Aritmética Modular</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatematicaModular" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../views/matematicaModular/matematicaModular/matematicaModular.html">¿Qué es Aritmética Modular?</a></li>
+												<li><a href="../../views/matematicaModular/sumaModular/sumaModular.html">Suma Modular</a></li>
+												<li><a href="../../views/matematicaModular/multiplicacionModular/multiplicacionModular.html">Multiplicación modular</a></li>
+												<li><a href="../../views/matematicaModular/inversoAditivo/inversoAditivo.html">Inverso aditivo</a></li>
+												<li><a href="../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.html">Inverso multiplicativo</a></li>
+												<li><a href="../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.html">Exponenciación clásica</a></li>
+												<li><a href="../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.html">Exponenciación binaria</a></li>
+												<li><a href="../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.html">Exponenciación por Teorema de Euler</a></li>
+												<li><a href="../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.html">Algoritmo Euclides</a></li>
+												<li><a href="../../views/matematicaModular/phiEuler/phiEuler.html">Phi de Euler</a></li>
+												<li><a href="../../views/matematicaModular/raicesPrimitivas/raicesPrimitivas.html">Raices Primitivas</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuMatrices" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Matrices</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatrices" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../views/matrices/matrices/matrices.html">Que es una Matriz</a></li>
+												<li><a href="../../views/matrices/multiplicacionMatrices/multiplicacionMatrices.html">Multiplicación de matrices</a></li>
+												<li><a href="../../views/matrices/determinanteMatrices/determinanteMatrices.html">Determinante de una matriz</a></li>
+												<li><a href="../../views/matrices/cofactoresMatrices/cofactoresMatrices.html">Matriz de cofactores</a></li>
+												<li><a href="../../views/matrices/transpuestaMatrices/transpuestaMatrices.html">Transpuesta de una matriz</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCampoGF2" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Campo GF(2<sup>8</sup>)</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCampoGF2" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../views/campoGF2/convertirGF/convertirGF.html">Elementos en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../views/campoGF2/sumaGF/sumaGF.html">Suma en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../views/campoGF2/multiplicacionGF/multiplicacionGF.html">Multiplicación en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.html">Inverso multiplicativo en GF(2<sup>8</sup>)</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCurva" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Curva elíptica</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCurva" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../views/curvaEliptica/curvaEliptica/curvaEliptica.html">¿Qué es la Curva Elíptica?</a></li>
+												<li><a href="../../views/curvaEliptica/sumaPuntos/sumaPuntos.html">Suma de puntos</a></li>
+												<li><a href="../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.html">Doblado de puntos</a></li>
+												<li><a href="../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.html">Obtención de puntos</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuBits" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Operaciones a nivel<br>de bits</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuBits" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../views/operacionesBits/operadoresLogicos/operadoresLogicos.html">Operadores lógicos </a></li>
+												<li><a href="../../views/operacionesBits/rotacionBits/rotacionBits.html">Rotación bits</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía clásica</li>
+						<li><a href="../../views/criptografia/clasica/clasica.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía clásica</span></a></li>
+						<li class="panel">
+							<a href="#Monoalfabetica" onclick="sustitucionMonoalfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución monoalfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Monoalfabetica" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/monoalfabetica/cesar/cesar.html">Cesar</a></li>
+									<li><a href="../../views/monoalfabetica/atbash/atbash.html">Atbash</a></li>
+									<li><a href="../../views/monoalfabetica/polybios/polybios.html">Polybios</a></li>
+									<li><a href="../../views/monoalfabetica/playfair/playfair.html">Playfair</a></li>
+									<li><a href="../../views/monoalfabetica/afin/afin.html">Afin</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Polialfabetica" onclick="sustitucionPolialfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución polialfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Polialfabetica" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/polialfabetica/desplazamiento/desplazamiento.html">Desplazamiento</a></li>
+									<li><a href="../../views/polialfabetica/vigenere/vigenere.html">Vigenere</a></li>
+									<li><a href="../../views/polialfabetica/vernam/vernam.html">Vernam</a></li>
+									<li><a href="../../views/polialfabetica/hill/hill.html">Hill</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Transposicion" onclick="transposicion();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por<br>transposición</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Transposicion" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/transposicion/rejilla/rejilla.html">Rejilla</a></li>
+									<li><a href="../../views/transposicion/inversa/inversa.html">Inversa</a></li>
+									<li><a href="../../views/transposicion/simple/simple.html">Simple</a></li>
+									<li><a href="../../views/transposicion/riel/riel.html">Por Riel</a></li>
+									<li><a href="../../views/transposicion/columnas/columnas.html">Por Columnas</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía moderna</li>
+						<li><a href="../../views/criptografia/moderna/moderna.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía moderna</span></a></li>
+						<li class="panel">
+							<a href="#Simetrico" onclick="cifradoSimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado simétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Simetrico" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/simetrico/feistel/feistel.html">Feistel</a></li>
+									<li><a href="../../views/simetrico/des/des.html">DES</a></li>
+									<li><a href="../../views/simetrico/aes/aes.html">AES</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Asimetrico" onclick="cifradoAsimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado asimétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Asimetrico" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/asimetrico/diffieHellman/diffieHellman.html">Diffie Hellman</a></li>
+									<li><a href="../../views/asimetrico/rsa/rsa.html">RSA</a></li>
+									<!-- <li><a href="../../views/asimetrico/dsa/dsa.html">DSA</a></li> -->
+									<li><a href="../../views/asimetrico/gammal/gammal.html">ElGamal</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Hash" onclick="funcionesHash();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Funciones Hash</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Hash" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/hash/md5/md5.html">MD5</a></li>
+									<li><a href="../../views/hash/sha1/sha1.html">SHA-1</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Firma" onclick="firmaDigital();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Firma Digital</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Firma" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/firmas/firmaRsa/firmaRsa.html">Firma RSA</a></li>
+									<li><a href="../../views/firmas/firmaECDSA/firmaECDSA.html">Firma ECDSA</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content">
+					<div class="content-heading clearfix">
+						<ul class="breadcrumb">
+							<li><i class="fa fa-home"></i> Inicio</li>
+							<li class="active"><a href="#">Calculadora</a></li>
+						</ul>
+					</div>
+					<div class="container-fluid">
+						<div class="panel panel-headline">
+							<div class="panel-body">
+								<h1>Calculadora <img src="../../includes/img/sketch/calculator-hand-drawn.png" width="70" align="middle" class="sketch pull-right"></h1>
+								<hr>
+								<p>Elige la función aritmética que desees utilizar.</p>
+								<hr>
+								<div class="panel panel-tab">
+									<div class="panel-heading" style="background-color: #f8f9fa; height: 41px;">
+										<ul class="nav nav-tabs pull-right" style="width: 75%;">
+											<li class="active"  style="width: 33%;"><a href="#tab1" data-toggle="tab" aria-expanded="true"><i class="fa fa-pencil"></i> Aritmética Modular</a></li>
+											<li  style="width: 33%;"><a href="#tab2" data-toggle="tab"><i class="fa fa-pencil"></i> Campo GF (2<sup>8</sup>)</a></li>
+											<li  style="width: 33%;"><a href="#tab3" data-toggle="tab"><i class="fa fa-pencil"></i> Curva Elíptica</a></li>
+										</ul>
+									</div>
+									<div class="panel-body padding-calculadora">
+										<div class="tab-content no-padding">
+											<div class="tab-pane fade active in" id="tab1">
+												<div class="row">
+											        <div class="col-md-12 bhoechie-tab-container" id="calculadoraModular">
+											            <div class="col-md-3 bhoechie-tab-menu">
+											              	<div class="list-group">
+												                <a href="#" class="list-group-item active text-center">Suma Modular</a>
+												                <a href="#" class="list-group-item text-center">Inverso Aditivo</a>
+												                <a href="#" class="list-group-item text-center">Multiplicación Modular</a>
+												                <a href="#" class="list-group-item text-center">Inverso Multiplicativo</a>
+												                <a href="#" class="list-group-item text-center">Exponenciación Clásica</a>
+												                <a href="#" class="list-group-item text-center">Exponenciación Binaria</a>
+												                <a href="#" class="list-group-item text-center">Exponenciación por Teorema de Euler</a>
+												                <a href="#" class="list-group-item text-center">Algoritmo de Euclides</a>
+												                <a href="#" class="list-group-item text-center">Phi de Euler</a>
+											              	</div>
+											            </div>
+											            <div class="col-md-9 bhoechie-tab">
+											                <div class="bhoechie-tab-content active">
+											                    <h1>Suma Modular</h1>
+																<center>
+																	<hr><span class="label label-success label-transparent"> x = ( a + b ) mod Z</span><hr>
+																	<span class="label label-info label-transparent"> x = ( </span>
+																	<input type="number" id="C-A-SM" class="inFormula" min="0" max="9999999" value="1">
+																	<span class="label label-info label-transparent"> + </span>
+																	<input type="number" id="C-B-SM" class="inFormula" min="0" max="9999999" value="1">
+																	<span class="label label-info label-transparent"> ) mod </span>
+																	<input type="number" id="C-Z-SM" class="inFormula" min="2" max="10000000" value="3"><br><br>
+																	<button id="btn-calcularSumaModular" class="btn btn-info"> Calcular Suma Modular </button><br><br>
+																	<span class="label label-info label-transparent"> x = </span>
+																	<input type="text" id="fileDisplayAreaCalculadoraSumaModular" class="outFormula" readonly><hr>
+																</center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                    <h1>Inverso Aditivo</h1>
+																<center>
+																	<hr><span class="label label-success label-transparent"> a + ( - a ) mod Z = 0</span><hr>
+																	<span class="label label-info label-transparent"> Inverso aditivo de </span>
+																	<input type="number" id="C-A-IA" class="inFormula" min="0" max="9999999" value="1">
+																	<span class="label label-info label-transparent"> mod </span>
+																	<input type="number" id="C-Z-IA" class="inFormula" min="2" max="10000000" value="3"><br><br>
+																	<button id="btn-calcularInversoAditivo" class="btn btn-info"> Calcular Inverso Aditivo </button><br><br>
+																	<span class="label label-info label-transparent"> - a = </span>
+																	<input type="text" id="fileDisplayAreaCalculadoraInversoAditivo" class="outFormula" readonly><hr>
+																</center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                   <h1>Multiplicación Modular</h1>
+											                   <center>
+																	<hr><span class="label label-success label-transparent"> x = ( a * b ) mod Z</span><hr>
+																	<span class="label label-info label-transparent"> x = ( </span>
+																	<input type="number" id="C-A-MM" class="inFormula" min="0" max="9999999" value="1">
+																	<span class="label label-info label-transparent"> * </span>
+																	<input type="number" id="C-B-MM" class="inFormula" min="0" max="9999999" value="1">
+																	<span class="label label-info label-transparent"> ) mod </span>
+																	<input type="number" id="C-Z-MM" class="inFormula" min="2" max="10000000" value="3"><br><br>
+																	<button id="btn-calcularMultiplicacionModular" class="btn btn-info"> Calcular Multiplicación Modular </button><br><br>
+																	<span class="label label-info label-transparent"> x = </span>
+																	<input type="text" id="fileDisplayAreaCalculadoraMultiplicacionModular" class="outFormula" readonly><hr>
+																</center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                    <h1>Inverso Multiplicativo</h1>
+											                    <center>
+																	<hr><span class="label label-success label-transparent"> a * a<sup>-1</sup> = 1 (mod Z) </span><hr>
+																	<span class="label label-info label-transparent"> Inverso multiplicativo de </span>
+																	<input type="number" id="C-A-IM" class="inFormula" min="2" max="9999999" value="2">
+																	<span class="label label-info label-transparent"> mod </span>
+																	<input type="number" id="C-M-IM" class="inFormula" min="2" max="10000000" value="3"><br><br>
+																	<button id="btn-calcularInversoMultiplicativo" class="btn btn-info"> Calcular Inverso Multiplicativo </button><br><br>
+																	<span class="label label-info label-transparent"> a<sup>-1</sup> = </span>
+																	<input type="text" id="fileDisplayAreaCalculadoraInversoMultiplicativo" class="outFormula" readonly><hr>
+																</center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                   	<h1>Exponenciación Clásica</h1>
+											                   	<center>
+																	<hr><span class="label label-success label-transparent"> x = b <sup> e </sup> mod n</span><hr>
+																	<span class="label label-info label-transparent"> x =  </span>
+																	<input type="number" id="C-Base-EC" class="inFormula" min="2" max="9999999" value="3">
+																	<sup><input type="number" id="C-Exponente-EC" class="inFormula" min="1" max="10000000" value="2"></sup>
+																	<span class="label label-info label-transparent"> mod </span>
+																	<input type="number" id="C-Modulo-EC" class="inFormula" min="2" max="10000000" value="3"><br><br>
+																	<button id="btn-calcularExponenciacionClasica" class="btn btn-info"> Calcular Exponenciación Clásica </button><br><br>
+																	<span class="label label-info label-transparent"> x = </span>
+																	<input type="text" id="fileDisplayAreaCalculadoraExponenciacionClasica" class="outFormula" readonly><hr>
+																</center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                	<h1>Exponenciación Binaria</h1>
+											                	<center>
+																	<hr><span class="label label-success label-transparent"> x = b <sup> e </sup> mod n</span><hr>
+																	<span class="label label-info label-transparent"> x =  </span>
+																	<input type="number" id="C-Base-EB" class="inFormula" min="2" max="9999999" value="3">
+																	<sup><input type="number" id="C-Exponente-EB" class="inFormula" min="1" max="10000000" value="2"></sup>
+																	<span class="label label-info label-transparent"> mod </span>
+																	<input type="number" id="C-Modulo-EB" class="inFormula" min="2" max="10000000" value="3"><br><br>
+																	<button id="btn-calcularExponenciacionBinaria" class="btn btn-info"> Calcular Exponenciación Binaria </button><br><br>
+																	<span class="label label-info label-transparent"> x = </span>
+																	<input type="text" id="fileDisplayAreaCalculadoraExponenciacionBinaria" class="outFormula" readonly><hr>
+																</center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                	<h1>Exponenciación Euler</h1>
+											                	<center>
+																	<hr><span class="label label-success label-transparent"> x = b <sup> e </sup> mod n</span><hr>
+																	<span class="label label-info label-transparent"> x =  </span>
+																	<input type="number" id="C-Base-EE" class="inFormula" min="2" max="9999999" value="3">
+																	<sup><input type="number" id="C-Exponente-EE" class="inFormula" min="1" max="10000000" value="2"></sup>
+																	<span class="label label-info label-transparent"> mod </span>
+																	<input type="number" id="C-Modulo-EE" class="inFormula" min="2" max="10000000" value="3"><br><br>
+																	<button id="btn-calcularExponenciacionEuler" class="btn btn-info"> Calcular Exponenciación Euler </button><br><br>
+																	<span class="label label-info label-transparent"> x = </span>
+																	<input type="text" id="fileDisplayAreaCalculadoraExponenciacionEuler" class="outFormula" readonly><hr>
+																</center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                	<h1>Algoritmo de Euclides (MCD)</h1>
+											                	<center>
+																	<hr><span class="label label-success label-transparent"> x = mcd ( a , b ) </span><hr>
+																	<span class="label label-info label-transparent"> x = mcd ( </span>
+																	<input type="number" id="C-A-EU" class="inFormula" min="1" max="10000000" value="2">
+																	<span class="label label-info label-transparent"> , </span>
+																	<input type="number" id="C-B-EU" class="inFormula" min="1" max="10000000" value="2">
+																	<span class="label label-info label-transparent"> ) </span><br><br>
+																	<button id="btn-calcularEuclides" class="btn btn-info"> Calcular MCD </button><br><br>
+																	<span class="label label-info label-transparent"> x = </span>
+																	<input type="text" id="fileDisplayAreaCalculadoraEuclides" class="outFormula" readonly><hr>
+																</center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                	<h1>Phi de Euler</h1>
+											                	<center>
+																	<hr><span class="label label-success label-transparent"> φ ( n ) </span><hr>
+																	<span class="label label-info label-transparent"> φ ( </span>
+																	<input type="number" id="C-N-PHI" class="inFormula" min="2" max="10000000" value="3">
+																	<span class="label label-info label-transparent"> ) </span><br><br>
+																	<button id="btn-calcularPhi" class="btn btn-info"> Calcular Phi </button><br><br>
+																	<span class="label label-info label-transparent"> φ ( n ) = </span>
+																	<input type="text" id="fileDisplayAreaCalculadoraPhi" class="outFormula" readonly><hr>
+																</center>
+											                </div>
+											            </div>
+											        </div>
+											    </div>
+											</div>
+											<div class="tab-pane fade" id="tab2">
+												<div class="row">
+											        <div class="col-md-12 bhoechie-tab-container" id="calculadoraGF">
+											            <div class="col-md-3 bhoechie-tab-menu">
+											              	<div class="list-group">
+												                <a href="#" class="list-group-item active text-center">Obtener polinomio GF(2<sup>8</sup>)</a>
+												                <a href="#" class="list-group-item text-center">Convertir polinomio a número GF(2<sup>8</sup>)</a>
+												                <a href="#" class="list-group-item text-center">Suma GF(2<sup>8</sup>)</a>
+												                <a href="#" class="list-group-item text-center">Multiplicación GF(2<sup>8</sup>)</a>
+												                <a href="#" class="list-group-item text-center">Inverso multiplicativo GF(2<sup>8</sup>)</a>
+											              	</div>
+											            </div>
+											            <div class="col-md-9 bhoechie-tab">
+											                <div class="bhoechie-tab-content active">
+											                    <h1>Obtener representación polinomial GF(2<sup>8</sup>)</h1>
+											                    <center>
+												                    <hr><span class="label label-success label-transparent"> Polinomio representante de 255 = x<sup>7</sup> + x<sup>6</sup> + x<sup>5</sup> + x<sup>4</sup> + x<sup>3</sup> + x<sup>2</sup> + x + 1 </span><hr>
+												                    <span class="label label-info label-transparent"> Representación polinomial de </span>
+												                    <input type="number" id="aOCNPC" min="0" max="255" class="inFormula"><br><br>
+												                    <button id="btnCalcularOCNPC" class="btn btn-info"> Calcular representación </button><br>
+												                    <span class="label label-info label-transparent"> Representación polinomial = </span>
+												                    <label type="text" id="ResultadoOCNPC" class="outFormula labelOut" readonly></label><hr>
+												                </center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                    <h1>Convertir polinomio a numero GF(2<sup>8</sup>)</h1>
+											                    <center>
+											                    	<hr><span class="label label-success label-transparent"> Número representante x<sup>7</sup> + x<sup>6</sup> + x<sup>5</sup> + x<sup>4</sup> + x<sup>3</sup> + x<sup>2</sup> + x + 1 = 255 </span><hr>
+											                    	<span class="label label-info label-transparent"> Número representante de </span>
+											                    	<label class="fancy-checkbox custom-bgcolor-blue">
+																		<input type="checkbox" id="x7OCPNC">
+																		<span>x<sup>7</sup> + </span>
+																	</label>
+																	<label class="fancy-checkbox custom-bgcolor-blue">
+																		<input type="checkbox" id="x6OCPNC">
+																		<span>x<sup>6</sup> + </span>
+																	</label>
+																	<label class="fancy-checkbox custom-bgcolor-blue">
+																		<input type="checkbox" id="x5OCPNC">
+																		<span>x<sup>5</sup> + </span>
+																	</label>
+																	<label class="fancy-checkbox custom-bgcolor-blue">
+																		<input type="checkbox" id="x4OCPNC">
+																		<span>x<sup>4</sup> + </span>
+																	</label>
+																	<label class="fancy-checkbox custom-bgcolor-blue">
+																		<input type="checkbox" id="x3OCPNC">
+																		<span>x<sup>3</sup> + </span>
+																	</label>
+																	<label class="fancy-checkbox custom-bgcolor-blue">
+																		<input type="checkbox" id="x2OCPNC">
+																		<span>x<sup>2</sup> + </span>
+																	</label>
+																	<label class="fancy-checkbox custom-bgcolor-blue">
+																		<input type="checkbox" id="x1OCPNC">
+																		<span>x + </span>
+																	</label>
+																	<label class="fancy-checkbox custom-bgcolor-blue">
+																		<input type="checkbox" id="x0OCPNC">
+																		<span>1</span>
+																	</label><br><br>
+																	<button id="btnCalcularOCPNC" class="btn btn-info"> Calcular representación </button><br>
+																	<span class="label label-info label-transparent"> Número equivalente = </span>
+												                    <label type="text" id="ResultadoOCPNC" class="outFormula labelOut" readonly></label><hr>
+											                    </center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                    <h1>Suma GF(2<sup>8</sup>)</h1>
+											                    <center>
+												                    <hr><span class="label label-success label-transparent"> x = a + b </span><hr>
+												                    <span class="label label-info label-transparent"> x = </span>
+												                    <input type="number" id="aOSGFC" min="0" max="255" class="inFormula">
+												                    <span class="label label-info label-transparent"> + </span>
+												                    <input type="number" id="bOSGFC" min="0" max="255" class="inFormula"><br><br>
+												                    <button id="btnCalcularOSGFC" class="btn btn-info"> Calcular suma </button><br><br>
+												                    <span class="label label-info label-transparent"> x = </span>
+												                    <input type="text" id="ResultadoOSGFC" class="outFormula" readonly><hr>
+												                </center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                    <h1>Multiplicación GF(2<sup>8</sup>)</h1>
+											                    <center>
+												                    <hr><span class="label label-success label-transparent"> x = a * b mod P(x)</span><hr>
+												                    <span class="label label-info label-transparent"> x = </span>
+												                    <input type="number" id="aOMGFC" min="0" max="255" class="inFormula">
+												                    <span class="label label-info label-transparent"> * </span>
+												                    <input type="number" id="bOMGFC" min="0" max="255" class="inFormula"><br><br>
+												                    <button id="btnCalcularOMGFC" class="btn btn-info"> Calcular multiplicación </button><br><br>
+												                    <span class="label label-info label-transparent"> x = </span>
+												                    <input type="text" id="ResultadoOMGFC" class="outFormula" readonly><hr>
+												                </center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                    <h1>Inverso multiplicativo GF(2<sup>8</sup>)</h1>
+											                    <center>
+																	<hr><span class="label label-success label-transparent"> a * b = 1 mod P(x)</span><hr>
+																	<span class="label label-info label-transparent"> Inverso multiplicativo de </span>
+																	<input type="number" id="aOIMGFC" min="0" max="255" class="inFormula"><br><br>
+																	<button id="btnCalcularOIMGFC" class="btn btn-info"> Calcular Inverso Multiplicativo </button><br><br>
+																	<span class="label label-info label-transparent"> b = </span>
+																	<input type="text" id="ResultadoOIMGFC" class="outFormula" readonly><hr>
+																</center>
+											                </div>
+											            </div>
+											        </div>
+											    </div>
+											</div>
+											<div class="tab-pane fade" id="tab3">
+												<div class="row">
+											        <div class="col-md-12 bhoechie-tab-container" id="calculadoraCurvaEliptica">
+											            <div class="col-md-3 bhoechie-tab-menu">
+											              	<div class="list-group">
+												                <a href="#" class="list-group-item active text-center">Obtención de puntos</a>
+												                <a href="#" class="list-group-item text-center">Suma de puntos</a>
+												                <a href="#" class="list-group-item text-center">Doblado de puntos</a>
+											              	</div>
+											            </div>
+											            <div class="col-md-9 bhoechie-tab">
+											            	<div class="bhoechie-tab-content active">
+											                    <h1>Obtención de puntos</h1>
+											                    <center>
+											                    	<hr><span class="label label-success label-transparent"> y<sup>2</sup> = x<sup>3</sup> + ( a * x ) + b mod p</span><br><br>
+											                    	<span class="label label-success label-transparent"> Donde a, b pertenecen a Z<sub>p</sub></span><hr>
+											                    	<span class="label label-info label-transparent"> y<sup>2</sup>= x<sup>3</sup> + ( </span>
+																	<input type="number" id="aOPC" class="inFormula" min="0" max="999" value="1">
+																	<span class="label label-info label-transparent">* x ) + </span>
+																	<input type="number" id="bOPC" class="inFormula" min="0" max="999" value="4">
+																	<span class="label label-info label-transparent"> mod </span>
+																	<input type="number" id="pOPC" class="inFormula" min="4" max="1000" value="23"><br><br>
+																	<button id="btnCalcularOPC" class="btn btn-info"> Obtener Puntos </button><br><br>
+																	<span class="label label-info label-transparent"> Puntos: </span><br>
+																	<textarea type="text" id="fileDisplayPuntosOPC" class="outFormula" rows="8" cols="30" style="resize: none;" readonly></textarea><hr>
+											                    </center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                    <h1>Suma de puntos</h1>
+											                    <center>
+											                    	<hr><span class="label label-success label-transparent"> y<sup>2</sup> = x<sup>3</sup> + ( a * x ) + b mod p</span><br><br>
+											                    	<span class="label label-success label-transparent"> Donde a, b pertenecen a Z<sub>p</sub>, y P1, P2 son puntos de la curva</span><hr>
+											                    	<span class="label label-info label-transparent"> y<sup>2</sup>= x<sup>3</sup> + ( </span>
+																	<input type="number" id="aOSPC" class="inFormula" min="0" max="999" value="1">
+																	<span class="label label-info label-transparent">* x ) + </span>
+																	<input type="number" id="bOSPC" class="inFormula" min="0" max="999" value="4">
+																	<span class="label label-info label-transparent"> mod </span>
+																	<input type="number" id="pOSPC" class="inFormula" min="4" max="1000" value="23"><br>
+																	<span class="label label-info label-transparent"> P1: </span>
+																	<input type="text" id="P1OSPC" class="inFormula" value="0,2">
+																	<span class="label label-info label-transparent">, P2: </span>
+																	<input type="text" id="P2OSPC" class="inFormula" value="0,2"><br><br>
+																	<span class="label label-info label-transparent"> Puntos: </span><br>
+																	<textarea type="text" id="fileDisplayPuntosOSPC" class="outFormula" rows="8" cols="30" style="resize: none;" readonly>(0,2) - (0,21) - (1,11) - (1,12) - (4,7) - (4,16) - (7,3) - (7,20) - (8,8) - (8,15) - (9,11) - (9,12) - (10,5) - (10,18) - (11,9) - (11,14) - (13,11) - (13,12) - (14,5) - (14,18) - (15,6) - (15,17) - (17,9) - (17,14) - (18,9) - (18,14) - (22,5) - (22,18)</textarea><br><br>
+																	<button id="btnCalcularOSPC" class="btn btn-info"> Calcular Suma </button><br><br>
+																	<span class="label label-info label-transparent"> x = </span>
+												                    <input type="text" id="ResultadoOSPC" class="outFormula" readonly><hr>
+											                    </center>
+											                </div>
+											                <div class="bhoechie-tab-content">
+											                    <h1>Doblado de puntos</h1>
+											                    <center>
+											                    	<hr><span class="label label-success label-transparent"> y<sup>2</sup> = x<sup>3</sup> + ( a * x ) + b mod p</span><br><br>
+											                    	<span class="label label-success label-transparent"> Donde a, b pertenecen a Z<sub>p</sub>, y P1 es un punto de la curva, y 1 <= k <= Orden de la curva </span><hr>
+											                    	<span class="label label-info label-transparent"> y<sup>2</sup>= x<sup>3</sup> + ( </span>
+																	<input type="number" id="aODPC" class="inFormula" min="0" max="999" value="1">
+																	<span class="label label-info label-transparent">* x ) + </span>
+																	<input type="number" id="bODPC" class="inFormula" min="0" max="999" value="4">
+																	<span class="label label-info label-transparent"> mod </span>
+																	<input type="number" id="pODPC" class="inFormula" min="4" max="1000" value="23"><br>
+																	<span class="label label-info label-transparent"> k: </span>
+																	<input type="number" id="kODPC" class="inFormula" min="1" value="2">
+																	<span class="label label-info label-transparent">, P1: </span>
+																	<input type="text" id="P1ODPC" class="inFormula" value="0,2"><br><br>
+																	<span class="label label-info label-transparent"> Puntos: </span><br>
+																	<textarea type="text" id="fileDisplayPuntosODPC" class="outFormula" rows="8" cols="30" style="resize: none;" readonly>(0,2) - (0,21) - (1,11) - (1,12) - (4,7) - (4,16) - (7,3) - (7,20) - (8,8) - (8,15) - (9,11) - (9,12) - (10,5) - (10,18) - (11,9) - (11,14) - (13,11) - (13,12) - (14,5) - (14,18) - (15,6) - (15,17) - (17,9) - (17,14) - (18,9) - (18,14) - (22,5) - (22,18)</textarea><br><br>
+																	<button id="btnCalcularODPC" class="btn btn-info"> Calcular Doblado </button><br><br>
+																	<span class="label label-info label-transparent"> x = </span>
+												                    <input type="text" id="ResultadoODPC" class="outFormula" readonly><hr>
+											                    </center>
+											                </div>
+											            </div>
+											        </div>
+											    </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END MAIN CONTENT -->
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="../../includes/vendor/jquery/jquery.min.js"></script>
+		<script src="../../includes/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../includes/scripts/klorofilpro-common.min.js"></script>
+		<script src="../../includes/scripts/animacionTT/infoTipoCifrados.js"></script>
+
+		<script src="../../views/matematicaModular/sumaModular/sumaModular.js"></script>
+		<script src="../../views/matematicaModular/inversoAditivo/inversoAditivo.js"></script>
+		<script src="../../views/matematicaModular/multiplicacionModular/multiplicacionModular.js"></script>
+		<script src="../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.js"></script>
+		<script src="../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.js"></script>
+		<script src="../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.js"></script>
+		<script src="../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.js"></script>
+		<script src="../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.js"></script>
+
+		<script src="../../views/campoGF2/convertirGF/convertirGF.js"></script>
+		<script src="../../views/campoGF2/sumaGF/sumaGF.js"></script>
+		<script src="../../views/campoGF2/multiplicacionGF/multiplicacionGF.js"></script>
+		<script src="../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.js"></script>
+		<script src="../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.js"></script>
+		<script src="../../views/curvaEliptica/sumaPuntos/sumaPuntos.js"></script>
+		<script src="../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.js"></script>
+
+		<script src="../../views/matematicaModular/phiEuler/phiEuler.js"></script>
+		<script src="../../includes/scripts/animacionTT/BigInteger.min.js"></script>
+		<script src="../../includes/scripts/animacionTT/mensajes.js""></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// bhoechie tab - vertical tabs
+			    $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+			    	divTabs = $(this).parent().parent().parent().attr('id');
+			        e.preventDefault();
+			        $(this).siblings('a.active').removeClass("active");
+			        $(this).addClass("active");
+			        var index = $(this).index();
+			        $("#"+divTabs+">div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+			        $("#"+divTabs+">div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+			    });
+			});
+		</script>
+		<style type="text/css">
+			.listaCurva{
+				height: 190px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.listaCampo{
+				height: 70px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			@media only all and (max-width: 990px) {
+				.listaCurva{
+					height: 42px;
+					display: block;
+					justify-content: center;
+					align-items: center;
+				}
+				.listaCampo{
+					height: 42px;
+					display: block;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+			div.panel-tab>div>ul> li >a{
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			.padding-calculadora{
+				padding: 0px 15px 0px 15px !important;
+			}
+			.inFormula {
+				width: 100px;
+				margin-top: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+    			opacity: 1;
+    			box-shadow: none;
+    			border-radius: 2px;
+    			border: 1px solid #4ebbdb;
+			}
+			.outFormula {
+				min-width: 100px;
+				margin-top: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				background-color: #eee;
+    			opacity: 1;
+    			box-shadow: none;
+    			border-radius: 2px;
+    			border: 1px solid #ccc;
+			}
+			.label{
+				font-size: 100%;
+			}
+			/*  bhoechie tab - vertical tabs*/
+			div.bhoechie-tab-container{
+				z-index: 10;
+				background-color: #ffffff;
+				padding: 0 !important;
+				border-radius: 4px;
+				-moz-border-radius: 4px;
+				background-clip: padding-box;
+				opacity: 0.97;
+				filter: alpha(opacity=97);
+			}
+			div.bhoechie-tab-menu{
+				padding-right: 0;
+				padding-left: 0;
+				padding-bottom: 0;
+			}
+			div.bhoechie-tab-menu div.list-group{
+				margin-bottom: 0;
+			}
+			div.bhoechie-tab-menu div.list-group>a{
+				border-left: 0 !important;
+			}
+			div.bhoechie-tab-menu div.list-group>a .glyphicon,
+			div.bhoechie-tab-menu div.list-group>a .fa {
+				color: #5bc0de;
+			}
+			div.bhoechie-tab-menu div.list-group>a:first-child{
+				border-radius: 0 !important;
+				-moz-border-radius: 0 !important;
+			}
+			div.bhoechie-tab-menu div.list-group>a:last-child{
+				margin-bottom: -1px !important;
+				border-radius: 0 !important;
+				-moz-border-radius: 0 !important;
+			}
+			div.bhoechie-tab-menu div.list-group>a.active,
+			div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+			div.bhoechie-tab-menu div.list-group>a.active .fa{
+				background-color: #5bc0de;
+				background-image: #5bc0de;
+				color: #ffffff;
+				border-color: #4ebbdb;
+			}
+			div.bhoechie-tab-menu div.list-group>a.active:after{
+				content: '';
+				position: absolute;
+				left: 100%;
+				top: 50%;
+				margin-top: -13px;
+				border-left: 0;
+				border-bottom: 13px solid transparent;
+				border-top: 13px solid transparent;
+				border-left: 10px solid #5bc0de;
+			}
+			div.bhoechie-tab-content{
+				background-color: #ffffff;
+				padding-left: 10px;
+			}
+			div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+				display: none;
+			}
+		</style>
+	</body>
+</html>

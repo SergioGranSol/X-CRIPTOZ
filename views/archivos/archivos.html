@@ -1,0 +1,1303 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>X-CRIPTOZ | Aprende Criptografía</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- VENDOR CSS -->
+		<link rel="stylesheet" href="../../includes/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../includes/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../includes/vendor/themify-icons/css/themify-icons.css">
+		<link rel="stylesheet" href="../../includes/vendor/dropify/css/dropify.min.css">
+		<link rel="stylesheet" href="../../includes/vendor/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css">
+		<link rel="StyleSheet" href="../../includes/css/animacionTT/panelFlotante.css">
+		<link rel="StyleSheet" href="../../includes/css/animacionTT/animation.css">
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="../../includes/css/main.min.css">
+		<!-- ICONS -->
+		<link rel="apple-touch-icon" sizes="76x76" href="../../includes/img/apple-iconTT.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../../includes/img/faviconTT.png">
+		<link id="css-skin" rel="stylesheet" href="../../includes/css/skins/sidebar-nav-darkblue.css" type="text/css">
+	</head>
+	<body>
+		<!-- WRAPPER -->
+		<div id="wrapper">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="brand">
+					<a href="../../layouts/main.html">
+						<img src="../../includes/img/logo-white.png" alt="X-CRIPTOZ Logo" class="img-responsive logo">
+					</a>
+				</div>
+				<div class="container-fluid">
+					<div id="tour-fullwidth" class="navbar-btn">
+						<button type="button" class="btn-toggle-fullwidth btn"><i class="fa fa-bars"></i></button>
+					</div>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#creditos">
+									<i class="fa fa-address-card-o"></i>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.escom.ipn.mx/" target="_blanc">
+									<img src="../../includes/img/escomWhiteMin.png" alt="ESCOM">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar">
+				<nav>
+					<ul class="nav" id="sidebar-nav-menu">						
+						<li class="menu-group">Inicio</li>
+						<li><a href="../../layouts/main.html"><i class="ti-home"></i> <span class="title">Inicio</span></a></li>
+						<li><a href="archivos.html" class="active"><i class="ti-envelope"></i> <span class="title">Cifrado de archivos</span></a></li>
+						<li><a href="../../views/calculadora/calculadora.html"><i class="ti-panel"></i> <span class="title">Calculadora</span></a></li>
+						<li class="panel">
+							<a href="#" data-toggle="collapse" data-target="#submenuDemo" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="fa fa-superscript"></i> <span class="title">Fundamentos Matemáticos</span><i class="icon-submenu ti-angle-left"></i></a>
+							<div id="submenuDemo" class="collapse" aria-expanded="false">
+								<ul class="submenu" id="submenu">
+									<li class="panel">
+										<a href="#SubmenuMatematicaModular" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Aritmética Modular</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatematicaModular" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../views/matematicaModular/matematicaModular/matematicaModular.html">¿Qué es Aritmética Modular?</a></li>
+												<li><a href="../../views/matematicaModular/sumaModular/sumaModular.html">Suma Modular</a></li>
+												<li><a href="../../views/matematicaModular/multiplicacionModular/multiplicacionModular.html">Multiplicación modular</a></li>
+												<li><a href="../../views/matematicaModular/inversoAditivo/inversoAditivo.html">Inverso aditivo</a></li>
+												<li><a href="../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.html">Inverso multiplicativo</a></li>
+												<li><a href="../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.html">Exponenciación clásica</a></li>
+												<li><a href="../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.html">Exponenciación binaria</a></li>
+												<li><a href="../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.html">Exponenciación por Teorema de Euler</a></li>
+												<li><a href="../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.html">Algoritmo Euclides</a></li>
+												<li><a href="../../views/matematicaModular/phiEuler/phiEuler.html">Phi de Euler</a></li>
+												<li><a href="../../views/matematicaModular/raicesPrimitivas/raicesPrimitivas.html">Raices Primitivas</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuMatrices" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Matrices</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatrices" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../views/matrices/matrices/matrices.html">Que es una Matriz</a></li>
+												<li><a href="../../views/matrices/multiplicacionMatrices/multiplicacionMatrices.html">Multiplicación de matrices</a></li>
+												<li><a href="../../views/matrices/determinanteMatrices/determinanteMatrices.html">Determinante de una matriz</a></li>
+												<li><a href="../../views/matrices/cofactoresMatrices/cofactoresMatrices.html">Matriz de cofactores</a></li>
+												<li><a href="../../views/matrices/transpuestaMatrices/transpuestaMatrices.html">Transpuesta de una matriz</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCampoGF2" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Campo GF(2<sup>8</sup>)</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCampoGF2" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../views/campoGF2/convertirGF/convertirGF.html">Elementos en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../views/campoGF2/sumaGF/sumaGF.html">Suma en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../views/campoGF2/multiplicacionGF/multiplicacionGF.html">Multiplicación en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.html">Inverso multiplicativo en GF(2<sup>8</sup>)</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCurva" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Curva elíptica</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCurva" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../views/curvaEliptica/curvaEliptica/curvaEliptica.html">¿Qué es la Curva Elíptica?</a></li>
+												<li><a href="../../views/curvaEliptica/sumaPuntos/sumaPuntos.html">Suma de puntos</a></li>
+												<li><a href="../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.html">Doblado de puntos</a></li>
+												<li><a href="../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.html">Obtención de puntos</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuBits" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Operaciones a nivel<br>de bits</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuBits" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../views/operacionesBits/operadoresLogicos/operadoresLogicos.html">Operadores lógicos </a></li>
+												<li><a href="../../views/operacionesBits/rotacionBits/rotacionBits.html">Rotación bits</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía clásica</li>
+						<li><a href="../../views/criptografia/clasica/clasica.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía clásica</span></a></li>
+						<li class="panel">
+							<a href="#Monoalfabetica" onclick="sustitucionMonoalfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución monoalfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Monoalfabetica" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/monoalfabetica/cesar/cesar.html">Cesar</a></li>
+									<li><a href="../../views/monoalfabetica/atbash/atbash.html">Atbash</a></li>
+									<li><a href="../../views/monoalfabetica/polybios/polybios.html">Polybios</a></li>
+									<li><a href="../../views/monoalfabetica/playfair/playfair.html">Playfair</a></li>
+									<li><a href="../../views/monoalfabetica/afin/afin.html">Afin</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Polialfabetica" onclick="sustitucionPolialfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución polialfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Polialfabetica" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/polialfabetica/desplazamiento/desplazamiento.html">Desplazamiento</a></li>
+									<li><a href="../../views/polialfabetica/vigenere/vigenere.html">Vigenere</a></li>
+									<li><a href="../../views/polialfabetica/vernam/vernam.html">Vernam</a></li>
+									<li><a href="../../views/polialfabetica/hill/hill.html">Hill</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Transposicion" onclick="transposicion();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por<br>transposición</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Transposicion" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/transposicion/rejilla/rejilla.html">Rejilla</a></li>
+									<li><a href="../../views/transposicion/inversa/inversa.html">Inversa</a></li>
+									<li><a href="../../views/transposicion/simple/simple.html">Simple</a></li>
+									<li><a href="../../views/transposicion/riel/riel.html">Por Riel</a></li>
+									<li><a href="../../views/transposicion/columnas/columnas.html">Por Columnas</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía moderna</li>
+						<li><a href="../../views/criptografia/moderna/moderna.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía moderna</span></a></li>
+						<li class="panel">
+							<a href="#Simetrico" onclick="cifradoSimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado simétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Simetrico" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/simetrico/aes/aes.html">AES</a></li>
+									<li><a href="../../views/simetrico/des/des.html">DES</a></li>
+									<li><a href="../../views/simetrico/feistel/feistel.html">Feistel</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Asimetrico" onclick="cifradoAsimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado asimétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Asimetrico" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/asimetrico/diffieHellman/diffieHellman.html">Diffie Hellman</a></li>
+									<li><a href="../../views/asimetrico/rsa/rsa.html">RSA</a></li>
+									<!-- <li><a href="../../views/asimetrico/dsa/dsa.html">DSA</a></li> -->
+									<li><a href="../../views/asimetrico/gammal/gammal.html">ElGamal</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Hash" onclick="funcionesHash();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Funciones Hash</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Hash" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/hash/md5/md5.html">MD5</a></li>
+									<li><a href="../../views/hash/sha1/sha1.html">SHA-1</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Firma" onclick="firmaDigital();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Firma Digital</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Firma" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../views/firmas/firmaRsa/firmaRsa.html">Firma RSA</a></li>
+									<li><a href="../../views/firmas/firmaECDSA/firmaECDSA.html">Firma ECDSA</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content">
+					<div class="content-heading clearfix">
+						<ul class="breadcrumb">
+							<li><i class="fa fa-home"></i> Inicio</li>
+							<li class="active"><a href="#">Cifrado de archivos</a></li>
+						</ul>
+					</div>
+					<div class="container-fluid">
+						<div class="panel">
+							<div class="panel-body">
+								<h1>Cifrado/Descifrado de Archivos <img src="../../includes/img/sketch/clipboard-hand-drawn-tool.png" width="70" align="middle" class="sketch pull-right"></h1>
+								<hr>
+								<p>Cifra y descifra archivos de texto.</p>
+								<hr>
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="dropdown active">
+										<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Sustitución monoalfabética <span class="label label-primary label-transparent">5</span> <b class="caret"></b></a>										
+										<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+											<li><a href="#archivosCesar" tabindex="-1" data-toggle="tab">Cesar</a></li>
+											<li><a href="#archivosAtbash" tabindex="-1" data-toggle="tab">Atbash</a></li>
+											<li><a href="#archivosPolybios" tabindex="-1" data-toggle="tab">Polybios</a></li>
+											<li><a href="#archivosPlayfair" tabindex="-1" data-toggle="tab">Playfair</a></li>
+											<li><a href="#archivosAfin" tabindex="-1" data-toggle="tab">Afin</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" id="myTabDrop2" class="dropdown-toggle" data-toggle="dropdown">Sustitución polialfabética <span class="label label-primary label-transparent">3</span> <b class="caret"></b></a>										
+										<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop2">
+											<li><a href="#archivosDesplazamiento" tabindex="-1" data-toggle="tab">Desplazamiento</a></li>
+											<li><a href="#archivosVigenere" tabindex="-1" data-toggle="tab">Vigenere</a></li>
+											<li><a href="#archivosHill" tabindex="-1" data-toggle="tab">Hill</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" id="myTabDrop3" class="dropdown-toggle" data-toggle="dropdown">Transposición <span class="label label-primary label-transparent">5</span> <b class="caret"></b></a>										
+										<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop3">
+											<li><a href="#archivosRejilla" tabindex="-1" data-toggle="tab">Rejilla</a></li>
+											<li><a href="#archivosInversa" tabindex="-1" data-toggle="tab">Inversa</a></li>
+											<li><a href="#archivosSimple" tabindex="-1" data-toggle="tab">Simple</a></li>
+											<li><a href="#archivosRiel" tabindex="-1" data-toggle="tab">Por riel</a></li>
+											<li><a href="#archivosColumnas" tabindex="-1" data-toggle="tab">Por columnas</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" id="myTabDrop4" class="dropdown-toggle" data-toggle="dropdown">Simétrico <span class="label label-primary label-transparent">2</span> <b class="caret"></b></a>										
+										<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop4">
+											<li><a href="#archivosDES" tabindex="-1" data-toggle="tab">DES</a></li>
+											<li><a href="#archivosAES" tabindex="-1" data-toggle="tab">AES</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" id="myTabDrop5" class="dropdown-toggle" data-toggle="dropdown">Asimétrico <span class="label label-primary label-transparent">3</span> <b class="caret"></b></a>										
+										<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop5">
+											<li><a href="#archivosRSA" tabindex="-1" data-toggle="tab">RSA</a></li>
+											<!-- <li><a href="#archivosDSA" tabindex="-1" data-toggle="tab"><i class="fa fa-circle" style="color: red;"></i>DSA</a></li> -->
+											<!-- <li><a href="#archivosDiffieHellman" tabindex="-1" data-toggle="tab">Diffie-Hellman</a></li>-->
+											<li><a href="#archivosGammal" tabindex="-1" data-toggle="tab">ElGamal</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" id="myTabDrop6" class="dropdown-toggle" data-toggle="dropdown">Funciones Hash <span class="label label-primary label-transparent">2</span> <b class="caret"></b></a>										
+										<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop6">
+											<li><a href="#archivosMD5" tabindex="-1" data-toggle="tab">MD5</a></li>
+											<li><a href="#archivosSHA1" tabindex="-1" data-toggle="tab">SHA-1</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" id="myTabDrop7" class="dropdown-toggle" data-toggle="dropdown">Firma Digital <span class="label label-primary label-transparent">2</span> <b class="caret"></b></a>										
+										<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop7">
+											<li><a href="#archivosFirmaRSA" tabindex="-1" data-toggle="tab">Firmar RSA</a></li>
+											<li><a href="#archivosFirmaECDSA" tabindex="-1" data-toggle="tab">Firma ECDSA</a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="tab-content no-padding">
+									<div id="archivosCesar" class="tab-pane fade in active">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado Cesar</h3>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputCesarCifrado" onchange="cifrarArchivoCesar();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarCesarCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaCesarCifrado">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado Cesar</h3>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputCesarDescifrado" onchange="descifrarArchivoCesar();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarCesarDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaCesarDescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosAtbash" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado Atbash</h3>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputAtbashCifrado" onchange="cifrarArchivoAtbash();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarAtbashCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaAtbashCifrado">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado Atbash</h3>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputAtbashDescifrado" onchange="descifrarArchivoAtbash();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarAtbashDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaAtbashDescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosPolybios" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado Polybios</h3>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputCPolybios" onchange="cifrarArchivoPolybios();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarPolybiosCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaCPolybios">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado Polybios</h3>
+												<input type="file" class="dropify" data-max-file-size="200K" data-allowed-file-extensions="txt" id="fileInputDPolybios" onchange="descifrarArchivoPolybios();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarPolybiosDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaDPolybios">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosPlayfair" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado Playfair</h3>
+												<div class="form-group">
+													<div class="input-group">Llave Alfabética:
+														<input class="form-control" type="text" id="llavePlayfairCifrado" maxlength="25" placeholder="Llave Alfabética">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputPlayfairCifrado">
+												<br>
+												<button class="btn btn-info btn-block" onclick="cifrarArchivoPlayfair();">Cifrar</button>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarPlayfairCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaPlayfairCifrado">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado Playfair</h3>
+												<div class="form-group">
+													<div class="input-group">Llave Alfabética:
+														<input class="form-control" type="text" id="llavePlayfairDescifrado" maxlength="25" placeholder="Llave Alfabética">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputPlayfairDescifrado">
+												<br>
+												<button class="btn btn-info btn-block" onclick="descifrarArchivoPlayfair();">Descifrar</button>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarPlayfairDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaPlayfairDescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosAfin" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado Afin</h3>
+												<div class="form-group">
+													<div class="input-group">Elige un valor para a:
+														<select id="valorAafinCarchivo" class="form-control">
+														  <option value="1">1</option>
+														  <option value="2">2</option>
+														  <option value="4">4</option>
+														  <option value="5">5</option>
+														  <option value="7">7</option>
+														  <option value="8">8</option>
+														  <option value="10">10</option>
+														  <option value="11">11</option>
+														  <option value="13">13</option>
+														  <option value="14">14</option>
+														  <option value="16">16</option>
+														  <option value="17">17</option>
+														  <option value="19">19</option>
+														  <option value="20">20</option>
+														  <option value="22">22</option>
+														  <option value="23">23</option>
+														  <option value="25">25</option>
+														  <option value="26">26</option>
+														</select>
+													</div>
+													<div class="input-group">Elige un valor para b:
+														<select id="valorBafinCarchivo" class="form-control">
+															<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option>
+														</select>
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputAfinCifrado" onchange="cifrarArchivoAfin();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarAfinCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaAfinCifrado">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado Afin</h3>
+												<div class="form-group">
+													<div class="input-group">Elige un valor para a:
+														<select id="valorAafinDarchivo"  class="form-control">
+														  <option value="1">1</option>
+														  <option value="2">2</option>
+														  <option value="4">4</option>
+														  <option value="5">5</option>
+														  <option value="7">7</option>
+														  <option value="8">8</option>
+														  <option value="10">10</option>
+														  <option value="11">11</option>
+														  <option value="13">13</option>
+														  <option value="14">14</option>
+														  <option value="16">16</option>
+														  <option value="17">17</option>
+														  <option value="19">19</option>
+														  <option value="20">20</option>
+														  <option value="22">22</option>
+														  <option value="23">23</option>
+														  <option value="25">25</option>
+														  <option value="26">26</option>
+														</select>
+													</div>
+													<div class="input-group">Elige un valor para b:
+														<select id="valorBafinDarchivo"  class="form-control">
+															<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option>
+														</select>
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputAfinDescifrado" onchange="descifrarArchivoAfin();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarAfinDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaAfinDescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+
+
+									<div id="archivosDesplazamiento" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado por Desplazamieto</h3>
+												<div class="form-group">
+													<div class="input-group">Llave Numérica:
+														<input class="form-control" type="number" id="llaveDesplaCifrado" min="0" max="26" placeholder="Llave Numérica">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputDesplaCifrado">
+												<br>
+												<button class="btn btn-info btn-block" onclick="cifrarArchivoDespla();">Cifrar</button>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarDesplaCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaDesplaCifrado">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado por Desplazamieto</h3>
+												<div class="form-group">
+													<div class="input-group">Llave Numérica:
+														<input class="form-control" type="number" id="llaveDesplaDescifrado" min="0" max="26" placeholder="Llave Numérica">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputDesplaDescifrado">
+												<br>
+												<button class="btn btn-info btn-block" onclick="descifrarArchivoDespla();">Descifrar</button>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarDesplaDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaDesplaDescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosVigenere" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado Vigenère</h3>
+												<div class="form-group">
+													<div class="input-group">Llave Alfabética:
+														<input class="form-control" type="text" id="in-llaveCifradoArchivoVigenere" maxlength="1000" placeholder="Llave Alfabética">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputCVigenere">
+												<br>
+												<button class="btn btn-info btn-block" id="btn-cifrarArchivoVigenere">Cifrar</button><br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarVigenereCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaCVigenere">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado Vigenère</h3>
+												<div class="form-group">
+													<div class="input-group">Llave Alfabética:
+														<input class="form-control" type="text" id="in-llaveDescifradoArchivoVigenere" maxlength="1000" placeholder="Llave Alfabética">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputDVigenere">
+												<br>
+												<button class="btn btn-info btn-block" id="btn-descifrarArchivoVigenere">Descifrar</button><br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarVigenereDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaDVigenere">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosHill" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado Hill</h3>
+												<!-- <div class="form-group">
+													<div class="input-group">Llave Numérica:
+														<input class="form-control" type="text" id="llaveHillCifrado" placeholder="Llave Numérica">
+													</div>
+												</div> -->
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputHillCifrado" onchange="cifrarArchivoHill();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarHillCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaHillCifrado">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado Hill</h3>
+												<!-- <div class="form-group">
+													<div class="input-group">Llave Numérica:
+														<input class="form-control" type="text" id="llaveHillDescifrado" placeholder="Llave Numérica">
+													</div>
+												</div> -->
+												<input type="file" class="dropify" data-max-file-size="100.002K" data-allowed-file-extensions="txt" id="fileInputHillDescifrado" onchange="descifrarArchivoHill();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarHillDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaHillDescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+
+
+									<div id="archivosRejilla" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado Rejilla</h3>
+												<div class="form-group">
+													<div class="input-group">Elige el tamaño de la rejilla:
+														<select id="tamRejillaCifrado" class="form-control" onchange="mostrarRejillaCifradoArchivo()">
+															<option disabled="" selected="" value=""> -- Selecciona las celdas -- </option>
+															<option value="4">4x4</option>
+															<option value="6">6x6</option>
+															<option value="8">8x8</option>
+														</select>
+													</div>
+													<div id="seccionRejillaC4X4" class="input-group" style="display: none;">
+														Selecciona las celdas que serán los huecos de la rejilla. Debes elegir 4 y recuerda que no puedes elegir 2 de la misma letra:
+														<button id="limpiarRejillaCifradoArchivos" class="form-control btn-info" style="color: white !important;" onclick="limpiarRejillaCifradoArchivos()">Limpiar</button>
+														<table class="table table-bordered">
+															<tbody>
+																<tr><td id="A1C-4X4-0" onclick="SCCA(this)">A1</td><td id="B1C-4X4-1" onclick="SCCA(this)">B1</td><td id="C2C-4X4-2" onclick="SCCA(this)">C2</td><td id="A2C-4X4-3" onclick="SCCA(this)">A2</td></tr>
+																<tr><td id="C1C-4X4-4" onclick="SCCA(this)">C1</td><td id="D1C-4X4-5" onclick="SCCA(this)">D1</td><td id="D2C-4X4-6" onclick="SCCA(this)">D2</td><td id="B2C-4X4-7" onclick="SCCA(this)">B2</td></tr>
+																<tr><td id="B4C-4X4-8" onclick="SCCA(this)">B4</td><td id="D4C-4X4-9" onclick="SCCA(this)">D4</td><td id="D3C-4X4-10" onclick="SCCA(this)">D3</td><td id="C3C-4X4-11" onclick="SCCA(this)">C3</td></tr>
+																<tr><td id="A4C-4X4-12" onclick="SCCA(this)">A4</td><td id="C4C-4X4-13" onclick="SCCA(this)">C4</td><td id="B3C-4X4-14" onclick="SCCA(this)">B3</td><td id="A3C-4X4-15" onclick="SCCA(this)">A3</td></tr>
+															</tbody>
+														</table>
+													</div>
+													<div id="seccionRejillaC6X6" class="input-group" style="display: none;">
+														Selecciona las celdas que serán los huecos de la rejilla. Debes elegir 9 y recuerda que no puedes elegir 2 de la misma letra:
+														<button id="limpiarRejillaCifradoArchivos2" class="form-control btn-info" style="color: white !important;" onclick="limpiarRejillaCifradoArchivos()">Limpiar</button>
+														<table class="table table-bordered">
+															<tbody>
+																<tr><td id="A1C-6X6-0" onclick="SCCA(this)">A1</td><td id="B1C-6X6-1" onclick="SCCA(this)">B1</td><td id="C1C-6X6-2" onclick="SCCA(this)">C1</td><td id="G2C-6X6-3" onclick="SCCA(this)">G2</td><td id="D2C-6X6-4" onclick="SCCA(this)">D2</td><td id="A2C-6X6-5" onclick="SCCA(this)">A2</td></tr>
+
+																<tr><td id="D1C-6X6-6" onclick="SCCA(this)">D1</td><td id="E1C-6X6-7" onclick="SCCA(this)">E1</td><td id="F1C-6X6-8" onclick="SCCA(this)">F1</td><td id="H2C-6X6-9" onclick="SCCA(this)">H2</td><td id="E2C-6X6-10" onclick="SCCA(this)">E2</td><td id="B2C-6X6-11" onclick="SCCA(this)">B2</td></tr>
+
+																<tr><td id="G1C-6X6-12" onclick="SCCA(this)">G1</td><td id="H1C-6X6-13" onclick="SCCA(this)">H1</td><td id="I1C-6X6-14" onclick="SCCA(this)">I1</td><td id="I2C-6X6-15" onclick="SCCA(this)">I2</td><td id="F2C-6X6-16" onclick="SCCA(this)">F2</td><td id="C2C-6X6-17" onclick="SCCA(this)">C2</td></tr>
+
+																<tr><td id="C4C-6X6-18" onclick="SCCA(this)">C4</td><td id="F4C-6X6-19" onclick="SCCA(this)">F4</td><td id="I4C-6X6-20" onclick="SCCA(this)">I4</td><td id="I3C-6X6-21" onclick="SCCA(this)">I3</td><td id="H3C-6X6-22" onclick="SCCA(this)">H3</td><td id="G3C-6X6-23" onclick="SCCA(this)">G3</td></tr>
+
+																<tr><td id="B4C-6X6-24" onclick="SCCA(this)">B4</td><td id="E4C-6X6-25" onclick="SCCA(this)">E4</td><td id="H4C-6X6-26" onclick="SCCA(this)">H4</td><td id="F3C-6X6-27" onclick="SCCA(this)">F3</td><td id="E3C-6X6-28" onclick="SCCA(this)">E3</td><td id="D3C-6X6-29" onclick="SCCA(this)">D3</td></tr>
+
+																<tr><td id="A4C-6X6-30" onclick="SCCA(this)">A4</td><td id="D4C-6X6-31" onclick="SCCA(this)">D4</td><td id="G4C-6X6-32" onclick="SCCA(this)">G4</td><td id="C3C-6X6-33" onclick="SCCA(this)">C3</td><td id="B3C-6X6-34" onclick="SCCA(this)">B3</td><td id="A3C-6X6-35" onclick="SCCA(this)">A3</td></tr>
+															</tbody>
+														</table>
+													</div>
+													<div id="seccionRejillaC8X8" class="input-group" style="display: none;">
+														Selecciona las celdas que serán los huecos de la rejilla. Debes elegir 16 y recuerda que no puedes elegir 2 de la misma letra:
+														<button id="limpiarRejillaCifradoArchivos3" class="form-control btn-info" style="color: white !important;" onclick="limpiarRejillaCifradoArchivos()">Limpiar</button>
+														<table class="table table-bordered">
+															<tbody>
+																<tr><td id="A1C-8X8-0" onclick="SCCA(this)">A1</td><td id="B1C-8X8-1" onclick="SCCA(this)">B1</td><td id="C1C-8X8-2" onclick="SCCA(this)">C1</td><td id="D1C-8X8-3" onclick="SCCA(this)">D1</td><td id="M2C-8X8-4" onclick="SCCA(this)">M2</td><td id="I2C-8X8-5" onclick="SCCA(this)">I2</td><td id="E2C-8X8-6" onclick="SCCA(this)">E2</td><td id="A2C-8X8-7" onclick="SCCA(this)">A2</td></tr>
+
+																<tr><td id="E1C-8X8-8" onclick="SCCA(this)">E1</td><td id="F1C-8X8-9" onclick="SCCA(this)">F1</td><td id="G1C-8X8-10" onclick="SCCA(this)">G1</td><td id="H1C-8X8-11" onclick="SCCA(this)">H1</td><td id="N2C-8X8-12" onclick="SCCA(this)">N2</td><td id="J2C-8X8-13" onclick="SCCA(this)">J2</td><td id="F2C-8X8-14" onclick="SCCA(this)">F2</td><td id="B2C-8X8-15" onclick="SCCA(this)">B2</td></tr>
+
+																<tr><td id="I1C-8X8-16" onclick="SCCA(this)">I1</td><td id="J1C-8X8-17" onclick="SCCA(this)">J1</td><td id="K1C-8X8-18" onclick="SCCA(this)">K1</td><td id="L1C-8X8-19" onclick="SCCA(this)">L1</td><td id="Ñ2C-8X8-20" onclick="SCCA(this)">Ñ2</td><td id="K2C-8X8-21" onclick="SCCA(this)">K2</td><td id="G2C-8X8-22" onclick="SCCA(this)">G2</td><td id="C2C-8X8-23" onclick="SCCA(this)">C2</td></tr>
+
+																<tr><td id="M1C-8X8-24" onclick="SCCA(this)">M1</td><td id="N1C-8X8-25" onclick="SCCA(this)">N1</td><td id="Ñ1C-8X8-26" onclick="SCCA(this)">Ñ1</td><td id="O1C-8X8-27" onclick="SCCA(this)">O1</td><td id="O2C-8X8-28" onclick="SCCA(this)">O2</td><td id="L2C-8X8-29" onclick="SCCA(this)">L2</td><td id="H2C-8X8-30" onclick="SCCA(this)">H2</td><td id="D2C-8X8-31" onclick="SCCA(this)">D2</td></tr>
+
+																<tr><td id="D4C-8X8-32" onclick="SCCA(this)">D4</td><td id="H4C-8X8-33" onclick="SCCA(this)">H4</td><td id="L4C-8X8-34" onclick="SCCA(this)">L4</td><td id="O4C-8X8-35" onclick="SCCA(this)">O4</td><td id="O3C-8X8-36" onclick="SCCA(this)">O3</td><td id="Ñ3C-8X8-37" onclick="SCCA(this)">Ñ3</td><td id="N3C-8X8-38" onclick="SCCA(this)">N3</td><td id="M3C-8X8-39" onclick="SCCA(this)">M3</td></tr>
+
+																<tr><td id="C4C-8X8-40" onclick="SCCA(this)">C4</td><td id="G4C-8X8-41" onclick="SCCA(this)">G4</td><td id="K4C-8X8-42" onclick="SCCA(this)">K4</td><td id="Ñ4C-8X8-43" onclick="SCCA(this)">Ñ4</td><td id="L3C-8X8-44" onclick="SCCA(this)">L3</td><td id="K3C-8X8-45" onclick="SCCA(this)">K3</td><td id="J3C-8X8-46" onclick="SCCA(this)">J3</td><td id="I3C-8X8-47" onclick="SCCA(this)">I3</td></tr>
+
+																<tr><td id="B4C-8X8-48" onclick="SCCA(this)">B4</td><td id="F4C-8X8-49" onclick="SCCA(this)">F4</td><td id="J4C-8X8-50" onclick="SCCA(this)">J4</td><td id="N4C-8X8-51" onclick="SCCA(this)">N4</td><td id="H3C-8X8-52" onclick="SCCA(this)">H3</td><td id="G3C-8X8-53" onclick="SCCA(this)">G3</td><td id="F3C-8X8-54" onclick="SCCA(this)">F3</td><td id="E3C-8X8-55" onclick="SCCA(this)">E3</td></tr>
+
+																<tr><td id="A4C-8X8-56" onclick="SCCA(this)">A4</td><td id="E4C-8X8-57" onclick="SCCA(this)">E4</td><td id="I4C-8X8-58" onclick="SCCA(this)">I4</td><td id="M4C-8X8-59" onclick="SCCA(this)">M4</td><td id="D3C-8X8-60" onclick="SCCA(this)">D3</td><td id="C3C-8X8-61" onclick="SCCA(this)">C3</td><td id="B3C-8X8-62" onclick="SCCA(this)">B3</td><td id="A3C-8X8-63" onclick="SCCA(this)">A3</td></tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputRejillaCifrado">
+												<br>
+												<button class="btn btn-info btn-block" id="btn-cifrarArchivoRejilla">Cifrar</button><br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarRejillaCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaRejillaCifrado">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado Rejilla</h3>
+												<div class="form-group">
+													<div class="input-group">Elige el tamaño de la rejilla:
+														<select id="tamRejillaDescifrado" class="form-control" onChange="mostrarRejillaDescifradoArchivo()" >
+															<option disabled selected value> -- Selecciona las celdas -- </option>
+															<option value=4>4x4</option>
+															<option value=6>6x6</option>
+															<option value=8>8x8</option>
+														</select>
+													</div>
+													<div id="seccionRejillaD4X4" class="input-group" style="display: none;">
+														Selecciona las celdas que serán los huecos de la rejilla. Debes elegir 4 y recuerda que no puedes elegir 2 de la misma letra:
+														<button id="limpiarRejillaDescifradoArchivos" class="form-control btn-info" style="color: white !important;" onClick="limpiarRejillaDescifradoArchivos()">Limpiar</button>
+														<button onClick="copiarRejillaArchivos()" class="form-control btn-info" style="color: white !important;">Copiar Rejilla</button>
+														<table class="table table-bordered">
+															<tbody>
+
+																<tr><td id="A1D-4X4-0" onclick="SCDA(this)">A1</td><td id="B1D-4X4-1" onclick="SCDA(this)">B1</td><td id="C2D-4X4-2" onclick="SCDA(this)">C2</td><td id="A2D-4X4-3" onclick="SCDA(this)">A2</td></tr>
+
+																<tr><td id="C1D-4X4-4" onclick="SCDA(this)">C1</td><td id="D1D-4X4-5" onclick="SCDA(this)">D1</td><td id="D2D-4X4-6" onclick="SCDA(this)">D2</td><td id="B2D-4X4-7" onclick="SCDA(this)">B2</td></tr>
+
+																<tr><td id="B4D-4X4-8" onclick="SCDA(this)">B4</td><td id="D4D-4X4-9" onclick="SCDA(this)">D4</td><td id="D3D-4X4-10" onclick="SCDA(this)">D3</td><td id="C3D-4X4-11" onclick="SCDA(this)">C3</td></tr>
+
+																<tr><td id="A4D-4X4-12" onclick="SCDA(this)">A4</td><td id="C4D-4X4-13" onclick="SCDA(this)">C4</td><td id="B3D-4X4-14" onclick="SCDA(this)">B3</td><td id="A3D-4X4-15" onclick="SCDA(this)">A3</td></tr>
+
+															</tbody>
+														</table>
+													</div>
+													<div id="seccionRejillaD6X6" class="input-group" style="display: none;">
+														Selecciona las celdas que serán los huecos de la rejilla. Debes elegir 9 y recuerda que no puedes elegir 2 de la misma letra:
+														<button id="limpiarRejillaDescifradoArchivos2" class="form-control btn-info" style="color: white !important;" onClick="limpiarRejillaDescifradoArchivos()">Limpiar</button>
+														<button onClick="copiarRejillaArchivos()" class="form-control btn-info" style="color: white !important;">Copiar Rejilla</button>
+														<table class="table table-bordered">
+															<tbody>
+																
+																<tr><td id="A1D-6X6-0" onclick="SCDA(this)">A1</td><td id="B1D-6X6-1" onclick="SCDA(this)">B1</td><td id="C1D-6X6-2" onclick="SCDA(this)">C1</td><td id="G2D-6X6-3" onclick="SCDA(this)">G2</td><td id="D2D-6X6-4" onclick="SCDA(this)">D2</td><td id="A2D-6X6-5" onclick="SCDA(this)">A2</td></tr>
+
+																<tr><td id="D1D-6X6-6" onclick="SCDA(this)">D1</td><td id="E1D-6X6-7" onclick="SCDA(this)">E1</td><td id="F1D-6X6-8" onclick="SCDA(this)">F1</td><td id="H2D-6X6-9" onclick="SCDA(this)">H2</td><td id="E2D-6X6-10" onclick="SCDA(this)">E2</td><td id="B2D-6X6-11" onclick="SCDA(this)">B2</td></tr>
+
+																<tr><td id="G1D-6X6-12" onclick="SCDA(this)">G1</td><td id="H1D-6X6-13" onclick="SCDA(this)">H1</td><td id="I1D-6X6-14" onclick="SCDA(this)">I1</td><td id="I2D-6X6-15" onclick="SCDA(this)">I2</td><td id="F2D-6X6-18" onclick="SCDA(this)">F2</td><td id="C2D-6X6-17" onclick="SCDA(this)">C2</td></tr>
+
+																<tr><td id="C4D-6X6-18" onclick="SCDA(this)">C4</td><td id="F4D-6X6-19" onclick="SCDA(this)">F4</td><td id="I4D-6X6-20" onclick="SCDA(this)">I4</td><td id="I3D-6X6-21" onclick="SCDA(this)">I3</td><td id="H3D-6X6-22" onclick="SCDA(this)">H3</td><td id="G3D-6X6-23" onclick="SCDA(this)">G3</td></tr>
+
+																<tr><td id="B4D-6X6-24" onclick="SCDA(this)">B4</td><td id="E4D-6X6-25" onclick="SCDA(this)">E4</td><td id="H4D-6X6-26" onclick="SCDA(this)">H4</td><td id="F3D-6X6-27" onclick="SCDA(this)">F3</td><td id="E3D-6X6-28" onclick="SCDA(this)">E3</td><td id="D3D-6X6-29" onclick="SCDA(this)">D3</td></tr>
+
+																<tr><td id="A4D-6X6-30" onclick="SCDA(this)">A4</td><td id="D4D-6X6-31" onclick="SCDA(this)">D4</td><td id="G4D-6X6-33" onclick="SCDA(this)">G4</td><td id="C3D-6X6-33" onclick="SCDA(this)">C3</td><td id="B3D-6X6-34" onclick="SCDA(this)">B3</td><td id="A3D-6X6-35" onclick="SCDA(this)">A3</td></tr>
+
+															</tbody>
+														</table>
+													</div>
+													<div id="seccionRejillaD8X8" class="input-group" style="display: none;">
+														Selecciona las celdas que serán los huecos de la rejilla. Debes elegir 16 y recuerda que no puedes elegir 2 de la misma letra:
+														<button id="limpiarRejillaDescifradoArchivos3" class="form-control btn-info" style="color: white !important;" onClick="limpiarRejillaDescifradoArchivos()">Limpiar</button>
+														<button onClick="copiarRejillaArchivos()" class="form-control btn-info" style="color: white !important;">Copiar Rejilla</button>
+														<table class="table table-bordered">
+															<tbody>
+																
+																<tr><td id="A1D-8X8-0" onclick="SCDA(this)">A1</td><td id="B1D-8X8-1" onclick="SCDA(this)">B1</td><td id="C1D-8X8-2" onclick="SCDA(this)">C1</td><td id="D1D-8X8-3" onclick="SCDA(this)">D1</td><td id="M2D-8X8-4" onclick="SCDA(this)">M2</td><td id="I2D-8X8-5" onclick="SCDA(this)">I2</td><td id="E2D-8X8-6" onclick="SCDA(this)">E2</td><td id="A2D-8X8-7" onclick="SCDA(this)">A2</td></tr>
+
+																<tr><td id="E1D-8X8-8" onclick="SCDA(this)">E1</td><td id="F1D-8X8-9" onclick="SCDA(this)">F1</td><td id="G1D-8X8-10" onclick="SCDA(this)">G1</td><td id="H1D-8X8-11" onclick="SCDA(this)">H1</td><td id="N2D-8X8-12" onclick="SCDA(this)">N2</td><td id="J2D-8X8-13" onclick="SCDA(this)">J2</td><td id="F2D-8X8-14" onclick="SCDA(this)">F2</td><td id="B2D-8X8-15" onclick="SCDA(this)">B2</td></tr>
+
+																<tr><td id="I1D-8X8-16" onclick="SCDA(this)">I1</td><td id="J1D-8X8-17" onclick="SCDA(this)">J1</td><td id="K1D-8X8-18" onclick="SCDA(this)">K1</td><td id="L1D-8X8-19" onclick="SCDA(this)">L1</td><td id="Ñ2D-8X8-20" onclick="SCDA(this)">Ñ2</td><td id="K2D-8X8-21" onclick="SCDA(this)">K2</td><td id="G2D-8X8-22" onclick="SCDA(this)">G2</td><td id="C2D-8X8-23" onclick="SCDA(this)">C2</td></tr>
+
+																<tr><td id="M1D-8X8-24" onclick="SCDA(this)">M1</td><td id="N1D-8X8-25" onclick="SCDA(this)">N1</td><td id="Ñ1D-8X8-26" onclick="SCDA(this)">Ñ1</td><td id="O1D-8X8-27" onclick="SCDA(this)">O1</td><td id="O2D-8X8-28" onclick="SCDA(this)">O2</td><td id="L2D-8X8-29" onclick="SCDA(this)">L2</td><td id="H2D-8X8-30" onclick="SCDA(this)">H2</td><td id="D2D-8X8-31" onclick="SCDA(this)">D2</td></tr>
+
+																<tr><td id="D4D-8X8-32" onclick="SCDA(this)">D4</td><td id="H4D-8X8-33" onclick="SCDA(this)">H4</td><td id="L4D-8X8-34" onclick="SCDA(this)">L4</td><td id="O4D-8X8-35" onclick="SCDA(this)">O4</td><td id="O3D-8X8-36" onclick="SCDA(this)">O3</td><td id="Ñ3D-8X8-37" onclick="SCDA(this)">Ñ3</td><td id="N3D-8X8-38" onclick="SCDA(this)">N3</td><td id="M3D-8X8-39" onclick="SCDA(this)">M3</td></tr>
+
+																<tr><td id="C4D-8X8-40" onclick="SCDA(this)">C4</td><td id="G4D-8X8-41" onclick="SCDA(this)">G4</td><td id="K4D-8X8-42" onclick="SCDA(this)">K4</td><td id="Ñ4D-8X8-43" onclick="SCDA(this)">Ñ4</td><td id="L3D-8X8-44" onclick="SCDA(this)">L3</td><td id="K3D-8X8-45" onclick="SCDA(this)">K3</td><td id="J3D-8X8-46" onclick="SCDA(this)">J3</td><td id="I3D-8X8-47" onclick="SCDA(this)">I3</td></tr>
+
+																<tr><td id="B4D-8X8-48" onclick="SCDA(this)">B4</td><td id="F4D-8X8-49" onclick="SCDA(this)">F4</td><td id="J4D-8X8-50" onclick="SCDA(this)">J4</td><td id="N4D-8X8-51" onclick="SCDA(this)">N4</td><td id="H3D-8X8-52" onclick="SCDA(this)">H3</td><td id="G3D-8X8-53" onclick="SCDA(this)">G3</td><td id="F3D-8X8-54" onclick="SCDA(this)">F3</td><td id="E3D-8X8-55" onclick="SCDA(this)">E3</td></tr>
+
+																<tr><td id="A4D-8X8-56" onclick="SCDA(this)">A4</td><td id="E4D-8X8-57" onclick="SCDA(this)">E4</td><td id="I4D-8X8-58" onclick="SCDA(this)">I4</td><td id="M4D-8X8-59" onclick="SCDA(this)">M4</td><td id="D3D-8X8-60" onclick="SCDA(this)">D3</td><td id="C3D-8X8-61" onclick="SCDA(this)">C3</td><td id="B3D-8X8-62" onclick="SCDA(this)">B3</td><td id="A3D-8X8-63" onclick="SCDA(this)">A3</td></tr>
+
+															</tbody>
+														</table>
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="105K" data-allowed-file-extensions="txt" id="fileInputRejillaDescifrado">
+												<br>
+												<button class="btn btn-info btn-block" id="btn-descifrarArchivoRejilla">Descifrar</button><br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarRejillaDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaRejillaDescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosInversa" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado Inversa</h3>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputInversaCifrado" onchange="cifrarArchivoInversa();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarInversaCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaInversaCifrado">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado Inversa</h3>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputInversaDescifrado" onchange="descifrarArchivoInversa();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarInversaDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaInversaDescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosSimple" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado Simple</h3>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputCSimple" onchange="cifrarArchivoSimple();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarSimpleCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaCSimple">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado Simple</h3>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputDSimple" onchange="descifrarArchivoSimple();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarSimpleDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaDSimple">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosRiel" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado por Riel</h3>
+												<div class="form-group">
+													<div class="input-group">Elije el número de rieles:
+														<input class="form-control" type="number" id="numeroRielesCifrado" min="2" max="50" value="2">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputRielCifrado">
+												<br>
+												<button class="btn btn-info btn-block" id="btn-cifarArchivoRiel">Cifrar</button><br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarRielCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaRielCifrado">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado por Riel</h3>
+												<div class="form-group">
+													<div class="input-group">Elije el número de rieles:
+														<input class="form-control" type="number" id="numeroRielesDescifrado" min="2" max="50" value="2">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputRielDescifrado">
+												<br>
+												<button class="btn btn-info btn-block" id="btn-descifarArchivoRiel">Descifrar</button><br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarRielDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaRielDescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosColumnas" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado por Columnas</h3>
+												<div class="form-group">
+													<div class="input-group">Llave Alfabética:
+														<input class="form-control" type="text" id="in-llaveCifradoArchivoColumnas" maxlength="1000" placeholder="Llave alfabética">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputCColumnas">
+												<br>
+												<button class="btn btn-info btn-block" id="btn-cifrarArchivoColumnas">Cifrar</button><br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarColumnasCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaCColumnas">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado por Columnas</h3>
+												<div class="form-group">
+													<div class="input-group">Llave Alfabética:
+														<input class="form-control" type="text" id="in-llaveDescifradoArchivoColumnas" maxlength="1000" placeholder="Llave alfabética">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="200K" data-allowed-file-extensions="txt" id="fileInputDColumnas">
+												<br>
+												<button class="btn btn-info btn-block" id="btn-descifrarArchivoColumnas">Descifrar</button><br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarColumnasDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaDColumnas">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+
+
+									<div id="archivosAES" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado AES</h3>
+												<div class="form-group">
+													<div class="input-group">Llave:
+														<input class="form-control" type="text" id="llaveAESCifradoArchivo" maxlength="16" placeholder="Llave">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputAESCifrado">
+												<br>
+												<button class="btn btn-info btn-block" id="btn-cifrarArchivoAES">Cifrar</button><br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarAESCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaAESCifrado">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado AES</h3>
+												<div class="form-group">
+													<div class="input-group">Llave:
+														<input class="form-control" type="text" id="llaveAESDescifradoArchivo" maxlength="16" placeholder="Llave">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="200K" data-allowed-file-extensions="txt" id="fileInputAESDescifrado">
+												<br>
+												<button class="btn btn-info btn-block" id="btn-descifrarArchivoAES">Descifrar</button><br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarAESDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaAESDescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosDES" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Cifrado DES</h3>
+												<div class="form-group">
+													<div class="input-group">Llave:
+														<input class="form-control" type="text" id="llaveDesCifrado" maxlength="8" placeholder="Llave">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputDesCifrado">
+												<br>
+												<button class="btn btn-info btn-block" onclick="cifrarArchivoDes(1);">Cifrar</button>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarDesCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaDesCifrado" style="max-height: 200px;">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Descifrado DES</h3>
+												<div class="form-group">
+													<div class="input-group">Llave:
+														<input class="form-control" type="text" id="llaveDesDescifrado" maxlength="8" placeholder="Llave">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="200K" data-allowed-file-extensions="txt" id="fileInputDesDescifrado">
+												<br>
+												<button class="btn btn-info btn-block" onclick="descifrarArchivoDes(0);">Descifrar</button>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarDesDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaDesDescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+
+									<div id="archivosRSA" class="tab-pane fade in">
+										<div class="row">
+											<h3>Generar Llaves RSA</h3>
+											<div class="col-md-3">
+												<h4>Numero primo p</h4>
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="pRSA">
+											</div>
+											<div class="col-md-3">
+												<h4>Numero primo q</h4>
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="qRSA">
+											</div>
+											<div class="col-md-3">
+												<h4>Exponente 'e'</h4>
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="eRSA">
+											</div>
+											<div class="col-md-3" style="padding-top: 40px;">
+												<button class="btn btn-info btn-lg btn-block" id="generarLlavesRSA" style="height: 198px; margin-bottom: 4px;">Generar Llaves</button>
+											</div>
+											<div class="col-md-12">
+												<p><b>*Todos los valores deben estar en hexadecimal.</b></p>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarRSAVerificar"></div>
+												</div>
+												<pre id="fileDisplayAreaRSAVerificar">&nbsp;</pre>
+											</div>
+										</div>
+										<hr>
+										<div class="row">
+											<h3>Cifrado RSA</h3>
+											<div class="col-md-5">	
+												<h4>Llave pública</h4>																							
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="llavePublicaRSA">
+											</div>
+											<div class="col-md-5">	
+												<h4>Archivo</h4>
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="fileInputCRSA">
+											</div>
+											<div class="col-md-2" style="padding-top: 40px;">
+												<button class="btn btn-info btn-lg btn-block" id="cifrarArchivoRSA" style="height: 198px;">Cifrar</button>
+											</div>
+											<div class="col-md-12">
+												<p><b>*La llave debe estar en hexadecimal.</b></p>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarRSACifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaRSACifrado">&nbsp;</pre>
+											</div>
+										</div>
+										<hr>
+										<div class="row">
+											<h3>Descifrado RSA</h3>
+											<div class="col-md-5">	
+												<h4>Llave privada</h4>																							
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="llavePrivadaRSA">
+											</div>
+											<div class="col-md-5">	
+												<h4>Archivo</h4>
+												<input type="file" class="dropify" data-max-file-size="5.010K" data-allowed-file-extensions="txt" id="fileInputDRSA">
+											</div>
+											<div class="col-md-2" style="padding-top: 40px;">
+												<button class="btn btn-info btn-lg btn-block" id="descifrarArchivoRSA" style="height: 198px;">Descifrar</button>
+											</div>
+											<div class="col-md-12">
+												<p><b>*La llave debe estar en hexadecimal.</b></p>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarRSADescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaRSADescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosGammal" class="tab-pane fade in">
+										<div class="row">
+											<h3>Generar Llave ElGamal</h3>
+											<div class="col-md-3">
+												<h4>Numero primo 'p'</h4>
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="pElGamal">
+											</div>
+											<div class="col-md-3">
+												<h4>Generador 'g'</h4>
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="raizElGamal">
+											</div>
+											<div class="col-md-3">
+												<h4>Exponente 'e'</h4>
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="eElGamal">
+											</div>
+											<div class="col-md-3" style="padding-top: 40px;">
+												<button class="btn btn-info btn-lg btn-block" id="generarLlaveElGamal" style="height: 198px; margin-bottom: 4px;">Generar Llave</button>
+											</div>
+											<div class="col-md-12">
+												<p><b>*Todos los valores deben estar en hexadecimal.</b></p>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarGammalVerificar"></div>
+												</div>
+												<pre id="fileDisplayAreaGammalVerificar">&nbsp;</pre>
+											</div>
+										</div>
+										<hr>
+										<div class="row">
+											<h3>Cifrado ElGamal</h3>
+											<div class="col-md-3">	
+												<h4>Llave pública</h4>																							
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="llaveElGamal">
+											</div>
+											<div class="col-md-3">	
+												<h4>Exponente 'e'</h4>
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="eCElGamal">
+											</div>
+											<div class="col-md-3">	
+												<h4>Archivo</h4>
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="fileInputCElGamal">
+											</div>
+											<div class="col-md-3" style="padding-top: 40px;">
+												<button class="btn btn-info btn-lg btn-block" id="cifrarArchivoElGamal" style="height: 198px;">Cifrar</button>
+											</div>
+											<div class="col-md-12">
+												<p><b>*La llave y el exponente deben estar en hexadecimal.</b></p>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarGammalCifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaGammalCifrado">&nbsp;</pre>
+											</div>
+										</div>
+										<hr>
+										<div class="row">
+											<h3>Descifrado ElGamal</h3>
+											<div class="col-md-3">	
+												<h4>Numero primo p</h4>																							
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="pDElGamal">
+											</div>
+											<div class="col-md-3">	
+												<h4>Exponente 'e'</h4>
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="eDElGamal">
+											</div>
+											<div class="col-md-3">	
+												<h4>Archivo</h4>
+												<input type="file" class="dropify" data-max-file-size="5K" data-allowed-file-extensions="txt" id="fileInputDElGamal">
+											</div>
+											<div class="col-md-3" style="padding-top: 40px;">
+												<button class="btn btn-info btn-lg btn-block" id="descifrarArchivoElGamal" style="height: 198px;">Descifrar</button>
+											</div>
+											<div class="col-md-12">
+												<p><b>*P y el exponente deben estar en hexadecimal.</b></p>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarGammalDescifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaGammalDescifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+
+
+									<div id="archivosMD5" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-12">
+												<h3>Función MD5</h3>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputMD5Cifrado" onchange="cifrarArchivoMD5();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarMD5Cifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaMD5Cifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosSHA1" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-12">
+												<h3>Función SHA-1</h3>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputSHACifrado" onchange="cifrarArchivoSHA();">
+												<br><div></div><div></div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarSHA1Cifrado"></div>
+												</div>
+												<pre id="fileDisplayAreaSHACifrado">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+
+
+									<div id="archivosFirmaRSA" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Firmar con RSA</h3>
+												<input type="file" class="dropify" data-max-file-size=".128K" data-allowed-file-extensions="txt" id="fileInputFirmaRSA" onchange="firmarArchivoRSA();">
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarFirmaRSA"></div>
+												</div>
+												<pre id="fileDisplayAreaFirmaRSAllaveN">&nbsp;</pre>
+												<pre id="fileDisplayAreaFirmaRSAllaveE">&nbsp;</pre>
+												<pre id="fileDisplayAreaFirmaRSAFirma">&nbsp;</pre>
+											</div>
+											<div class="col-md-3">
+												<h3>Verificar con RSA</h3>
+												<div class="form-group">
+													<div class="input-group">Ingresa la llave pública n:
+														<input class="form-control" type="text" maxlength="256" id="llavePublicaNFirmaRSA">
+													</div>
+												</div>
+												<h4>Mensaje original</h4>
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="fileInputVerificarRSAMensaje">
+											</div>
+											<div class="col-md-3" style="padding-top: 56px;">
+												<div class="form-group">
+													<div class="input-group">Ingresa la llave pública e:
+														<input class="form-control" type="text" id="llavePublicaEFirmaRSA">
+													</div>
+												</div>
+												<h4>Firma obtenida</h4>
+												<input type="file" class="dropify" data-max-file-size="1K" data-allowed-file-extensions="txt" id="fileInputVerificarRSAFirma">
+											</div>
+											<div class="col-md-6"></div>
+											<div class="col-md-6">
+												<br>
+												<button class="btn btn-info btn-block" onclick="verificarArchivoRSA();">Verificar</button>
+												<br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarVerificarRSA"></div>
+												</div>
+												<pre id="fileDisplayAreaVerificarRSA">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+									<div id="archivosFirmaECDSA" class="tab-pane fade in">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Firmar con ECDSA</h3>
+												<div class="form-group">
+													<div class="input-group">Llave privada:
+														<input class="form-control" type="number" id="llavePrivadaArchivoECDSA" min="1" max="28" value="2">
+													</div>													
+												</div>
+												<input type="file" class="dropify" data-max-file-size="100K" data-allowed-file-extensions="txt" id="fileInputECDSAGenerar">
+												<br>
+												<button class="btn btn-info btn-block" id="btn-firmarArchivoECDSA">Firmar</button><br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarECDSAGenerar"></div>
+												</div>
+												<div class="form-group">
+													<div class="input-group">Llave Pública:
+														<pre id="llavePublicaGeneradaECDSA">&nbsp;</pre>
+													</div>
+												</div>
+												<pre id="fileDisplayAreaECDSAGenerar">&nbsp;</pre>
+											</div>
+											<div class="col-md-6">
+												<h3>Verificar firma con ECDSA</h3>
+												<div class="form-group" style="margin-bottom: 70px;">
+													<div class="input-group">Llave pública:
+														<input class="form-control" type="text" id="llavePublicaArchivoECDSA" value="3,4">
+													</div>
+												</div>
+												<input type="file" class="dropify" data-max-file-size="101K" data-allowed-file-extensions="txt" id="fileInputECDSAVerificar">
+												<br>
+												<button class="btn btn-info btn-block" id="btn-verificarArchivoECDSA">Verificar</button><br>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbarECDSAVerificar"></div>
+												</div>
+												<pre id="fileDisplayAreaECDSAVerificar">&nbsp;</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END MAIN CONTENT -->
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="../../includes/vendor/jquery/jquery.min.js"></script>
+		<script src="../../includes/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../includes/scripts/klorofilpro-common.min.js"></script>
+		<script src="../../includes/scripts/animacionTT/infoTipoCifrados.js"></script>
+		<script src="../../includes/vendor/dropify/js/dropify.min.js"></script>
+		<script src="../../includes/vendor/bootstrap-progressbar/js/bootstrap-progressbar.min.js"></script>
+
+		<script src="../../views/monoalfabetica/afin/afin.js"></script>
+		<script src="../../views/monoalfabetica/atbash/atbash.js"></script>
+		<script src="../../views/monoalfabetica/cesar/cesar.js"></script>
+		<script src="../../views/monoalfabetica/playfair/playfair.js"></script>
+		<script src="../../views/monoalfabetica/polybios/polybios.js"></script>
+
+		<script src="../../views/polialfabetica/desplazamiento/desplazamiento.js"></script>
+		<script src="../../views/polialfabetica/hill/hill.js"></script>
+		<script src="../../views/polialfabetica/vernam/vernam.js"></script>
+		<script src="../../views/polialfabetica/vigenere/vigenere.js"></script>
+
+		<script src="../../views/transposicion/columnas/columnas.js"></script>
+		<script src="../../views/transposicion/inversa/inversa.js"></script>
+		<script src="../../views/transposicion/rejilla/rejilla.js"></script>
+		<script src="../../views/transposicion/riel/riel.js"></script>
+		<script src="../../views/transposicion/simple/simple.js"></script>
+
+		<script src="../../views/simetrico/aes/aes.js"></script>
+		<script src="../../views/simetrico/des/des.js"></script>
+		<script src="../../views/simetrico/feistel/feistel.js"></script>
+
+		<script src="../../views/asimetrico/diffieHellman/diffieHellman.js"></script>
+		<script src="../../views/asimetrico/dsa/dsa.js"></script>
+		<script src="../../views/asimetrico/gammal/gammal.js"></script>
+		<script src="../../views/asimetrico/rsa/rsa.js"></script>
+
+		<script src="../../views/hash/md5/md5.js"></script>
+		<script src="../../views/hash/sha1/sha1.js"></script>
+
+		<script src="../../views/firmas/firmaECDSA/firmaECDSA.js"></script>
+		<script src="../../views/firmas/firmaRsa/firmaRsa.js"></script>
+		<script src="../../views/firmas/firmaRsa/rsa.js"></script>
+
+		<script src="../../includes/scripts/animacionTT/FileSaver.js"></script>
+		<script src="../../includes/scripts/animacionTT/BigInteger.min.js"></script>
+		<script src="../../includes/scripts/animacionTT/mensajes.js""></script>
+
+		<script>
+			$(function(){
+				var drEvent = $('.dropify').dropify({
+					messages:{
+						default: 'Arrastra y suelte un archivo aquí o haga click',
+						replace: 'Arrastra y suelte un archivo aquí o haga click para remplazarlo',
+						remove: 'Quitar',
+						error: 'Tipo de archivo no permitido'
+					}
+				});
+				drEvent.on('dropify.afterClear', function(event, element){
+					if (element.element.id == 'pRSA' || element.element.id == 'qRSA' || element.element.id == 'eRSA'){
+						$("#progressbarRSAVerificar").addClass("notransition").css('width','0%').attr('aria-valuenow', '0');
+						$("#fileDisplayAreaRSAVerificar").html('&nbsp;');
+					} else if (element.element.id == 'llavePublicaRSA' || element.element.id == 'fileInputCRSA'){
+						$("#progressbarRSACifrado").addClass("notransition").css('width','0%').attr('aria-valuenow', '0');
+						$("#fileDisplayAreaRSACifrado").html('&nbsp;');
+					} else if (element.element.id == 'llavePrivadaRSA' || element.element.id == 'fileInputDRSA'){
+						$("#progressbarRSADescifrado").addClass("notransition").css('width','0%').attr('aria-valuenow', '0');
+						$("#fileDisplayAreaRSADescifrado").html('&nbsp;');
+					} 
+
+					else if (element.element.id == 'pElGamal' || element.element.id == 'raizElGamal' || element.element.id == 'eElGamal'){
+						$("#progressbarGammalVerificar").addClass("notransition").css('width','0%').attr('aria-valuenow', '0');
+						$("#fileDisplayAreaGammalVerificar").html('&nbsp;');
+					} else if (element.element.id == 'llaveElGamal' || element.element.id == 'eCElGamal' || element.element.id == 'fileInputCElGamal'){
+						$("#progressbarGammalCifrado").addClass("notransition").css('width','0%').attr('aria-valuenow', '0');
+						$("#fileDisplayAreaGammalCifrado").html('&nbsp;');
+					} else if (element.element.id == 'pDElGamal' || element.element.id == 'eDElGamal' || element.element.id == 'fileInputDElGamal'){
+						$("#progressbarGammalDescifrado").addClass("notransition").css('width','0%').attr('aria-valuenow', '0');
+						$("#fileDisplayAreaGammalDescifrado").html('&nbsp;');
+					}
+
+					else if (element.element.id == 'fileInputFirmaRSA'){
+						$("#progressbarFirmaRSA").addClass("notransition").css('width','0%').attr('aria-valuenow', '0');
+						$("#fileDisplayAreaFirmaRSAllaveN").html('&nbsp;');
+						$("#fileDisplayAreaFirmaRSAllaveE").html('&nbsp;');
+						$("#fileDisplayAreaFirmaRSAFirma").html('&nbsp;');
+					} else if (element.element.id == 'fileInputVerificarRSAMensaje' || element.element.id == 'fileInputVerificarRSAFirma'){
+						$("#progressbarVerificarRSA").addClass("notransition").css('width','0%').attr('aria-valuenow', '0');
+						$("#fileDisplayAreaVerificarRSA").html('&nbsp;');
+					}
+
+					else {
+						$(this).parent().next().next().next().next().children().addClass("notransition").css('width','0%').attr('aria-valuenow', '0');
+						$(this).parent().next().next().next().next().next().html('&nbsp;');
+					}					
+				});
+			});
+		</script>
+	</body>
+</html>

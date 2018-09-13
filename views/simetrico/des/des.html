@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>X-CRIPTOZ | Aprende Criptografía</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- VENDOR CSS -->
+		<link rel="stylesheet" href="../../../includes/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../includes/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../../includes/vendor/themify-icons/css/themify-icons.css">
+		<link rel="stylesheet" href="../../../includes/vendor/toastr/toastr.min.css">
+		<link rel="StyleSheet" href="../../../includes/css/animacionTT/panelFlotante.css">
+		<link rel="StyleSheet" href="../../../includes/css/animacionTT/animation.css">
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="../../../includes/css/main.min.css">
+		<!-- ICONS -->
+		<link rel="apple-touch-icon" sizes="76x76" href="../../../includes/img/apple-iconTT.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../../../includes/img/faviconTT.png">
+		<link id="css-skin" rel="stylesheet" href="../../../includes/css/skins/sidebar-nav-darkblue.css" type="text/css">
+	</head>
+	<body>
+		<!-- WRAPPER -->
+		<div id="wrapper">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="brand">
+					<a href="../../../layouts/main.html">
+						<img src="../../../includes/img/logo-white.png" alt="X-CRIPTOZ Logo" class="img-responsive logo">
+					</a>
+				</div>
+				<div class="container-fluid">
+					<div id="tour-fullwidth" class="navbar-btn">
+						<button type="button" class="btn-toggle-fullwidth btn"><i class="fa fa-bars"></i></button>
+					</div>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#creditos">
+									<i class="fa fa-address-card-o"></i>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.escom.ipn.mx/" target="_blanc">
+									<img src="../../../includes/img/escomWhiteMin.png" alt="ESCOM">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar">
+				<nav>
+					<ul class="nav" id="sidebar-nav-menu">						
+						<li class="menu-group">Inicio</li>
+						<li><a href="../../../layouts/main.html"><i class="ti-home"></i> <span class="title">Inicio</span></a></li>
+						<li><a href="../../../views/archivos/archivos.html"><i class="ti-envelope"></i> <span class="title">Cifrado de archivos</span></a></li>
+						<li><a href="../../../views/calculadora/calculadora.html"><i class="ti-panel"></i> <span class="title">Calculadora</span></a></li>
+						<li class="panel">
+							<a href="#" data-toggle="collapse" data-target="#submenuDemo" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="fa fa-superscript"></i> <span class="title">Fundamentos Matemáticos</span><i class="icon-submenu ti-angle-left"></i></a>
+							<div id="submenuDemo" class="collapse" aria-expanded="false">
+								<ul class="submenu" id="submenu">
+									<li class="panel">
+										<a href="#SubmenuMatematicaModular" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Aritmética Modular</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatematicaModular" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/matematicaModular/matematicaModular/matematicaModular.html">¿Qué es Aritmética Modular?</a></li>
+												<li><a href="../../../views/matematicaModular/sumaModular/sumaModular.html">Suma Modular</a></li>
+												<li><a href="../../../views/matematicaModular/multiplicacionModular/multiplicacionModular.html">Multiplicación modular</a></li>
+												<li><a href="../../../views/matematicaModular/inversoAditivo/inversoAditivo.html">Inverso aditivo</a></li>
+												<li><a href="../../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.html">Inverso multiplicativo</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.html">Exponenciación clásica</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.html">Exponenciación binaria</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.html">Exponenciación por Teorema de Euler</a></li>
+												<li><a href="../../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.html">Algoritmo Euclides</a></li>
+												<li><a href="../../../views/matematicaModular/phiEuler/phiEuler.html">Phi de Euler</a></li>
+												<li><a href="../../../views/matematicaModular/raicesPrimitivas/raicesPrimitivas.html">Raices Primitivas</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuMatrices" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Matrices</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatrices" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/matrices/matrices/matrices.html">Que es una Matriz</a></li>
+												<li><a href="../../../views/matrices/multiplicacionMatrices/multiplicacionMatrices.html">Multiplicación de matrices</a></li>
+												<li><a href="../../../views/matrices/determinanteMatrices/determinanteMatrices.html">Determinante de una matriz</a></li>
+												<li><a href="../../../views/matrices/cofactoresMatrices/cofactoresMatrices.html">Matriz de cofactores</a></li>
+												<li><a href="../../../views/matrices/transpuestaMatrices/transpuestaMatrices.html">Transpuesta de una matriz</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCampoGF2" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Campo GF(2<sup>8</sup>)</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCampoGF2" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/campoGF2/convertirGF/convertirGF.html">Elementos en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/sumaGF/sumaGF.html">Suma en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/multiplicacionGF/multiplicacionGF.html">Multiplicación en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.html">Inverso multiplicativo en GF(2<sup>8</sup>)</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCurva" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Curva elíptica</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCurva" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/curvaEliptica/curvaEliptica/curvaEliptica.html">¿Qué es la Curva Elíptica?</a></li>
+												<li><a href="../../../views/curvaEliptica/sumaPuntos/sumaPuntos.html">Suma de puntos</a></li>
+												<li><a href="../../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.html">Doblado de puntos</a></li>
+												<li><a href="../../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.html">Obtención de puntos</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuBits" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Operaciones a nivel<br>de bits</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuBits" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/operacionesBits/operadoresLogicos/operadoresLogicos.html">Operadores lógicos </a></li>
+												<li><a href="../../../views/operacionesBits/rotacionBits/rotacionBits.html">Rotación bits</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía clásica</li>
+						<li><a href="../../../views/criptografia/clasica/clasica.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía clásica</span></a></li>
+						<li class="panel">
+							<a href="#Monoalfabetica" onclick="sustitucionMonoalfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución monoalfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Monoalfabetica" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/monoalfabetica/cesar/cesar.html">Cesar</a></li>
+									<li><a href="../../../views/monoalfabetica/atbash/atbash.html">Atbash</a></li>
+									<li><a href="../../../views/monoalfabetica/polybios/polybios.html">Polybios</a></li>
+									<li><a href="../../../views/monoalfabetica/playfair/playfair.html">Playfair</a></li>
+									<li><a href="../../../views/monoalfabetica/afin/afin.html">Afin</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Polialfabetica" onclick="sustitucionPolialfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución polialfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Polialfabetica" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/polialfabetica/desplazamiento/desplazamiento.html">Desplazamiento</a></li>
+									<li><a href="../../../views/polialfabetica/vigenere/vigenere.html">Vigenere</a></li>
+									<li><a href="../../../views/polialfabetica/vernam/vernam.html">Vernam</a></li>
+									<li><a href="../../../views/polialfabetica/hill/hill.html">Hill</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Transposicion" onclick="transposicion();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por<br>transposición</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Transposicion" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/transposicion/rejilla/rejilla.html">Rejilla</a></li>
+									<li><a href="../../../views/transposicion/inversa/inversa.html">Inversa</a></li>
+									<li><a href="../../../views/transposicion/simple/simple.html">Simple</a></li>
+									<li><a href="../../../views/transposicion/riel/riel.html">Por Riel</a></li>
+									<li><a href="../../../views/transposicion/columnas/columnas.html">Por Columnas</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía moderna</li>
+						<li><a href="../../../views/criptografia/moderna/moderna.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía moderna</span></a></li>
+						<li class="panel">
+							<a href="#Simetrico" onclick="cifradoSimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="active collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado simétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Simetrico" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/simetrico/feistel/feistel.html">Feistel</a></li>
+									<li><a href="des.html" class="active">DES</a></li>
+									<li><a href="../../../views/simetrico/aes/aes.html">AES</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Asimetrico" onclick="cifradoAsimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado asimétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Asimetrico" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/asimetrico/diffieHellman/diffieHellman.html">Diffie Hellman</a></li>
+									<li><a href="../../../views/asimetrico/rsa/rsa.html">RSA</a></li>
+									<!-- <li><a href="../../../views/asimetrico/dsa/dsa.html">DSA</a></li> -->
+									<li><a href="../../../views/asimetrico/gammal/gammal.html">ElGamal</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Hash" onclick="funcionesHash();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Funciones Hash</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Hash" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/hash/md5/md5.html">MD5</a></li>
+									<li><a href="../../../views/hash/sha1/sha1.html">SHA-1</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Firma" onclick="firmaDigital();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Firma Digital</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Firma" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/firmas/firmaRsa/firmaRsa.html">Firma RSA</a></li>
+									<li><a href="../../../views/firmas/firmaECDSA/firmaECDSA.html">Firma ECDSA</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content" id="contenidoPagina">
+					<div class="content-heading clearfix">
+						<ul class="breadcrumb">
+							<li><i class="fa fa-home"></i> Criptografía moderna</li>
+							<li>Simétrico</li>
+							<li class="active"><a href="#">DES</a></li>
+						</ul>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="panel">
+									<div class="panel-heading" style="background-color: #1c79d2 !important;">
+										<h4 class="panel-title" style="color: white !important; font-size: 20px;">Cifrado DES</h4>
+										<button type="button" class="btn btn-primary" style="float: right; position: relative; top: -0.4em;" onclick="mostrarPanelDes();">
+											<span>Ver cifrado</span>
+											<i class="fa fa-cog fa-spin"></i>
+										</button>
+									</div>
+									<div class="panel-body text-justify">
+										<p>El 15 de mayo de 1973, la Agencia Nacional de Normalización hizo un llamamiento en el Registro Federal para la creación de un algoritmo de cifrado que cumpliera con los siguientes requisitos:</p>
+										<ul>
+											<li>Ofrecer un alto nivel de seguridad relacionado con una pequeña clave utilizada para cifrado y descifrado</li>
+											<li>Ser comprensible</li>
+											<li>No depender de la confidencialidad del algoritmo</li>
+											<li>Ser adaptable y económico</li>
+											<li>Ser eficaz y exportable</li>
+										</ul>
+										<p>A finales de 1974, IBM propuso "Lucifer", que gracias a la Agencia Nacional de Seguridad fue modificado convirtiéndose en DES (Data Encryption Standard o Estándar de Cifrado de Datos). 
+										Se trata de un sistema de cifrado simétrico por bloques de 64 bits, de los que 8 bits (un byte) se utilizan como control de paridad para la verificación de la integridad de la clave.
+										El algoritmo se encarga de realizar combinaciones, sustituciones y permutaciones entre el texto a cifrar y la clave, asegurándose al mismo tiempo de que las operaciones puedan realizarse en tanto para el cifrado como para el descifrado.
+										El algoritmo se puede describir de la siguiente manera:</p>
+										<ul>
+											<li>Fraccionamiento del texto en bloques de 64 bits (8 bytes)</li>
+											<li>Permutación inicial de los bloques</li>
+											<li>Partición de los bloques en dos partes: izquierda y derecha</li>
+											<li>Permutación y sustitución repetidas 16 veces (denominadas rondas)</li>
+											<li>Reconexión de las partes izquierda y derecha, seguida de la permutación inicial inversa.</li>
+										</ul>
+										<hr>
+										<img src="../../../includes/img/sketch/class-hand-drawn-persons-group.png" width="70" align="middle" class="sketch pull-right">
+										<h3 class="text-primary">Generación de llave</h3>
+										<p>Dado que el algoritmo DES mencionado anteriormente es público, toda la seguridad se basa en la complejidad de las claves de cifrado.</p>
+										<p>A continuación se muestra cómo obtener el conjunto de llaves usando la llave publica de <b>64 bits</b>, cada una de ellas utilizadas para el algoritmo DES.</p>
+										<p>Como primer paso se realiza una permutación denominada <b>PC1</b>, de esta forma se eliminan los bits de paridad de la llave para obtener una llave que posea una longitud de 56 bits. La tabla de la permutación PC1 es la siguiente:</p>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>PC1</b></td><td>
+											<table class=" table table-bordered"><tbody>
+											<tr><td>57</td><td>49</td><td>41</td><td>33</td><td>25</td><td>17</td><td>9</td><td>1</td><td>58</td><td>50</td><td>42</td><td>34</td><td>26</td><td>18</td></tr>
+											<tr><td>10</td><td>2</td><td>59</td><td>51</td><td>43</td><td>35</td><td>27</td><td>19</td><td>11</td><td>3</td><td>60</td><td>52</td><td>44</td><td>36</td></tr>
+											<tr><td>63</td><td>55</td><td>47</td><td>39</td><td>31</td><td>23</td><td>15</td><td>7</td><td>62</td><td>54</td><td>46</td><td>38</td><td>30</td><td>22</td></tr>
+											<tr><td>14</td><td>6</td><td>61</td><td>53</td><td>45</td><td>37</td><td>29</td><td>21</td><td>13</td><td>5</td><td>28</td><td>20</td><td>12</td><td>4</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<p>A continuación, se divide el resultado en dos mitades <label class="formula2">C<sub>0</sub></label> y <label class="formula2">D<sub>0</sub></label>, cada una de ellas de <b>28 bits</b>.</p>
+										<p>Con <label class="formula2">C<sub>0</sub></label> y <label class="formula2">D<sub>0</sub></label> definidas, ahora se crean 16 bloques <label class="formula2">C<sub>i</sub></label> y <label class="formula2">D<sub>i</sub></label>, con <label class="formula2">1 &lt;= i &lt;= 16</label>. Cada par de bloques (<label class="formula2">Ci</label> , <label class="formula2">Di</label> ) se forma a partir del par anterior(es decir <label class="formula2">C<sub>i-1</sub></label>, <label class="formula2">D<sub>i-1</sub></label>), usando para ello una tabla de rotaciones a la izquierda prefijadas de la siguiente forma:</p>
+										<table class="table table-bordered" style="background-color: #F2F4F7; margin:0 auto;width:50%">
+											<tbody><tr><td>&nbsp;Iteración:&nbsp;</td>
+											<td>&nbsp;1&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;3&nbsp;</td><td>&nbsp;4&nbsp;</td><td>&nbsp;5&nbsp;</td><td>&nbsp;6&nbsp;</td><td>&nbsp;7&nbsp;</td><td>&nbsp;8&nbsp;</td><td>&nbsp;9&nbsp;</td><td>&nbsp;10&nbsp;</td><td>&nbsp;11&nbsp;</td><td>&nbsp;12&nbsp;</td><td>&nbsp;13&nbsp;</td><td>&nbsp;14&nbsp;</td><td>&nbsp;15&nbsp;</td><td>&nbsp;16&nbsp;</td></tr>
+											<tr><td>&nbsp;Desplazamientos:&nbsp;</td>
+											<td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;1&nbsp;</td></tr>
+										</tbody></table><br>
+										<p>Una vez obtenidos los dos bloques de 28 bits de cada iteración, cada par se agrupa en un bloque de 56 bits. Esto da como resultado 16 bloques de 56 bits, de los cuales cada uno de los bloques pasa por una permutación, denominada <b>PC2</b>:</p>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>PC2</b></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><td>14</td><td>17</td><td>11</td><td>24</td><td>1</td><td>5</td><td>3</td><td>28</td><td>15</td><td>6</td><td>21</td><td>10</td></tr>
+											<tr><td>23</td><td>19</td><td>12</td><td>4</td><td>26</td><td>8</td><td>16</td><td>7</td><td>27</td><td>20</td><td>13</td><td>2</td></tr>
+											<tr><td>41</td><td>52</td><td>31</td><td>37</td><td>47</td><td>55</td><td>30</td><td>40</td><td>51</td><td>45</td><td>33</td><td>48</td></tr>
+											<tr><td>44</td><td>49</td><td>39</td><td>56</td><td>34</td><td>53</td><td>46</td><td>42</td><td>50</td><td>36</td><td>29</td><td>32</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<p>Esto da como resultado 16 bloques de 48 bits que representan el conjunto de 16 llaves <label class="formula2">K<sub>1</sub></label> a <label class="formula2">K<sub>16</sub></label> utilizadas en el algoritmo DES.</p>
+										<hr>
+										<img src="../../../includes/img/sketch/class-hand-drawn-persons-group.png" width="70" align="middle" class="sketch pull-right">
+										<h3 class="text-primary">Cifrado</h3>
+										<p>A partir de ahora se usan los bloques de <b>64 bits</b> pertenecientes al mensaje.</p>
+										<p>Cada bit de un bloque está sujeto a una permutación inicial, que puede representarse mediante la siguiente matriz de permutación inicial (anotada como <b>IP</b>):</p>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>IP</b></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><td>58</td><td>50</td><td>42</td><td>34</td><td>26</td><td>18</td><td>10</td><td>2</td></tr>
+											<tr><td>60</td><td>52</td><td>44</td><td>36</td><td>28</td><td>20</td><td>12</td><td>4</td></tr>
+											<tr><td>62</td><td>54</td><td>46</td><td>38</td><td>30</td><td>22</td><td>14</td><td>6</td></tr>
+											<tr><td>64</td><td>56</td><td>48</td><td>40</td><td>32</td><td>24</td><td>16</td><td>8</td></tr>
+											<tr><td>57</td><td>49</td><td>41</td><td>33</td><td>25</td><td>17</td><td>9</td><td>1</td></tr>
+											<tr><td>59</td><td>51</td><td>43</td><td>35</td><td>27</td><td>19</td><td>11</td><td>3</td></tr>
+											<tr><td>61</td><td>53</td><td>45</td><td>37</td><td>29</td><td>21</td><td>13</td><td>5</td></tr>
+											<tr><td>63</td><td>55</td><td>47</td><td>39</td><td>31</td><td>23</td><td>15</td><td>7</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<p>Esta tabla de permutación muestra que el bit número 58 del bloque de 64 bits está en la primera posición, el bit numero 50 está en la segunda posición y así sucesivamente.</p>
+										<p>A continuación, se divide el bloque permutado en dos mitades: una parte izquierda denominada <label class="formula2">L<sub>0</sub></label> y una parte derecha denominada <label class="formula2">R<sub>0</sub></label>, ambas de 32 bits.<br>
+										Los bloques <label class="formula2">L</label> y <label class="formula2">R</label> están sujetos a un conjunto de transformaciones iterativas denominadas rondas.</p>
+										<p>Las rondas comienzan con el bloque <label class="formula2">R<sub>0</sub></label>. Los 32 bits del bloque <label class="formula2">R<sub>0</sub></label> se expanden a <b>48</b> bits gracias a una tabla llamada tabla de expansión que se anota como <b>E</b>, en la que los 48 bits se mezclan y 16 de ellos se duplican:</p>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>E</b></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><td>32</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+											<tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
+											<tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr>
+											<tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
+											<tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+											<tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+											<tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr>
+											<tr><td>28</td><td>29</td><td>30</td><td>31</td><td>32</td><td>1</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<p>El algoritmo DES aplica después <b>OR exclusivas</b> entre la primera clave <label class="formula2">K<sub>1</sub></label> y el bloque resultante de la expansión.</p>
+										<p>Después, el bloque obtenido se divide en 8 bloques de 6 bits. Cada uno de estos bloques se procesa a través de las llamadas cajas de sustitución, denominadas generalmente <b>S-Box</b>.</p>
+										<p>Esta es la primera caja de sustitución, representada en una tabla de 4 por 16:</p>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>S</b><sub>1</sub></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><th>&nbsp;</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr>
+											<tr><td><b>0</b></td><td>14</td><td>4</td><td>13</td><td>1</td><td>2</td><td>15</td><td>11</td><td>8</td><td>3</td><td>10</td><td>6</td><td>12</td><td>5</td><td>9</td><td>0</td><td>7</td></tr>
+											<tr><td><b>1</b></td><td>0</td><td>15</td><td>7</td><td>4</td><td>14</td><td>2</td><td>13</td><td>1</td><td>10</td><td>6</td><td>12</td><td>11</td><td>9</td><td>5</td><td>3</td><td>8</td></tr>
+											<tr><td><b>2</b></td><td>4</td><td>1</td><td>14</td><td>8</td><td>13</td><td>6</td><td>2</td><td>11</td><td>15</td><td>12</td><td>9</td><td>7</td><td>3</td><td>10</td><td>5</td><td>0</td></tr>
+											<tr><td><b>3</b></td><td>15</td><td>12</td><td>8</td><td>2</td><td>4</td><td>9</td><td>1</td><td>7</td><td>5</td><td>11</td><td>3</td><td>14</td><td>10</td><td>0</td><td>6</td><td>13</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<p>Un ejemplo del funcionamiento de la caja de sustitución es el siguiente:</p>
+										<p>Sea 101110 el primero de los 8 bloques. El primer y último bit dan 10, es decir, 2 en valor binario. Los bits 2, 3, 4 y 5 dan 0111, o 7 en valor binario. Por lo tanto, el resultado de la caja de sustitución es el valor ubicado en la línea 2, de la columna 7. Es el valor 11 o 1011 en binario.</p>
+										<p>Cada uno de los 8 bloques de 6 bits pasa a través de la función de selección correspondiente, dando un resultado de 8 valores con 4 bits cada uno. A continuación se presentan las cajas de sustitución restantes:</p>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>S</b><sub>2</sub></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><th>&nbsp;</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr>
+											<tr><td><b>0</b></td><td>15</td><td>1</td><td>8</td><td>14</td><td>6</td><td>11</td><td>3</td><td>4</td><td>9</td><td>7</td><td>2</td><td>13</td><td>12</td><td>0</td><td>5</td><td>10</td></tr>
+											<tr><td><b>1</b></td><td>3</td><td>13</td><td>4</td><td>7</td><td>15</td><td>2</td><td>8</td><td>14</td><td>12</td><td>0</td><td>1</td><td>10</td><td>6</td><td>9</td><td>11</td><td>5</td></tr>
+											<tr><td><b>2</b></td><td>0</td><td>14</td><td>7</td><td>11</td><td>10</td><td>4</td><td>13</td><td>1</td><td>5</td><td>8</td><td>12</td><td>6</td><td>9</td><td>3</td><td>2</td><td>15</td></tr>
+											<tr><td><b>3</b></td><td>13</td><td>8</td><td>10</td><td>1</td><td>3</td><td>15</td><td>4</td><td>2</td><td>11</td><td>6</td><td>7</td><td>12</td><td>0</td><td>5</td><td>14</td><td>9</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>S</b><sub>3</sub></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><th>&nbsp;</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr>
+											<tr><td><b>0</b></td><td>10</td><td>0</td><td>9</td><td>14</td><td>6</td><td>3</td><td>15</td><td>5</td><td>1</td><td>13</td><td>12</td><td>7</td><td>11</td><td>4</td><td>2</td><td>8</td></tr>
+											<tr><td><b>1</b></td><td>13</td><td>7</td><td>0</td><td>9</td><td>3</td><td>4</td><td>6</td><td>10</td><td>2</td><td>8</td><td>5</td><td>14</td><td>12</td><td>11</td><td>15</td><td>1</td></tr>
+											<tr><td><b>2</b></td><td>13</td><td>6</td><td>4</td><td>9</td><td>8</td><td>15</td><td>3</td><td>0</td><td>11</td><td>1</td><td>2</td><td>12</td><td>5</td><td>10</td><td>14</td><td>7</td></tr>
+											<tr><td><b>3</b></td><td>1</td><td>10</td><td>13</td><td>0</td><td>6</td><td>9</td><td>8</td><td>7</td><td>4</td><td>15</td><td>14</td><td>3</td><td>11</td><td>5</td><td>2</td><td>12</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>S</b><sub>4</sub></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><th>&nbsp;</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr>
+											<tr><td><b>0</b></td><td>7</td><td>13</td><td>14</td><td>3</td><td>0</td><td>6</td><td>9</td><td>10</td><td>1</td><td>2</td><td>8</td><td>5</td><td>11</td><td>12</td><td>4</td><td>15</td></tr>
+											<tr><td><b>1</b></td><td>13</td><td>8</td><td>11</td><td>5</td><td>6</td><td>15</td><td>0</td><td>3</td><td>4</td><td>7</td><td>2</td><td>12</td><td>1</td><td>10</td><td>14</td><td>9</td></tr>
+											<tr><td><b>2</b></td><td>10</td><td>6</td><td>9</td><td>0</td><td>12</td><td>11</td><td>7</td><td>13</td><td>15</td><td>1</td><td>3</td><td>14</td><td>5</td><td>2</td><td>8</td><td>4</td></tr>
+											<tr><td><b>3</b></td><td>3</td><td>15</td><td>0</td><td>6</td><td>10</td><td>1</td><td>13</td><td>8</td><td> 9</td><td>4</td><td>5</td><td>11</td><td>12</td><td>7</td><td>2</td><td>14</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>S</b><sub>5</sub></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><th>&nbsp;</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr>
+											<tr><td><b>0</b></td><td>2</td><td>12</td><td>4</td><td>1</td><td>7</td><td>10</td><td>11</td><td>6</td><td>8</td><td>5</td><td>3</td><td>15</td><td>13</td><td>0</td><td>14</td><td>9</td></tr>
+											<tr><td><b>1</b></td><td>14</td><td>11</td><td>2</td><td>12</td><td>4</td><td>7</td><td>13</td><td>1</td><td>5</td><td>0</td><td>15</td><td>10</td><td>3</td><td>9</td><td>8</td><td>6</td></tr>
+											<tr><td><b>2</b></td><td>4</td><td>2</td><td>1</td><td>11</td><td>10</td><td>13</td><td>7</td><td>8</td><td>15</td><td>9</td><td>12</td><td>5</td><td>6</td><td>3</td><td>0</td><td>14</td></tr>
+											<tr><td><b>3</b></td><td>11</td><td>8</td><td>12</td><td>7</td><td>1</td><td>14</td><td>2</td><td>13</td><td>6</td><td>15</td><td>0</td><td>9</td><td>10</td><td>4</td><td>5</td><td>3</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>S</b><sub>6</sub></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><th>&nbsp;</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr>
+											<tr><td><b>0</b></td><td>12</td><td>1</td><td>10</td><td>15</td><td>9</td><td>2</td><td>6</td><td>8</td><td>0</td><td>13</td><td>3</td><td>4</td><td>14</td><td>7</td><td>5</td><td>11</td></tr>
+											<tr><td><b>1</b></td><td>10</td><td>15</td><td>4</td><td>2</td><td>7</td><td>12</td><td>9</td><td>5</td><td>6</td><td>1</td><td>13</td><td>14</td><td>0</td><td>11</td><td>3</td><td>8</td></tr>
+											<tr><td><b>2</b></td><td>9</td><td>14</td><td>15</td><td>5</td><td>2</td><td>8</td><td>12</td><td>3</td><td>7</td><td>0</td><td>4</td><td>10</td><td>1</td><td>13</td><td>11</td><td>6</td></tr>
+											<tr><td><b>3</b></td><td>4</td><td>3</td><td>2</td><td>12</td><td>9</td><td>5</td><td>15</td><td>10</td><td>11</td><td>14</td><td>1</td><td>7</td><td>6</td><td>0</td><td>8</td><td>13</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>S</b><sub>7</sub></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><th>&nbsp;</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr>
+											<tr><td><b>0</b></td><td>4</td><td>11</td><td>2</td><td>14</td><td>15</td><td>0</td><td>8</td><td>13</td><td>3</td><td>12</td><td>9</td><td>7</td><td>5</td><td>10</td><td>6</td><td>1</td></tr>
+											<tr><td><b>1</b></td><td>13</td><td>0</td><td>11</td><td>7</td><td>4</td><td>9</td><td>1</td><td>10</td><td>14</td><td>3</td><td>5</td><td>12</td><td>2</td><td>15</td><td>8</td><td>6</td></tr>
+											<tr><td><b>2</b></td><td>1</td><td>4</td><td>11</td><td>13</td><td>12</td><td>3</td><td>7</td><td>14</td><td>10</td><td>15</td><td>6</td><td>8</td><td>0</td><td>5</td><td>9</td><td>2</td></tr>
+											<tr><td><b>3</b></td><td>6</td><td>11</td><td>13</td><td>8</td><td>1</td><td>4</td><td>10</td><td>7</td><td>9</td><td>5</td><td>0</td><td>15</td><td>14</td><td>2</td><td>3</td><td>12</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>S</b><sub>8</sub></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><th>&nbsp;</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr>
+											<tr><td><b>0</b></td><td>13</td><td>2</td><td>8</td><td>4</td><td>6</td><td>15</td><td>11</td><td>1</td><td>10</td><td>9</td><td>3</td><td>14</td><td>5</td><td>0</td><td>12</td><td>7</td></tr>
+											<tr><td><b>1</b></td><td>1</td><td>15</td><td>13</td><td>8</td><td>10</td><td>3</td><td>7</td><td>4</td><td>12</td><td>5</td><td>6</td><td>11</td><td>0</td><td>14</td><td>9</td><td>2</td></tr>
+											<tr><td><b>1</b></td><td>7</td><td>11</td><td>4</td><td>1</td><td>9</td><td>12</td><td>14</td><td>2</td><td>0</td><td>6</td><td>10</td><td>13</td><td>15</td><td>3</td><td>5</td><td>8</td></tr>
+											<tr><td><b>1</b></td><td>2</td><td>1</td><td>14</td><td>7</td><td>4</td><td>10</td><td>8</td><td>13</td><td>15</td><td>12</td><td>9</td><td>0</td><td>3</td><td>5</td><td>6</td><td>11</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<p>Por lo tanto, cada bloque de 6 bits se sustituye por un bloque de 4 bits. Estos bits se combinan para formar un bloque de 32 bits.</p>
+										<p>Finalmente, el bloque de 32 bits se somete a una permutación <b>P</b>. A continuación, mostramos la tabla:</p>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>P</b></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><td>16</td><td>7</td><td>20</td><td>21</td><td>29</td><td>12</td><td>28</td><td>17</td></tr>
+											<tr><td>1</td><td>15</td><td>23</td><td>26</td><td>5</td><td>18</td><td>31</td><td>10</td></tr>
+											<tr><td>2</td><td>8</td><td>24</td><td>14</td><td>32</td><td>27</td><td>3</td><td>9</td></tr>
+											<tr><td>19</td><td>13</td><td>30</td><td>6</td><td>22</td><td>11</td><td>4</td><td>25</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<p>El conjunto de estos resultados salidos de <b>P</b> están sujetos a un <b>OR exclusivo</b> con <label class="formula2">L<sub>0</sub></label> inicial, para devolver <label class="formula2">R<sub>1</sub></label>, en tanto que la <label class="formula2">R<sub>0</sub></label> inicial devuelve <label class="formula2">L<sub>1</sub></label>.</p>
+										<p>Estos nuevos valores son los que serán usados en la siguiente ronda como <label class="formula2">L</label> y <label class="formula2">R</label> iniciales.</p>
+										<p>El conjunto de estos pasos (rondas) se reitera <b>16 veces</b>.</p>
+										<p>Al final de las rondas, los dos bloques <label class="formula2">L<sub>16</sub></label> y <label class="formula2">R<sub>16</sub></label> se vuelven a conectar y se someten a una permutación inicial inversa conocida como <b>IP<sup>-1</sup></b>:</p>
+										<table class="table table-bordered text-center" style="margin:0 auto;width:50%"><thead>
+											<tr><td><b>IP<sup>-1</sup></b></td><td>
+											<table class="table table-bordered"><tbody>
+											<tr><td>40</td><td>8</td><td>48</td><td>16</td><td>56</td><td>24</td><td>64</td><td>32</td></tr>
+											<tr><td>39</td><td>7</td><td>47</td><td>15</td><td>55</td><td>23</td><td>63</td><td>31</td></tr>
+											<tr><td>38</td><td>6</td><td>46</td><td>14</td><td>54</td><td>22</td><td>62</td><td>30</td></tr>
+											<tr><td>37</td><td>5</td><td>45</td><td>13</td><td>53</td><td>21</td><td>61</td><td>29</td></tr>
+											<tr><td>36</td><td>4</td><td>44</td><td>12</td><td>52</td><td>20</td><td>60</td><td>28</td></tr>
+											<tr><td>35</td><td>3</td><td>43</td><td>11</td><td>51</td><td>19</td><td>59</td><td>27</td></tr>
+											<tr><td>34</td><td>2</td><td>42</td><td>10</td><td>50</td><td>18</td><td>58</td><td>26</td></tr>
+											<tr><td>33</td><td>1</td><td>41</td><td>9</td><td>49</td><td>17</td><td>57</td><td>25</td></tr>
+											</tbody></table></td></tr>
+										</thead></table><br>
+										<p>El resultado que surge es el texto cifrado.</p>
+										<hr>
+										<img src="../../../includes/img/sketch/class-hand-drawn-persons-group.png" width="70" align="middle" class="sketch pull-right">
+										<h3 class="text-primary">Descifrado</h3>
+										<p>El proceso de descifrado es exactamente igual al cifrado descrito anteriormente, pero invirtiendo el orden en el que se hace uso del conjunto de sub llaves. Es decir, para el cifrado comenzamos usando la primer sub llave <label class="formula2">K<sub>1</sub></label> en la primer ronda y seguimos de forma ascendente hasta <label class="formula2">K<sub>16</sub></label>, para el descifrado comenzaríamos usando <label class="formula2">K<sub>16</sub></label> en la primer y seguimos de forma descendente hasta <label class="formula2">K<sub>1</sub></label>.</p>
+										<hr>
+										<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+										<p align="justify"></p><ol type="”1”" start="”1”">
+											<li>Douglas Stinson. (1995). Cryptography: Theory and Practice. United States: CRC Press.</li>
+											<li>Prof. Dr. Eng. Monica Borda. (2011). Fundamentals in Information Theory and Coding. Berlin Heidelberg: Springer.</li>
+											<li>Wade Trappe, Lawrence C. Washington. (2006). Introduction to Cryptography with Coding Theory. United States: Prentice Hall.</li>
+										</ol><p></p>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="panel" id="pnl-InteractivoDes" style="display: none; margin: 10px 10px 10px;">
+					<div class="panel-heading" style="background-color: #1c79d2 !important; height: 47px;">
+						<h4 class="panel-title" style="color: white !important; font-size: 20px;">Cifrado DES</h4>
+						<div class="right" style="margin-left: 20px;">
+							<button type="button" class="btn btn-danger btn-sm" id="btn-cerrarPanelDes">
+								<span>Volver</span>
+								<i class="fa fa-arrow-left"></i>
+							</button>
+						</div>
+					</div>
+					<div class="panel-body" style="padding-top: 10px;">
+						<div class="custom-tabs-line tabs-line-bottom left-aligned">
+							<ul class="nav" role="tablist" style="width: 100%;">
+								<li class="active" style="width: 50%;"><a href="#animacionCifradoDes" id="btn-animacionCifradoDes" data-toggle="tab" class="text-center">Cifrado</a></li>
+								<li style="width: 50%;"><a href="#animacionDesifradoDes" id="btn-animacionDesifradoDes" data-toggle="tab" class="text-center">Descifrado</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div id="animacionCifradoDes" class="tab-pane fade in active" style="padding: 10px;">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-3 text-primary">Llave:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="text" id="in-keyDesC" maxlength="8" placeholder="Llave">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-5 text-primary">Texto claro:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="text" id="in-txtPlanoDes" maxlength="8" placeholder="Texto claro">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" data-toggle="dropdown" tabindex="-1" aria-expanded="false" id="btn-tipoCiDes">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoCiDes1">Cifrado Rápido</a></li>
+															<li><a id="tipoCiDes2">Cifrado Normal</a></li>
+															<!-- <li><a id="tipoCiDes3">Cifrado Lento</a></li> -->
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-cifrarDes" tabindex="-1" value="2">Cifrado Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarCifrarDes" tabindex="-1" style="display:none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<ul class="nav nav-tabs text-center" role="tablist" id="tabKeyCifradoC" style="display:none;">
+									<li class="active" style="width:49%;" id="tabHacerLlaveC"><a href="#generarLlaveC" role="tab" data-toggle="tab">Generar llave</a></li>
+									<li style="width:49%; display:none;" id="tabHacerCifradoC"><a href="#hacerCifradoC" role="tab" data-toggle="tab">Cifrado</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade in active" id="generarLlaveC">
+										<div class="alert alert-info text-center" role="alert" id="infoDes01C" style="display:none;"><strong>Para generar el conjunto de llaves, la llave debe ser escrita en binario<br>Posteriormente se realiza una permutacion entre la llave en binario y la matriz de permutación PC1, de esta forma se eliminan los bits de paridad de la clave</strong></div>
+										<div id="cadenaKeyDesC" class="text-center"></div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:50%" id="PC1C">
+										<thead><tr>
+										<td><b>PC1</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody><tr id="matrizPc1C01"></tr>
+										<tr id="matrizPc1C02"></tr>
+										<tr id="matrizPc1C03"></tr>
+										<tr id="matrizPc1C04"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="primeraPermutacionC" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" style="display:none;" id="infoDes02C"><strong>Al obtener la permutacion principal, comienzan las iteraciones<br><br>Nota:Para la primer iteración se hace uso del resultado de la permutacion principal, para las iteraciones posteriores se hace uso del resultado de la rotacion de la iteracion anterior<br><br>El resultado de la permutacion principal se divide en la mitad izquierda y la mitad derecha y cada uno se desplaza el numero de posiciones dado por la tabla de rotaciones<br>En la primer iteracion el desplazamineto de los bits es de una posición<br><br>
+										<table class="table table-bordered" style="background-color:white; margin:0 auto;width:50%">
+											<tr><td>&nbsp;Iteración:&nbsp;</td>
+											<td>&nbsp;1&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;3&nbsp;</td><td>&nbsp;4&nbsp;</td><td>&nbsp;5&nbsp;</td><td>&nbsp;6&nbsp;</td><td>&nbsp;7&nbsp;</td><td>&nbsp;8&nbsp;</td><td>&nbsp;9&nbsp;</td><td>&nbsp;10&nbsp;</td><td>&nbsp;11&nbsp;</td><td>&nbsp;12&nbsp;</td><td>&nbsp;13&nbsp;</td><td>&nbsp;14&nbsp;</td><td>&nbsp;15&nbsp;</td><td>&nbsp;16&nbsp;</td></tr>
+											<tr><td>&nbsp;Desplazamientos:&nbsp;</td>
+											<td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;1&nbsp;</td></tr>
+										</table><br>
+										Una vez teminada la rotacion, se unen izquierda y derecha</strong></div>
+										<div id="izquierdaDerechaC" class="text-center"></div>
+										<div id="permutacionRotadaC" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" style="display:none;" id="infoDes03C"><strong>Al obtener la rotacion se aplica una permutacion con la matriz PC2</strong></div>
+										<div id="rotadaC" class="text-center"></div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:50%" id="PC2C">
+										<thead><tr>
+										<td><b>PC2</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody><tr id="matrizPc2C01"></tr>
+										<tr id="matrizPc2C02"></tr>
+										<tr id="matrizPc2C03"></tr>
+										<tr id="matrizPc2C04"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="primerKeyC" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" id="infoDes04C" style="display:none;"><strong>Al obtener la primer llave se termina la primer iteración<br>Para obtener el conjunto de llaves restantes repetir 15 veces mas la rotacion y permutacion con PC2</strong></div>
+										<div id="keysC" class="text-center"></div>
+									</div>
+									<div class="tab-pane fade" id="hacerCifradoC">
+										<div class="alert alert-info text-center" role="alert" id="infoDes05C" style="display:none;"><strong>El mensaje en claro debe ser escrito en binario<br>Posteriormente se realiza una permutacion entre el mensaje en claro y la matriz de permutación IP, y el resultado obtenido es divido en la mitad izquierda (L) y la mitad derecha (R)</strong></div>
+										<div id="cadenaTextoDesC" class="text-center"></div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:40%" id="IPC">
+										<thead><tr>
+										<td><b>IP</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody><tr id="matrizIPC01"></tr>
+										<tr id="matrizIPC02"></tr>
+										<tr id="matrizIPC03"></tr>
+										<tr id="matrizIPC04"></tr>
+										<tr id="matrizIPC05"></tr>
+										<tr id="matrizIPC06"></tr>
+										<tr id="matrizIPC07"></tr>
+										<tr id="matrizIPC08"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="LeftRightC" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" style="display:none;" id="infoDes06C"><strong>Al obtener la permutacion, comienzan las iteraciones<br><br>Para el nuevo valor de R, se le aplica una permutacion con la tabla de expancion, a esta operacion se le llama expancion</strong></div>
+										<div id="RightExpanC" class="text-center"></div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:30%" id="EC">
+										<thead><tr>
+										<td><b>E</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody><tr id="matrizEC01"></tr>
+										<tr id="matrizEC02"></tr>
+										<tr id="matrizEC03"></tr>
+										<tr id="matrizEC04"></tr>
+										<tr id="matrizEC05"></tr>
+										<tr id="matrizEC06"></tr>
+										<tr id="matrizEC07"></tr>
+										<tr id="matrizEC08"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="expancionRC" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" style="display:none;" id="infoDes07C"><strong>Al resultado obtenido en la expancion se le aplica una operacion de XOR con la primer llave del conjunto de llaves obtenido previamente</strong></div>
+										<div id="resultExpC" class="text-center"></div>
+										<div id="primerLlaveC" class="text-center"></div>
+										<div id="xorC" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" style="display:none;" id="infoDes08C"><strong>Después se divide en 8 bloques de 6 bits y cada uno de estos bloques se procesa a través de cajas de sustitución<br>La sustitucion se realiza tomando el primer y ultimo bit del bloque, la union de estos bits representará la fila y los cuatro bits restantes representan la columna; con este par de coordenadas se obtiene el resultado de cada sustituión</strong></div>
+										<div id="xorcajaSC" class="text-center"></div>
+										<div id="posicionesCajaC" class="text-center" style="display:none;">
+											<label id="rowCajaC">Fila: </label><br>
+											<label id="colCajaC">Columna: </label>
+										</div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:50%" id="cajaSC">
+										<thead><tr>
+										<td id="nameSboxC1" style="display:none;"><b>S1</b></td>
+										<td id="nameSboxC2" style="display:none;"><b>S2</b></td>
+										<td id="nameSboxC3" style="display:none;"><b>S3</b></td>
+										<td id="nameSboxC4" style="display:none;"><b>S4</b></td>
+										<td id="nameSboxC5" style="display:none;"><b>S5</b></td>
+										<td id="nameSboxC6" style="display:none;"><b>S6</b></td>
+										<td id="nameSboxC7" style="display:none;"><b>S7</b></td>
+										<td id="nameSboxC8" style="display:none;"><b>S8</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody>
+										<tr id="matrizSbox1C01" style="display:none;"></tr><tr id="matrizSbox1C02" style="display:none;"></tr><tr id="matrizSbox1C03" style="display:none;"></tr><tr id="matrizSbox1C04" style="display:none;"></tr><tr id="matrizSbox1C05" style="display:none;"></tr>
+										<tr id="matrizSbox2C01" style="display:none;"></tr><tr id="matrizSbox2C02" style="display:none;"></tr><tr id="matrizSbox2C03" style="display:none;"></tr><tr id="matrizSbox2C04" style="display:none;"></tr><tr id="matrizSbox2C05" style="display:none;"></tr>
+										<tr id="matrizSbox3C01" style="display:none;"></tr><tr id="matrizSbox3C02" style="display:none;"></tr><tr id="matrizSbox3C03" style="display:none;"></tr><tr id="matrizSbox3C04" style="display:none;"></tr><tr id="matrizSbox3C05" style="display:none;"></tr>
+										<tr id="matrizSbox4C01" style="display:none;"></tr><tr id="matrizSbox4C02" style="display:none;"></tr><tr id="matrizSbox4C03" style="display:none;"></tr><tr id="matrizSbox4C04" style="display:none;"></tr><tr id="matrizSbox4C05" style="display:none;"></tr>
+										<tr id="matrizSbox5C01" style="display:none;"></tr><tr id="matrizSbox5C02" style="display:none;"></tr><tr id="matrizSbox5C03" style="display:none;"></tr><tr id="matrizSbox5C04" style="display:none;"></tr><tr id="matrizSbox5C05" style="display:none;"></tr>
+										<tr id="matrizSbox6C01" style="display:none;"></tr><tr id="matrizSbox6C02" style="display:none;"></tr><tr id="matrizSbox6C03" style="display:none;"></tr><tr id="matrizSbox6C04" style="display:none;"></tr><tr id="matrizSbox6C05" style="display:none;"></tr>
+										<tr id="matrizSbox7C01" style="display:none;"></tr><tr id="matrizSbox7C02" style="display:none;"></tr><tr id="matrizSbox7C03" style="display:none;"></tr><tr id="matrizSbox7C04" style="display:none;"></tr><tr id="matrizSbox7C05" style="display:none;"></tr>
+										<tr id="matrizSbox8C01" style="display:none;"></tr><tr id="matrizSbox8C02" style="display:none;"></tr><tr id="matrizSbox8C03" style="display:none;"></tr><tr id="matrizSbox8C04" style="display:none;"></tr><tr id="matrizSbox8C05" style="display:none;"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="sboxC" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" id="infoDes09C" style="display:none;"><strong>El bloque de 32 bits se somete a una permutacion con la tabla P</strong></div>
+										<div id="sboxResultC" class="text-center"></div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:50%" id="PFinC">
+										<thead><tr>
+										<td><b>P</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody><tr id="matrizPFinC01"></tr>
+										<tr id="matrizPFinC02"></tr>
+										<tr id="matrizPFinC03"></tr>
+										<tr id="matrizPFinC04"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="permutaSboxC" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" id="infoDes010C" style="display:none;"><strong>El ultimo paso de la iteracion es realizar la operacion XOR entre L y el resultado de S-Box<br>De esta forma obtendremos el nuevo valor de R que sera usado para la siguiente iteracion<br>Para obtener el nuevo valor de L que se usara en la siguiente iteracion, se toma el valor de R con el se inicio en la iteracion<br>Este proceso se realiza 15 vecez mas usando el conjunto de llaves ordenado de forma acendente</strong></div>
+										<div id="newRightC" class="text-center"></div>
+										<div id="newLeftC" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" id="infoDes011C" style="display:none;"><strong>Para conseguir el texto cifrado, L y R obtenidos en la ultima iteracion son unidos y permutados usando la tabla IP inversa, de esta forma se obtiene el texto cifrado</strong></div>
+										<div id="lastLeftRightC" class="text-center"></div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:40%" id="PInvC">
+										<thead><tr>
+										<td><b>IP-1</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody><tr id="matrizPInvC01"></tr>
+										<tr id="matrizPInvC02"></tr>
+										<tr id="matrizPInvC03"></tr>
+										<tr id="matrizPInvC04"></tr>
+										<tr id="matrizPInvC05"></tr>
+										<tr id="matrizPInvC06"></tr>
+										<tr id="matrizPInvC07"></tr>
+										<tr id="matrizPInvC08"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="PermutaInversaC" class="text-center"></div>
+										<div id="textoFinalC" class="text-center"></div>
+									</div>
+								</div>
+								<br>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-8 text-primary">Texto cifrado:
+											<input class="form-control" type="text" placeholder="Texto cifrado" id="out-txtCifradoDes" readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="animacionDesifradoDes" class="tab-pane fade in" style="padding: 10px;">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-3 text-primary">Llave:
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-btn"><button class="btn btn-primary btnVelocidadCopiar" type="button" id="btn-copiarTextoDes" data-toggle="tooltip" title="Copiar Texto cifrado"><i class="fa fa-clone" aria-hidden="true"></i></button></span>
+													<input class="form-control" type="text" id="in-keyDesD" maxlength="8" placeholder="Llave">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-5 text-primary">Texto cifrado:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="text" id="in-txtCifradoDes" maxlength="8" placeholder="Texto cifrado">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" data-toggle="dropdown" tabindex="-1" aria-expanded="false" id="btn-tipoDeDes">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoDeDes1">Descifrado Rápido</a></li>
+															<li><a id="tipoDeDes2">Descifrado Normal</a></li>
+															<!-- <li><a id="tipoDeDes3">Descifrado Lento</a></li> -->
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-descifrarDes" tabindex="-1" value="2">Descifrado Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarDescifrarDes" tabindex="-1" style="display:none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<ul class="nav nav-tabs text-center" role="tablist" id="tabKeyCifradoD" style="display:none;">
+									<li class="active" style="width:49%;" id="tabHacerLlaveD"><a href="#generarLlaveD" role="tab" data-toggle="tab">Generar llave</a></li>
+									<li style="width:49%; display:none;" id="tabHacerCifradoD"><a href="#hacerCifradoD" role="tab" data-toggle="tab">Descifrado</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade in active" id="generarLlaveD">
+										<div class="alert alert-info text-center" role="alert" id="infoDes01D" style="display:none;"><strong>Para generar el conjunto de llaves, la llave debe ser escrita en binario<br>Posteriormente se realiza una permutacion entre la llave en binario y la matriz de permutación PC1, de esta forma se eliminan los bits de paridad de la clave</strong></div>
+										<div id="cadenaKeyDesD" class="text-center"></div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:50%" id="PC1D">
+										<thead><tr>
+										<td><b>PC1</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody><tr id="matrizPc1D01"></tr>
+										<tr id="matrizPc1D02"></tr>
+										<tr id="matrizPc1D03"></tr>
+										<tr id="matrizPc1D04"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="primeraPermutacionD" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" style="display:none;" id="infoDes02D"><strong>Al obtener la permutacion principal, comienzan las iteraciones<br><br>Nota:Para la primer iteración se hace uso del resultado de la permutacion principal, para las iteraciones posteriores se hace uso del resultado de la rotacion de la iteracion anterior<br><br>El resultado de la permutacion principal se divide en la mitad izquierda y la mitad derecha y cada uno se desplaza el numero de posiciones dado por la tabla de rotaciones<br>En la primer iteracion el desplazamineto de los bits es de una posición<br><br>
+										<table class="table table-bordered" style="background-color:white; margin:0 auto;width:50%">
+											<tr><td>&nbsp;Iteración:&nbsp;</td>
+											<td>&nbsp;1&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;3&nbsp;</td><td>&nbsp;4&nbsp;</td><td>&nbsp;5&nbsp;</td><td>&nbsp;6&nbsp;</td><td>&nbsp;7&nbsp;</td><td>&nbsp;8&nbsp;</td><td>&nbsp;9&nbsp;</td><td>&nbsp;10&nbsp;</td><td>&nbsp;11&nbsp;</td><td>&nbsp;12&nbsp;</td><td>&nbsp;13&nbsp;</td><td>&nbsp;14&nbsp;</td><td>&nbsp;15&nbsp;</td><td>&nbsp;16&nbsp;</td></tr>
+											<tr><td>&nbsp;Desplazamientos:&nbsp;</td>
+											<td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;2&nbsp;</td><td>&nbsp;1&nbsp;</td></tr>
+										</table><br>
+										Una vez teminada la rotacion, se unen izquierda y derecha</strong></div>
+										<div id="izquierdaDerechaD" class="text-center"></div>
+										<div id="permutacionRotadaD" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" style="display:none;" id="infoDes03D"><strong>Al obtener la rotacion se aplica una permutacion con la matriz PC2</strong></div>
+										<div id="rotadaD" class="text-center"></div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:50%" id="PC2D">
+										<thead><tr>
+										<td><b>PC2</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody><tr id="matrizPc2D01"></tr>
+										<tr id="matrizPc2D02"></tr>
+										<tr id="matrizPc2D03"></tr>
+										<tr id="matrizPc2D04"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="primerKeyD" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" id="infoDes04D" style="display:none;"><strong>Al obtener la primer llave se termina la primer iteración<br>Para obtener el conjunto de llaves restantes repetir 15 veces mas la rotacion y permutacion con PC2</strong></div>
+										<div id="keysD" class="text-center"></div>
+									</div>
+									<div class="tab-pane fade" id="hacerCifradoD">
+										<div class="alert alert-info text-center" role="alert" id="infoDes05D" style="display:none;"><strong>El texto cifrado debe ser escrito en binario<br>Posteriormente se realiza una permutacion entre el texto cifrado y la matriz de permutación IP, y el resultado obtenido es divido en la mitad izquierda (L) y la mitad derecha (R)</strong></div>
+										<div id="cadenaTextoDesD" class="text-center"></div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:40%" id="IPD">
+										<thead><tr>
+										<td><b>IP</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody><tr id="matrizIPD01"></tr>
+										<tr id="matrizIPD02"></tr>
+										<tr id="matrizIPD03"></tr>
+										<tr id="matrizIPD04"></tr>
+										<tr id="matrizIPD05"></tr>
+										<tr id="matrizIPD06"></tr>
+										<tr id="matrizIPD07"></tr>
+										<tr id="matrizIPD08"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="LeftRightD" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" style="display:none;" id="infoDes06D"><strong>Al obtener la permutacion, comienzan las iteraciones<br><br>Para el nuevo valor de R, se le aplica una permutacion con la tabla de expancion, a esta operacion se le llama expancion</strong></div>
+										<div id="RightExpanD" class="text-center"></div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:30%" id="ED">
+										<thead><tr>
+										<td><b>E</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody><tr id="matrizED01"></tr>
+										<tr id="matrizED02"></tr>
+										<tr id="matrizED03"></tr>
+										<tr id="matrizED04"></tr>
+										<tr id="matrizED05"></tr>
+										<tr id="matrizED06"></tr>
+										<tr id="matrizED07"></tr>
+										<tr id="matrizED08"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="expancionRD" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" style="display:none;" id="infoDes07D"><strong>Al resultado obtenido en la expancion se le aplica una operacion de XOR con la ultima llave del conjunto de llaves obtenido previamente</strong></div>
+										<div id="resultExpD" class="text-center"></div>
+										<div id="primerLlaveD" class="text-center"></div>
+										<div id="xorD" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" style="display:none;" id="infoDes08D"><strong>Después se divide en 8 bloques de 6 bits y cada uno de estos bloques se procesa a través de cajas de sustitución<br>La sustitucion se realiza tomando el primer y ultimo bit del bloque, la union de estos bits representará la fila y los cuatro bits restantes representan la columna; con este par de coordenadas se obtiene el resultado de cada sustituión</strong></div>
+										<div id="xorcajaSD" class="text-center"></div>
+										<div id="posicionesCajaD" class="text-center" style="display:none;">
+											<label id="rowCajaD">Fila: </label><br>
+											<label id="colCajaD">Columna: </label>
+										</div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:50%" id="cajaSD">
+										<thead><tr>
+										<td id="nameSboxD1" style="display:none;"><b>S1</b></td>
+										<td id="nameSboxD2" style="display:none;"><b>S2</b></td>
+										<td id="nameSboxD3" style="display:none;"><b>S3</b></td>
+										<td id="nameSboxD4" style="display:none;"><b>S4</b></td>
+										<td id="nameSboxD5" style="display:none;"><b>S5</b></td>
+										<td id="nameSboxD6" style="display:none;"><b>S6</b></td>
+										<td id="nameSboxD7" style="display:none;"><b>S7</b></td>
+										<td id="nameSboxD8" style="display:none;"><b>S8</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody>
+										<tr id="matrizSbox1C01" style="display:none;"></tr><tr id="matrizSbox1D02" style="display:none;"></tr><tr id="matrizSbox1D03" style="display:none;"></tr><tr id="matrizSbox1D04" style="display:none;"></tr><tr id="matrizSbox1D05" style="display:none;"></tr>
+										<tr id="matrizSbox2D01" style="display:none;"></tr><tr id="matrizSbox2D02" style="display:none;"></tr><tr id="matrizSbox2D03" style="display:none;"></tr><tr id="matrizSbox2D04" style="display:none;"></tr><tr id="matrizSbox2D05" style="display:none;"></tr>
+										<tr id="matrizSbox3D01" style="display:none;"></tr><tr id="matrizSbox3D02" style="display:none;"></tr><tr id="matrizSbox3D03" style="display:none;"></tr><tr id="matrizSbox3D04" style="display:none;"></tr><tr id="matrizSbox3D05" style="display:none;"></tr>
+										<tr id="matrizSbox4D01" style="display:none;"></tr><tr id="matrizSbox4D02" style="display:none;"></tr><tr id="matrizSbox4D03" style="display:none;"></tr><tr id="matrizSbox4D04" style="display:none;"></tr><tr id="matrizSbox4D05" style="display:none;"></tr>
+										<tr id="matrizSbox5D01" style="display:none;"></tr><tr id="matrizSbox5D02" style="display:none;"></tr><tr id="matrizSbox5D03" style="display:none;"></tr><tr id="matrizSbox5D04" style="display:none;"></tr><tr id="matrizSbox5D05" style="display:none;"></tr>
+										<tr id="matrizSbox6D01" style="display:none;"></tr><tr id="matrizSbox6D02" style="display:none;"></tr><tr id="matrizSbox6D03" style="display:none;"></tr><tr id="matrizSbox6D04" style="display:none;"></tr><tr id="matrizSbox6D05" style="display:none;"></tr>
+										<tr id="matrizSbox7D01" style="display:none;"></tr><tr id="matrizSbox7D02" style="display:none;"></tr><tr id="matrizSbox7D03" style="display:none;"></tr><tr id="matrizSbox7D04" style="display:none;"></tr><tr id="matrizSbox7D05" style="display:none;"></tr>
+										<tr id="matrizSbox8D01" style="display:none;"></tr><tr id="matrizSbox8D02" style="display:none;"></tr><tr id="matrizSbox8D03" style="display:none;"></tr><tr id="matrizSbox8D04" style="display:none;"></tr><tr id="matrizSbox8D05" style="display:none;"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="sboxD" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" id="infoDes09D" style="display:none;"><strong>El bloque de 32 bits se somete a una permutacion con la tabla P</strong></div>
+										<div id="sboxResultD" class="text-center"></div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:50%" id="PFinD">
+										<thead><tr>
+										<td><b>P</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody><tr id="matrizPFinD01"></tr>
+										<tr id="matrizPFinD02"></tr>
+										<tr id="matrizPFinD03"></tr>
+										<tr id="matrizPFinD04"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="permutaSboxD" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" id="infoDes010D" style="display:none;"><strong>El ultimo paso de la iteracion es realizar la operacion XOR entre L y el resultado de S-Box<br>De esta forma obtendremos el nuevo valor de R que sera usado para la siguiente iteracion<br>Para obtener el nuevo valor de L que se usara en la siguiente iteracion, se toma el valor de R con el se inicio en la iteracion<br>Este proceso se realiza 15 vecez mas usando el conjunto de llaves ordenado de forma descendente</strong></div>
+										<div id="newLeftD" class="text-center"></div>
+										<div id="newRightD" class="text-center"></div>
+										<div class="alert alert-info text-center" role="alert" id="infoDes011D" style="display:none;"><strong>Para conseguir el texto descifrado, L y R obtenidos en la ultima iteracion son unidos y permutados usando la tabla IP inversa, de esta forma se obtiene el texto descifrado</strong></div>
+										<div id="lastLeftRightD" class="text-center"></div>
+										<table class="table table-bordered" style="display:none;margin:0 auto;width:40%" id="PInvD">
+										<thead><tr>
+										<td><b>IP-1</b></td>
+										<td>
+										<table class="table table-bordered">
+										<tbody><tr id="matrizPInvD01"></tr>
+										<tr id="matrizPInvD02"></tr>
+										<tr id="matrizPInvD03"></tr>
+										<tr id="matrizPInvD04"></tr>
+										<tr id="matrizPInvD05"></tr>
+										<tr id="matrizPInvD06"></tr>
+										<tr id="matrizPInvD07"></tr>
+										<tr id="matrizPInvD08"></tr>
+										</tbody></table></td></tr>
+										</thead></table>
+										<div id="PermutaInversaD" class="text-center"></div>
+										<div id="textoFinalD" class="text-center"></div>
+									</div>
+								</div>
+								<br>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-8 text-primary">Texto claro:
+											<input class="form-control" type="text" placeholder="Texto claro" id="out-txtPlanoDes" readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END MAIN CONTENT -->
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="../../../includes/vendor/jquery/jquery.min.js"></script>
+		<script src="../../../includes/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../includes/vendor/toastr/toastr.min.js"></script>
+		<script src="../../../includes/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="../../../includes/scripts/klorofilpro-common.min.js"></script>
+		<script src="../../../includes/scripts/animacionTT/infoTipoCifrados.js"></script>
+
+		<script src="des.js"></script>
+		<script src="../../../views/fundamentos/modalFundamentos.js""></script>
+		<script src="../../../includes/scripts/animacionTT/animation.js"></script>
+		<script src="../../../includes/scripts/animacionTT/BigInteger.min.js"></script>
+		<script>
+			var togglePanelFundamentos = function(e) {
+				e.preventDefault();
+				var panel = document.getElementById('panel-fundamentos');
+				if (panel.className) panel.className = '';
+				else panel.className = 'active';
+			}
+			$(document).ready(function(){
+				$("body").append(modales);
+				$("#listaFundamentos .panel-body").slimScroll({height:"600px",wheelStep:20,color:"rgba(160, 174, 186, 1)"});
+			});
+		</script>
+		<div id="panel-fundamentos">
+			<div class="panel-row"></div>
+			<a href="#" onclick="togglePanelFundamentos(event);" style="background-color: #2b333e;"><i class="fa fa-superscript"></i></a>
+			<div id="listaFundamentos">
+				<div class="panel-heading">
+					<h2 class="panel-title">Fundamentos Matematicos </h2>
+				</div>
+				<div class="panel-body">
+					<nav>
+						<span><i class="fa fa-pencil"></i> Del Cifrado DES</span>
+						<ul>
+							<li class="file-tag tag-blue"><a href="#" data-toggle="modal" data-target="#modalOperadoresLogicos">Operadores lógicos</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-purple"></i> Aritmética Modular</span>
+						<ul>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalMatematicaModular">¿Qué es Aritmética Modular?</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalSumaModular">Suma Modular</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionModular">Multiplicación Modular</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalInversoAditivo">Inverso aditivo</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalInversoMultiplicativo">Inverso multiplicativo</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionClasica">Exponencicación Clásica</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionBinaria">Exponencicación Binaria</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionEuler">Exponencicación por Teorema de Euler</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalAlgoritmoEuclides">Algoritmo de Euclides</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalPhiEuler">Phi de Euler</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalRaicesPrimitivas">Raices Primitivas</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-green"></i> Matrices</span>
+						<ul>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalMatrices"> Que es una Matriz</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionMatrices">Multiplicacion de matrices</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalDeterminanteMatrices">Determinante de una matriz</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalCofactoresMatrices">Matriz de cofactores</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalTranspuestaMatrices">Transpuesta de una matriz</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-red"></i> Campo GF(2<sup>8</sup>)</span>
+						<ul>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalConvertirGF">Elementos en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalSumaGF">Suma en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionGF">Multiplicación en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalInversoMultiplicativoGF">Inverso Multiplicativo en GF(2<sup>8</sup>)</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-yellow"></i> Curva Elíptica</span>
+						<ul>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalCurvaEliptica">¿Qué es la Curva Elíptica?</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalSumaPuntos">Suma de Puntos</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalDobladoPuntos">Doblado de Puntos</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalObtencionPuntos">Obtención de Putos</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-blue"></i> Operaciones a nivel de Bits</span>
+						<ul>
+							<li class="file-tag tag-blue"><a href="#" data-toggle="modal" data-target="#modalRotacionBits">Rotación de bits</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<script src="../../../views/matematicaModular/sumaModular/sumaModular.js""></script>
+		<script src="../../../views/matematicaModular/multiplicacionModular/multiplicacionModular.js""></script>
+		<script src="../../../views/matematicaModular/inversoAditivo/inversoAditivo.js""></script>
+		<script src="../../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.js""></script>
+		<script src="../../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.js""></script>
+		<script src="../../../views/matematicaModular/phiEuler/phiEuler.js""></script>
+		<script src="../../../views/campoGF2/convertirGF/convertirGF.js""></script>
+		<script src="../../../views/campoGF2/sumaGF/sumaGF.js""></script>
+		<script src="../../../views/campoGF2/multiplicacionGF/multiplicacionGF.js""></script>
+		<script src="../../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.js""></script>
+		<script src="../../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.js""></script>
+		<script src="../../../views/curvaEliptica/sumaPuntos/sumaPuntos.js""></script>
+		<script src="../../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.js""></script>
+		<script src="../../../includes/scripts/animacionTT/mensajes.js""></script>
+	</body>
+</html>

@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>X-CRIPTOZ | Aprende Criptografía</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- VENDOR CSS -->
+		<link rel="stylesheet" href="../../../includes/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../includes/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../../includes/vendor/themify-icons/css/themify-icons.css">
+		<link rel="stylesheet" href="../../../includes/vendor/toastr/toastr.min.css">
+		<link rel="StyleSheet" href="../../../includes/css/animacionTT/panelFlotante.css">
+		<link rel="StyleSheet" href="../../../includes/css/animacionTT/animation.css">
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="../../../includes/css/main.min.css">
+		<!-- ICONS -->
+		<link rel="apple-touch-icon" sizes="76x76" href="../../../includes/img/apple-iconTT.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../../../includes/img/faviconTT.png">
+		<link id="css-skin" rel="stylesheet" href="../../../includes/css/skins/sidebar-nav-darkblue.css" type="text/css">
+	</head>
+	<body>
+		<!-- WRAPPER -->
+		<div id="wrapper">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="brand">
+					<a href="../../../layouts/main.html">
+						<img src="../../../includes/img/logo-white.png" alt="X-CRIPTOZ Logo" class="img-responsive logo">
+					</a>
+				</div>
+				<div class="container-fluid">
+					<div id="tour-fullwidth" class="navbar-btn">
+						<button type="button" class="btn-toggle-fullwidth btn"><i class="fa fa-bars"></i></button>
+					</div>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#creditos">
+									<i class="fa fa-address-card-o"></i>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.escom.ipn.mx/" target="_blanc">
+									<img src="../../../includes/img/escomWhiteMin.png" alt="ESCOM">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar">
+				<nav>
+					<ul class="nav" id="sidebar-nav-menu">						
+						<li class="menu-group">Inicio</li>
+						<li><a href="../../../layouts/main.html"><i class="ti-home"></i> <span class="title">Inicio</span></a></li>
+						<li><a href="../../../views/archivos/archivos.html"><i class="ti-envelope"></i> <span class="title">Cifrado de archivos</span></a></li>
+						<li><a href="../../../views/calculadora/calculadora.html"><i class="ti-panel"></i> <span class="title">Calculadora</span></a></li>
+						<li class="panel">
+							<a href="#" data-toggle="collapse" data-target="#submenuDemo" data-parent="#sidebar-nav-menu" class="collapsed active" aria-expanded="false"><i class="fa fa-superscript"></i> <span class="title">Fundamentos Matemáticos</span><i class="icon-submenu ti-angle-left"></i></a>
+							<div id="submenuDemo" class="collapse" aria-expanded="false">
+								<ul class="submenu" id="submenu">
+									<li class="panel">
+										<a href="#SubmenuMatematicaModular" data-toggle="collapse" data-parent="#submenu" class="collapsed active" aria-expanded="false"><span class="title">Aritmética Modular</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatematicaModular" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/matematicaModular/matematicaModular/matematicaModular.html">¿Qué es Aritmética Modular?</a></li>
+												<li><a href="../../../views/matematicaModular/sumaModular/sumaModular.html">Suma Modular</a></li>
+												<li><a href="../../../views/matematicaModular/multiplicacionModular/multiplicacionModular.html" class="active">Multiplicación modular</a></li>
+												<li><a href="../../../views/matematicaModular/inversoAditivo/inversoAditivo.html">Inverso aditivo</a></li>
+												<li><a href="../../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.html">Inverso multiplicativo</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.html">Exponenciación clásica</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.html">Exponenciación binaria</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.html">Exponenciación por Teorema de Euler</a></li>
+												<li><a href="../../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.html">Algoritmo Euclides</a></li>
+												<li><a href="../../../views/matematicaModular/phiEuler/phiEuler.html">Phi de Euler</a></li>
+												<li><a href="../../../views/matematicaModular/raicesPrimitivas/raicesPrimitivas.html">Raices Primitivas</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuMatrices" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Matrices</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatrices" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/matrices/matrices/matrices.html">Que es una Matriz</a></li>
+												<li><a href="../../../views/matrices/multiplicacionMatrices/multiplicacionMatrices.html">Multiplicación de matrices</a></li>
+												<li><a href="../../../views/matrices/determinanteMatrices/determinanteMatrices.html">Determinante de una matriz</a></li>
+												<li><a href="../../../views/matrices/cofactoresMatrices/cofactoresMatrices.html">Matriz de cofactores</a></li>
+												<li><a href="../../../views/matrices/transpuestaMatrices/transpuestaMatrices.html">Transpuesta de una matriz</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCampoGF2" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Campo GF(2<sup>8</sup>)</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCampoGF2" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/campoGF2/convertirGF/convertirGF.html">Elementos en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/sumaGF/sumaGF.html">Suma en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/multiplicacionGF/multiplicacionGF.html">Multiplicación en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.html">Inverso multiplicativo en GF(2<sup>8</sup>)</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCurva" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Curva elíptica</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCurva" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/curvaEliptica/curvaEliptica/curvaEliptica.html">¿Qué es la Curva Elíptica?</a></li>
+												<li><a href="../../../views/curvaEliptica/sumaPuntos/sumaPuntos.html">Suma de puntos</a></li>
+												<li><a href="../../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.html">Doblado de puntos</a></li>
+												<li><a href="../../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.html">Obtención de puntos</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuBits" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Operaciones a nivel<br>de bits</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuBits" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/operacionesBits/operadoresLogicos/operadoresLogicos.html">Operadores lógicos </a></li>
+												<li><a href="../../../views/operacionesBits/rotacionBits/rotacionBits.html">Rotación bits</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía clásica</li>
+						<li><a href="../../../views/criptografia/clasica/clasica.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía clásica</span></a></li>
+						<li class="panel">
+							<a href="#Monoalfabetica" onclick="sustitucionMonoalfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución monoalfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Monoalfabetica" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/monoalfabetica/cesar/cesar.html">Cesar</a></li>
+									<li><a href="../../../views/monoalfabetica/atbash/atbash.html">Atbash</a></li>
+									<li><a href="../../../views/monoalfabetica/polybios/polybios.html">Polybios</a></li>
+									<li><a href="../../../views/monoalfabetica/playfair/playfair.html">Playfair</a></li>
+									<li><a href="../../../views/monoalfabetica/afin/afin.html">Afin</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Polialfabetica" onclick="sustitucionPolialfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución polialfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Polialfabetica" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/polialfabetica/desplazamiento/desplazamiento.html">Desplazamiento</a></li>
+									<li><a href="../../../views/polialfabetica/vigenere/vigenere.html">Vigenere</a></li>
+									<li><a href="../../../views/polialfabetica/vernam/vernam.html">Vernam</a></li>
+									<li><a href="../../../views/polialfabetica/hill/hill.html">Hill</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Transposicion" onclick="transposicion();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por<br>transposición</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Transposicion" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/transposicion/rejilla/rejilla.html">Rejilla</a></li>
+									<li><a href="../../../views/transposicion/inversa/inversa.html">Inversa</a></li>
+									<li><a href="../../../views/transposicion/simple/simple.html">Simple</a></li>
+									<li><a href="../../../views/transposicion/riel/riel.html">Por Riel</a></li>
+									<li><a href="../../../views/transposicion/columnas/columnas.html">Por Columnas</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía moderna</li>
+						<li><a href="../../../views/criptografia/moderna/moderna.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía moderna</span></a></li>
+						<li class="panel">
+							<a href="#Simetrico" onclick="cifradoSimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado simétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Simetrico" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/simetrico/feistel/feistel.html">Feistel</a></li>
+									<li><a href="../../../views/simetrico/des/des.html">DES</a></li>
+									<li><a href="../../../views/simetrico/aes/aes.html">AES</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Asimetrico" onclick="cifradoAsimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado asimétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Asimetrico" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/asimetrico/diffieHellman/diffieHellman.html">Diffie Hellman</a></li>
+									<li><a href="../../../views/asimetrico/rsa/rsa.html">RSA</a></li>
+									<!-- <li><a href="../../../views/asimetrico/dsa/dsa.html">DSA</a></li> -->
+									<li><a href="../../../views/asimetrico/gammal/gammal.html">ElGamal</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Hash" onclick="funcionesHash();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Funciones Hash</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Hash" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/hash/md5/md5.html">MD5</a></li>
+									<li><a href="../../../views/hash/sha1/sha1.html">SHA-1</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Firma" onclick="firmaDigital();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Firma Digital</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Firma" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/firmas/firmaRsa/firmaRsa.html">Firma RSA</a></li>
+									<li><a href="../../../views/firmas/firmaECDSA/firmaECDSA.html">Firma ECDSA</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content" id="contenidoPagina">
+					<div class="content-heading clearfix">
+						<ul class="breadcrumb">
+							<li><i class="fa fa-home"></i> Fundamentos Matemáticos</li>
+							<li>Aritmética Modular</li>
+							<li class="active"><a href="#">Multiplicación Modular</a></li>
+						</ul>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="panel">
+									<div class="panel-heading" style="background-color: #7d3c61 !important;">
+										<h4 class="panel-title" style="color: white !important; font-size: 20px;">Multiplicación Modular</h4>
+										<button type="button" class="btn btn-primary" style="float: right; position: relative; top: -0.4em;" onclick="mostrarPanelMultiplicacionModular();">
+											<span>Ver operación </span>
+											<i class="fa fa-cog fa-spin"></i>
+										</button>
+									</div>
+									<div class="panel-body">
+										<img src="../../../includes/img/sketch/maths-on-board.png" width="70" align="middle" class="sketch pull-right">
+										<p>La multiplicación modular es exactamente como la multiplicación algebraica, excepto que el resultado se reduce módulo <label class="formula2">m</label>.</p>
+										<p>Por ejemplo:</p>
+										<p>Se quiere multiplicar <label class="formula2">10</label> y <label class="formula2">3</label> en <label class="formula2">Z<sub>14</sub></label></p>
+										<center>
+											<p><label class="formula2">10 * 3 = 30 ≡ 2 mod 14</label></p>
+										</center><br>
+										<p>Esta definición de multiplicación satisface la mayoría de las reglas familiares de aritmética. A continuación se enumeran estas propiedades:</p>
+										<ol>
+											<li>La multiplicación es cerrada, es decir, para cualquier <label class="formula2">a</label>, <label class="formula2">b</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">a * b ∈ Z<sub>m</sub></label></li>
+											<li>La multiplicación es conmutativa, es decir, para cualquier <label class="formula2">a</label>, <label class="formula2">b</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">a * b = b * a</label></li>
+											<li>La multiplicación es asociativa, es decir, para cualquier <label class="formula2">a</label>, <label class="formula2">b</label>, <label class="formula2">c</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">(a * b) * c = a * (b * c)</label></li>
+											<li><label class="formula2">1</label> es una identidad multiplicativa, es decir, para cualquiera, <label class="formula2">a</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">a * 1 = 1 * a = a </label></li>
+											<li>La multiplicación distribuye sobre la suma, es decir, para cualquier <label class="formula2">a</label>, <label class="formula2">b</label>, <label class="formula2">c</label> ∈ <label class="formula2">Z<sub>m</sub></label>,&nbsp;&nbsp;&nbsp;&nbsp; <label class="formula2">(a + b) * c = (a * c) + (b * c)</label> y <label class="formula2">a * (b +c) = (a * b) + (a * c)</label>.</li>
+										</ol>
+										<hr>
+										<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+										<ol type="”1”" start="”1”">
+											<li>Christof Paar, Jan Pelzl. (2010). Understanding Cryptography. Berlin Heidelberg: Springer.</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel" id="pnl-InteractivoMultiplicacionModular" style="display: none; margin: 10px 10px 10px;">
+					<div class="panel-heading" style="background-color: #7d3c61 !important; height: 47px;">
+						<h4 class="panel-title" style="color: white !important; font-size: 20px;">Multiplicación Modular</h4>
+						<div class="right" style="margin-left: 20px;">
+							<button type="button" class="btn btn-danger btn-sm" onclick="cerrarPanelMultiplicacionModular();">
+								<span>Volver</span>
+								<i class="fa fa-arrow-left"></i>
+							</button>
+						</div>
+					</div>
+					<div class="panel-body" style="padding-top: 10px;">
+						<div id="operacionMultiplicacionModular">
+					    	<div class="container">
+								<div class="row">
+									<div class="col-sm-2"></div>
+									<div class="col-sm-2 text-primary">A:
+										<div class="form-group">
+											<div class="input-group">
+												<input class="form-control" type="number" id="in-valorAMultiplicacionModular" min="0" max="50" value="15">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-2 text-primary">B:
+										<div class="form-group">
+											<div class="input-group">
+												<input class="form-control" type="number" id="in-valorBMultiplicacionModular" min="0" max="50" value="15">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 text-primary">Anillo (Z):
+										<div class="form-group">
+											<div class="input-group">
+												<input class="form-control" type="number" id="in-valorAnilloMultiplicacionModular" min="2" max="50" value="20">
+												<div class="input-group-btn">
+													<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadMultiplicacionModular" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu pull-right" role="menu">
+														<li><a id="tipoMultiplicacionModular1">Calcular Rápido</a></li>
+														<li><a id="tipoMultiplicacionModular2">Calcular Normal</a></li>
+													</ul>
+													<button class="btn btn-primary accionIniciar" type="button" id="btn-comenzarMultiplicacionModular" tabindex="-1" value="2">Calcular Normal</button>
+													<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarMultiplicacionModular" style="display: none;">Cancelar</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="alert alert-info" style="display: none; font-weight:bold; text-align: center;" id="MMdiv1"></div>
+							<div class="col-md-12">
+								<div class="text-center" id="MMdivOperacion"></div><br>
+							</div>
+							<div class="col-md-12">
+								<div id="valorMultiplicacionModular" class="text-center"></div>
+							</div>
+							<div class="container"><br>
+								<div class="row">
+									<div class="col-md-2 text-primary"></div>
+									<div class="col-md-8 text-primary">Resultado:
+										<input type="text" class="form-control" placeholder="Resultado" readonly="" id="out-multiplicacionModular">
+									</div>
+								</div>
+							</div>
+					    </div>						
+					</div>
+				</div>
+				<!-- END MAIN CONTENT -->
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="../../../includes/vendor/jquery/jquery.min.js"></script>
+		<script src="../../../includes/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../includes/vendor/toastr/toastr.min.js"></script>
+		<script src="../../../includes/scripts/klorofilpro-common.min.js"></script>
+		<script src="../../../includes/scripts/animacionTT/infoTipoCifrados.js"></script>
+
+		<script src="multiplicacionModular.js"></script>
+		<script src="../../../includes/scripts/animacionTT/animation.js"></script>
+		<script src="../../../includes/scripts/animacionTT/mensajes.js""></script>
+		<script src="../../../includes/scripts/animacionTT/BigInteger.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,841 @@
+/*ANIMACION 1*/
+.parpadeo {
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@-webkit-keyframes parpadeo {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #337ab7; color: #ffffff;}
+}
+
+@keyframes parpadeo {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #337ab7; color: #ffffff;}
+}
+
+.parpadeoNext {
+    -webkit-animation-name: parpadeoNext;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeoNext;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@-webkit-keyframes parpadeoNext {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #000000; color: #ffffff;}
+}
+
+@keyframes parpadeoNext {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #000000; color: #ffffff;}
+}
+
+.parpadeolargo {
+    -webkit-animation-name: parpadeolargo;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeolargo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+@-webkit-keyframes parpadeolargo {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #b3d9ff}
+}
+
+@keyframes parpadeolargo {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #b3d9ff}
+}
+
+.parpadeomuylargo {
+    -webkit-animation-name: parpadeomuylargo;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeomuylargo;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+@-webkit-keyframes parpadeomuylargo {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #b3d9ff}
+}
+
+@keyframes parpadeomuylargo {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #b3d9ff}
+}
+
+.parpadeomuycorto {
+    -webkit-animation-name: parpadeomuycorto;
+    -webkit-animation-duration: 0.125s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse; 
+    animation-name: parpadeomuycorto;
+    animation-duration: 0.125s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+@-webkit-keyframes parpadeomuycorto {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #b3d9ff}
+}
+
+@keyframes parpadeomuycorto {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #b3d9ff}
+}
+
+.parpadeocorto {
+    -webkit-animation-name: parpadeocorto;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeocorto;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+@-webkit-keyframes parpadeocorto {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #b3d9ff}
+}
+
+@keyframes parpadeocorto {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #b3d9ff}
+}
+
+.parpadeo2 {
+    -webkit-animation-name: parpadeo2;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+@-webkit-keyframes parpadeo2 {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #6CFF67}
+}
+
+@keyframes parpadeo2 {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #6CFF67}
+}
+
+.parpadeolargo2 {
+    -webkit-animation-name: parpadeolargo2;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse; 
+    animation-name: parpadeolargo2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+@-webkit-keyframes parpadeolargo2 {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #F3FF67}
+}
+
+@keyframes parpadeolargo2 {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #F3FF67}
+}
+
+.circulo {
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+.title-table {
+    font-weight: bold;
+    background-color: #DEDFE0;
+}
+
+.title-table2 {
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #DEDFE0;
+}
+
+.title-table3 {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #DEDFE0;
+}
+
+.seleccionado {
+    background-color: #b3d9ff;
+}
+
+.tableVI2>tbody>tr>td{
+    font-size: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.tableVI3>tbody>tr>td{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.panel .table>tbody>tr>td:first-child, .panel .table>tbody>tr>td:last-child{
+    padding-left: 8px;
+}
+
+.tableVI4>tbody>tr>td:first-child{
+    width: 10%;
+}
+
+.panel .tableVI4>tbody>tr>td:last-child{
+    padding-left: 0px;
+}
+
+#teoria{
+    text-align: center;
+}
+
+.error{
+    border-style: solid;
+    border-color: #F9354C;
+    border-width: 1px;
+}
+
+.formula{
+    text-align: center;
+    font-size: 1.4em;
+    font-style: italic;
+    word-spacing: 5px;
+    color: black;
+    font-family: "Cambria Math";
+}
+
+.formula2{
+    font-size: 1em;
+    font-style: italic;
+    word-spacing: 5px;
+    color: black;
+    font-family: "Cambria Math";
+    margin-bottom: 0 !important;
+    margin-right: 3px;
+}
+
+.formula sup{
+    margin-left: 2px;
+}
+
+.formula2 sup{
+    margin-left: 2px;
+}
+
+.formula sub{
+    margin-right: 2px;
+}
+
+.formula2 sub{
+    margin-right: 2px;
+}
+
+.imgder{
+    float: right;
+    margin-left: 10px;
+}
+
+.imgizq{
+    float: left;
+}
+
+.imgizq img, .imgder img{
+    display: block;
+    margin: 0 auto; 
+}
+
+.imgizq p, .imgder p{
+    text-align: center;
+}
+
+
+
+
+/*ANIMACION 2*/
+.parpadeo0_25s-azul {
+    -webkit-animation-name: parpadeo-azul;
+    -webkit-animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-azul;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo0_5s-azul {
+    -webkit-animation-name: parpadeo-azul;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-azul;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo0_75s-azul {
+    -webkit-animation-name: parpadeo-azul;
+    -webkit-animation-duration: 0.75s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-azul;
+    animation-duration: 0.75s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo1s-azul {
+    -webkit-animation-name: parpadeo-azul;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-azul;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo1_5s-azul {
+    -webkit-animation-name: parpadeo-azul;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-azul;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo2s-azul {
+    -webkit-animation-name: parpadeo-azul;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-azul;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo2_5s-azul {
+    -webkit-animation-name: parpadeo-azul;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-azul;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo3s-azul {
+    -webkit-animation-name: parpadeo-azul;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-azul;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo4s-azul {
+    -webkit-animation-name: parpadeo-azul;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-azul;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo5s-azul {
+    -webkit-animation-name: parpadeo-azul;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-azul;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo6s-azul {
+    -webkit-animation-name: parpadeo-azul;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-azul;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo8s-azul {
+    -webkit-animation-name: parpadeo-azul;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-azul;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo0_5s-negro {
+    -webkit-animation-name: parpadeo-negro;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-negro;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo1s-negro {
+    -webkit-animation-name: parpadeo-negro;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-negro;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo2s-negro {
+    -webkit-animation-name: parpadeo-negro;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-negro;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.parpadeo0_5s-amarillo {
+    -webkit-animation-name: parpadeo-amarillo;
+    -webkit-animation-duration: 0-5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse; 
+    animation-name: parpadeo-amarillo;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+.parpadeo1s-amarillo {
+    -webkit-animation-name: parpadeo-amarillo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse; 
+    animation-name: parpadeo-amarillo;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+.parpadeo2s-amarillo {
+    -webkit-animation-name: parpadeo-amarillo;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse; 
+    animation-name: parpadeo-amarillo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+.parpadeo4s-amarillo {
+    -webkit-animation-name: parpadeo-amarillo;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse; 
+    animation-name: parpadeo-amarillo;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+.parpadeo8s-amarillo {
+    -webkit-animation-name: parpadeo-amarillo;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse; 
+    animation-name: parpadeo-amarillo;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+.parpadeo0_5s-verde {
+    -webkit-animation-name: parpadeo-verde;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-verde;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+.parpadeo1s-verde {
+    -webkit-animation-name: parpadeo-verde;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-verde;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+.parpadeo2s-verde {
+    -webkit-animation-name: parpadeo-verde;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo-verde;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;    
+}
+
+@-webkit-keyframes parpadeo2 {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #6CFF67}
+}
+
+@-webkit-keyframes parpadeo-azul {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #b3d9ff}
+}
+
+@keyframes parpadeo-azul {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #b3d9ff}
+}
+
+@-webkit-keyframes parpadeo-negro {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #000000; color: #ffffff;}
+}
+
+@keyframes parpadeo-negro {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #000000; color: #ffffff;}
+}
+
+@-webkit-keyframes parpadeo-verde {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #6CFF67}
+}
+
+@keyframes parpadeo-verde {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #6CFF67}
+}
+
+@-webkit-keyframes parpadeo-amarillo {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #F3FF67}
+}
+
+@keyframes parpadeo-amarillo {
+    0%   {background-color: #f2f2f2}
+    100%  {background-color: #F3FF67}
+}
+
+
+.circulo {
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+.title-table {
+    font-weight: bold;
+    background-color: #DEDFE0;
+}
+
+.title-table2 {
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #DEDFE0;
+}
+
+.title-table3 {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #DEDFE0;
+}
+
+.seleccionado {
+    background-color: #b3d9ff;
+}
+
+.tableVI2>tbody>tr>td{
+    font-size: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.tableVI3>tbody>tr>td{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0;
+    padding-right: 0px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.panel .table>tbody>tr>td:first-child, .panel .table>tbody>tr>td:last-child{
+    padding-left: 0px;
+}
+
+.tableVI4>tbody>tr>td:first-child{
+    width: 10%;
+    font-size: 1vw;
+}
+
+.panel .tableVI4>tbody>tr>td:last-child{
+    padding-left: 0;
+}
+
+.panel .table{
+    margin-bottom: 0;
+}
+
+.teoria{
+    text-align: justify;
+}
+
+.error{
+    border-style: solid;
+    border-color: #F9354C;
+    border-width: 1px;
+}
+
+.tabla>tbody>tr>td:last-child{
+    padding-left: 0 !important;
+}
+
+.tabla>tbody>tr>td:first-child{
+    padding-left: 0 !important;
+}
+
+.llave{
+    width: 50% !important;
+}
+
+.llave2{
+    width: 37.2% !important;
+    display: inline;
+    float: left;
+}
+
+.llave3{
+    width: 50% !important;
+    display: inline !important;
+    float: left !important;
+}
+
+.input-error{
+    border-color:#F9354C !important;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075) !important;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075) !important;
+}
+
+.input-error:focus{
+    border-color:#F9354C !important;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483 !important;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483 !important;
+}
+
+
+
+/*ANIMACION 3*/
+.parpadeo1R {
+    -webkit-animation-name: parpadeo1R;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo1R;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@-webkit-keyframes parpadeo1R {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #b3d9ff;}
+}
+
+@keyframes parpadeo1R {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #b3d9ff;}
+}
+
+.parpadeoNext1R {
+    -webkit-animation-name: parpadeoNext1R;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeoNext1R;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@-webkit-keyframes parpadeoNext1R {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #6CFF67;}
+}
+
+@keyframes parpadeoNext1R {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #6CFF67;}
+}
+
+.parpadeo2N {
+    -webkit-animation-name: parpadeo2N;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo2N;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@-webkit-keyframes parpadeo2N {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #b3d9ff;}
+}
+
+@keyframes parpadeo2N {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #b3d9ff;}
+}
+
+.parpadeoNext2N {
+    -webkit-animation-name: parpadeoNext2N;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeoNext2N;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@-webkit-keyframes parpadeoNext2N {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #6CFF67;}
+}
+
+@keyframes parpadeoNext2N {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #6CFF67;}
+}
+
+.parpadeo3L {
+    -webkit-animation-name: parpadeo3L;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeo3L;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@-webkit-keyframes parpadeo3L {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #b3d9ff;}
+}
+
+@keyframes parpadeo3L {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #b3d9ff;}
+}
+
+.parpadeoNext3L {
+    -webkit-animation-name: parpadeoNext3L;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: reverse;
+    animation-name: parpadeoNext3L;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@-webkit-keyframes parpadeoNext3L {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #6CFF67;}
+}
+
+@keyframes parpadeoNext3L {
+    0%   {background-color: #ffffff;}
+    100%  {background-color: #6CFF67;}
+}
+
+#c{
+    border-left-color: #337AB7;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-top-color: #337AB7;
+    border-top-width: 5px;
+    border-top-style: solid;
+}

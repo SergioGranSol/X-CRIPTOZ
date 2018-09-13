@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>X-CRIPTOZ | Aprende Criptografía</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- VENDOR CSS -->
+		<link rel="stylesheet" href="../../../includes/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../includes/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../../includes/vendor/themify-icons/css/themify-icons.css">
+		<link rel="stylesheet" href="../../../includes/vendor/toastr/toastr.min.css">
+		<link rel="StyleSheet" href="../../../includes/css/animacionTT/panelFlotante.css">
+		<link rel="StyleSheet" href="../../../includes/css/animacionTT/animation.css">
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="../../../includes/css/main.min.css">
+		<!-- ICONS -->
+		<link rel="apple-touch-icon" sizes="76x76" href="../../../includes/img/apple-iconTT.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../../../includes/img/faviconTT.png">
+		<link id="css-skin" rel="stylesheet" href="../../../includes/css/skins/sidebar-nav-darkblue.css" type="text/css">
+	</head>
+	<body>
+		<!-- WRAPPER -->
+		<div id="wrapper">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="brand">
+					<a href="../../../layouts/main.html">
+						<img src="../../../includes/img/logo-white.png" alt="X-CRIPTOZ Logo" class="img-responsive logo">
+					</a>
+				</div>
+				<div class="container-fluid">
+					<div id="tour-fullwidth" class="navbar-btn">
+						<button type="button" class="btn-toggle-fullwidth btn"><i class="fa fa-bars"></i></button>
+					</div>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#creditos">
+									<i class="fa fa-address-card-o"></i>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.escom.ipn.mx/" target="_blanc">
+									<img src="../../../includes/img/escomWhiteMin.png" alt="ESCOM">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar">
+				<nav>				
+					<ul class="nav" id="sidebar-nav-menu">						
+						<li class="menu-group">Inicio</li>
+						<li><a href="../../../layouts/main.html"><i class="ti-home"></i> <span class="title">Inicio</span></a></li>
+						<li><a href="../../../views/archivos/archivos.html"><i class="ti-envelope"></i> <span class="title">Cifrado de archivos</span></a></li>
+						<li><a href="../../../views/calculadora/calculadora.html"><i class="ti-panel"></i> <span class="title">Calculadora</span></a></li>
+						<li class="panel">
+							<a href="#" data-toggle="collapse" data-target="#submenuDemo" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="fa fa-superscript"></i> <span class="title">Fundamentos Matemáticos</span><i class="icon-submenu ti-angle-left"></i></a>
+							<div id="submenuDemo" class="collapse" aria-expanded="false">
+								<ul class="submenu" id="submenu">
+									<li class="panel">
+										<a href="#SubmenuMatematicaModular" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Aritmética Modular</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatematicaModular" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/matematicaModular/matematicaModular/matematicaModular.html">¿Qué es Aritmética Modular?</a></li>
+												<li><a href="../../../views/matematicaModular/sumaModular/sumaModular.html">Suma Modular</a></li>
+												<li><a href="../../../views/matematicaModular/multiplicacionModular/multiplicacionModular.html">Multiplicación modular</a></li>
+												<li><a href="../../../views/matematicaModular/inversoAditivo/inversoAditivo.html">Inverso aditivo</a></li>
+												<li><a href="../../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.html">Inverso multiplicativo</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.html">Exponenciación clásica</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.html">Exponenciación binaria</a></li>
+												<li><a href="../../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.html">Exponenciación por Teorema de Euler</a></li>
+												<li><a href="../../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.html">Algoritmo Euclides</a></li>
+												<li><a href="../../../views/matematicaModular/phiEuler/phiEuler.html">Phi de Euler</a></li>
+												<li><a href="../../../views/matematicaModular/raicesPrimitivas/raicesPrimitivas.html">Raices Primitivas</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuMatrices" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Matrices</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuMatrices" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/matrices/matrices/matrices.html">Que es una Matriz</a></li>
+												<li><a href="../../../views/matrices/multiplicacionMatrices/multiplicacionMatrices.html">Multiplicación de matrices</a></li>
+												<li><a href="../../../views/matrices/determinanteMatrices/determinanteMatrices.html">Determinante de una matriz</a></li>
+												<li><a href="../../../views/matrices/cofactoresMatrices/cofactoresMatrices.html">Matriz de cofactores</a></li>
+												<li><a href="../../../views/matrices/transpuestaMatrices/transpuestaMatrices.html">Transpuesta de una matriz</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCampoGF2" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Campo GF(2<sup>8</sup>)</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCampoGF2" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/campoGF2/convertirGF/convertirGF.html">Elementos en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/sumaGF/sumaGF.html">Suma en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/multiplicacionGF/multiplicacionGF.html">Multiplicación en GF(2<sup>8</sup>)</a></li>
+												<li><a href="../../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.html">Inverso multiplicativo en GF(2<sup>8</sup>)</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuCurva" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Curva elíptica</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuCurva" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/curvaEliptica/curvaEliptica/curvaEliptica.html">¿Qué es la Curva Elíptica?</a></li>
+												<li><a href="../../../views/curvaEliptica/sumaPuntos/sumaPuntos.html">Suma de puntos</a></li>
+												<li><a href="../../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.html">Doblado de puntos</a></li>
+												<li><a href="../../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.html">Obtención de puntos</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="panel">
+										<a href="#SubmenuBits" data-toggle="collapse" data-parent="#submenu" class="collapsed" aria-expanded="false"><span class="title">Operaciones a nivel<br>de bits</span> <i class="icon-submenu ti-angle-left"></i></a>
+										<div id="SubmenuBits" class="collapse" aria-expanded="false">
+											<ul class="submenu">
+												<li><a href="../../../views/operacionesBits/operadoresLogicos/operadoresLogicos.html">Operadores lógicos </a></li>
+												<li><a href="../../../views/operacionesBits/rotacionBits/rotacionBits.html">Rotación bits</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía clásica</li>
+						<li><a href="../../../views/criptografia/clasica/clasica.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía clásica</span></a></li>
+						<li class="panel">
+							<a href="#Monoalfabetica" onclick="sustitucionMonoalfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución monoalfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Monoalfabetica" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/monoalfabetica/cesar/cesar.html">Cesar</a></li>
+									<li><a href="../../../views/monoalfabetica/atbash/atbash.html">Atbash</a></li>
+									<li><a href="../../../views/monoalfabetica/polybios/polybios.html">Polybios</a></li>
+									<li><a href="../../../views/monoalfabetica/playfair/playfair.html">Playfair</a></li>
+									<li><a href="../../../views/monoalfabetica/afin/afin.html">Afin</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Polialfabetica" onclick="sustitucionPolialfabetica();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="active collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por sustitución polialfabética</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Polialfabetica" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/polialfabetica/desplazamiento/desplazamiento.html">Desplazamiento</a></li>
+									<li><a href="../../../views/polialfabetica/vigenere/vigenere.html">Vigenere</a></li>
+									<li><a href="vernam.html" class="active">Vernam</a></li>
+									<li><a href="../../../views/polialfabetica/hill/hill.html">Hill</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Transposicion" onclick="transposicion();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-hummer"></i> <span class="title">Cifrado por<br>transposición</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Transposicion" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/transposicion/rejilla/rejilla.html">Rejilla</a></li>
+									<li><a href="../../../views/transposicion/inversa/inversa.html">Inversa</a></li>
+									<li><a href="../../../views/transposicion/simple/simple.html">Simple</a></li>
+									<li><a href="../../../views/transposicion/riel/riel.html">Por Riel</a></li>
+									<li><a href="../../../views/transposicion/columnas/columnas.html">Por Columnas</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-group">Criptografía moderna</li>
+						<li><a href="../../../views/criptografia/moderna/moderna.html"><i class="ti-bookmark-alt"></i> <span class="title">Criptografía moderna</span></a></li>
+						<li class="panel">
+							<a href="#Simetrico" onclick="cifradoSimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado simétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Simetrico" class="collapse" aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/simetrico/feistel/feistel.html">Feistel</a></li>
+									<li><a href="../../../views/simetrico/des/des.html">DES</a></li>
+									<li><a href="../../../views/simetrico/aes/aes.html">AES</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Asimetrico" onclick="cifradoAsimetrico();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Cifrado asimétrico</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Asimetrico" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/asimetrico/diffieHellman/diffieHellman.html">Diffie Hellman</a></li>
+									<li><a href="../../../views/asimetrico/rsa/rsa.html">RSA</a></li>
+									<!-- <li><a href="../../../views/asimetrico/dsa/dsa.html">DSA</a></li> -->
+									<li><a href="../../../views/asimetrico/gammal/gammal.html">ElGamal</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Hash" onclick="funcionesHash();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Funciones Hash</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Hash" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/hash/md5/md5.html">MD5</a></li>
+									<li><a href="../../../views/hash/sha1/sha1.html">SHA-1</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="panel">
+							<a href="#Firma" onclick="firmaDigital();" data-toggle="collapse" data-parent="#sidebar-nav-menu" class="collapsed" aria-expanded="false"><i class="ti-shield"></i> <span class="title">Firma Digital</span> <i class="icon-submenu ti-angle-left"></i></a>
+							<div id="Firma" class="collapse " aria-expanded="false">
+								<ul class="submenu">
+									<li><a href="../../../views/firmas/firmaRsa/firmaRsa.html">Firma RSA</a></li>
+									<li><a href="../../../views/firmas/firmaECDSA/firmaECDSA.html">Firma ECDSA</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content" id="contenidoPagina">
+					<div class="content-heading clearfix">
+						<ul class="breadcrumb">
+							<li><i class="fa fa-home"></i> Criptografía clásica</li>
+							<li>Sustitución polialfabética</li>
+							<li class="active"><a href="#">Vernam</a></li>
+						</ul>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="panel">
+									<div class="panel-heading" style="background-color: #1c79d2 !important;">
+										<h4 class="panel-title" style="color: white !important; font-size: 20px;">Cifrado Vernam</h4>
+										<button type="button" class="btn btn-primary" style="float: right; position: relative; top: -0.4em;" onclick="mostrarPanelVernam();">
+											<span>Ver cifrado</span>
+											<i class="fa fa-cog fa-spin"></i>
+										</button>
+									</div>
+									<div class="panel-body text-justify">
+							    		<div class="pull-right imagenDerecha">
+											<img src="../../../includes/img/Vernam.jpg" width="180">
+											<p>Gilbert S. Vernam</p>
+										</div>
+										<p>El cifrado de Vernam, que es un criptosistema irrompible, fue desarrollado por Gilbert S. Vernam y Joseph Mauborgne hacia 1918. Empieza por representar el mensaje como una secuencia de 0s y 1s. Esto puede lograrse escribiendo todos los números en binario, por ejemplo, o usando ASCII. Pero el mensaje también podría ser una señal de video o audio digitalizada.</p>
+						    			<p>La clave es una secuencia aleatoria de 0s y 1s de la misma longitud que el mensaje. Una vez que se utiliza una clave, se descarta y nunca se vuelve a utilizar. Cada mensaje nuevo requiere una nueva clave de la misma longitud que el nuevo mensaje.</p>
+										<br><hr>
+										<img src="../../../includes/img/sketch/class-hand-drawn-persons-group.png" width="70" align="middle" class="sketch pull-right">
+										<h3 class="text-primary">Cifrado</h3>
+										Los pasos para cifrar usando ese algoritmo son los siguientes:<br>
+										<ol>
+											<li>Convertir en una cadena de bits todos los caracteres del mensaje claro usando su código ASCII.</li>
+											<li>Generar una llave aleatoria de bits de la misma longitud que el mensaje claro.</li>
+											<li>Realizar la función XOR entre el mensaje claro y la llave.</li>
+											<li>El resultado se transforma en números decimales de 8 bits que son el código ASCII del texto cifrado resultante.</li>
+										</ol><br>
+										<p>Ejemplo:</p>
+										<table class="table table-bordered" style="background-color: #F2F4F7;">
+											<tbody><tr>
+												<td>Mensaje claro:</td>
+												<td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td rowspan="2" style="text-align: center;"><br>XOR</td>
+											</tr>
+											<tr>
+												<td>Llave aleatoria:</td>
+												<td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td style="padding-left: 8px;">0</td>
+											</tr>
+											<tr>
+												<td>Texto cifrado:</td>
+												<td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td></td>
+											</tr>
+										</tbody></table>
+										<hr>
+										<img src="../../../includes/img/sketch/class-hand-drawn-persons-group.png" width="70" align="middle" class="sketch pull-right">
+										<h3 class="text-primary">Descifrado</h3>
+										Los pasos para descifrar usando ese algoritmo son los siguientes:<br>
+										<ol>
+											<li>Convertir en una cadena de bits todos los caracteres del texto cifrado usando su código ASCII.</li>
+											<li>Utilizar la llave aleatoria de bits que se utilizó para cifrar el mensaje.</li>
+											<li>Realizar la función XOR entre el texto cifrado y la llave.</li>
+											<li>El resultado se transforma en números decimales de 8 bits que son el código ASCII del mensaje claro descifrado.</li>
+										</ol>
+										<br>
+										<table class="table table-bordered" style="background-color: #F2F4F7;">
+											<tbody><tr>
+												<td>Texto cifrado:</td>
+												<td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td rowspan="2" style="text-align: center;"><br>XOR</td>
+											</tr>
+											<tr>
+												<td>Llave aleatoria:</td>
+												<td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td style="padding-left: 8px;">0</td>
+											</tr>
+											<tr>
+												<td>Mensaje claro:</td>
+												<td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td>
+											</tr>
+										</tbody></table>
+										<hr>
+										<h3 class="text-primary"><img src="../../../includes/img/sketch/pen-hand-draw-tool-with-text-lines.png" width="50" align="middle" class="sketch"> Referencias</h3>
+										<ol>
+											<li>Ramió, J. (1999). Aplicaciones Criptográficas. Dpto. de Publicaciones EUI-UPM: Dpto. de Publicaciones EUI-UPM.</li>
+		 									<li>Ramió, J. (2006). Seguridad Informática y Criptografía. Dpto. de Publicaciones EUI-UPM: Dpto. de Publicaciones EUI-UPM.</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="panel" id="pnl-Interactivo3" style="display: none; margin: 10px 10px 10px;">
+					<div class="panel-heading" style="background-color: #1c79d2 !important; height: 47px;">
+						<h4 class="panel-title" style="color: white !important; font-size: 20px;">Cifrado Vernam</h4>
+						<div class="right" style="margin-left: 20px;">
+							<button type="button" class="btn btn-danger btn-sm" onclick="cerrarPanelVernam();">
+								<span>Volver</span>
+								<i class="fa fa-arrow-left"></i>
+							</button>
+						</div>
+					</div>
+					<div class="panel-body" style="padding-top: 10px;">
+						<div class="custom-tabs-line tabs-line-bottom left-aligned">
+							<ul class="nav" role="tablist" style="width: 100%;">
+								<li class="active" style="width: 50%;"><a href="#cifrarVernam" data-toggle="tab" class="text-center">Cifrado</a></li>
+								<li style="width: 50%;"><a href="#descifrarVernam" data-toggle="tab" class="text-center">Descifrado</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div id="cifrarVernam" class="tab-pane fade active in" style="padding: 10px;">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-6 text-primary">Texto claro:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="text" id="in-textoPlanoVernam" placeholder="Texto claro">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadCVernam" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoVernamC1">Cifrado Rápido</a></li>
+															<li><a id="tipoVernamC2">Cifrado Normal</a></li>
+															<!-- <li><a id="tipoVernamC3">Cifrado Lento&nbsp;</a></li> -->
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-cifrarVernam" tabindex="-1" value="2">Cifrado Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarCifrarVernam" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="VEdiv1" class="alert alert-info" style="display:none; font-weight:bold; text-align: center;"></div><br>
+								<table class="table tableVI4 tabla">
+									<tbody id="table-Vernam1">
+										<tr id="VErow0"></tr>
+										<tr id="VErow1"></tr>
+									</tbody>
+								</table>
+								<table class="table tableVI3 tableVI4 tabla">
+									<tbody id="table-Vernam2">
+										<tr id="VErow2"></tr>
+										<tr id="VErow3"></tr>
+										</tbody>
+								</table>
+								<table class="table tableVI3 tableVI4 tabla">
+									<tbody id="table-Vernam3">
+										<tr id="VErow4"></tr>
+									</tbody>
+								</table>
+								<table class="table tableVI3 tableVI4 tabla">
+									<tbody id="table-Vernam4">
+										<tr id="VErow5"></tr>
+									</tbody>
+								</table>
+								<table class="table tableVI4 tabla">
+									<tbody id="table-Vernam5">
+										<tr id="VErow6"></tr>
+										<tr id="VErow7"></tr>
+									</tbody>
+								</table><br>
+								<div id="textoCifradoVernam" class="text-center"></div>
+								<div class="container" style="margin-bottom: -20px;"><br>
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-3 text-primary">Texto cifrado:
+											<div class="form-group">
+												<div class="input-group">
+													<input type="text" class="form-control" placeholder="Texto cifrado" id="out-textoCifradoVernam" readonly="">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3 text-primary">Llave:
+											<div class="form-group">
+												<div class="input-group">
+													<input type="text" class="form-control" placeholder="Llave" id="out-claveCifradoVernam" readonly="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+						    </div>
+						    <div id="descifrarVernam" class="tab-pane fade" style="padding: 10px;">
+						    	<div class="container">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-3 text-primary">Texto cifrado:
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-btn"><button class="btn btn-primary btnVelocidadCopiar" type="button" id="btn-copiarTextoVernam" data-toggle="tooltip" title="" data-original-title="Copiar Texto cifrado"><i class="fa fa-clone" aria-hidden="true"></i></button></span>
+													<input class="form-control" type="text" id="in-textoPlanoCifradoVernam" placeholder="Texto cifrado">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-5 text-primary">Llave:
+											<div class="form-group">
+												<div class="input-group">
+													<input class="form-control" type="text" id="in-claveDescifradoVernam" placeholder="Llave">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-primary dropdown-toggle btnVelocidadCopiar" id="btn-velocidadDVernam" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li><a id="tipoVernamD1">Descifrado Rápido</a></li>
+															<li><a id="tipoVernamD2">Descifrado Normal</a></li>
+															<!-- <li><a id="tipoVernamD3">Descifrado Lento&nbsp;</a></li> -->
+														</ul>
+														<button class="btn btn-primary accionIniciar" type="button" id="btn-descifrarVernam" tabindex="-1" value="2">Descifrado Normal</button>
+														<button class="btn btn-danger accionCancelar" type="button" id="btn-cancelarDescifrarVernam" style="display: none;">Cancelar</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="VEdiv2" class="alert alert-info" style="display:none; font-weight:bold; text-align: center;"></div>
+								<br>
+								<table class="table tableVI4 tabla">
+									<tbody id="table-Vernam21">
+										<tr id="VErow200"></tr>
+										<tr id="VErow20"></tr>
+									</tbody>
+								</table>
+								<table class="table tableVI3 tableVI4 tabla">
+									<tbody id="table-Vernam22">
+										<tr id="VErow21"></tr>
+										<tr id="VErow22"></tr>
+									</tbody>
+								</table>
+								<table class="table tableVI4 tabla">
+									<tbody id="table-Vernam23">
+										<tr id="VErow233"></tr>
+										<tr id="VErow23"></tr>
+									</tbody>
+								</table>
+								<table class="table tableVI3 tableVI4 tabla">
+									<tbody id="table-Vernam24">
+										<tr id="VErow24"></tr>
+									</tbody>
+								</table>
+								<table class="table tableVI4 tabla">
+									<tbody id="table-Vernam25">
+										<tr id="VErow25"></tr>
+										<tr id="VErow26"></tr>
+									</tbody>
+								</table><br>
+								<div id="textoDescifradoVernam" class="text-center"></div>
+								<div class="container"><br>
+									<div class="row">
+										<div class="col-sm-2"></div>
+										<div class="col-sm-8 text-primary">Texto claro:
+											<input type="text" class="form-control" placeholder="Texto claro" id="out-textoDescifradoVernam" readonly="">
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+				<!-- END MAIN CONTENT -->
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="../../../includes/vendor/jquery/jquery.min.js"></script>
+		<script src="../../../includes/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../includes/vendor/toastr/toastr.min.js"></script>
+		<script src="../../../includes/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="../../../includes/scripts/klorofilpro-common.min.js"></script>
+		<script src="../../../includes/scripts/animacionTT/infoTipoCifrados.js"></script>
+
+		<script src="vernam.js"></script>
+		<script src="../../../views/fundamentos/modalFundamentos.js""></script>
+		<script src="../../../includes/scripts/animacionTT/animation.js"></script>
+		<script src="../../../includes/scripts/animacionTT/BigInteger.min.js"></script>
+		<script>
+			var togglePanelFundamentos = function(e) {
+				e.preventDefault();
+				var panel = document.getElementById('panel-fundamentos');
+				if (panel.className) panel.className = '';
+				else panel.className = 'active';
+			}
+			$(document).ready(function(){
+				$("body").append(modales);
+				$("#listaFundamentos .panel-body").slimScroll({height:"600px",wheelStep:20,color:"rgba(160, 174, 186, 1)"});
+			});
+		</script>
+		<div id="panel-fundamentos">
+			<div class="panel-row"></div>
+			<a href="#" onclick="togglePanelFundamentos(event);" style="background-color: #2b333e;"><i class="fa fa-superscript"></i></a>
+			<div id="listaFundamentos">
+				<div class="panel-heading">
+					<h2 class="panel-title">Fundamentos Matematicos </h2>
+				</div>
+				<div class="panel-body">
+					<nav>
+						<span><i class="fa fa-pencil"></i> Del Cifrado Vernam</span>
+						<ul>
+							<li class="file-tag tag-blue"><a href="#" data-toggle="modal" data-target="#modalOperadoresLogicos">Operadores lógicos</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-purple"></i> Aritmética Modular</span>
+						<ul>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalMatematicaModular">¿Qué es Aritmética Modular?</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalSumaModular">Suma Modular</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionModular">Multiplicación Modular</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalInversoAditivo">Inverso aditivo</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalInversoMultiplicativo">Inverso multiplicativo</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionClasica">Exponencicación Clásica</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionBinaria">Exponencicación Binaria</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalExponenciacionEuler">Exponencicación por Teorema de Euler</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalAlgoritmoEuclides">Algoritmo de Euclides</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalPhiEuler">Phi de Euler</a></li>
+							<li class="file-tag tag-purple"><a href="#" data-toggle="modal" data-target="#modalRaicesPrimitivas">Raices Primitivas</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-green"></i> Matrices</span>
+						<ul>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalMatrices"> Que es una Matriz</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionMatrices">Multiplicacion de matrices</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalDeterminanteMatrices">Determinante de una matriz</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalCofactoresMatrices">Matriz de cofactores</a></li>
+							<li class="file-tag tag-green"><a href="#" data-toggle="modal" data-target="#modalTranspuestaMatrices">Transpuesta de una matriz</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-red"></i> Campo GF(2<sup>8</sup>)</span>
+						<ul>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalConvertirGF">Elementos en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalSumaGF">Suma en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalMultiplicacionGF">Multiplicación en GF(2<sup>8</sup>)</a></li>
+							<li class="file-tag tag-red"><a href="#" data-toggle="modal" data-target="#modalInversoMultiplicativoGF">Inverso Multiplicativo en GF(2<sup>8</sup>)</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-yellow"></i> Curva Elíptica</span>
+						<ul>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalCurvaEliptica">¿Qué es la Curva Elíptica?</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalSumaPuntos">Suma de Puntos</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalDobladoPuntos">Doblado de Puntos</a></li>
+							<li class="file-tag tag-yellow"><a href="#" data-toggle="modal" data-target="#modalObtencionPuntos">Obtención de Putos</a></li>
+						</ul>
+						<hr>
+						<span><i class="fa fa-pencil custom-text-blue"></i> Operaciones a nivel de Bits</span>
+						<ul>
+							<li class="file-tag tag-blue"><a href="#" data-toggle="modal" data-target="#modalRotacionBits">Rotación de bits</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<script src="../../../views/matematicaModular/sumaModular/sumaModular.js""></script>
+		<script src="../../../views/matematicaModular/multiplicacionModular/multiplicacionModular.js""></script>
+		<script src="../../../views/matematicaModular/inversoAditivo/inversoAditivo.js""></script>
+		<script src="../../../views/matematicaModular/inversoMultiplicativo/inversoMultiplicativo.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionClasica/exponenciacionClasica.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionBinaria/exponenciacionBinaria.js""></script>
+		<script src="../../../views/matematicaModular/exponenciacionEuler/exponenciacionEuler.js""></script>
+		<script src="../../../views/matematicaModular/algoritmoEuclides/algoritmoEuclides.js""></script>
+		<script src="../../../views/matematicaModular/phiEuler/phiEuler.js""></script>
+		<script src="../../../views/campoGF2/convertirGF/convertirGF.js""></script>
+		<script src="../../../views/campoGF2/sumaGF/sumaGF.js""></script>
+		<script src="../../../views/campoGF2/multiplicacionGF/multiplicacionGF.js""></script>
+		<script src="../../../views/campoGF2/inversoMultiplicativoGF/inversoMultiplicativoGF.js""></script>
+		<script src="../../../views/curvaEliptica/obtencionPuntos/obtencionPuntos.js""></script>
+		<script src="../../../views/curvaEliptica/sumaPuntos/sumaPuntos.js""></script>
+		<script src="../../../views/curvaEliptica/dobladoPuntos/dobladoPuntos.js""></script>
+		<script src="../../../includes/scripts/animacionTT/mensajes.js""></script>
+	</body>
+</html>
