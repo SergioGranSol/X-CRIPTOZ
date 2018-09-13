@@ -5,8 +5,8 @@ Aprende las base de criptografía en [X-CRIPTOZ](https://sergiogransol.github.io
 ## Authors
 
 * **Sergio Granados** - *Initial work* - [SergioGranSol](https://github.com/SergioGranSol)
-* ** Iván Meléndez**
-* ** Mario Isaac Moreno**
+* **Iván Meléndez**
+* **Mario Isaac Moreno**
 
 ## License
 
