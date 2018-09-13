@@ -22,4 +22,4 @@ Este proyecto fue realizado como trabajo escolar por los alumnos:
 
 ## License
 
-Code released under the [MIT License.](https://github.com/SergioGranSol/nodejsTestingApp/blob/master/LICENSE)
+Code released under the [MIT License.](https://github.com/SergioGranSol/X-CRIPTOZ/blob/master/LICENSE)
